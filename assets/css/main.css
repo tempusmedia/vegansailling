@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+
+.landing-btn {
+  @apply h-24 flex flex-col justify-center items-center;
+}
+
+.landing-btn:hover {
+}
+.landing-btn:focus {
+}
+.landing-btn:active {
+}
+
+.landing-btn--primary {
+  @apply bg-gradient-to-r from-vegan-red to-vegan-orange text-white opacity-85;
+}
+
+.landing-btn--secondary {
+  @apply bg-white opacity-80 text-vegan-blue;
+}
+
+@tailwind utilities;
+
+
