@@ -20,6 +20,15 @@
   @apply bg-white opacity-80 text-vegan-blue;
 }
 
+.nav-link {
+  @apply block text-vegan-blue font-medium text-lg font-poppins py-5;
+}
+
+.hamburger-menu {
+  @apply block absolute bg-white top-0 w-full flex flex-col justify-evenly;
+}
+.hamburger-items {
+  @apply flex flex-col justify-center items-center py-5;
+}
+
 @tailwind utilities;
-
-
