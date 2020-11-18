@@ -20,32 +20,41 @@
 
     <nuxt-link :to="route" class="hidden xs:block"
       ><div
-        class="landing-btn h-24 sm:h-40 hover:h-64"
+        class="landing-btn h-24 sm:h-40 hover:pt-10 hover:h-64 sm:hover:h-landing sm:hover:pt-8"
         :class="
           variantState ? 'landing-btn--primary' : 'landing-btn--secondary'
         "
       >
-        <p class="font-poppins font-medium text-lg sm:text-4xl sm:pt-6">
+        <p
+          class="font-poppins font-medium text-lg sm:text-4xl sm:mt-6 sm:leading-landing"
+        >
           {{ title }}
         </p>
-        <p class="font-poppins font-light italic text-lg sm:text-4xl">
+        <p
+          class="font-poppins font-light italic text-lg sm:text-4xl sm:leading-landing"
+        >
           {{ subtitle }}
         </p>
         <p
-          class="desc-text text-center max-w-landing sm:text-xl font-light leading-snug pt-2 sm:pt-6"
+          class="font-poppins desc-text text-center max-w-landing sm:text-xl font-light leading-snug pt-2 sm:pt-6"
         >
           {{ texta }}
         </p>
         <p
-          class="desc-text text-center max-w-landing sm:text-xl font-light leading-snug"
+          class="font-poppins desc-text text-center max-w-landing sm:text-xl font-light leading-snug"
         >
           {{ textb }}
         </p>
         <p
-          class="desc-text text-center max-w-landing sm:text-xl font-light leading-snug"
+          class="font-poppins desc-text text-center max-w-landing sm:text-xl font-light leading-snug"
         >
           {{ textc }}
         </p>
+        <VegeBtn
+          :class="variantState ? 'btn--primary' : 'btn--secondary'"
+          class="font-poppins bottom-btn xs:block mt-5 mb-5 sm:mt-12 sm:mb-4"
+          >See more</VegeBtn
+        >
       </div>
     </nuxt-link>
   </div>

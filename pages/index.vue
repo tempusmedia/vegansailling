@@ -38,7 +38,7 @@
         <HeaderLanding />
         <!-- <img src="/images/bg-main.jpg" />
     <img src="~/assets/images/bg-main.jpg" /> -->
-        <div class="flex xs:h-64 xs:items-end">
+        <div class="flex xs:h-auto xs:items-end">
           <landing-button
             class="w-1/2 pr-2 landing-desk"
             variant="primary"
@@ -112,10 +112,15 @@ body {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
-.desc-text {
+.desc-text,
+.bottom-btn {
   display: none;
 }
 .landing-desk:hover .desc-text {
+  display: block;
+}
+
+.landing-desk:hover .bottom-btn {
   display: block;
 }
 </style>

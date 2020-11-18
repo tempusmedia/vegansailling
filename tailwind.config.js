@@ -26,6 +26,16 @@ module.exports = {
             },
             maxWidth: {
                 'landing': '300px'
+            },
+            fontSize: {
+                'btn': '1.375rem'
+            },
+            height: {
+                'landing': '27rem',
+
+            },
+            lineHeight: {
+                'landing': '43.2px'
             }
         }
     },
