@@ -2,13 +2,15 @@
   <div>
     <nuxt-link :to="route"
       ><div
-        class="landing-btn"
+        class="landing-btn h-24 sm:h-40"
         :class="
           variantState ? 'landing-btn--primary' : 'landing-btn--secondary'
         "
       >
-        <p class="font-poppins font-medium text-lg">{{ title }}</p>
-        <p class="font-poppins font-light italic text-lg">{{ subtitle }}</p>
+        <p class="font-poppins font-medium text-lg sm:text-4xl">{{ title }}</p>
+        <p class="font-poppins font-light italic text-lg sm:text-4xl">
+          {{ subtitle }}
+        </p>
       </div></nuxt-link
     >
   </div>

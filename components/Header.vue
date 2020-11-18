@@ -32,8 +32,11 @@
     <div class="flex px-5 py-3 navBreak:hidden">
       <div class="w-1/6"></div>
       <div class="w-4/6 flex justify-center">
-        <img src="/images/logo.svg" alt="Vegan Sailing Logo" />
+        <nuxt-link :to="route.home">
+          <img src="/images/logo.svg" alt="Vegan Sailing Logo"
+        /></nuxt-link>
       </div>
+
       <div class="w-1/6 flex justify-end align-middle z-50">
         <button
           @click="isOpen = !isOpen"

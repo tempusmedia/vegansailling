@@ -2,7 +2,7 @@
 @tailwind components;
 
 .landing-btn {
-  @apply h-24 flex flex-col justify-center items-center;
+  @apply flex flex-col justify-center items-center;
 }
 
 .landing-btn:hover {

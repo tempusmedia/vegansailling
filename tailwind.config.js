@@ -20,7 +20,9 @@ module.exports = {
                 '85': '0.85',
             },
             screens: {
-                navBreak: '939px'
+                navBreak: '939px',
+                xs: '375px',
+                landing: '974px'
             },
         }
     },

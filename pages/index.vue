@@ -1,27 +1,61 @@
 <template>
-  <div
-    class="custom-height bg-no-repeat w-full object-center object-cover flex flex-col justify-between"
-    style="background-image: url('/images/bg-main-xs.jpg')"
-  >
-    <HeaderLanding />
-    <!-- <img src="/images/bg-main.jpg" />
+  <div>
+    <!-- mobile -->
+    <div
+      class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
+      style="background-image: url('/images/bg-main-xs.jpg')"
+    >
+      <HeaderLanding />
+      <!-- <img src="/images/bg-main.jpg" />
     <img src="~/assets/images/bg-main.jpg" /> -->
-    <div class="flex">
-      <landing-button
-        class="w-1/2"
-        variant="primary"
-        :title="landingBtn.primary.title"
-        :subtitle="landingBtn.primary.subtitle"
-        :route="landingBtn.primary.route"
-      />
+      <div class="flex">
+        <landing-button
+          class="w-1/2"
+          variant="primary"
+          :title="landingBtn.primary.title"
+          :subtitle="landingBtn.primary.subtitle"
+          :route="landingBtn.primary.route"
+        />
 
-      <landing-button
-        class="w-1/2"
-        variant="secondary"
-        :title="landingBtn.secondary.title"
-        :subtitle="landingBtn.secondary.subtitle"
-        :route="landingBtn.secondary.route"
-      />
+        <landing-button
+          class="w-1/2"
+          variant="secondary"
+          :title="landingBtn.secondary.title"
+          :subtitle="landingBtn.secondary.subtitle"
+          :route="landingBtn.secondary.route"
+        />
+      </div>
+    </div>
+
+    <!-- desktop -->
+    <div
+      class="h-screen bg-no-repeat bg-cover bg-center w-full object-center object-cover hidden xs:block"
+      style="background-image: url('/images/bg-main.jpg')"
+    >
+      <div
+        class="h-screen flex flex-col justify-between max-w-screen-landing mx-auto"
+      >
+        <HeaderLanding />
+        <!-- <img src="/images/bg-main.jpg" />
+    <img src="~/assets/images/bg-main.jpg" /> -->
+        <div class="flex">
+          <landing-button
+            class="w-1/2 pr-2"
+            variant="primary"
+            :title="landingBtn.primary.title"
+            :subtitle="landingBtn.primary.subtitle"
+            :route="landingBtn.primary.route"
+          />
+
+          <landing-button
+            class="w-1/2 pl-2"
+            variant="secondary"
+            :title="landingBtn.secondary.title"
+            :subtitle="landingBtn.secondary.subtitle"
+            :route="landingBtn.secondary.route"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
