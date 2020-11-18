@@ -18,8 +18,10 @@ module.exports = {
             opacity: {
                 '80': '.8',
                 '85': '0.85',
-
-            }
+            },
+            screens: {
+                navBreak: '939px'
+            },
         }
     },
     variants: {

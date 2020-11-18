@@ -37,5 +37,12 @@
 .hamburger-items {
   @apply flex flex-col justify-center items-center py-8;
 }
+.nav-mob.nuxt-link-active {
+  font-weight: bold;
+}
+
+.nav-desk.nuxt-link-active {
+  font-weight: 500;
+}
 
 @tailwind utilities;

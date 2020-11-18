@@ -1,14 +1,14 @@
 <template>
   <header class="bg-white">
-    <div class="px-5 py-3 hidden sm:flex">
+    <div class="px-5 py-3 hidden navBreak:flex">
       <div class="flex justify-start w-2/5">
         <nuxt-link
-          style="border: 2px solid"
-          class="nav-link nav-desk mr-4"
+          exact
+          class="nav-link nav-desk pr-8"
           :to="route.privateSailing"
           >Private vegan sailing</nuxt-link
         >
-        <nuxt-link class="nav-link nav-desk mr-4" :to="route.bookCabin"
+        <nuxt-link exact class="nav-link nav-desk" :to="route.bookCabin"
           >Book a cabin</nuxt-link
         >
       </div>
@@ -18,16 +18,18 @@
         /></nuxt-link>
       </div>
       <div class="flex justify-end w-2/5">
-        <nuxt-link class="nav-link nav-desk" :to="route.gallery"
+        <nuxt-link exact class="nav-link nav-desk pl-8" :to="route.gallery"
           >Gallery</nuxt-link
         >
-        <nuxt-link class="nav-link nav-desk" :to="route.about">About</nuxt-link>
-        <nuxt-link class="nav-link nav-desk" :to="route.contact"
+        <nuxt-link exact class="nav-link nav-desk pl-8" :to="route.about"
+          >About</nuxt-link
+        >
+        <nuxt-link exact class="nav-link nav-desk pl-8" :to="route.contact"
           >Contact</nuxt-link
         >
       </div>
     </div>
-    <div class="flex px-5 py-3 sm:hidden">
+    <div class="flex px-5 py-3 navBreak:hidden">
       <div class="w-1/6"></div>
       <div class="w-4/6 flex justify-center">
         <img src="/images/logo.svg" alt="Vegan Sailing Logo" />
@@ -56,7 +58,10 @@
         </button>
       </div>
     </div>
-    <div class="py-20 sm:hidden" :class="isOpen ? 'hamburger-menu' : 'hidden'">
+    <div
+      class="py-20 navBreak:hidden"
+      :class="isOpen ? 'hamburger-menu' : 'hidden'"
+    >
       <svg
         class="mb-1"
         width="68"
@@ -110,18 +115,22 @@
         </defs>
       </svg>
       <div class="hamburger-items">
-        <nuxt-link class="nav-link nav-mob" :to="route.home">Home</nuxt-link>
-        <nuxt-link class="nav-link nav-mob" :to="route.privateSailing"
+        <nuxt-link exact class="nav-link nav-mob" :to="route.home"
+          >Home</nuxt-link
+        >
+        <nuxt-link exact class="nav-link nav-mob" :to="route.privateSailing"
           >Private vegan sailing</nuxt-link
         >
-        <nuxt-link class="nav-link nav-mob" :to="route.bookCabin"
+        <nuxt-link exact class="nav-link nav-mob" :to="route.bookCabin"
           >Book a cabin</nuxt-link
         >
-        <nuxt-link class="nav-link nav-mob" :to="route.gallery"
+        <nuxt-link exact class="nav-link nav-mob" :to="route.gallery"
           >Gallery</nuxt-link
         >
-        <nuxt-link class="nav-link nav-mob" :to="route.about">About</nuxt-link>
-        <nuxt-link class="nav-link nav-mob" :to="route.contact"
+        <nuxt-link exact class="nav-link nav-mob" :to="route.about"
+          >About</nuxt-link
+        >
+        <nuxt-link exact class="nav-link nav-mob" :to="route.contact"
           >Contact</nuxt-link
         >
       </div>
