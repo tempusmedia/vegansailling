@@ -21,14 +21,21 @@
 }
 
 .nav-link {
-  @apply block text-vegan-blue font-medium text-lg font-poppins py-5;
+  @apply block text-vegan-blue;
+}
+.nav-mob {
+  @apply font-medium text-lg font-poppins py-3;
+}
+
+.nav-desk {
+  @apply font-light text-lg font-poppins flex items-center;
 }
 
 .hamburger-menu {
-  @apply block absolute bg-white top-0 w-full flex flex-col justify-evenly;
+  @apply absolute bg-white top-0 w-full flex flex-col justify-evenly;
 }
 .hamburger-items {
-  @apply flex flex-col justify-center items-center py-5;
+  @apply flex flex-col justify-center items-center py-8;
 }
 
 @tailwind utilities;

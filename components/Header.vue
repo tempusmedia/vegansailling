@@ -1,6 +1,33 @@
 <template>
   <header class="bg-white">
-    <div class="flex px-5 py-3">
+    <div class="px-5 py-3 hidden sm:flex">
+      <div class="flex justify-start w-2/5">
+        <nuxt-link
+          style="border: 2px solid"
+          class="nav-link nav-desk mr-4"
+          :to="route.privateSailing"
+          >Private vegan sailing</nuxt-link
+        >
+        <nuxt-link class="nav-link nav-desk mr-4" :to="route.bookCabin"
+          >Book a cabin</nuxt-link
+        >
+      </div>
+      <div class="w-1/5 flex justify-center">
+        <nuxt-link class="nav-link" :to="route.home">
+          <img src="/images/logo.svg" alt="Vegan Sailing Logo"
+        /></nuxt-link>
+      </div>
+      <div class="flex justify-end w-2/5">
+        <nuxt-link class="nav-link nav-desk" :to="route.gallery"
+          >Gallery</nuxt-link
+        >
+        <nuxt-link class="nav-link nav-desk" :to="route.about">About</nuxt-link>
+        <nuxt-link class="nav-link nav-desk" :to="route.contact"
+          >Contact</nuxt-link
+        >
+      </div>
+    </div>
+    <div class="flex px-5 py-3 sm:hidden">
       <div class="w-1/6"></div>
       <div class="w-4/6 flex justify-center">
         <img src="/images/logo.svg" alt="Vegan Sailing Logo" />
@@ -29,8 +56,9 @@
         </button>
       </div>
     </div>
-    <div class="py-20" :class="isOpen ? 'hamburger-menu' : 'hidden'">
+    <div class="py-20 sm:hidden" :class="isOpen ? 'hamburger-menu' : 'hidden'">
       <svg
+        class="mb-1"
         width="68"
         height="31"
         fill="none"
@@ -82,15 +110,23 @@
         </defs>
       </svg>
       <div class="hamburger-items">
-        <nuxt-link class="nav-link" to="/">Home</nuxt-link>
-        <nuxt-link class="nav-link" to="/">Private vegan sailing</nuxt-link>
-        <nuxt-link class="nav-link" to="/">Book a cabin</nuxt-link>
-        <nuxt-link class="nav-link" to="/">Gallery</nuxt-link>
-        <nuxt-link class="nav-link" to="/">About</nuxt-link>
-        <nuxt-link class="nav-link" to="/">Contact</nuxt-link>
+        <nuxt-link class="nav-link nav-mob" :to="route.home">Home</nuxt-link>
+        <nuxt-link class="nav-link nav-mob" :to="route.privateSailing"
+          >Private vegan sailing</nuxt-link
+        >
+        <nuxt-link class="nav-link nav-mob" :to="route.bookCabin"
+          >Book a cabin</nuxt-link
+        >
+        <nuxt-link class="nav-link nav-mob" :to="route.gallery"
+          >Gallery</nuxt-link
+        >
+        <nuxt-link class="nav-link nav-mob" :to="route.about">About</nuxt-link>
+        <nuxt-link class="nav-link nav-mob" :to="route.contact"
+          >Contact</nuxt-link
+        >
       </div>
       <svg
-        class="ml-auto mt-5"
+        class="ml-auto mt-6"
         width="135"
         height="25"
         fill="none"
@@ -138,10 +174,22 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      isOpen: false,
-    }
+  data: () => ({
+    isOpen: false,
+    route: {
+      home: '/',
+      privateSailing: 'private_sailing',
+      bookCabin: 'book_a_cabin',
+      gallery: 'gallery',
+      about: 'about',
+      contact: 'contact',
+    },
+  }),
+  /*if route changes, navbar closes*/
+  watch: {
+    $route() {
+      this.isOpen = false
+    },
   },
 }
 </script>
