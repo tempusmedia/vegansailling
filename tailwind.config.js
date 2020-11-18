@@ -24,10 +24,15 @@ module.exports = {
                 xs: '375px',
                 landing: '974px'
             },
+            maxWidth: {
+                'landing': '300px'
+            }
         }
     },
     variants: {
-        backgroundColor: ['responsive', 'hover', 'focus', 'active']
+        backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+        height: ['responsive', 'hover', 'focus', 'active'],
+        display: ['responsive', 'hover', 'focus', 'active']
     },
     plugins: []
 }

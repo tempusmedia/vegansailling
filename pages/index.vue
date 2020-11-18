@@ -8,7 +8,7 @@
       <HeaderLanding />
       <!-- <img src="/images/bg-main.jpg" />
     <img src="~/assets/images/bg-main.jpg" /> -->
-      <div class="flex">
+      <div class="flex h-64 items-end">
         <landing-button
           class="w-1/2"
           variant="primary"
@@ -38,21 +38,27 @@
         <HeaderLanding />
         <!-- <img src="/images/bg-main.jpg" />
     <img src="~/assets/images/bg-main.jpg" /> -->
-        <div class="flex">
+        <div class="flex xs:h-64 xs:items-end">
           <landing-button
-            class="w-1/2 pr-2"
+            class="w-1/2 pr-2 landing-desk"
             variant="primary"
             :title="landingBtn.primary.title"
             :subtitle="landingBtn.primary.subtitle"
             :route="landingBtn.primary.route"
+            :texta="landingBtn.primary.texta"
+            :textb="landingBtn.primary.textb"
+            :textc="landingBtn.primary.textc"
           />
 
           <landing-button
-            class="w-1/2 pl-2"
+            class="w-1/2 pl-2 landing-desk"
             variant="secondary"
             :title="landingBtn.secondary.title"
             :subtitle="landingBtn.secondary.subtitle"
             :route="landingBtn.secondary.route"
+            :texta="landingBtn.secondary.texta"
+            :textb="landingBtn.secondary.textb"
+            :textc="landingBtn.secondary.textc"
           />
         </div>
       </div>
@@ -68,11 +74,17 @@ export default {
         title: 'Private',
         subtitle: 'vegan sailing',
         route: '/private_sailing',
+        texta: 'Rent a sailing boat or a  ',
+        textb: 'catamaran with a vegan ',
+        textc: 'cook and/or skipper',
       },
       secondary: {
         title: 'Book',
         subtitle: 'a Cabin',
         route: '/book_a_cabin',
+        texta: 'Join all inclusive vegan sailing',
+        textb: 'trip and share a boat with',
+        textc: 'other vegans',
       },
     },
   }),
@@ -99,5 +111,11 @@ body {
 .custom-height {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+}
+.desc-text {
+  display: none;
+}
+.landing-desk:hover .desc-text {
+  display: block;
 }
 </style>
