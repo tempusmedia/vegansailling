@@ -52,7 +52,9 @@
         </p>
         <VegeBtn
           :route="route"
-          :class="variantState ? 'btn--primary' : 'btn--secondary'"
+          :class="
+            variantState ? 'btn--primary-landing' : 'btn--secondary-landing'
+          "
           class="btn bottom-btn xs:block mt-5 mb-5 sm:mt-12 sm:mb-4"
           >See more</VegeBtn
         >

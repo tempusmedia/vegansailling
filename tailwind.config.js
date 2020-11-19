@@ -34,10 +34,12 @@ module.exports = {
                 'landing': '300px'
             },
             fontSize: {
-                'btn': '1.375rem'
+                'btn': '1.375rem',
+                'title': '1.625rem'
             },
             height: {
                 'landing': '27rem',
+                'title-cta': '28rem'
 
             },
             lineHeight: {
