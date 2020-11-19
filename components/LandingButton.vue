@@ -51,8 +51,9 @@
           {{ textc }}
         </p>
         <VegeBtn
+          :route="route"
           :class="variantState ? 'btn--primary' : 'btn--secondary'"
-          class="btn font-poppins bottom-btn xs:block mt-5 mb-5 sm:mt-12 sm:mb-4"
+          class="btn bottom-btn xs:block mt-5 mb-5 sm:mt-12 sm:mb-4"
           >See more</VegeBtn
         >
       </div>
