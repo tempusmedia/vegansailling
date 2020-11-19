@@ -1,12 +1,24 @@
 @tailwind base;
 @tailwind components;
 
+.btn {
+  @apply rounded-full py-2 px-6  border-solid border-2;
+}
+
 .btn--primary {
-  @apply rounded-full py-2 px-6  border-solid border-2 border-white;
+  @apply border-white;
 }
 
 .btn--secondary {
-  @apply rounded-full py-2 px-6  border-solid border-2 border-vegan-blue;
+  @apply border-vegan-blue text-vegan-blue;
+}
+
+.btn--primary:hover {
+  @apply text-btn-primary-hover bg-white bg-opacity-30 border-btn-primary-hover;
+}
+
+.btn--secondary:hover {
+  @apply border-button-secondary text-button-secondary bg-vegan-blue bg-opacity-15;
 }
 
 @screen sm {

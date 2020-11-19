@@ -8,7 +8,9 @@ module.exports = {
             colors: {
                 'vegan-red': '#ED4924',
                 'vegan-orange': '#F17322',
-                'vegan-blue': '#154752'
+                'vegan-blue': '#154752',
+                'button-secondary': '#2F7C8C',
+                'btn-primary-hover': '#FFE5DA'
             },
             fontFamily: {
                 poppins: [
@@ -16,8 +18,12 @@ module.exports = {
                 ]
             },
             opacity: {
+                '15': '0.15',
+                '30': '0.3',
                 '80': '.8',
                 '85': '0.85',
+
+
             },
             screens: {
                 navBreak: '939px',
