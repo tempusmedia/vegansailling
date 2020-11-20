@@ -30,15 +30,19 @@
           ><div class="text-left text-vegan-blue">
             <img class="relative top-wave-line" src="/images/wave-orange.svg" />
             <h1 class="font-semibold leading-tight">
-              Experience private
-              <p><span class="font-light italic">vegan sailing</span> in</p>
-              Croatia
+              {{ $t('pages.private_sailing.experience-private') }}
+              <p>
+                <span class="font-light italic">
+                  {{ $t('pages.private_sailing.vegan-sailing') }}</span
+                >
+                {{ $t('pages.private_sailing.in') }}
+              </p>
+              {{ $t('pages.private_sailing.croatia') }}
             </h1>
           </div></TitleCta
         >
       </div>
     </div>
-    <h1>{{ $t('message') }}</h1>
   </div>
 </template>
 
