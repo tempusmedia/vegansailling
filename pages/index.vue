@@ -36,6 +36,8 @@
         class="h-screen flex flex-col justify-between max-w-screen-landing mx-auto"
       >
         <HeaderLanding />
+        <Testprev />
+
         <!-- <img src="/images/bg-main.jpg" />
     <img src="~/assets/images/bg-main.jpg" /> -->
         <div class="flex xs:h-auto xs:items-end">

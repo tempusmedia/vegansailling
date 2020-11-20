@@ -27,6 +27,7 @@
         <nuxt-link exact class="nav-link nav-desk pl-8" :to="route.contact"
           >Contact</nuxt-link
         >
+        <LanguageSwitcher />
       </div>
     </div>
     <div class="flex px-5 py-3 navBreak:hidden">

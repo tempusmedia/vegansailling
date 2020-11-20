@@ -1,3 +1,5 @@
+import i18n from './locales/i18n'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -36,6 +38,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
@@ -45,6 +48,15 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    [
+      'nuxt-i18n',
+      {
+        locales: ['en', 'hr'],
+        defaultLocale: 'en',
+        vueI18n: i18n
+      }
+    ],
+    'nuxt-i18n-link'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
