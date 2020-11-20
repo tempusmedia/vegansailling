@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+
+html,
+body {
+  overflow: hidden;
+}
+
+h1 {
+  @apply text-title;
+}
+
+@screen xs {
+  h1 {
+    @apply text-title-regular;
+  }
+}
+
+.btn {
+  @apply rounded-full py-2 px-6  border-solid border-2 font-poppins;
+}
+
+.btn--primary {
+  @apply py-3 px-8 border-white;
+}
+
+.btn--secondary {
+  @apply py-3 px-8 border-vegan-blue text-vegan-blue;
+}
+
+.btn--primary-landing {
+  @apply border-white;
+}
+
+.btn--secondary-landing {
+  @apply border-vegan-blue text-vegan-blue;
+}
+
+.btn--primary-landing:hover,
+.btn--primary:hover {
+  @apply text-btn-primary-hover bg-white bg-opacity-30 border-btn-primary-hover;
+}
+
+.btn--secondary-landing:hover,
+.btn--secondary:hover {
+  @apply border-button-secondary text-button-secondary bg-vegan-blue bg-opacity-15;
+}
+
+@screen sm {
+  .btn--primary-landing {
+    @apply py-3 px-8;
+  }
+  .btn--secondary-landing {
+    @apply py-3 px-8;
+  }
+}
+
+.landing-btn {
+  @apply flex flex-col justify-center items-center;
+}
+
+.landing-btn:hover {
+}
+.landing-btn:focus {
+}
+.landing-btn:active {
+}
+
+.landing-btn--primary {
+  @apply bg-gradient-to-r from-vegan-red to-vegan-orange text-white opacity-85;
+}
+
+.landing-btn--secondary {
+  @apply bg-white opacity-80 text-vegan-blue;
+}
+
+.nav-link {
+  @apply block text-vegan-blue;
+}
+.nav-mob {
+  @apply font-medium text-lg font-poppins py-3;
+}
+
+.nav-desk {
+  @apply font-light text-lg font-poppins flex items-center;
+}
+
+.hamburger-menu {
+  @apply absolute bg-white top-0 w-full flex flex-col justify-evenly;
+}
+.hamburger-items {
+  @apply flex flex-col justify-center items-center py-8;
+}
+.nav-mob.nuxt-link-active {
+  font-weight: bold;
+}
+
+.nav-desk.nuxt-link-active {
+  font-weight: 500;
+}
+
+.top-wave-line {
+  left: 310px;
+  top: -50px;
+  margin-bottom: -40px;
+}
+
+@tailwind utilities;
