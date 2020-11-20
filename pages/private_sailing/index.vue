@@ -28,7 +28,10 @@
       >
         <TitleCta :route="titleCta.route" :desc="titleCta.desc"
           ><div class="text-left text-vegan-blue">
-            <img class="relative top-wave-line" src="/images/wave-orange.svg" />
+            <img
+              class="relative top-wave-line z-0"
+              src="/images/wave-orange.svg"
+            />
             <h1 class="font-semibold leading-tight">
               {{ $t('pages.private_sailing.experience-private') }}
               <p>
