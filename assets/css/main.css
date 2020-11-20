@@ -1,8 +1,19 @@
 @tailwind base;
 @tailwind components;
 
+html,
+body {
+  overflow: hidden;
+}
+
 h1 {
   @apply text-title;
+}
+
+@screen xs {
+  h1 {
+    @apply text-title-regular;
+  }
 }
 
 .btn {
@@ -86,6 +97,12 @@ h1 {
 
 .nav-desk.nuxt-link-active {
   font-weight: 500;
+}
+
+.top-wave-line {
+  left: 310px;
+  top: -50px;
+  margin-bottom: -40px;
 }
 
 @tailwind utilities;

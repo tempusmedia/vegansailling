@@ -31,15 +31,23 @@ module.exports = {
                 landing: '974px'
             },
             maxWidth: {
-                'landing': '300px'
+                'landing': '300px',
+                'btn': '177px'
             },
             fontSize: {
                 'btn': '1.375rem',
-                'title': '1.625rem'
+                'title': '1.625rem',
+                'title-regular': '36px'
             },
             height: {
                 'landing': '27rem',
-                'title-cta': '28rem'
+                'title-cta': '28rem',
+                'desk-cta': '30rem',
+                'landing-main': '780px',
+
+            },
+            width: {
+                'title-wta': '478px',
 
             },
             lineHeight: {

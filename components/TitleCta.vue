@@ -1,37 +1,33 @@
 <template>
   <div
-    class="landing-btn h-title-cta bg-white bg-opacity-80 font-poppins mx-5 mt-5"
+    class="landing-btn h-title-cta xs:h-desk-cta bg-white bg-opacity-80 font-poppins mx-5 mt-5 xs:flex xs:flex-col xs:items-start xs:w-title-wta"
   >
     <!-- TITLE in slot because mixed styles -->
-    <slot></slot>
+    <div class="xs:px-12">
+      <slot></slot>
 
-    <p
-      class="font-poppins text-center max-w-md sm:text-xl font-light leading-snug pt-2 sm:pt-6 text-vegan-blue"
-    >
-      {{ firstline }}
-    </p>
-    <p
-      class="font-poppins text-center max-w-md sm:text-xl font-light leading-snug text-vegan-blue"
-    >
-      {{ secondline }}
-    </p>
-    <p
-      class="font-poppins text-center max-w-md sm:text-xl font-light leading-snug text-vegan-blue"
-    >
-      {{ thirdline }}
-    </p>
-    <Btn
-      :route="route"
-      class="btn btn--secondary xs:block mt-5 mb-5 sm:mt-12 sm:mb-4"
-      >Book now</Btn
-    >
+      <p
+        class="font-poppins text-center xs:text-left max-w-md xs:text-xl font-light leading-snug text-vegan-blue"
+        style="white-space: pre-line"
+      >
+        {{ desc }}
+        {{ descm }}
+      </p>
+
+      <Btn
+        :route="route"
+        class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+        >Book now</Btn
+      >
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['route', 'firstline', 'secondline', 'thirdline'],
+  props: ['route', 'desc', 'descm'],
 }
 </script>
 
 <style></style>
+<!-- ukloniti viška varijable i sve staviti sa  \n. možda čak napraviti sad jednu varijablu gdje se u jednoj unosi jedan n, a u drugoj drugi -->
