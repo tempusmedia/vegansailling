@@ -36,7 +36,6 @@
         class="h-screen flex flex-col justify-between max-w-screen-landing mx-auto"
       >
         <HeaderLanding />
-        <Testprev />
 
         <!-- <img src="/images/bg-main.jpg" />
     <img src="~/assets/images/bg-main.jpg" /> -->
@@ -97,6 +96,11 @@ export default {
 
 // for mobile -> fetch height of viewport (process.browser -> client side js)
 if (process.browser) {
+  window.addEventListener('load', () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  })
   window.addEventListener('resize', () => {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01
@@ -112,7 +116,8 @@ body {
 }
 /* apply height of vieport to css variable */
 .custom-height {
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: 100vh;
+  /*  Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
 .desc-text,

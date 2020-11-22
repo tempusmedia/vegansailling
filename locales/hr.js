@@ -11,7 +11,7 @@ export default {
       'experience-private': "Iskusite privatno",
       'vegan-sailing': "vegansko jedrenje",
       "in": "u",
-      "croatia": "Hrvatskoj"
+      "croatia": "Hrvatskoj",
     },
     "book_a_cabin": {
 
