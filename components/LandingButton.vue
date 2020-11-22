@@ -2,7 +2,7 @@
   <div>
     <!-- mobile -->
 
-    <nuxt-link :to="route" class="xs:hidden"
+    <nuxt-i18n-link :to="route" class="xs:hidden"
       ><div
         class="landing-btn h-24 sm:h-40 group"
         :class="
@@ -13,12 +13,12 @@
         <p class="font-poppins font-light italic text-lg sm:text-4xl">
           {{ subtitle }}
         </p>
-      </div></nuxt-link
+      </div></nuxt-i18n-link
     >
 
     <!-- desktop-->
 
-    <nuxt-link :to="route" class="hidden xs:block"
+    <nuxt-i18n-link :to="route" class="hidden xs:block"
       ><div
         class="landing-btn h-24 sm:h-40 hover:pt-10 hover:h-64 sm:hover:h-landing sm:hover:pt-8"
         :class="
@@ -59,7 +59,7 @@
           >See more</VegeBtn
         >
       </div>
-    </nuxt-link>
+    </nuxt-i18n-link>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nuxt-link :to="route">
+    <nuxt-i18n-link :to="route">
       <p class="font-medium text-sm sm:text-btn"><slot></slot></p>
-    </nuxt-link>
+    </nuxt-i18n-link>
   </div>
 </template>
 <script>
