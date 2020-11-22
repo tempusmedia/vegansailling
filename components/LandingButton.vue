@@ -2,7 +2,7 @@
   <div>
     <!-- mobile -->
 
-    <nuxt-i18n-link :to="route" class="xs:hidden"
+    <nuxt-link :to="route" class="xs:hidden"
       ><div
         class="landing-btn h-24 sm:h-40 group"
         :class="
@@ -13,12 +13,12 @@
         <p class="font-poppins font-light italic text-lg sm:text-4xl">
           {{ subtitle }}
         </p>
-      </div></nuxt-i18n-link
+      </div></nuxt-link
     >
 
     <!-- desktop-->
 
-    <nuxt-i18n-link :to="route" class="hidden xs:block"
+    <nuxt-link :to="route" class="hidden xs:block"
       ><div
         class="landing-btn h-24 sm:h-40 hover:pt-10 hover:h-64 sm:hover:h-landing sm:hover:pt-8"
         :class="
@@ -36,36 +36,28 @@
           {{ subtitle }}
         </p>
         <p
-          class="font-poppins desc-text text-center max-w-landing sm:text-xl font-light leading-snug pt-2 sm:pt-6"
+          class="font-poppins content-text text-center max-w-landing sm:text-xl font-light leading-snug pt-2 sm:pt-6"
         >
-          {{ texta }}
+          {{ content }}
         </p>
-        <p
-          class="font-poppins desc-text text-center max-w-landing sm:text-xl font-light leading-snug"
-        >
-          {{ textb }}
-        </p>
-        <p
-          class="font-poppins desc-text text-center max-w-landing sm:text-xl font-light leading-snug"
-        >
-          {{ textc }}
-        </p>
+
         <VegeBtn
           :route="route"
           :class="
             variantState ? 'btn--primary-landing' : 'btn--secondary-landing'
           "
           class="btn bottom-btn xs:block mt-5 mb-5 sm:mt-12 sm:mb-4"
-          >See more</VegeBtn
+        >
+          {{ $t('components.vegebtn.see_more') }}</VegeBtn
         >
       </div>
-    </nuxt-i18n-link>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['variant', 'title', 'subtitle', 'route', 'texta', 'textb', 'textc'],
+  props: ['variant', 'title', 'subtitle', 'route', 'content'],
 
   computed: {
     variantState: function () {

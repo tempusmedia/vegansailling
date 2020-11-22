@@ -81,6 +81,10 @@ h1 {
   @apply font-medium text-lg font-poppins py-3;
 }
 
+.home-mob {
+  @apply font-medium text-lg font-poppins py-3;
+}
+
 .nav-desk {
   @apply font-light text-lg font-poppins flex items-center;
 }

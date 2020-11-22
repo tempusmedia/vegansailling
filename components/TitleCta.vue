@@ -10,8 +10,8 @@
         class="font-poppins text-center xs:text-left max-w-md xs:text-xl font-light leading-snug text-vegan-blue"
         style="white-space: pre-line"
       >
-        {{ desc }}
-        {{ descm }}
+        {{ content }}
+        {{ contentMobile }}
       </p>
 
       <Btn
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  props: ['route', 'desc', 'descm'],
+  props: ['route', 'content', 'contentMobile'],
 }
 </script>
 
