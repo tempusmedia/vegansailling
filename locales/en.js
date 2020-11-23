@@ -55,6 +55,21 @@ export default {
     "languageswitcher": {
 
     },
+    "qna": {
+      "what": "What is vegan book a cabin sailing?",
+      "food": "Food on board",
+      "safety": "Safety and comfort",
+      "selection": "Boat selection",
+      "onboard": "What you will find onboard",
+      "pack": "What you have to pack",
+      "what_content": "Our vegan cook will take care of all your meals. By feeling out preference sheet you will inform the cook about your food and dring preferences. If needed you will comunicate more details so cook can prepare all the meals exactly how you like them.",
+      "food_content": "Our vegan cook will take care of all your meals. By feeling out preference sheet you will inform the cook about your food and dring preferences. If needed you will comunicate more details so cook can prepare all the meals exactly how you like them. \n You will get a menu before the trip so you can confirm it or change a details.",
+      "safety_content": "Our vegan cook will take care of all your meals. By feeling out preference sheet you will inform the cook about your food and dring preferences. If needed you will comunicate more details so cook can prepare all the meals exactly how you like them. \n You will get a menu before the trip so you can confirm it or change a details.",
+      "selection_content": "Our vegan cook will take care of all your meals. By feeling out preference sheet you will inform the cook about your food and dring preferences. If needed you will comunicate more details so cook can prepare all the meals exactly how you like them. \n You will get a menu before the trip so you can confirm it or change a details.",
+      "onboard_content": "Our vegan cook will take care of all your meals. By feeling out preference sheet you will inform the cook about your food and dring preferences. If needed you will comunicate more details so cook can prepare all the meals exactly how you like them. \n You will get a menu before the trip so you can confirm it or change a details.",
+      "pack_content": "Our vegan cook will take care of all your meals. By feeling out preference sheet you will inform the cook about your food and dring preferences. If needed you will comunicate more details so cook can prepare all the meals exactly how you like them. \n You will get a menu before the trip so you can confirm it or change a details.",
+
+    },
     "titlecta": {
 
     },
