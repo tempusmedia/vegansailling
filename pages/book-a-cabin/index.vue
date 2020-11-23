@@ -48,6 +48,7 @@
         >
       </div>
     </div>
+    <QnA />
   </div>
 </template>
 
