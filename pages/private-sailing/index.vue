@@ -53,7 +53,11 @@
         >
       </div>
     </div>
+
+    <!-- umjesto carousel staviti na desk normalne ikone-->
     <InfoCarousel />
+
+    <QnA />
   </div>
 </template>
 

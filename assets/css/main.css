@@ -3,7 +3,9 @@
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1 {
@@ -109,4 +111,11 @@ h1 {
   margin-bottom: -40px;
 }
 
+.icon-title {
+  @apply font-poppins text-vegan-blue text-lg font-semibold;
+}
+
+.icon-content {
+  @apply font-poppins text-vegan-blue text-base font-light;
+}
 @tailwind utilities;

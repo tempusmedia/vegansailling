@@ -10,7 +10,8 @@ module.exports = {
                 'vegan-orange': '#F17322',
                 'vegan-blue': '#154752',
                 'button-secondary': '#2F7C8C',
-                'btn-primary-hover': '#FFE5DA'
+                'btn-primary-hover': '#FFE5DA',
+                'qna': '#EAECF1'
             },
             fontFamily: {
                 poppins: [
