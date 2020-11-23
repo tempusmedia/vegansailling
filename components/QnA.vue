@@ -1,19 +1,29 @@
 <template>
   <div class="bg-qna">
-    <h2>Q&A</h2>
+    <h2 class="section-title font-semibold text-center">
+      Q<span class="font-light">&</span>A
+    </h2>
 
-    <div>
+    <div class="accordions">
+      <dl
+        v-for="(item, id) in items"
+        class="bg-white rounded mx-5 mb-3 px-8 py-4"
+      >
+        <dt @click="item.open = !item.open" class="accordion-title flex">
+          <span class="accordion-signal mr-2" v-if="item.open">+</span>
+          <span class="accordion-signal mr-2" v-if="!item.open">-</span>
+          <p>{{ item.title }}</p>
+        </dt>
+        <dd v-if="item.open" class="accordion-content mt-5">
+          {{ item.content }}
+        </dd>
+      </dl>
+    </div>
+
+    <div class="mx-5">
       <h2>Have more questions?</h2>
       <p>Contact us directly at</p>
       <p>info@vegansailing.eu</p>
-    </div>
-
-    <h1>Simple Accordion w/ Vue JS</h1>
-    <div class="accordions">
-      <dl v-for="(item, id) in items">
-        <dt @click="item.open = !item.open">{{ item.title }}</dt>
-        <dd v-if="item.open">{{ item.content }}</dd>
-      </dl>
     </div>
   </div>
 </template>

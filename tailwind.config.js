@@ -12,6 +12,7 @@ module.exports = {
                 'button-secondary': '#2F7C8C',
                 'btn-primary-hover': '#FFE5DA',
                 'qna': '#EAECF1'
+
             },
             fontFamily: {
                 poppins: [

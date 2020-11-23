@@ -118,4 +118,21 @@ h1 {
 .icon-content {
   @apply font-poppins text-vegan-blue text-base font-light;
 }
+
+.accordion-title {
+  @apply font-poppins text-vegan-blue text-lg font-semibold;
+}
+
+.accordion-content {
+  @apply font-poppins text-vegan-blue text-base font-light;
+}
+
+.accordion-signal {
+  @apply text-vegan-red;
+}
+
+.section-title {
+  @apply text-title text-vegan-blue;
+}
+
 @tailwind utilities;

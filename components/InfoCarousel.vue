@@ -8,7 +8,7 @@
       :responsive="false"
       :navigation="true"
       :dots="false"
-      class="relative pt-10"
+      class="relative pt-10 pb-10"
       :margin="5"
     >
       <template slot="prev"
