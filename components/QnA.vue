@@ -27,7 +27,11 @@
         <span class="font-bold not-italic">Have</span> more questions?
       </h2>
       <p class="content">Contact us directly at</p>
-      <p class="content font-medium text-vegan-red">info@vegansailing.eu</p>
+      <a
+        href="mailto:info@vegansailing.eu"
+        class="content font-medium text-vegan-red"
+        >info@vegansailing.eu</a
+      >
     </div>
   </div>
 </template>
@@ -73,6 +77,7 @@ export default {
         },
       }
     }
+
     if (
       this.$nuxt.$route.path == '/book-a-cabin' ||
       this.$nuxt.$route.path == '/hr/book-a-cabin'
@@ -80,7 +85,7 @@ export default {
       return {
         items: {
           q1: {
-            title: 'RADI',
+            title: 'Book a Cabin Page (Radi)',
             content: this.$t('components.qna.what_content'),
             open: false,
           },
