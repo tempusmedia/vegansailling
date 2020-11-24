@@ -46,10 +46,14 @@ module.exports = {
                 'title-cta': '28rem',
                 'desk-cta': '30rem',
                 'landing-main': '780px',
+                'route-img': '141px',
+                '36': '9rem'
 
             },
             width: {
                 'title-wta': '478px',
+                'route-img': '141px',
+                '36': '9rem'
 
             },
             lineHeight: {

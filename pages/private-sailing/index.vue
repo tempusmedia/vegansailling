@@ -58,6 +58,7 @@
     <InfoCarousel />
 
     <QnA />
+    <RouteExample />
   </div>
 </template>
 

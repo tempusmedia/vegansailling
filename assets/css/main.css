@@ -139,4 +139,8 @@ h1 {
   @apply font-poppins text-vegan-blue text-base font-light;
 }
 
+.orange-medium {
+  @apply text-lg font-medium font-poppins text-vegan-red;
+}
+
 @tailwind utilities;

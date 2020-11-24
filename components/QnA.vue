@@ -33,6 +33,10 @@
         >info@vegansailing.eu</a
       >
     </div>
+    <div class="flex">
+      <img src="/images/boat01-xs.jpg" />
+      <img src="/images/boat02-xs.jpg" />
+    </div>
   </div>
 </template>
 <script>
