@@ -59,6 +59,7 @@
 
     <QnA />
     <RouteExample />
+    <OurCrew />
   </div>
 </template>
 

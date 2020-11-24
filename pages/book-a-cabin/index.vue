@@ -50,6 +50,8 @@
     </div>
     <QnA />
     <RouteExample />
+    <OurCrew />
+    <BoatAndCabin />
   </div>
 </template>
 

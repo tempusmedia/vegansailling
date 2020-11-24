@@ -119,7 +119,8 @@ h1 {
   @apply font-poppins text-vegan-blue text-base font-light;
 }
 
-.accordion-title {
+.accordion-title,
+.card-title {
   @apply font-poppins text-vegan-blue text-lg font-semibold;
 }
 
@@ -142,5 +143,6 @@ h1 {
 .orange-medium {
   @apply text-lg font-medium font-poppins text-vegan-red;
 }
+
 
 @tailwind utilities;

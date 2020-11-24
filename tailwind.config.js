@@ -11,7 +11,8 @@ module.exports = {
                 'vegan-blue': '#154752',
                 'button-secondary': '#2F7C8C',
                 'btn-primary-hover': '#FFE5DA',
-                'qna': '#EAECF1'
+                'qna': '#EAECF1',
+                'hr-border': '#e5ebec'
 
             },
             fontFamily: {
@@ -34,7 +35,9 @@ module.exports = {
             },
             maxWidth: {
                 'landing': '300px',
-                'btn': '177px'
+                'btn': '177px',
+                'crew-card': '285px',
+                '8': '8rem'
             },
             fontSize: {
                 'btn': '1.375rem',
@@ -53,7 +56,8 @@ module.exports = {
             width: {
                 'title-wta': '478px',
                 'route-img': '141px',
-                '36': '9rem'
+                '36': '9rem',
+
 
             },
             lineHeight: {
