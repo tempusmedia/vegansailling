@@ -51,7 +51,9 @@
     <QnA />
     <RouteExample />
     <OurCrew />
+    <br />
     <BoatAndCabin />
+    <Reviews />
   </div>
 </template>
 

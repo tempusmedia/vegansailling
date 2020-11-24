@@ -60,6 +60,7 @@
     <QnA />
     <RouteExample />
     <OurCrew />
+    <Reviews />
   </div>
 </template>
 

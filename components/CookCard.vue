@@ -6,7 +6,7 @@
       </h2> -->
 
       <!-- first card -->
-      <div class="max-w-crew-card mx-auto pb-5">
+      <div class="max-w-crew-card mx-auto pb-5 bg-white">
         <img src="/images/cook01.jpg" />
         <div class="text-center py-6 px-2 card-shadow">
           <h2 class="card-title pb-2">Cook</h2>
