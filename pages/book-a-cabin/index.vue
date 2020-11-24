@@ -54,6 +54,7 @@
     <br />
     <BoatAndCabin />
     <Reviews />
+    <!-- Footer in layout-->
   </div>
 </template>
 

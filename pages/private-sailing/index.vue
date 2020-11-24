@@ -61,6 +61,8 @@
     <RouteExample />
     <OurCrew />
     <Reviews />
+
+    <!-- Footer in layout-->
   </div>
 </template>
 

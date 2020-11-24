@@ -50,7 +50,8 @@ module.exports = {
                 'desk-cta': '30rem',
                 'landing-main': '780px',
                 'route-img': '141px',
-                '36': '9rem'
+                '36': '9rem',
+                'footer': "545px"
 
             },
             width: {

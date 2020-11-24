@@ -1,5 +1,39 @@
 <template>
-  <div>footer</div>
+  <div>
+    <div
+      class="h-footer bg-no-repeat w-full object-center object-cover flex flex-col items-center justify-evenly"
+      style="background-image: url('/images/footer-bg.jpg')"
+    >
+      <div class="flex flex-col items-center justify-evenly -mt-2">
+        <h2
+          class="section-title text-white font-semibold text-center pt-12 mb-8"
+        >
+          Lorem<span class="font-light"> ipsum dolor</span>
+        </h2>
+        <p class="content text-white text-center mb-8">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut
+          <span class="font-semibold">+385 98 953 5476 </span>or
+          <span class="font-semibold">info(a)vegansialing.eu</span>
+        </p>
+        <Btn
+          :route="route"
+          class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
+          >Book Now</Btn
+        >
+      </div>
+      <div class="flex">
+        <img src="/images/instagram.svg" />
+        <img src="/images/facebook.svg" />
+      </div>
+    </div>
+  </div>
 </template>
-
+<script>
+export default {
+  data: () => ({
+    route: '/',
+  }),
+}
+</script>
 <style></style>
