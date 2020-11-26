@@ -12,7 +12,8 @@ module.exports = {
                 'button-secondary': '#2F7C8C',
                 'btn-primary-hover': '#FFE5DA',
                 'qna': '#EAECF1',
-                'hr-border': '#e5ebec'
+                'hr-border': '#e5ebec',
+                'modal-input': '#D3D3D3'
 
             },
             fontFamily: {
@@ -37,7 +38,9 @@ module.exports = {
                 'landing': '300px',
                 'btn': '177px',
                 'crew-card': '285px',
-                '8': '8rem'
+                '8': '8rem',
+                'modal-txtsm': '188px',
+                'modal-inputs': '255px'
             },
             fontSize: {
                 'btn': '1.375rem',
@@ -58,11 +61,16 @@ module.exports = {
                 'title-wta': '478px',
                 'route-img': '141px',
                 '36': '9rem',
+                'modal-inputs': '255px'
 
 
             },
             lineHeight: {
                 'landing': '43.2px'
+            },
+            spacing: {
+                '7': '1.75rem',
+                'modal-inputs': '255px'
             }
         }
     },

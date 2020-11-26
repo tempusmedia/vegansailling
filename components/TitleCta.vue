@@ -14,7 +14,7 @@
         {{ contentMobile }}
       </p>
 
-      <slot name="button"> </slot>
+      <slot name="button"></slot>
     </div>
   </div>
 </template>

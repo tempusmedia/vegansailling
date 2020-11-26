@@ -7,7 +7,6 @@ body {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
-
 h1 {
   @apply text-title;
 }
@@ -144,5 +143,32 @@ h1 {
   @apply text-lg font-medium font-poppins text-vegan-red;
 }
 
+.modal-input {
+  @apply w-modal-inputs border border-modal-input rounded-3xl px-5 py-3;
+}
+
+.modal-shade {
+  @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center;
+}
+
+.modal-bg {
+  @apply bg-white shadow-sm overflow-x-auto flex flex-col w-11/12 mx-auto rounded-3xl;
+}
+
+.modal-content {
+  @apply bg-white m-4 p-3 rounded-3xl flex flex-col;
+}
+
+.radio-bg {
+  @apply flex justify-center items-center bg-qna px-10 py-4 mx-5 rounded-xl;
+}
 
 @tailwind utilities;
+
+.vue-number-input__btn-dec {
+  background: white !important;
+}
+
+.vue-number-input__btn-inc {
+  background: white !important;
+}

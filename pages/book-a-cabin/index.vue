@@ -20,11 +20,19 @@
           </div></template
         >
         <template #button>
-          <!-- <Btn
-        :route="route"
-        class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
-        >Book now</Btn
-      > -->
+          <div class="max-w-btn mx-auto xs:mx-0">
+            <a
+              class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+              type="button"
+              @click="showModal"
+            >
+              <p
+                class="font-medium text-btn text-center xs:text-left select-none"
+              >
+                Book Now
+              </p>
+            </a>
+          </div>
         </template>
       </TitleCta>
     </div>
@@ -65,6 +73,20 @@
           class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
           >Book now</Btn
         > -->
+
+            <div class="max-w-btn mx-auto xs:mx-0">
+              <a
+                class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+                type="button"
+                @click="showModal"
+              >
+                <p
+                  class="font-medium text-btn text-center xs:text-left select-none"
+                >
+                  Book Now
+                </p>
+              </a>
+            </div>
           </template>
         </TitleCta>
       </div>
@@ -75,24 +97,37 @@
     <br />
     <BoatAndCabin />
     <Reviews />
+
+    <ModalCabin v-show="isModalVisible" @close="closeModal" />
     <!-- Footer in layout-->
   </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    titleCta: {
-      route: '/',
-      contentMobile:
-        'Join all inclusive vegan \n  sailing trip and share a boat \n  with other vegans',
-      content:
-        'Join all inclusive vegan sailing trip \n and share a boat with other \n vegans',
-      // firstline: 'Join all inclusive vegan',
-      // secondline: 'and share a boat with other',
-      // thirdline: ' vegans',
+  data() {
+    return {
+      isModalVisible: false,
+      titleCta: {
+        route: '/',
+        contentMobile:
+          'Join all inclusive vegan \n  sailing trip and share a boat \n  with other vegans',
+        content:
+          'Join all inclusive vegan sailing trip \n and share a boat with other \n vegans',
+        // firstline: 'Join all inclusive vegan',
+        // secondline: 'and share a boat with other',
+        // thirdline: ' vegans',
+      },
+    }
+  },
+  methods: {
+    showModal() {
+      this.isModalVisible = true
     },
-  }),
+    closeModal() {
+      this.isModalVisible = false
+    },
+  },
 }
 </script>
 <style></style>

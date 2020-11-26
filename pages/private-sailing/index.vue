@@ -29,14 +29,15 @@
         class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
         >Book now</Btn
       > -->
-
           <div class="max-w-btn mx-auto xs:mx-0">
             <a
               class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
               type="button"
               @click="showModal"
             >
-              <p class="font-medium text-btn text-center xs:text-left">
+              <p
+                class="font-medium text-btn text-center xs:text-left select-none"
+              >
                 Book Now
               </p>
             </a>
@@ -88,7 +89,9 @@
                 type="button"
                 @click="showModal"
               >
-                <p class="font-medium text-btn text-center xs:text-left">
+                <p
+                  class="font-medium text-btn text-center xs:text-left select-none"
+                >
                   Book Now
                 </p>
               </a>
