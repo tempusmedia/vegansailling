@@ -100,7 +100,6 @@
 
     <ModalCabin v-show="isModalVisible" @close="closeModal" />
     <!-- Footer in layout-->
-    
   </div>
 </template>
 

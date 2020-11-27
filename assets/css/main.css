@@ -148,15 +148,19 @@ h1 {
 }
 
 .modal-shade {
-  @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center;
+  @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center bg-gray-800 bg-opacity-50;
 }
 
 .modal-bg {
-  @apply bg-white shadow-sm overflow-x-auto flex flex-col w-11/12 mx-auto rounded-3xl;
+  @apply bg-white shadow-sm flex flex-col w-11/12 mx-auto rounded-3xl absolute;
 }
 
 .modal-content {
   @apply bg-white m-4 p-3 rounded-3xl flex flex-col;
+}
+
+.modal-footer {
+  @apply bg-gradient-to-r from-vegan-red to-vegan-orange text-white;
 }
 
 .radio-bg {

@@ -13,9 +13,11 @@ module.exports = {
                 'btn-primary-hover': '#FFE5DA',
                 'qna': '#EAECF1',
                 'hr-border': '#e5ebec',
-                'modal-input': '#D3D3D3'
+                'modal-input': '#D3D3D3',
+                'arrow-active': '#828282'
 
             },
+            fill: ['hover', 'focus'],
             fontFamily: {
                 poppins: [
                     'Poppins'
