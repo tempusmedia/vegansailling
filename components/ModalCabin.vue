@@ -64,7 +64,7 @@
                     checked="checked"
                   />
                   <label for="sailingboat"
-                    ><p class="content pl-3">Sailingboat</p></label
+                    ><p class="content pl-3">Bunk bed</p></label
                   >
                 </div>
                 <div class="flex">
@@ -75,7 +75,7 @@
                     value="catamaran"
                   />
                   <label for="catamaran"
-                    ><p class="content pl-3">Catamaran</p></label
+                    ><p class="content pl-3">Double room</p></label
                   >
                 </div>
               </div>
@@ -128,20 +128,20 @@
           <div class="content flex justify-center w-modal-inputs mx-auto">
             <div class="flex flex-col w-modal-inputs">
               <input
-                class="modal-input mt-3"
+                class="modal-input mt-3 input-name"
                 placeholder="Your name"
                 name="name"
                 id="name"
               />
               <input
-                class="modal-input mt-3"
+                class="modal-input mt-3 input-name"
                 placeholder="Your email"
                 name="email"
                 id="email"
               />
               <textarea
+                class="modal-input rounded-2xl mt-3 input-name"
                 placeholder="Write your message"
-                class="modal-input rounded-2xl mt-3"
                 name="message"
                 id="message"
               ></textarea>
@@ -150,7 +150,7 @@
 
           <!-- Book now & close modal & send data & show success modal-->
 
-          <div class="max-w-btn mx-auto xs:mx-0">
+          <div class="max-w-btn mx-auto mt-4 mb-4 xs:mx-0">
             <a
               class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
               type="button"
@@ -190,7 +190,6 @@
 <script>
 export default {
   name: 'modal',
-  data() {},
 
   methods: {
     close() {
@@ -276,5 +275,12 @@ select.date {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+input.input-name::placeholder,
+textarea.input-name::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #154752;
+  font-weight: 300;
 }
 </style>

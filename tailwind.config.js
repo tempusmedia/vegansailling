@@ -72,7 +72,9 @@ module.exports = {
             },
             spacing: {
                 '7': '1.75rem',
-                'modal-inputs': '255px'
+                'modal-inputs': '255px',
+                '36': '9rem',
+                '80': '20rem'
             }
         }
     },

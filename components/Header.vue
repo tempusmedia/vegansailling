@@ -205,17 +205,19 @@
 </template>
 <script>
 export default {
-  data: () => ({
-    isOpen: false,
-    route: {
-      home: '/',
-      privateSailing: 'private-sailing',
-      bookCabin: 'book-a-cabin',
-      gallery: 'gallery',
-      about: 'about',
-      contact: 'contact',
-    },
-  }),
+  data() {
+    return {
+      isOpen: false,
+      route: {
+        home: '/',
+        privateSailing: 'private-sailing',
+        bookCabin: 'book-a-cabin',
+        gallery: 'gallery',
+        about: 'about',
+        contact: 'contact',
+      },
+    }
+  },
   /*if route changes, navbar closes*/
   watch: {
     $route() {

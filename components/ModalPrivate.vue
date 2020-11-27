@@ -99,8 +99,6 @@
                   />
                 </div>
               </div>
-
-            
             </client-only>
             <div class="content flex justify-center w-modal-inputs mx-auto">
               <div class="flex flex-col w-modal-inputs">

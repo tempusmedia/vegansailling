@@ -15,7 +15,7 @@
       />
       <button
         class="absolute text-modal-input hover:text-arrow-active focus:outline-none"
-        style="right: 5px; bottom: 6px"
+        style="right: 7px; bottom: 6px"
         @click="dec"
       >
         <svg
@@ -31,7 +31,7 @@
 
       <button
         class="absolute text-modal-input hover:text-arrow-active focus:outline-none"
-        style="right: 5px; top: 6px"
+        style="right: 7px; top: 7px"
         @click="inc"
       >
         <svg

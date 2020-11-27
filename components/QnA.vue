@@ -1,27 +1,30 @@
 <template>
-  <div class="bg-qna">
-    <h2 class="section-title font-semibold text-center py-10">
+  <div class="bg-qna sm:py-36 sm:-ml-80 sm:pl-80">
+    <h2
+      class="section-title font-semibold text-center py-10 sm:pt-0 sm:text-left sm:pl-10"
+    >
       Q<span class="font-light">&</span>A
     </h2>
 
-    <div class="accordions">
+    <div class="accordions max-w-xl">
       <dl
+        @click="item.open = !item.open"
         v-for="(item, id) in items"
         class="bg-white rounded-lg mx-5 mb-3 px-8 py-4 cursor-pointer"
       >
-        <dt @click="item.open = !item.open" class="accordion-title flex">
+        <dt class="accordion-title flex select-none">
           <span class="accordion-signal mr-2" v-if="item.open">+</span>
           <span class="accordion-signal mr-2" v-if="!item.open">-</span>
           <p>{{ item.title }}</p>
         </dt>
-        <dd v-if="item.open" class="accordion-content mt-5">
+        <dd v-if="item.open" class="accordion-content mt-5 select-none">
           {{ item.content }}
         </dd>
       </dl>
     </div>
 
     <div
-      class="bg-white rounded-lg mx-5 mb-3 px-6 py-4 text-center border-vegan-red border border-solid"
+      class="bg-white rounded-lg mx-5 mb-3 sm:mb-10 px-6 py-4 text-center border-vegan-red border border-solid max-w-xl"
     >
       <h2 class="section-title font-light italic">
         <span class="font-bold not-italic">Have</span> more questions?
@@ -32,10 +35,6 @@
         class="content font-medium text-vegan-red"
         >info@vegansailing.eu</a
       >
-    </div>
-    <div class="flex">
-      <img src="/images/boat01-xs.jpg" />
-      <img src="/images/boat02-xs.jpg" />
     </div>
   </div>
 </template>
