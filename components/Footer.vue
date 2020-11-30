@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      class="h-footer bg-no-repeat w-full object-center object-cover flex flex-col items-center justify-evenly"
-      style="background-image: url('/images/footer-bg.jpg')"
+      class="h-footer sm:h-footer-desk bg-no-repeat w-full object-center object-cover flex flex-col items-center justify-evenly"
+      style="background-image: url('/images/footer-bg-desk.jpg')"
     >
-      <div class="flex flex-col items-center justify-evenly -mt-2">
+      <div class="flex flex-col items-center justify-evenly -mt-2 sm:max-w-xl">
         <h2
           class="section-title text-white font-semibold text-center pt-12 mb-8"
         >

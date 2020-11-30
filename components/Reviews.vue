@@ -37,19 +37,18 @@
       style="background-image: url('/images/reviews-desk.jpg')"
     >
       <div>
-        <h2 class="section-title font-semibold text-center pt-16">Reviews</h2>
+        <h2 class="section-title font-semibold text-center pt-10">Reviews</h2>
       </div>
 
       <carousel
         :items="1"
         :autoplay="true"
-        :responsive="false"
         :navigation="false"
         :dots="true"
-        class="relative pt-10 pb-10"
+        class="relative pt-10 pb-5 mx-auto"
         :margin="5"
       >
-        <dl v-for="(review, id) in reviews">
+        <dl v-for="(review, id) in reviews" class="carousel-w mx-auto">
           <dt>
             <p class="content px-10 text-center">
               {{ review.content }}
@@ -90,4 +89,8 @@ export default {
   },
 }
 </script>
-<style></style>
+<style scoped>
+.carousel-w {
+  max-width: 566px;
+}
+</style>

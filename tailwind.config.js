@@ -58,6 +58,7 @@ module.exports = {
                 'route-img': '141px',
                 '36': '9rem',
                 'footer': "545px",
+                'footer-desk': '525.25px',
                 '69pic': '69rem',
                 '76': '19rem'
 
