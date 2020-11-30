@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white bg-opacity-80 h-20 w-full ml-5 my-1 border content">
+  <div class="bg-white bg-opacity-80 h-20 max-w-xl mx-5 my-1 border content">
     <div
       class="border-l-4 border-vegan-orange h-full pl-8 flex flex-col justify-center"
     >

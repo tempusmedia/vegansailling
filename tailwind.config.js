@@ -14,7 +14,8 @@ module.exports = {
                 'qna': '#EAECF1',
                 'hr-border': '#e5ebec',
                 'modal-input': '#D3D3D3',
-                'arrow-active': '#828282'
+                'arrow-active': '#828282',
+                'cta-orange': '#FF4800'
 
             },
             fill: ['hover', 'focus'],
@@ -88,7 +89,8 @@ module.exports = {
                 '20': '5rem',
                 'minus20': '-5rem',
                 '28': '7rem',
-                'cust': '10vw'
+                'cust': '10vw',
+                'land': '10rem'
 
             }
         }
