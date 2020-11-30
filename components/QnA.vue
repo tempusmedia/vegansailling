@@ -1,40 +1,53 @@
 <template>
-  <div class="bg-qna sm:py-36 sm:-ml-80 sm:pl-80">
-    <h2
-      class="section-title font-semibold text-center py-10 sm:pt-0 sm:text-left sm:pl-10"
-    >
-      Q<span class="font-light">&</span>A
-    </h2>
-
-    <div class="accordions max-w-xl">
-      <dl
-        @click="item.open = !item.open"
-        v-for="(item, id) in items"
-        class="bg-white rounded-lg mx-5 mb-3 px-8 py-4 cursor-pointer"
+  <div class="flex relative mt-56">
+    <div class="bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64">
+      <h2
+        class="section-title font-semibold text-center py-10 sm:pt-0 sm:text-left sm:pl-10"
       >
-        <dt class="accordion-title flex select-none">
-          <span class="accordion-signal mr-2" v-if="item.open">+</span>
-          <span class="accordion-signal mr-2" v-if="!item.open">-</span>
-          <p>{{ item.title }}</p>
-        </dt>
-        <dd v-if="item.open" class="accordion-content mt-5 select-none">
-          {{ item.content }}
-        </dd>
-      </dl>
-    </div>
-
-    <div
-      class="bg-white rounded-lg mx-5 mb-3 sm:mb-10 px-6 py-4 text-center border-vegan-red border border-solid max-w-xl"
-    >
-      <h2 class="section-title font-light italic">
-        <span class="font-bold not-italic">Have</span> more questions?
+        Q<span class="font-light">&</span>A
       </h2>
-      <p class="content">Contact us directly at</p>
-      <a
-        href="mailto:info@vegansailing.eu"
-        class="content font-medium text-vegan-red"
-        >info@vegansailing.eu</a
+
+      <div class="accordions lg:max-w-xl">
+        <dl
+          @click="item.open = !item.open"
+          v-for="(item, id) in items"
+          class="bg-white rounded-lg mx-5 mb-3 px-8 py-4 cursor-pointer"
+        >
+          <dt class="accordion-title flex select-none">
+            <span class="accordion-signal mr-2" v-if="item.open">+</span>
+            <span class="accordion-signal mr-2" v-if="!item.open">-</span>
+            <p>{{ item.title }}</p>
+          </dt>
+          <dd v-if="item.open" class="accordion-content mt-5 select-none">
+            {{ item.content }}
+          </dd>
+        </dl>
+      </div>
+
+      <div
+        class="bg-white rounded-lg mx-5 mb-3 sm:mb-10 px-6 py-4 text-center border-vegan-red border border-solid lg:max-w-more-questions"
       >
+        <h2 class="section-title font-light italic">
+          <span class="font-bold not-italic">Have</span> more questions?
+        </h2>
+        <p class="content">Contact us directly at</p>
+        <a
+          href="mailto:info@vegansailing.eu"
+          class="content font-medium text-vegan-red"
+          >info@vegansailing.eu</a
+        >
+      </div>
+    </div>
+    <div
+      class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20"
+      style="right: -9rem"
+    >
+      <img src="/images/boat-qna.jpg" alt="Boat QnA" />
+      <img
+        class="w-56 h-28 absolute z-30 bottom-cust -mt-32 xl:bottom-14"
+        src="/images/white-waves.svg"
+        alt="White waves"
+      />
     </div>
   </div>
 </template>
@@ -123,4 +136,4 @@ export default {
   },
 }
 </script>
-<style></style>
+<style scoped></style>

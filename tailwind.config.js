@@ -42,7 +42,8 @@ module.exports = {
                 'crew-card': '285px',
                 '8': '8rem',
                 'modal-txtsm': '188px',
-                'modal-inputs': '255px'
+                'modal-inputs': '255px',
+                'more-questions': '532px'
             },
             fontSize: {
                 'btn': '1.375rem',
@@ -56,7 +57,8 @@ module.exports = {
                 'landing-main': '780px',
                 'route-img': '141px',
                 '36': '9rem',
-                'footer': "545px"
+                'footer': "545px",
+                '69pic': '69rem'
 
             },
             width: {
@@ -74,7 +76,15 @@ module.exports = {
                 '7': '1.75rem',
                 'modal-inputs': '255px',
                 '36': '9rem',
-                '80': '20rem'
+                '80': '20rem',
+                '28': '7rem',
+            },
+            inset: {
+                '14': '3.5rem',
+                '20': '5rem',
+                '28': '7rem',
+                'cust': '10vw'
+
             }
         }
     },
