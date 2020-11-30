@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sm:pb-6">
     <div class="xs:hidden section-title text-center mt-10">
       <h2 class="font-semibold">Boat and cabin</h2>
       <h2 class="font-light">Example</h2>
@@ -22,7 +22,7 @@
           ><span class="prev absolute ml-5 z-10" style="top: 8rem">
             <!-- without <p> not showing arrow? -->
 
-            <img class="icon-height sm:mt-2" src="/nav/left-arrow.svg"
+            <img class="icon-height sm:mt-6" src="/nav/left-arrow.svg"
           /></span>
         </template>
         <div class="slide">
@@ -37,7 +37,7 @@
         <template slot="next"
           ><span class="next absolute right-0 mr-5 z-10" style="top: 8rem"
             ><img
-              class="icon-height sm:mt-2"
+              class="icon-height sm:mt-6"
               src="/nav/right-arrow.svg"
               alt="next" /></span
         ></template>
@@ -53,6 +53,12 @@
 }
 .img-width {
   width: 80% !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .img-width {
+    width: 303px !important;
+  }
 }
 .slide {
   max-width: 303px;

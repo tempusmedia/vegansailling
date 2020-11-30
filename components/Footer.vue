@@ -6,9 +6,9 @@
     >
       <div class="flex flex-col items-center justify-evenly -mt-2 sm:max-w-xl">
         <h2
-          class="section-title text-white font-semibold text-center pt-12 mb-8"
+          class="section-title text-white font-semibold text-center pt-12 mb-8 font-poppins"
         >
-          Lorem<span class="font-light"> ipsum dolor</span>
+          Lorem<span class="font-light font-poppins"> ipsum dolor</span>
         </h2>
         <p class="content text-white text-center mb-8">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
