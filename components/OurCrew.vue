@@ -1,12 +1,7 @@
 <template>
   <div>
     <div
-      style="
-        height: 743px;
-        background-color: #eaecf1;
-        position: relative;
-        z-index: -1;
-      "
+     class="crew-container"
     >
       <h2 class="section-title font-semibold text-center pt-12">
         Meet<span class="font-light"> our crew</span>
@@ -20,3 +15,11 @@
     </div>
   </div>
 </template>
+<style scoped>
+  .crew-container {
+    height: 743px;
+    background-color: #eaecf1;
+    position: relative;
+    z-index: -1;
+  }
+</style>

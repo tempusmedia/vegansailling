@@ -176,7 +176,6 @@
       <QnA />
     </section>
     <section>
-     
       <RouteExample />
     </section>
     <!-- route example će voditi na svoje pojedinačne pageve zbog mogućih promjena u budućnosti -->

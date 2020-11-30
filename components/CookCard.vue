@@ -6,12 +6,12 @@
       </h2> -->
 
       <!-- first card -->
-      <div class="max-w-crew-card mx-auto pb-5 bg-white">
+      <div class="max-w-crew-card sm:max-w-xl mx-auto pb-5 bg-white">
         <img src="/images/cook01.jpg" />
-        <div class="text-center py-6 px-2 card-shadow">
-          <h2 class="card-title pb-2">Cook</h2>
+        <div class="text-center py-6 sm:py-10 px-2 card-shadow">
+          <h2 class="card-title pb-2 sm:text-2xl sm:pb-8 sm:pt-0">Cook</h2>
 
-          <table id="thirdTable" class="content">
+          <table id="thirdTable" class="content sm:mr-12">
             <tbody>
               <tr class="table-row" v-for="row in rows">
                 <!-- for space between rows add class="py-1" to <td> -->

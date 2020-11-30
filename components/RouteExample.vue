@@ -101,7 +101,7 @@
       </div>
 
       <!-- route image container desk-->
-      <div class="mt-28 hidden lg:block max-w-screen-xl mx-auto">
+      <div class="mt-28 hidden lg:block max-w-screen-xl mx-auto mb-12">
         <div class="flex justify-evenly">
           <!-- Split -->
           <div class="relative w-1/3 flex flex-col justify-center">
@@ -118,11 +118,8 @@
             </div>
           </div>
           <!-- Zadar -->
-          <div class="relative w-1/3">
-            <img
-              class="absolute wave-pos w-2/3"
-              src="/images/zadar-waves-desk.svg"
-            />
+          <div class="relative">
+            <img class="absolute wave-pos" src="/images/wave-orange.svg" />
 
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/zadar-xs.jpg" />
@@ -175,7 +172,7 @@ li {
 }
 
 .top-cdesk10 {
-  top: -16px;
+  top: -14px;
   width: 330px;
 }
 
@@ -185,7 +182,7 @@ li {
 }
 
 .bottom-cdesk10 {
-  bottom: 43px;
+  bottom: 45px;
   width: 330px;
 }
 
