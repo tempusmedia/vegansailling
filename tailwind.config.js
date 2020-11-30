@@ -58,14 +58,16 @@ module.exports = {
                 'route-img': '141px',
                 '36': '9rem',
                 'footer': "545px",
-                '69pic': '69rem'
+                '69pic': '69rem',
+                '76': '19rem'
 
             },
             width: {
                 'title-wta': '478px',
                 'route-img': '141px',
                 '36': '9rem',
-                'modal-inputs': '255px'
+                'modal-inputs': '255px',
+                '76': '19rem'
 
 
             },
@@ -82,6 +84,7 @@ module.exports = {
             inset: {
                 '14': '3.5rem',
                 '20': '5rem',
+                'minus20': '-5rem',
                 '28': '7rem',
                 'cust': '10vw'
 
