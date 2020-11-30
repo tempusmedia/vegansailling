@@ -1,9 +1,9 @@
 <template>
   <div
-    class="landing-btn h-title-cta xs:h-desk-cta bg-cta-orange font-poppins mt-5 xs:flex xs:flex-col xs:items-start xs:w-title-wta"
+    class="landing-btn h-title-cta bg-cta-orange font-poppins mt-5 xs:flex xs:flex-col xs:items-start my-orange-cont mx-auto"
   >
     <!-- TITLE in slot because mixed styles -->
-    <div class="xs:px-12">
+    <div class="xs:px-12 xs:mx-auto">
       <slot name="title"></slot>
       <slot name="content"></slot>
       <!-- <p
@@ -24,5 +24,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+@media only screen and (min-width: 375px) {
+  .my-orange-cont {
+    width: 1200px;
+    height: 286px;
+  }
+}
+</style>
 <!-- ukloniti viška varijable i sve staviti sa  \n. možda čak napraviti sad jednu varijablu gdje se u jednoj unosi jedan n, a u drugoj drugi -->

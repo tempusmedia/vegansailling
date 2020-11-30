@@ -93,20 +93,26 @@
     </div>
     <MapDates />
     <div
-      class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between overflow-x-hidden"
+      class="bg-no-repeat w-full object-center object-cover flex flex-col justify-between overflow-x-hidden xs:mx-auto relative sm:-mt-36"
     >
       <!-- style="background-image: url('/images/bg-orangecta.jpg')" -->
       <OrangeCta>
         <template #title>
-          <h1
-            class="font-semibold leading-tight xs:hidden text-white text-center"
-          >
-            All inclusive
-            <span class="font-light italic"><p>vegan sailing</p></span>
-          </h1></template
+          <div class="sm:hidden">
+            <h1 class="font-semibold leading-tight text-white text-center">
+              All inclusive
+              <span class="font-light italic"><p>vegan sailing</p></span>
+            </h1>
+          </div>
+          <div class="hidden sm:block">
+            <h1 class="font-semibold leading-tight text-white text-center">
+              All inclusive
+              <span class="font-light italic">vegan sailing</span>
+            </h1>
+          </div></template
         >
         <template #content
-          ><p class="text-white text-center">
+          ><p class="text-white text-center max-w-lg py-5">
             Single cabin or bunkbed price: €900 / Double bed cabin price: €2100
             *all reservations are closed 30 days before the trip
           </p></template
