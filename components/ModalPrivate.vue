@@ -1,7 +1,7 @@
 <template>
   <div class="modal-backdrop z-50 flex-column">
     <div
-      class="modal w-full object-center object-cover mx-5 rounded-3xl flex-column"
+      class="modal w-full object-center object-cover mx-5 rounded-3xl flex-column max-w-screen-xl"
       style="background-image: url('/images/bg-wavy.jpg')"
     >
       <div

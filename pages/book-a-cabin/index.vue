@@ -2,7 +2,7 @@
   <div>
     <!--xs mobile -->
     <div
-      class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
+      class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between overflow-x-hidden"
       style="background-image: url('/images/public-bg-xs.jpg')"
     >
       <TitleCta
@@ -39,7 +39,7 @@
 
     <!--xs: desktop rai-->
     <div
-      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main"
+      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main overflow-x-hidden"
       style="background-image: url('/images/public-bg.jpg')"
     >
       <div
@@ -91,10 +91,14 @@
         </TitleCta>
       </div>
     </div>
-    <QnA />
-    <RouteExample />
+    <section class="max-w-screen-xl mx-auto">
+      <QnA />
+    </section>
+    <section>
+      <RouteExample />
+    </section>
     <OurCrew />
-    <br />
+
     <BoatAndCabin />
     <Reviews />
 

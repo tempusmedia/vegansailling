@@ -68,7 +68,8 @@ module.exports = {
                 'route-img': '141px',
                 '36': '9rem',
                 'modal-inputs': '255px',
-                '76': '19rem'
+                '76': '19rem',
+                'txtarea': '32.375rem'
 
 
             },

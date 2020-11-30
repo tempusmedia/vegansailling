@@ -2,7 +2,7 @@
   <transition name="modal-fade">
     <div class="modal-shade overflow-y-auto z-50">
       <div
-        class="modal-bg top-0 mt-10 mb-10"
+        class="modal-bg top-0 mt-10 mb-10 max-w-screen-xl"
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
@@ -24,7 +24,7 @@
             </svg>
           </button>
           <header id="modalTitle" class="mt-3 mb-10">
-            <div class="text-center text-vegan-blue">
+            <div class="text-center text-vegan-blue sm:hidden font-poppins">
               <h1 class="font-semibold leading-tight">
                 {{ $t('pages.book_a_cabin.book') }}
                 <span class="font-light italic"
@@ -32,12 +32,22 @@
                 >
               </h1>
             </div>
+            <div
+              class="text-center text-vegan-blue hidden sm:block font-poppins"
+            >
+              <h1 class="font-semibold leading-tight">
+                {{ $t('pages.book_a_cabin.book') }}
+                <span class="font-light italic">{{
+                  $t('pages.book_a_cabin.a_cabin')
+                }}</span>
+              </h1>
+            </div>
           </header>
 
           <!-- CHECKBOX -->
           <section>
             <div class="flex justify-center">
-              <div>
+              <div class="sm:flex sm:w-76 sm:justify-between">
                 <label class="box content"
                   >Hire skipper
                   <input type="checkbox" checked="checked" />
@@ -53,8 +63,10 @@
           </section>
           <!-- RADIO BUTTON -->
           <section id="modalDescription">
-            <div class="radio-bg">
-              <div class="flex flex-col justify-center">
+            <div class="radio-bg sm:w-txtarea sm:mx-auto">
+              <div
+                class="flex flex-col justify-center sm:flex-row sm:w-76 sm:justify-between"
+              >
                 <div class="text-left flex">
                   <input
                     type="radio"
@@ -87,60 +99,68 @@
             <InputNumberSlider />
           </section>
           <!-- INPUT DATE -->
-
-          <div class="w-modal-inputs modal-input mt-3 mx-auto">
-            <select
-              type="date"
-              name="date"
-              class="date relative focus:outline-none"
+          <div class="sm:flex sm:mx-auto">
+            <div
+              class="w-modal-inputs modal-input mt-3 mx-auto sm:mx-0 sm:mr-1"
             >
-              <option class="content" value="">Pick a date</option>
-              <option value="01/01/2021-07/01/2021">
-                01/01/2021 - 05/01/2021
-              </option>
-              <option value="07/01/2021-14/01/2021">
-                07/01/2021 - 14/01/2021
-              </option>
-              <option value="14/01/2021-21/01/2021">
-                14/01/2021 - 21/01/2021
-              </option>
-              <option value="21/01/2021-28/01/2021">
-                21/01/2021 - 28/01/2021
-              </option>
-            </select>
-          </div>
+              <select
+                type="date"
+                name="date"
+                class="date relative focus:outline-none"
+              >
+                <option class="content" value="">Pick a date</option>
+                <option value="01/01/2021-07/01/2021">
+                  01/01/2021 - 05/01/2021
+                </option>
+                <option value="07/01/2021-14/01/2021">
+                  07/01/2021 - 14/01/2021
+                </option>
+                <option value="14/01/2021-21/01/2021">
+                  14/01/2021 - 21/01/2021
+                </option>
+                <option value="21/01/2021-28/01/2021">
+                  21/01/2021 - 28/01/2021
+                </option>
+              </select>
+            </div>
 
-          <!-- INPUT LOCATION -->
-          <div class="w-modal-inputs modal-input mt-3 mx-auto">
-            <select
-              type="location"
-              name="location"
-              class="date relative focus:outline-none"
+            <!-- INPUT LOCATION -->
+            <div
+              class="w-modal-inputs modal-input mt-3 mx-auto sm:mx-0 sm:ml-1"
             >
-              <option class="content" value="">Pick location</option>
-              <option value="Krk">Krk</option>
-              <option value="Zadar">Zadar</option>
-              <option value="Split">Split</option>
-            </select>
+              <select
+                type="location"
+                name="location"
+                class="date relative focus:outline-none"
+              >
+                <option class="content" value="">Pick location</option>
+                <option value="Krk">Krk</option>
+                <option value="Zadar">Zadar</option>
+                <option value="Split">Split</option>
+              </select>
+            </div>
           </div>
-
           <!-- INPUT INFO -->
           <div class="content flex justify-center w-modal-inputs mx-auto">
             <div class="flex flex-col w-modal-inputs">
-              <input
-                class="modal-input mt-3 input-name"
-                placeholder="Your name"
-                name="name"
-                id="name"
-              />
-              <input
-                class="modal-input mt-3 input-name"
-                placeholder="Your email"
-                name="email"
-                id="email"
-              />
+              <div
+                class="flex flex-col sm:flex-row sm:mx-auto sm:relative lefty"
+              >
+                <input
+                  class="modal-input mt-3 input-name sm:mr-1"
+                  placeholder="Your name"
+                  name="name"
+                  id="name"
+                />
+                <input
+                  class="modal-input mt-3 input-name sm:ml-1"
+                  placeholder="Your email"
+                  name="email"
+                  id="email"
+                />
+              </div>
               <textarea
-                class="modal-input rounded-2xl mt-3 input-name"
+                class="modal-input rounded-2xl mt-3 input-name sm:relative sm:w-txtarea lefty"
                 placeholder="Write your message"
                 name="message"
                 id="message"
@@ -149,8 +169,8 @@
           </div>
 
           <!-- Book now & close modal & send data & show success modal-->
-
-          <div class="max-w-btn mx-auto mt-4 mb-4 xs:mx-0">
+          <!-- xs:mx-0 -->
+          <div class="max-w-btn mx-auto mt-4 mb-4">
             <a
               class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
               type="button"
@@ -199,6 +219,9 @@ export default {
 }
 </script>
 <style>
+.lefty {
+  left: -8.3rem;
+}
 select.date {
   font-family: 'Poppins', sans-serif;
   color: #154752;
