@@ -135,6 +135,12 @@ h1 {
   @apply text-title text-vegan-blue;
 }
 
+@screen sm {
+  .section-title {
+    @apply text-3xl;
+  }
+}
+
 .content {
   @apply font-poppins text-vegan-blue text-base font-light;
 }

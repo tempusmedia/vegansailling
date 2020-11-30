@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="section-title text-center">
+    <div class="section-title text-center mt-10">
       <h2 class="font-semibold">Boat and cabin</h2>
       <h2 class="font-light">Example</h2>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex relative mt-56">
+  <div class="flex relative sm:mt-56">
     <div class="bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64">
       <h2
         class="section-title font-semibold text-center py-10 sm:pt-0 sm:text-left sm:pl-10"

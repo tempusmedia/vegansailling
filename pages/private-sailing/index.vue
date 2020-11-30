@@ -181,6 +181,7 @@
     <!-- route example će voditi na svoje pojedinačne pageve zbog mogućih promjena u budućnosti -->
 
     <OurCrew />
+    <BoatAndCabin />
     <Reviews />
 
     <ModalPrivate v-show="isModalVisible" @close="closeModal" />
