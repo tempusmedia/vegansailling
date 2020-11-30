@@ -132,7 +132,7 @@ h1 {
 }
 
 .section-title {
-  @apply text-title text-vegan-blue;
+  @apply text-title text-vegan-blue font-poppins;
 }
 
 @screen sm {
