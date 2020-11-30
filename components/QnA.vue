@@ -44,7 +44,7 @@
     >
       <img src="/images/boat-qna.jpg" alt="Boat QnA" />
       <img
-        class="w-56 h-28 absolute z-30 bottom-cust -mt-32 xl:bottom-14"
+        class="w-56 h-28 absolute z-30 -mt-32 hidden lg:block xl:bottom-14"
         src="/images/white-waves.svg"
         alt="White waves"
       />

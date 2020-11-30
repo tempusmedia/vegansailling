@@ -176,10 +176,7 @@
       <QnA />
     </section>
     <section>
-      <div class="flex">
-        <img src="/images/boat01-xs.jpg" />
-        <img src="/images/boat02-xs.jpg" />
-      </div>
+     
       <RouteExample />
     </section>
     <!-- route example će voditi na svoje pojedinačne pageve zbog mogućih promjena u budućnosti -->
