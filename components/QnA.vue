@@ -42,9 +42,9 @@
       class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20"
       style="right: -9rem"
     >
-      <img src="/images/boat-qna.jpg" alt="Boat QnA" />
+      <img src="/images/boat-qna.png" alt="Boat QnA" />
       <img
-        class="w-56 h-28 absolute z-30 -mt-32 hidden lg:block xl:bottom-14"
+        class="w-56 h-28 absolute z-30 -mt-32 hidden lg:block xl:bottom-24"
         src="/images/white-waves.svg"
         alt="White waves"
       />

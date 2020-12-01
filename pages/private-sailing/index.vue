@@ -41,9 +41,9 @@
       </TitleCta>
     </div>
 
-    <!-- desktop -->
+    <!-- desktop overflow-x-hidden-->
     <div
-      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main overflow-x-hidden"
+      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main relative"
       style="background-image: url('/images/private-bg.jpg')"
     >
       <div
@@ -52,6 +52,7 @@
         <TitleCta
           :route="route"
           :content="this.$t('pages.private_sailing.content')"
+          class="relative -top-16"
         >
           <template #title>
             <div class="text-left text-vegan-blue">
@@ -93,11 +94,14 @@
           </template>
         </TitleCta>
       </div>
+
+      <WaveTitle />
     </div>
 
     <!-- info -->
     <InfoCarousel class="sm:hidden" />
-    <section class="hidden sm:block max-w-screen-xl mx-auto my-32">
+
+    <section class="hidden sm:block max-w-screen-xl mx-auto my-32 mt-8">
       <div class="flex max-w-6xl justify-evenly my-12 mx-auto">
         <div>
           <div class="h-50 flex flex-col items-center justify-center">
@@ -207,11 +211,4 @@ export default {
   },
 }
 </script>
-<style>
-.wave-container {
-  overflow: hidden;
-}
-.wave-container > svg {
-  display: block;
-}
-</style>
+<style scoped></style>

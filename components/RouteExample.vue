@@ -14,11 +14,35 @@
             class="relative"
             style="top: -5rem"
           />
-          <img
-            src="/images/boat02-lg.jpg"
-            class="relative"
-            style="left: -5rem"
-          />
+          <div class="relative opacity-80">
+            <img src="/images/boat02-lg.jpg" class="relative -left-20" />
+            <svg
+              class="w-full absolute -bottom-6 -left-16"
+              viewBox="0 0 468 151"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.8144 99.6368C154.292 -4.50714 258.027 210.724 454.88 6.52001"
+                stroke="white"
+                stroke-width="4"
+              />
+            </svg>
+
+            <svg
+              class="w-full absolute bottom-0 -left-20"
+              viewBox="0 0 343 49"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M343 1.51107V49.6062H0V1.88697C27.343 -2.01141 60.6183 -0.363166 99.6712 11.5124C214.671 46.4827 276.9 41.329 343 1.51107Z"
+                fill="white"
+              />
+            </svg>
+          </div>
         </div>
         <div class="sm:w-1/2 sm:max-w-md sm:-mt-10">
           <h2

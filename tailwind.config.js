@@ -83,14 +83,21 @@ module.exports = {
                 '36': '9rem',
                 '80': '20rem',
                 '28': '7rem',
+
             },
             inset: {
+                '-6': '-1.5rem',
+                '10': '2.5rem',
+                '-10': '-2.5rem',
                 '14': '3.5rem',
                 '20': '5rem',
                 'minus20': '-5rem',
                 '28': '7rem',
                 'cust': '10vw',
-                'land': '10rem'
+                'land': '10rem',
+                '-16': '-4rem',
+                '-20': '-5rem',
+                '24': '6rem'
 
             }
         }
