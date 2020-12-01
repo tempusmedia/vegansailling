@@ -75,7 +75,7 @@
       </div>
     </div>
     <div
-      class="py-20 navBreak:hidden z-10"
+      class="py-20 navBreak:hidden z-40"
       :class="isOpen ? 'hamburger-menu' : 'hidden'"
     >
       <svg
