@@ -6,11 +6,11 @@
           exact
           class="nav-link nav-desk pr-8"
           :to="route.privateSailing"
-          >Private vegan sailing</nuxt-i18n-link
+          >{{ $t('components.header.private') }}</nuxt-i18n-link
         >
-        <nuxt-i18n-link exact class="nav-link nav-desk" :to="route.bookCabin"
-          >Book a cabin</nuxt-i18n-link
-        >
+        <nuxt-i18n-link exact class="nav-link nav-desk" :to="route.bookCabin">{{
+          $t('components.header.book')
+        }}</nuxt-i18n-link>
       </div>
       <div class="w-1/5 flex justify-center">
         <nuxt-i18n-link class="nav-link" :to="route.home">
@@ -18,16 +18,28 @@
         /></nuxt-i18n-link>
       </div>
       <div class="flex justify-end w-2/5">
-        <nuxt-i18n-link exact class="nav-link nav-desk pl-8" :to="route.gallery"
-          >Gallery</nuxt-i18n-link
+        <nuxt-i18n-link
+          exact
+          class="nav-link nav-desk pl-8"
+          :to="route.gallery"
+          >{{ $t('components.header.gallery') }}</nuxt-i18n-link
         >
-        <nuxt-i18n-link exact class="nav-link nav-desk pl-8" :to="route.about"
-          >About</nuxt-i18n-link
+        <nuxt-i18n-link
+          exact
+          class="nav-link nav-desk pl-8"
+          :to="route.about"
+          >{{ $t('components.header.about') }}</nuxt-i18n-link
         >
-        <nuxt-i18n-link exact class="nav-link nav-desk pl-8" :to="route.contact"
-          >Contact</nuxt-i18n-link
+        <nuxt-i18n-link
+          exact
+          class="nav-link nav-desk pl-8"
+          :to="route.contact"
+          >{{ $t('components.header.contact') }}</nuxt-i18n-link
         >
+
+        <!-- LANGUAGE SWITHCER WORKING  
         <LanguageSwitcher />
+        -->
       </div>
     </div>
     <div class="flex px-5 py-3 navBreak:hidden">
@@ -119,27 +131,33 @@
         </defs>
       </svg>
       <div class="hamburger-items">
-        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.home"
-          >Home</nuxt-i18n-link
-        >
+        <!-- <nuxt-i18n-link class="nav-link nav-mob" :to="route.home">{{
+          $t('components.header.home')
+        }}</nuxt-i18n-link> -->
+
+        <!-- srediti ovdje kako treba, da home možda isto ima nav-link, s exact i pravilnim css-om -->
+
+        <nuxt-i18n-link class="nav-link home-mob" :to="route.home">{{
+          $t('components.header.home')
+        }}</nuxt-i18n-link>
         <nuxt-i18n-link
           exact
           class="nav-link nav-mob"
           :to="route.privateSailing"
-          >Private vegan sailing</nuxt-i18n-link
+          >{{ $t('components.header.private') }}</nuxt-i18n-link
         >
-        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.bookCabin"
-          >Book a cabin</nuxt-i18n-link
-        >
-        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.gallery"
-          >Gallery</nuxt-i18n-link
-        >
-        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.about"
-          >About</nuxt-i18n-link
-        >
-        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.contact"
-          >Contact</nuxt-i18n-link
-        >
+        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.bookCabin">{{
+          $t('components.header.book')
+        }}</nuxt-i18n-link>
+        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.gallery">{{
+          $t('components.header.gallery')
+        }}</nuxt-i18n-link>
+        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.about">{{
+          $t('components.header.about')
+        }}</nuxt-i18n-link>
+        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.contact">{{
+          $t('components.header.contact')
+        }}</nuxt-i18n-link>
       </div>
       <svg
         class="ml-auto mt-6"
@@ -190,17 +208,19 @@
 </template>
 <script>
 export default {
-  data: () => ({
-    isOpen: false,
-    route: {
-      home: '/',
-      privateSailing: 'private_sailing',
-      bookCabin: 'book_a_cabin',
-      gallery: 'gallery',
-      about: 'about',
-      contact: 'contact',
-    },
-  }),
+  data() {
+    return {
+      isOpen: false,
+      route: {
+        home: '/',
+        privateSailing: 'private-sailing',
+        bookCabin: 'book-a-cabin',
+        gallery: 'gallery',
+        about: 'about',
+        contact: 'contact',
+      },
+    }
+  },
   /*if route changes, navbar closes*/
   watch: {
     $route() {

@@ -27,11 +27,17 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    'normalize.css/normalize.css',
     '@/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    { src: 'plugins/owl.js', ssr: false },// Only works on client side
+    { src: '~/plugins/vue-datepicker', ssr: false },
+    { src: '~/plugins/vue-number-input', ssr: false }
+
+
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -64,6 +70,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+
     postcss: {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn

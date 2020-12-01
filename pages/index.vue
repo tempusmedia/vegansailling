@@ -46,9 +46,7 @@
             :title="landingBtn.primary.title"
             :subtitle="landingBtn.primary.subtitle"
             :route="landingBtn.primary.route"
-            :texta="landingBtn.primary.texta"
-            :textb="landingBtn.primary.textb"
-            :textc="landingBtn.primary.textc"
+            :content="this.$t('pages.private_sailing.content_mobile')"
           />
 
           <landing-button
@@ -57,9 +55,7 @@
             :title="landingBtn.secondary.title"
             :subtitle="landingBtn.secondary.subtitle"
             :route="landingBtn.secondary.route"
-            :texta="landingBtn.secondary.texta"
-            :textb="landingBtn.secondary.textb"
-            :textc="landingBtn.secondary.textc"
+            :content="this.$t('pages.book_a_cabin.content_mobile')"
           />
         </div>
       </div>
@@ -75,18 +71,12 @@ export default {
       primary: {
         title: 'Private',
         subtitle: 'vegan sailing',
-        route: '/private_sailing',
-        texta: 'Rent a sailing boat or a  ',
-        textb: 'catamaran with a vegan ',
-        textc: 'cook and/or skipper',
+        route: '/private-sailing',
       },
       secondary: {
         title: 'Book',
         subtitle: 'a Cabin',
-        route: '/book_a_cabin',
-        texta: 'Join all inclusive vegan sailing',
-        textb: 'trip and share a boat with',
-        textc: 'other vegans',
+        route: '/book-a-cabin',
       },
     },
   }),
@@ -120,11 +110,11 @@ body {
   /*  Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
-.desc-text,
+.content-text,
 .bottom-btn {
   display: none;
 }
-.landing-desk:hover .desc-text {
+.landing-desk:hover .content-text {
   display: block;
 }
 

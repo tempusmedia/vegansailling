@@ -3,9 +3,10 @@
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
-
 h1 {
   @apply text-title;
 }
@@ -81,6 +82,10 @@ h1 {
   @apply font-medium text-lg font-poppins py-3;
 }
 
+.home-mob {
+  @apply font-medium text-lg font-poppins py-3;
+}
+
 .nav-desk {
   @apply font-light text-lg font-poppins flex items-center;
 }
@@ -105,4 +110,75 @@ h1 {
   margin-bottom: -40px;
 }
 
+.icon-title {
+  @apply font-poppins text-vegan-blue text-lg font-semibold;
+}
+
+.icon-content {
+  @apply font-poppins text-vegan-blue text-base font-light;
+}
+
+.accordion-title,
+.card-title {
+  @apply font-poppins text-vegan-blue text-lg font-semibold;
+}
+
+.accordion-content {
+  @apply font-poppins text-vegan-blue text-base font-light;
+}
+
+.accordion-signal {
+  @apply text-vegan-red;
+}
+
+.section-title {
+  @apply text-title text-vegan-blue font-poppins;
+}
+
+@screen sm {
+  .section-title {
+    @apply text-3xl;
+  }
+}
+
+.content {
+  @apply font-poppins text-vegan-blue text-base font-light;
+}
+
+.orange-medium {
+  @apply text-lg font-medium font-poppins text-vegan-red;
+}
+
+.modal-input {
+  @apply w-modal-inputs border border-modal-input rounded-3xl px-5 py-3;
+}
+
+.modal-shade {
+  @apply fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center bg-gray-800 bg-opacity-50;
+}
+
+.modal-bg {
+  @apply bg-white shadow-sm flex flex-col w-11/12 mx-auto rounded-3xl absolute;
+}
+
+.modal-content {
+  @apply bg-white m-4 p-3 rounded-3xl flex flex-col;
+}
+
+.modal-footer {
+  @apply bg-gradient-to-r from-vegan-red to-vegan-orange text-white;
+}
+
+.radio-bg {
+  @apply flex justify-center items-center bg-qna px-10 py-4 mx-5 rounded-xl;
+}
+
 @tailwind utilities;
+
+.vue-number-input__btn-dec {
+  background: white !important;
+}
+
+.vue-number-input__btn-inc {
+  background: white !important;
+}

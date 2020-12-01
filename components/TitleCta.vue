@@ -4,28 +4,24 @@
   >
     <!-- TITLE in slot because mixed styles -->
     <div class="xs:px-12">
-      <slot></slot>
+      <slot name="title"></slot>
 
       <p
         class="font-poppins text-center xs:text-left max-w-md xs:text-xl font-light leading-snug text-vegan-blue"
         style="white-space: pre-line"
       >
-        {{ desc }}
-        {{ descm }}
+        {{ content }}
+        {{ contentMobile }}
       </p>
 
-      <Btn
-        :route="route"
-        class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
-        >Book now</Btn
-      >
+      <slot name="button"></slot>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['route', 'desc', 'descm'],
+  props: ['content', 'contentMobile'],
 }
 </script>
 
