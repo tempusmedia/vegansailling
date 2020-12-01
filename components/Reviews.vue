@@ -33,7 +33,7 @@
 
     <!-- desktop -->
     <div
-      class="hidden xs:block bg-no-repeat w-full object-center object-cover"
+      class="hidden xs:block bg-no-repeat w-full object-center object-cover my-reviews"
       style="background-image: url('/images/reviews-desk.jpg')"
     >
       <div>
@@ -92,5 +92,12 @@ export default {
 <style scoped>
 .carousel-w {
   max-width: 566px;
+}
+.my-reviews {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 </style>

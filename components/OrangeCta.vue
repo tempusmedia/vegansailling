@@ -1,6 +1,6 @@
 <template>
   <div
-    class="landing-btn h-title-cta bg-cta-orange font-poppins mt-5 xs:flex xs:flex-col xs:items-start my-orange-cont mx-auto"
+    class="landing-btn h-title-cta bg-cta-orange font-poppins mt-5 sm:mt-0 xs:flex xs:flex-col xs:items-start my-orange-cont mx-auto relative z-50"
   >
     <!-- TITLE in slot because mixed styles -->
     <div class="xs:px-12 xs:mx-auto">

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="h-footer sm:h-footer-desk bg-no-repeat w-full object-center object-cover flex flex-col items-center justify-evenly"
+      class="h-footer sm:h-footer-desk bg-no-repeat w-full object-center object-cover flex flex-col items-center justify-evenly my-foot"
       style="background-image: url('/images/footer-bg-desk.jpg')"
     >
       <div class="flex flex-col items-center justify-evenly -mt-2 sm:max-w-xl">
@@ -36,4 +36,12 @@ export default {
   }),
 }
 </script>
-<style></style>
+<style>
+.my-foot {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>

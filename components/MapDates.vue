@@ -28,18 +28,19 @@
         <MapDateItem name="Krk" date="15 August" />
       </div>
     </div> -->
-
-    <div
-      class="hidden xs:flex bg-no-repeat w-full overflow-x-hidden my-mar"
-      style="background-image: url('/images/map-desk.jpg')"
-    >
-      <div class="my-cont">
-        <div class="spacer-item-desk"></div>
-        <MapDateItem name="Split" date="15 May" />
-        <MapDateItem name="Zadar" date="1 June" />
-        <MapDateItem name="Krk" date="15 July" />
-        <MapDateItem name="Split" date="1 August" />
-        <MapDateItem name="Krk" date="15 August" />
+    <div>
+      <div
+        class="hidden xs:flex bg-no-repeat w-full overflow-x-hidden my-mar relative z-50"
+        style="background-image: url('/images/map-desk02.png')"
+      >
+        <div class="my-cont">
+          <div class="spacer-item-desk"></div>
+          <MapDateItem name="Split" date="15 May" />
+          <MapDateItem name="Zadar" date="1 June" />
+          <MapDateItem name="Krk" date="15 July" />
+          <MapDateItem name="Split" date="1 August" />
+          <MapDateItem name="Krk" date="15 August" />
+        </div>
       </div>
     </div>
   </div>
@@ -54,7 +55,7 @@
   height: 580px;
 }
 .spacer-item-desk {
-  height: 370px;
+  height: 200px;
 }
 .map-part {
   height: 1117px;
@@ -66,6 +67,11 @@
 .my-mar {
   margin-top: -12rem;
   padding-bottom: 20rem;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .my-cont {
   width: 1111px;

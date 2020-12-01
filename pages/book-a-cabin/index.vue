@@ -45,7 +45,11 @@
       <div
         class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-center xs:justify-end items-center"
       >
-        <TitleCta :route="titleCta.route" :content="titleCta.content">
+        <TitleCta
+          :route="titleCta.route"
+          :content="titleCta.content"
+          class="relative -top-16"
+        >
           <template #title>
             <div class="text-left text-vegan-blue">
               <img
@@ -93,7 +97,7 @@
     </div>
     <MapDates />
     <div
-      class="bg-no-repeat w-full object-center object-cover flex flex-col justify-between overflow-x-hidden xs:mx-auto relative sm:-mt-36"
+      class="bg-no-repeat w-full object-center object-cover flex flex-col justify-between overflow-x-hidden xs:mx-auto relative sm:-mt-40"
     >
       <!-- style="background-image: url('/images/bg-orangecta.jpg')" -->
       <OrangeCta>
@@ -136,7 +140,7 @@
     </div>
 
     <!-- info -->
-    <InfoCarousel class="sm:hidden" />
+    <InfoCarousel class="sm:hidden sm:mt-5" />
     <section class="hidden sm:block max-w-screen-xl mx-auto my-32">
       <div class="flex max-w-6xl justify-evenly my-12 mx-auto">
         <div>
