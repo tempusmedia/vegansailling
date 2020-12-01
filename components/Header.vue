@@ -36,7 +36,10 @@
           :to="route.contact"
           >{{ $t('components.header.contact') }}</nuxt-i18n-link
         >
+
+        <!-- LANGUAGE SWITHCER WORKING  
         <LanguageSwitcher />
+        -->
       </div>
     </div>
     <div class="flex px-5 py-3 navBreak:hidden">
