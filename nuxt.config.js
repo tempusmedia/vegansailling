@@ -35,7 +35,8 @@ export default {
   plugins: [
     { src: 'plugins/owl.js', ssr: false },// Only works on client side
     { src: '~/plugins/vue-datepicker', ssr: false },
-    { src: '~/plugins/vue-number-input', ssr: false }
+    { src: '~/plugins/vue-number-input', ssr: false },
+    { src: '~/plugins/vue-carousel-3d', ssr: false }
 
 
   ],
@@ -77,7 +78,8 @@ export default {
       plugins: {
 
       },
-    }
+    },
+    // transpile: ['vue-carousel-3d']
   }
 
 }

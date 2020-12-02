@@ -2,40 +2,56 @@
   <header class="bg-white">
     <div class="px-5 py-3 hidden navBreak:flex">
       <div class="flex justify-start w-2/5">
-        <nuxt-i18n-link
-          exact
-          class="nav-link nav-desk pr-8"
-          :to="route.privateSailing"
-          >{{ $t('components.header.private') }}</nuxt-i18n-link
-        >
-        <nuxt-i18n-link exact class="nav-link nav-desk" :to="route.bookCabin">{{
-          $t('components.header.book')
-        }}</nuxt-i18n-link>
+        <div class="nav-link-container relative">
+          <nuxt-i18n-link
+            exact
+            class="nav-link nav-desk pr-8"
+            :to="route.privateSailing"
+            >{{ $t('components.header.private') }}</nuxt-i18n-link
+          >
+        </div>
+        <div class="nav-link-container relative">
+          <nuxt-i18n-link
+            exact
+            class="nav-link nav-desk"
+            :to="route.bookCabin"
+            >{{ $t('components.header.book') }}</nuxt-i18n-link
+          >
+        </div>
       </div>
       <div class="w-1/5 flex justify-center">
-        <nuxt-i18n-link class="nav-link" :to="route.home">
-          <img src="/images/logo.svg" alt="Vegan Sailing Logo"
-        /></nuxt-i18n-link>
+        <div class="nav-link-container relative">
+          <nuxt-i18n-link class="nav-link" :to="route.home">
+            <img src="/images/logo.svg" alt="Vegan Sailing Logo"
+          /></nuxt-i18n-link>
+        </div>
       </div>
       <div class="flex justify-end w-2/5">
-        <nuxt-i18n-link
-          exact
-          class="nav-link nav-desk pl-8"
-          :to="route.gallery"
-          >{{ $t('components.header.gallery') }}</nuxt-i18n-link
-        >
-        <nuxt-i18n-link
-          exact
-          class="nav-link nav-desk pl-8"
-          :to="route.about"
-          >{{ $t('components.header.about') }}</nuxt-i18n-link
-        >
-        <nuxt-i18n-link
-          exact
-          class="nav-link nav-desk pl-8"
-          :to="route.contact"
-          >{{ $t('components.header.contact') }}</nuxt-i18n-link
-        >
+        <div class="nav-link-container relative">
+          <nuxt-i18n-link
+            exact
+            class="nav-link nav-desk pl-8"
+            :to="route.gallery"
+            >{{ $t('components.header.gallery') }}</nuxt-i18n-link
+          >
+        </div>
+        <div class="nav-link-container relative">
+          <nuxt-i18n-link
+            exact
+            class="nav-link nav-desk pl-8"
+            :to="route.about"
+            >{{ $t('components.header.about') }}</nuxt-i18n-link
+          >
+        </div>
+
+        <div class="nav-link-container relative">
+          <nuxt-i18n-link
+            exact
+            class="nav-link nav-desk pl-8"
+            :to="route.contact"
+            >{{ $t('components.header.contact') }}</nuxt-i18n-link
+          >
+        </div>
 
         <!-- LANGUAGE SWITHCER WORKING  
         <LanguageSwitcher />
@@ -75,7 +91,7 @@
       </div>
     </div>
     <div
-      class="py-20 navBreak:hidden z-10"
+      class="py-20 navBreak:hidden z-40"
       :class="isOpen ? 'hamburger-menu' : 'hidden'"
     >
       <svg

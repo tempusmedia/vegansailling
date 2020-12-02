@@ -29,6 +29,7 @@ module.exports = {
                 '30': '0.3',
                 '80': '.8',
                 '85': '0.85',
+                '90': '.9'
 
 
             },
@@ -44,12 +45,15 @@ module.exports = {
                 '8': '8rem',
                 'modal-txtsm': '188px',
                 'modal-inputs': '255px',
-                'more-questions': '532px'
+                'more-questions': '532px',
+                'reviews-reach': '44rem'
             },
             fontSize: {
                 'btn': '1.375rem',
                 'title': '1.625rem',
-                'title-regular': '36px'
+                'title-regular': '36px',
+                'title-elipse': '32px',
+
             },
             height: {
                 'landing': '27rem',
@@ -61,7 +65,8 @@ module.exports = {
                 'footer': "545px",
                 'footer-desk': '525.25px',
                 '69pic': '69rem',
-                '76': '19rem'
+                '76': '19rem',
+                'navh': '72px'
 
             },
             width: {
@@ -83,6 +88,7 @@ module.exports = {
                 '36': '9rem',
                 '80': '20rem',
                 '28': '7rem',
+                'beneath-booking': '11.68rem'
 
             },
             inset: {
@@ -97,7 +103,8 @@ module.exports = {
                 'land': '10rem',
                 '-16': '-4rem',
                 '-20': '-5rem',
-                '24': '6rem'
+                '24': '6rem',
+                '18': '4.5rem'
 
             }
         }

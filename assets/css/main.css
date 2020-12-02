@@ -18,7 +18,7 @@ h1 {
 }
 
 .btn {
-  @apply rounded-full py-2 px-6  border-solid border-2 font-poppins;
+  @apply rounded-full py-2 px-6  border-solid border-2 font-poppins cursor-pointer;
 }
 
 .btn--primary {
@@ -75,6 +75,10 @@ h1 {
   @apply bg-white opacity-80 text-vegan-blue;
 }
 
+.nav-link-container {
+  @apply flex items-center;
+}
+
 .nav-link {
   @apply block text-vegan-blue;
 }
@@ -87,7 +91,7 @@ h1 {
 }
 
 .nav-desk {
-  @apply font-light text-lg font-poppins flex items-center;
+  @apply font-light text-lg font-poppins flex items-center h-navh;
 }
 
 .hamburger-menu {
@@ -102,6 +106,14 @@ h1 {
 
 .nav-desk.nuxt-link-active {
   font-weight: 500;
+}
+
+.nav-desk.nuxt-link-active::before {
+  width: 28px;
+  border-bottom: 3px solid #ef5f23;
+  content: '';
+  position: absolute;
+  top: 3.7rem;
 }
 
 .top-wave-line {
@@ -137,7 +149,7 @@ h1 {
 
 @screen sm {
   .section-title {
-    @apply text-3xl;
+    @apply text-4xl;
   }
 }
 
@@ -147,6 +159,9 @@ h1 {
 
 .orange-medium {
   @apply text-lg font-medium font-poppins text-vegan-red;
+}
+.title-elipse {
+  @apply text-title-elipse;
 }
 
 .modal-input {

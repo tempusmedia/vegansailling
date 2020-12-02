@@ -9,12 +9,15 @@
     <div class="py-10 mx-5 sm:mt-24">
       <div class="flex">
         <div class="hidden sm:flex sm:w-1/2 relative justify-end pr-10">
-          <img
-            src="/images/boat01-lg.jpg"
-            class="relative"
-            style="top: -5rem"
-          />
-          <div class="relative opacity-80">
+          <div>
+            <img
+              src="/images/boat01-lg.jpg"
+              class="relative"
+              style="top: -5rem"
+            />
+          </div>
+          <!-- for transparent img  opacity-80-->
+          <div class="relative">
             <img src="/images/boat02-lg.jpg" class="relative -left-20" />
             <svg
               class="w-full absolute -bottom-6 -left-16"
@@ -84,15 +87,18 @@
           </ul>
         </div>
       </div>
-      <!-- route img container xs-->
-      <div class="mt-12 lg:hidden">
+
+      <!-- MOBILE route img container MOBILE-->
+      <div class="mt-12 lg:hidden max-w-lg mx-auto">
         <div class="flex justify-between">
           <!-- Split -->
           <div class="relative">
             <div class="flex flex-col items-center">
               <img class="rounded-full h-36 w-36" src="/images/split-xs.jpg" />
               <span class="flex pt-2"
-                ><p class="orange-medium">Split</p>
+                ><p class="orange-medium">
+                  {{ $t('components.route_example.split') }}
+                </p>
                 <img class="pl-1" src="/images/arrow-right-xs.svg"
               /></span>
             </div>
@@ -105,7 +111,9 @@
             <div class="flex flex-col items-center">
               <img class="rounded-full h-36 w-36" src="/images/zadar-xs.jpg" />
               <span class="flex pt-2"
-                ><p class="orange-medium">Zadar</p>
+                ><p class="orange-medium">
+                  {{ $t('components.route_example.zadar') }}
+                </p>
                 <img class="pl-1" src="/images/arrow-right-xs.svg"
               /></span>
             </div>
@@ -117,18 +125,22 @@
           <div class="flex flex-col items-center">
             <img class="rounded-full h-36 w-36" src="/images/krk-xs.jpg" />
             <span class="flex pt-2"
-              ><p class="orange-medium">Krk</p>
+              ><p class="orange-medium">
+                {{ $t('components.route_example.krk') }}
+              </p>
               <img class="pl-1" src="/images/arrow-right-xs.svg"
             /></span>
           </div>
         </div>
       </div>
 
-      <!-- route image container desk-->
+      <!-- DESKTOP route image container DESKTOP-->
       <div class="mt-28 hidden lg:block max-w-screen-xl mx-auto mb-12">
         <div class="flex justify-evenly">
           <!-- Split -->
-          <div class="relative w-1/3 flex flex-col justify-center">
+          <div
+            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+          >
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/split-xs.jpg" />
               <img
@@ -136,24 +148,30 @@
                 src="/images/split-elipse-desk.svg"
               />
               <span class="flex pt-8"
-                ><p class="orange-medium">Split</p>
-                <img class="pl-1" src="/images/arrow-right-xs.svg"
+                ><p class="orange-medium title-elipse">
+                  {{ $t('components.route_example.split') }}
+                </p>
+                <img class="pl-1" src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
           <!-- Zadar -->
-          <div class="relative">
+          <div class="relative cursor-pointer hover:opacity-90">
             <img class="absolute wave-pos" src="/images/wave-orange.svg" />
 
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/zadar-xs.jpg" />
               <span class="flex pt-8"
-                ><p class="orange-medium">Zadar</p>
-                <img class="pl-1" src="/images/arrow-right-xs.svg"
+                ><p class="orange-medium title-elipse">
+                  {{ $t('components.route_example.zadar') }}
+                </p>
+                <img class="pl-1" src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
-          <div class="relative w-1/3 flex flex-col justify-center">
+          <div
+            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+          >
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/krk-xs.jpg" />
               <img
@@ -161,8 +179,10 @@
                 src="/images/krk-elipse-desk.svg"
               />
               <span class="flex pt-8"
-                ><p class="orange-medium">Krk</p>
-                <img class="pl-1" src="/images/arrow-right-xs.svg"
+                ><p class="orange-medium title-elipse">
+                  {{ $t('components.route_example.krk') }}
+                </p>
+                <img class="pl-1" src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
@@ -206,7 +226,7 @@ li {
 }
 
 .bottom-cdesk10 {
-  bottom: 45px;
+  bottom: 65px;
   width: 330px;
 }
 
