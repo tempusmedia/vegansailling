@@ -92,7 +92,9 @@
             <div class="flex flex-col items-center">
               <img class="rounded-full h-36 w-36" src="/images/split-xs.jpg" />
               <span class="flex pt-2"
-                ><p class="orange-medium">Split</p>
+                ><p class="orange-medium">
+                  {{ $t('components.route_example.split') }}
+                </p>
                 <img class="pl-1" src="/images/arrow-right-xs.svg"
               /></span>
             </div>
@@ -105,7 +107,9 @@
             <div class="flex flex-col items-center">
               <img class="rounded-full h-36 w-36" src="/images/zadar-xs.jpg" />
               <span class="flex pt-2"
-                ><p class="orange-medium">Zadar</p>
+                ><p class="orange-medium">
+                  {{ $t('components.route_example.zadar') }}
+                </p>
                 <img class="pl-1" src="/images/arrow-right-xs.svg"
               /></span>
             </div>
@@ -117,7 +121,9 @@
           <div class="flex flex-col items-center">
             <img class="rounded-full h-36 w-36" src="/images/krk-xs.jpg" />
             <span class="flex pt-2"
-              ><p class="orange-medium">Krk</p>
+              ><p class="orange-medium">
+                {{ $t('components.route_example.krk') }}
+              </p>
               <img class="pl-1" src="/images/arrow-right-xs.svg"
             /></span>
           </div>
@@ -136,8 +142,10 @@
                 src="/images/split-elipse-desk.svg"
               />
               <span class="flex pt-8"
-                ><p class="orange-medium">Split</p>
-                <img class="pl-1" src="/images/arrow-right-xs.svg"
+                ><p class="orange-medium title-elipse">
+                  {{ $t('components.route_example.split') }}
+                </p>
+                <img class="pl-1" src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
@@ -148,8 +156,10 @@
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/zadar-xs.jpg" />
               <span class="flex pt-8"
-                ><p class="orange-medium">Zadar</p>
-                <img class="pl-1" src="/images/arrow-right-xs.svg"
+                ><p class="orange-medium title-elipse">
+                  {{ $t('components.route_example.zadar') }}
+                </p>
+                <img class="pl-1" src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
@@ -161,8 +171,10 @@
                 src="/images/krk-elipse-desk.svg"
               />
               <span class="flex pt-8"
-                ><p class="orange-medium">Krk</p>
-                <img class="pl-1" src="/images/arrow-right-xs.svg"
+                ><p class="orange-medium title-elipse">
+                  {{ $t('components.route_example.krk') }}
+                </p>
+                <img class="pl-1" src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
@@ -206,7 +218,7 @@ li {
 }
 
 .bottom-cdesk10 {
-  bottom: 45px;
+  bottom: 65px;
   width: 330px;
 }
 

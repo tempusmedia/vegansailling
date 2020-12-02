@@ -49,7 +49,8 @@ module.exports = {
             fontSize: {
                 'btn': '1.375rem',
                 'title': '1.625rem',
-                'title-regular': '36px'
+                'title-regular': '36px',
+                'title-elipse': '32px'
             },
             height: {
                 'landing': '27rem',

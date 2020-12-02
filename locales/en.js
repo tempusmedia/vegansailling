@@ -79,6 +79,11 @@ export default {
     "reviews": {
       "r1": "John Doe",
       "r1_content": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida cursus purus in auctor. Donec suscipit pellentesque enim nec feugiat. Proin a massa felis. Ut at dapibus turpis.”"
+    },
+    "route_example": {
+      "split": "Split",
+      "krk": "Krk",
+      "zadar": "Zadar"
     }
   }
 }
