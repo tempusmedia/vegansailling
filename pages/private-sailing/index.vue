@@ -185,9 +185,14 @@
     <!-- route example će voditi na svoje pojedinačne pageve zbog mogućih promjena u budućnosti -->
 
     <OurCrew />
+
     <BoatAndCabin />
     <Reviews />
-
+    <!-- <carousel-3d>
+      <slide :index="0"> Slide 1 Content </slide>
+      <slide :index="1"> Slide 2 Content </slide>
+      <slide :index="2"> Slide 3 Content </slide>
+    </carousel-3d> -->
     <ModalCabin v-show="isModalVisible" @close="closeModal" />
 
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
