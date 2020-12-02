@@ -75,6 +75,10 @@ h1 {
   @apply bg-white opacity-80 text-vegan-blue;
 }
 
+.nav-link-container {
+  @apply flex items-center;
+}
+
 .nav-link {
   @apply block text-vegan-blue;
 }
@@ -87,7 +91,7 @@ h1 {
 }
 
 .nav-desk {
-  @apply font-light text-lg font-poppins flex items-center;
+  @apply font-light text-lg font-poppins flex items-center h-navh;
 }
 
 .hamburger-menu {
@@ -102,6 +106,14 @@ h1 {
 
 .nav-desk.nuxt-link-active {
   font-weight: 500;
+}
+
+.nav-desk.nuxt-link-active::before {
+  width: 28px;
+  border-bottom: 3px solid #ef5f23;
+  content: '';
+  position: absolute;
+  top: 3.7rem;
 }
 
 .top-wave-line {

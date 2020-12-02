@@ -61,7 +61,8 @@ module.exports = {
                 'footer': "545px",
                 'footer-desk': '525.25px',
                 '69pic': '69rem',
-                '76': '19rem'
+                '76': '19rem',
+                'navh': '72px'
 
             },
             width: {
