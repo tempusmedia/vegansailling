@@ -9,11 +9,13 @@
     <div class="py-10 mx-5 sm:mt-24">
       <div class="flex">
         <div class="hidden sm:flex sm:w-1/2 relative justify-end pr-10">
-          <img
-            src="/images/boat01-lg.jpg"
-            class="relative"
-            style="top: -5rem"
-          />
+          <div>
+            <img
+              src="/images/boat01-lg.jpg"
+              class="relative"
+              style="top: -5rem"
+            />
+          </div>
           <div class="relative opacity-80">
             <img src="/images/boat02-lg.jpg" class="relative -left-20" />
             <svg
@@ -84,8 +86,9 @@
           </ul>
         </div>
       </div>
-      <!-- route img container xs-->
-      <div class="mt-12 lg:hidden">
+
+      <!-- MOBILE route img container MOBILE-->
+      <div class="mt-12 lg:hidden max-w-lg mx-auto">
         <div class="flex justify-between">
           <!-- Split -->
           <div class="relative">
@@ -130,7 +133,7 @@
         </div>
       </div>
 
-      <!-- route image container desk-->
+      <!-- DESKTOP route image container DESKTOP-->
       <div class="mt-28 hidden lg:block max-w-screen-xl mx-auto mb-12">
         <div class="flex justify-evenly">
           <!-- Split -->
