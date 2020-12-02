@@ -45,7 +45,7 @@
         :autoplay="true"
         :navigation="true"
         :dots="true"
-        class="relative pt-8 pb-5 mx-auto max-w-reviews-reach"
+        class="relative pt-10 pb-5 mx-auto max-w-reviews-reach"
         :margin="5"
       >
         <template slot="prev"
