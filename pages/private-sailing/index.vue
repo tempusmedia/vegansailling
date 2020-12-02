@@ -193,6 +193,7 @@
       <slide :index="1"> Slide 2 Content </slide>
       <slide :index="2"> Slide 3 Content </slide>
     </carousel-3d> -->
+    <!-- <ThreeCarousel /> -->
     <ModalCabin v-show="isModalVisible" @close="closeModal" />
 
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
