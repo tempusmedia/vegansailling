@@ -23,8 +23,12 @@
         >
       </div>
       <div class="flex">
-        <img src="/images/instagram.svg" />
-        <img src="/images/facebook.svg" />
+        <a href="/" class="hover:opacity-80"
+          ><img src="/images/instagram.svg"
+        /></a>
+        <a href="/" class="hover:opacity-80"
+          ><img src="/images/facebook.svg"
+        /></a>
       </div>
     </div>
   </div>

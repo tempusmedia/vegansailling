@@ -149,7 +149,7 @@ h1 {
 
 @screen sm {
   .section-title {
-    @apply text-3xl;
+    @apply text-4xl;
   }
 }
 

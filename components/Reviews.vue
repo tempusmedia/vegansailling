@@ -33,11 +33,11 @@
 
     <!-- desktop -->
     <div
-      class="hidden xs:block bg-no-repeat w-full object-center object-cover my-reviews"
+      class="hidden xs:block bg-no-repeat w-full object-center object-cover my-reviews my-desk-height"
       style="background-image: url('/images/reviews-desk.jpg')"
     >
       <div>
-        <h2 class="section-title font-semibold text-center pt-10">Reviews</h2>
+        <h2 class="section-title font-semibold text-center pt-12">Reviews</h2>
       </div>
 
       <carousel
@@ -91,7 +91,7 @@ export default {
 </script>
 <style scoped>
 .carousel-w {
-  max-width: 566px;
+  max-width: 666px;
 }
 .my-reviews {
   background: no-repeat center center fixed;
@@ -99,5 +99,8 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.my-desk-height {
+  height: 356px;
 }
 </style>

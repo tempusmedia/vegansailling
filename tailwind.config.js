@@ -29,6 +29,7 @@ module.exports = {
                 '30': '0.3',
                 '80': '.8',
                 '85': '0.85',
+                '90': '.9'
 
 
             },
@@ -85,6 +86,7 @@ module.exports = {
                 '36': '9rem',
                 '80': '20rem',
                 '28': '7rem',
+                'beneath-booking': '11.68rem'
 
             },
             inset: {

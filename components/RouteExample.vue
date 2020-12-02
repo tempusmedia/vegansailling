@@ -16,7 +16,8 @@
               style="top: -5rem"
             />
           </div>
-          <div class="relative opacity-80">
+          <!-- for transparent img  opacity-80-->
+          <div class="relative">
             <img src="/images/boat02-lg.jpg" class="relative -left-20" />
             <svg
               class="w-full absolute -bottom-6 -left-16"
@@ -137,7 +138,9 @@
       <div class="mt-28 hidden lg:block max-w-screen-xl mx-auto mb-12">
         <div class="flex justify-evenly">
           <!-- Split -->
-          <div class="relative w-1/3 flex flex-col justify-center">
+          <div
+            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+          >
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/split-xs.jpg" />
               <img
@@ -153,7 +156,7 @@
             </div>
           </div>
           <!-- Zadar -->
-          <div class="relative">
+          <div class="relative cursor-pointer hover:opacity-90">
             <img class="absolute wave-pos" src="/images/wave-orange.svg" />
 
             <div class="flex flex-col items-center">
@@ -166,7 +169,9 @@
               /></span>
             </div>
           </div>
-          <div class="relative w-1/3 flex flex-col justify-center">
+          <div
+            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+          >
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/krk-xs.jpg" />
               <img
