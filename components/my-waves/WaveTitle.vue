@@ -50,10 +50,7 @@
 </template> -->
 
 <template>
-  <div
-    class="my-wave absolute"
-    style="width: 100%; bottom: -9.5rem; left: -1rem"
-  >
+  <div class="my-wave absolute" style="width: 100%; bottom: -9rem; left: -1rem">
     <svg
       class="my-svg-wave"
       viewBox="0 0 2101 460"
