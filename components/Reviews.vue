@@ -24,7 +24,7 @@
               {{ review.content }}
             </p>
             <p class="content px-10 text-center pt-6 pb-10">
-              {{ review.person }}
+              - {{ review.person }}
             </p>
           </dt>
         </dl>
@@ -33,7 +33,7 @@
 
     <!-- desktop -->
     <div
-      class="hidden xs:block bg-no-repeat w-full object-center object-cover my-reviews my-desk-height"
+      class="hidden xs:block bg-no-repeat w-full object-center object-cover my-reviews my-desk-height pt-1"
       style="background-image: url('/images/reviews-desk.jpg')"
     >
       <div>
@@ -43,21 +43,35 @@
       <carousel
         :items="1"
         :autoplay="true"
-        :navigation="false"
+        :navigation="true"
         :dots="true"
-        class="relative pt-10 pb-5 mx-auto"
+        class="relative pt-8 pb-5 mx-auto max-w-reviews-reach"
         :margin="5"
       >
+        <template slot="prev"
+          ><span class="prev absolute ml-5 z-10 top-18">
+            <!-- without <p> not showing arrow? -->
+
+            <img class="blue-icon-height" src="/nav/arrow-blue-l.svg"
+          /></span>
+        </template>
         <dl v-for="(review, id) in reviews" class="carousel-w mx-auto">
           <dt>
             <p class="content px-10 text-center">
               {{ review.content }}
             </p>
-            <p class="content px-10 text-center pt-6 pb-10">
-              {{ review.person }}
+            <p class="content px-10 text-center pt-5 pb-10">
+              - {{ review.person }}
             </p>
           </dt>
         </dl>
+        <template slot="next"
+          ><span class="next absolute right-0 mr-5 z-10 top-18"
+            ><img
+              class="blue-icon-height"
+              src="/nav/arrow-blue-r.svg"
+              alt="next" /></span
+        ></template>
       </carousel>
     </div>
   </div>
@@ -102,5 +116,8 @@ export default {
 }
 .my-desk-height {
   height: 356px;
+}
+.blue-icon-height {
+  height: 11px;
 }
 </style>
