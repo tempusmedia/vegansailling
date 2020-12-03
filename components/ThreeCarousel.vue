@@ -6,6 +6,8 @@
       :display="3"
       :width="552"
       :height="826"
+      :border="0"
+      :controlsVisible="true"
     >
       <slide :index="0" class="carousel-container">
         <SkipperCard />
@@ -15,7 +17,7 @@
         <SkipperCard />
       </slide>
       <slide :index="2" class="carousel-container">
-        <SkipperCard />
+        <CookCard />
       </slide>
     </carousel-3d>
   </div>
@@ -38,10 +40,10 @@ export default {
   height: 826px !important;
   width: 552px !important;
 }  */
-.carousel-3d-slide {
+/* .carousel-3d-slide {
   border-width: 0 !important;
   outline: none !important;
-}
+} */
 .carousel-3d-slide.carousel-container {
   opacity: 0.6 !important;
   background: none;

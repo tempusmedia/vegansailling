@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="slide-transition">
     <!--xs mobile -->
     <div
       class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between overflow-x-hidden"
@@ -258,4 +258,8 @@ export default {
   },
 }
 </script>
-<style></style>
+<style>
+.slide-transition {
+  scroll-behavior: smooth;
+}
+</style>

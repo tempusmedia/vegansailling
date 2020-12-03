@@ -21,12 +21,11 @@ export default {
 
 
   server: {
-    // port: 8000,    
-    // host: '0.0.0.0',
+
 
     port: 3000,
     host: 'localhost'
-
+    // host: '0.0.0.0',
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

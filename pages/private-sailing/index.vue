@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="slide-transition">
     <!-- add max-width to each section in front of the bg image. leave bg image w-full, so it looks the same as in the design-->
 
     <!-- mobile -->
@@ -222,5 +222,8 @@ export default {
 <style scoped>
 .test {
   color: rgb(167, 13, 13);
+}
+.slide-transition {
+  scroll-behavior: smooth;
 }
 </style>
