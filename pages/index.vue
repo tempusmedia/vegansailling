@@ -110,7 +110,9 @@ body {
   /*  Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
-.content-text,
+
+/* <!-- SOLUTION WITH DISPLAY: NONE -> transition problem --> */
+/* .content-text,
 .bottom-btn {
   display: none;
 }
@@ -120,5 +122,38 @@ body {
 
 .landing-desk:hover .bottom-btn {
   display: block;
+} */
+
+/* <!-- SOLUTION WITH VISIBILITY & OPACITY -->  */
+.content-text,
+.bottom-btn {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  left: -999em;
+}
+.content-text,
+.bottom-btn {
+  height: 0;
+  position: absolute;
+  left: -999em;
+}
+.landing-desk:hover .content-text {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  height: initial;
+  position: relative;
+  left: 0;
+}
+
+.landing-desk:hover .bottom-btn {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  height: initial;
+  position: relative;
+  left: 0;
 }
 </style>
