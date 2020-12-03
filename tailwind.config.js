@@ -46,7 +46,8 @@ module.exports = {
                 'modal-txtsm': '188px',
                 'modal-inputs': '255px',
                 'more-questions': '532px',
-                'reviews-reach': '44rem'
+                'reviews-reach': '44rem',
+                'crew-card-desk': '552px'
             },
             fontSize: {
                 'btn': '1.375rem',

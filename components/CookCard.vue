@@ -6,7 +6,9 @@
       </h2> -->
 
       <!-- first card -->
-      <div class="max-w-crew-card sm:max-w-xl mx-auto pb-5 bg-white">
+      <div
+        class="max-w-crew-card sm:max-w-crew-card-desk mx-auto pb-5 bg-white"
+      >
         <div class="relative">
           <svg
             class="absolute z-50"
