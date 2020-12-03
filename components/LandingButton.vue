@@ -26,7 +26,7 @@
         "
       >
         <p
-          class="font-poppins font-medium text-lg sm:text-4xl sm:mt-6 sm:leading-landing"
+          class="font-poppins font-medium text-lg sm:text-4xl sm:mt-6 sm:leading-landing my-title"
         >
           {{ title }}
         </p>

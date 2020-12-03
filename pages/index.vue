@@ -41,7 +41,7 @@
     <img src="~/assets/images/bg-main.jpg" /> -->
         <div class="flex xs:h-auto xs:items-end">
           <landing-button
-            class="w-1/2 pr-2 landing-desk"
+            class="w-1/2 mr-2 landing-desk"
             variant="primary"
             :title="landingBtn.primary.title"
             :subtitle="landingBtn.primary.subtitle"
@@ -50,7 +50,7 @@
           />
 
           <landing-button
-            class="w-1/2 pl-2 landing-desk"
+            class="w-1/2 ml-2 landing-desk"
             variant="secondary"
             :title="landingBtn.secondary.title"
             :subtitle="landingBtn.secondary.subtitle"
@@ -155,5 +155,13 @@ body {
   height: initial;
   position: relative;
   left: 0;
+}
+@media only screen and (min-width: 375px) {
+  .my-title {
+    margin-top: 0 !important;
+  }
+  .landing-desk:hover .my-title {
+    margin-top: 1.5rem !important;
+  }
 }
 </style>
