@@ -36,21 +36,27 @@
           >
         </div>
         <div class="nav-link-container relative">
-          <nuxt-i18n-link
+          <!-- <nuxt-i18n-link
             exact
             class="nav-link nav-desk pl-8"
             :to="route.about"
             >{{ $t('components.header.about') }}</nuxt-i18n-link
-          >
+          > -->
+          <a class="nav-link nav-desk pl-8" :href="route.aboutHash">{{
+            $t('components.header.about')
+          }}</a>
         </div>
 
         <div class="nav-link-container relative">
-          <nuxt-i18n-link
+          <!-- <nuxt-i18n-link
             exact
             class="nav-link nav-desk pl-8"
             :to="route.contact"
             >{{ $t('components.header.contact') }}</nuxt-i18n-link
-          >
+          > -->
+          <a class="nav-link nav-desk pl-8" :href="route.contactHash">
+            {{ $t('components.header.contact') }}
+          </a>
         </div>
 
         <!-- LANGUAGE SWITHCER WORKING  
@@ -168,12 +174,18 @@
         <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.gallery">{{
           $t('components.header.gallery')
         }}</nuxt-i18n-link>
-        <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.about">{{
+        <!-- <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.about">{{
           $t('components.header.about')
         }}</nuxt-i18n-link>
         <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.contact">{{
           $t('components.header.contact')
-        }}</nuxt-i18n-link>
+        }}</nuxt-i18n-link> -->
+        <a class="nav-link nav-mob" :href="route.aboutHash">{{
+          $t('components.header.about')
+        }}</a>
+        <a class="nav-link nav-mob" :href="route.contactHash">{{
+          $t('components.header.contact')
+        }}</a>
       </div>
       <svg
         class="ml-auto mt-6"
@@ -234,8 +246,12 @@ export default {
         gallery: 'gallery',
         about: 'about',
         contact: 'contact',
+        aboutHash: '#about',
+        contactHash: '#contact',
       },
     }
+
+    /*upisati custom code: ako je ruta /private-sailing -> /private-sailing/#about else drugo (zbog contacta)*/
   },
   /*if route changes, navbar closes*/
   watch: {

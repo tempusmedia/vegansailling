@@ -9,7 +9,7 @@
       <div
         class="max-w-crew-card sm:max-w-crew-card-desk mx-auto pb-5 bg-white"
       >
-        <div class="relative">
+        <div class="bg-qna relative">
           <svg
             class="absolute z-50"
             viewBox="0 0 554 128"
@@ -77,7 +77,7 @@ export default {
         { item: 'Languages', desc: 'English, Italian, German' },
         {
           item: 'Cooking experience',
-          desc: 'vegan cooking classes and daily preparation of vegan meals',
+          desc: 'vegan cooking classes and preparation of vegan meals',
         },
         {
           item: 'Hobbies',
@@ -120,7 +120,8 @@ export default {
 }
 
 .card-shadow {
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09);
+  /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09); */
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
 }
 
 .cook-mask {

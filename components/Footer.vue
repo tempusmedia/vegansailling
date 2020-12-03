@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact">
     <div
       class="h-footer sm:h-footer-desk bg-no-repeat w-full object-center object-cover flex flex-col items-center justify-evenly my-foot"
       style="background-image: url('/images/footer-bg-desk.jpg')"

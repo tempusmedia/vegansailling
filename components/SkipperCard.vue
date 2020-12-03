@@ -125,7 +125,9 @@ export default {
 }
 .card-shadow {
   /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09); */
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
 }
+
 .skipper-mask {
   clip-path: url(#mySkip);
 }
