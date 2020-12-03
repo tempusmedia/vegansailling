@@ -1,12 +1,21 @@
 <template>
-  <div id="example">
-    <carousel-3d :inverse-scaling="1500" :space="800">
-      <slide v-for="(slide, i) in slides" :index="i">
-        <span class="title">You know</span>
-        <p>
-          You know, being a test pilot isn't always the healthiest business in
-          the world.
-        </p>
+  <div style="height: 900px">
+    <carousel-3d
+      :perspective="0"
+      :space="400"
+      :display="3"
+      :width="552"
+      :height="826"
+    >
+      <slide :index="0" class="carousel-container">
+        <SkipperCard />
+        <!-- <img src="https://placehold.it/827x554" /> -->
+      </slide>
+      <slide :index="1" class="carousel-container">
+        <SkipperCard />
+      </slide>
+      <slide :index="2" class="carousel-container">
+        <SkipperCard />
       </slide>
     </carousel-3d>
   </div>
@@ -15,16 +24,39 @@
 export default {
   data() {
     return {
-      slides: 5,
+      slides: 7,
     }
   },
 }
 </script>
-<style>
-.carousel-3d-container .carousel-3d-slide {
-  padding: 20px;
+<style scoped>
+/* .carousel-container {
+  height: 826px !important;
+  width: 552px !important;
 }
-.carousel-3d-container .carousel-3d-slide .title {
-  font-size: 22px;
+.carousel-3d-slider {
+  height: 826px !important;
+  width: 552px !important;
+}  */
+.carousel-3d-slide {
+  border-width: 0 !important;
+  outline: none !important;
+}
+.carousel-3d-slide.carousel-container {
+  opacity: 0.6 !important;
+  background: none;
+}
+.carousel-3d-slide.carousel-container.current {
+  background: none;
+  opacity: 1 !important;
 }
 </style>
+
+<!-- 
+  CAROUSEL USING LOOP
+  <carousel-3d :perspective="0" :space="400" :display="3">
+  <slide v-for="(slide, i) in slides" :index="i">
+  
+  </slide>
+
+</carousel-3d> -->

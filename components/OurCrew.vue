@@ -16,10 +16,11 @@
     </h2>
     <div class="crew-container flex justify-center"></div>
     <div style="margin-top: -610px">
-      <SkipperCard />
+      <ThreeCarousel />
+      <!-- <SkipperCard />
       <br />
       <br />
-      <CookCard />
+      <CookCard /> -->
     </div>
   </div>
 </template>

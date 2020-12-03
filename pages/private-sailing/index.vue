@@ -193,7 +193,7 @@
       <slide :index="1"> Slide 2 Content </slide>
       <slide :index="2"> Slide 3 Content </slide>
     </carousel-3d> -->
-    <!-- <ThreeCarousel /> -->
+
     <ModalCabin v-show="isModalVisible" @close="closeModal" />
 
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
@@ -219,4 +219,8 @@ export default {
   },
 }
 </script>
-<style scoped></style>
+<style scoped>
+.test {
+  color: rgb(167, 13, 13);
+}
+</style>

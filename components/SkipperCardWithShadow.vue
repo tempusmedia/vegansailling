@@ -2,8 +2,8 @@
   <div>
     <div>
       <!-- <h2 class="section-title font-semibold text-center mb-10">
-        Meet<span class="font-light"> our crew</span>
-      </h2> -->
+          Meet<span class="font-light"> our crew</span>
+        </h2> -->
 
       <!-- first card -->
       <div
@@ -60,8 +60,8 @@
       </svg>
     </div>
     <!-- <div class="max-w-crew-card mx-auto">
-      <img src="/images/cook01.jpg" />
-    </div> -->
+        <img src="/images/cook01.jpg" />
+      </div> -->
   </div>
 </template>
 
@@ -124,7 +124,7 @@ export default {
   word-wrap: break-word;
 }
 .card-shadow {
-  /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09); */
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09);
 }
 .skipper-mask {
   clip-path: url(#mySkip);
