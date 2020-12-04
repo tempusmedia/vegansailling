@@ -41,7 +41,7 @@
     <img src="~/assets/images/bg-main.jpg" /> -->
         <div class="flex xs:h-auto xs:items-end">
           <landing-button
-            class="w-1/2 pr-2 landing-desk"
+            class="w-1/2 mr-2 landing-desk"
             variant="primary"
             :title="landingBtn.primary.title"
             :subtitle="landingBtn.primary.subtitle"
@@ -50,7 +50,7 @@
           />
 
           <landing-button
-            class="w-1/2 pl-2 landing-desk"
+            class="w-1/2 ml-2 landing-desk"
             variant="secondary"
             :title="landingBtn.secondary.title"
             :subtitle="landingBtn.secondary.subtitle"
@@ -110,7 +110,9 @@ body {
   /*  Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
-.content-text,
+
+/* <!-- SOLUTION WITH DISPLAY: NONE -> transition problem --> */
+/* .content-text,
 .bottom-btn {
   display: none;
 }
@@ -120,5 +122,46 @@ body {
 
 .landing-desk:hover .bottom-btn {
   display: block;
+} */
+
+/* <!-- SOLUTION WITH VISIBILITY & OPACITY -->  */
+.content-text,
+.bottom-btn {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  left: -999em;
+}
+.content-text,
+.bottom-btn {
+  height: 0;
+  position: absolute;
+  left: -999em;
+}
+.landing-desk:hover .content-text {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  height: initial;
+  position: relative;
+  left: 0;
+}
+
+.landing-desk:hover .bottom-btn {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  height: initial;
+  position: relative;
+  left: 0;
+}
+@media only screen and (min-width: 375px) {
+  .my-title {
+    margin-top: 0 !important;
+  }
+  .landing-desk:hover .my-title {
+    margin-top: 1.5rem !important;
+  }
 }
 </style>

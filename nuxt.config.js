@@ -39,11 +39,15 @@ export default {
     { src: 'plugins/owl.js', ssr: false },// Only works on client side
     { src: '~/plugins/vue-datepicker', ssr: false },
     { src: '~/plugins/vue-number-input', ssr: false },
-    { src: '~/plugins/vue-carousel-3d', ssr: false }
+    { src: '~/plugins/vue-carousel-3d', ssr: false },
+    { src: "~plugins/aos", ssr: false }
+
 
 
   ],
-
+  purgeCSS: {
+    whitelist: ["aos-init", "aos-animate", "data-aos-delay", "data-aos-duration", "fade-up", "zoom-in"],
+  },
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 

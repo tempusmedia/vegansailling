@@ -1,6 +1,6 @@
 <template>
   <div class="flex relative sm:mt-56">
-    <div class="bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64">
+    <div class="bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64 w-full">
       <h2
         class="section-title font-semibold text-center py-10 sm:pt-0 sm:text-left sm:pl-10"
       >
@@ -42,9 +42,8 @@
       class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20"
       style="right: -9rem"
     >
-   
-        <img src="/images/boat-qna.jpg" alt="Boat QnA" />
- 
+      <img src="/images/boat-qna.jpg" alt="Boat QnA" />
+
       <!-- <img src="/images/boat-qna.webp" alt="Boat QnA" /> -->
       <img
         class="w-56 h-28 absolute z-30 -mt-32 hidden lg:block xl:bottom-24"

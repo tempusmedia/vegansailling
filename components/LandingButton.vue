@@ -20,13 +20,13 @@
 
     <nuxt-link :to="route" class="hidden xs:block"
       ><div
-        class="landing-btn h-24 sm:h-40 hover:pt-10 hover:h-64 sm:hover:h-landing sm:hover:pt-8"
+        class="landing-btn h-24 sm:h-40 hover:pt-10 hover:h-64 sm:hover:h-landing sm:hover:pt-8 my-transition"
         :class="
           variantState ? 'landing-btn--primary' : 'landing-btn--secondary'
         "
       >
         <p
-          class="font-poppins font-medium text-lg sm:text-4xl sm:mt-6 sm:leading-landing"
+          class="font-poppins font-medium text-lg sm:text-4xl sm:mt-6 sm:leading-landing my-title"
         >
           {{ title }}
         </p>
@@ -69,4 +69,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.my-transition {
+  transition: 0.2s all ease-out;
+}
+</style>
