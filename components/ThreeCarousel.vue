@@ -8,6 +8,9 @@
       :height="826"
       :border="0"
       :controlsVisible="true"
+      :autoplay="true"
+      :autoplayTimeout="3000"
+      :autoplayHoverPause="true"
     >
       <slide :index="0" class="carousel-container">
         <SkipperCard />

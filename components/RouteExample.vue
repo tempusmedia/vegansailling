@@ -218,6 +218,8 @@
   </div>
 </template>
 <script>
+//po potrebi dodati da čita da li se korisnik nalazi na /private ili /book-a-cabin i sukladno tome prikazivati odgovarajući modal u skripti
+//napraviti private i cabin varijante components
 export default {
   data() {
     return {
@@ -288,5 +290,13 @@ li {
 .wave-pos {
   top: 25px;
   left: -20px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>
