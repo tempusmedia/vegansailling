@@ -26,7 +26,7 @@
           <header id="modalTitle" class="mt-3 mb-10">
             <div class="text-center text-vegan-blue sm:hidden font-poppins">
               <h1 class="font-semibold leading-tight">
-                Split
+                Zadar
                 <span class="font-light italic"><p>Route</p></span>
               </h1>
             </div>
@@ -34,8 +34,8 @@
               class="text-center text-vegan-blue hidden sm:block font-poppins"
             >
               <h1 class="font-semibold leading-tight">
-                Split
-                <span class="font-light italic"> Route</span>
+                Zadar
+                <span class="font-light italic">Route </span>
               </h1>
             </div>
           </header>
