@@ -114,13 +114,40 @@ module.exports = {
                 '0': '0ms',
                 '2000': '2000ms',
                 '3000': '3000ms'
+            },
+            keyframes: {
+                wiggle: {
+                    '0%, 100%': { transform: 'rotate(-3deg)' },
+                    '50%': { transform: 'rotate(3deg)' },
+                },
+                rightbounce: {
+                    '0%': {
+                        transform: 'translateX(0)',
+                        animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+                    },
+
+                    '50%': {
+                        transform: 'translateX(25%)',
+                        animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+                    },
+
+                    '100%': {
+                        transform: 'translateX(0%)',
+                        animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+                    },
+                },
+            },
+            animation: {
+                wiggle: 'wiggle 1s ease-in-out infinite',
+                rightbounce: 'rightbounce ease-in-out 1s infinite',
             }
         }
     },
     variants: {
         backgroundColor: ['responsive', 'hover', 'focus', 'active'],
         height: ['responsive', 'hover', 'focus', 'active'],
-        display: ['responsive', 'hover', 'focus', 'active']
+        display: ['responsive', 'hover', 'focus', 'active'],
+        animation: ['hover', 'focus', 'group-hover'],
     },
     plugins: []
 }

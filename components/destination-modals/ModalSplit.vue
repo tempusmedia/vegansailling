@@ -43,7 +43,7 @@
           <div class="flex mx-16">
             <div>
               <div>
-                <h1 class="route-modal-nr">1</h1>
+                <div><h1 class="route-modal-nr">1</h1></div>
                 <div>
                   <p class="route-modal-title">Day one (usually Saturday):</p>
                   <p class="route-modal-body">
@@ -56,7 +56,7 @@
                 </div>
               </div>
               <div>
-                <h1 class="route-modal-nr">2</h1>
+                <div><h1 class="route-modal-nr">2</h1></div>
                 <div>
                   <p class="route-modal-title">Day two:</p>
                   <p class="route-modal-body">
@@ -69,7 +69,9 @@
             </div>
             <div>
               <div>
-                <h1 class="route-modal-nr">3</h1>
+                <div>
+                  <h1 class="route-modal-nr">3</h1>
+                </div>
                 <div>
                   <p class="route-modal-title">Day three:</p>
                   <p class="route-modal-body">
@@ -79,7 +81,9 @@
                 </div>
               </div>
               <div>
-                <h1 class="route-modal-nr">4</h1>
+                <div>
+                  <h1 class="route-modal-nr">4</h1>
+                </div>
                 <div>
                   <p class="route-modal-title">Day four:</p>
                   <p class="route-modal-body">
@@ -89,7 +93,9 @@
                 </div>
               </div>
               <div>
-                <h1 class="route-modal-nr">5</h1>
+                <div>
+                  <h1 class="route-modal-nr">5</h1>
+                </div>
                 <div>
                   <p class="route-modal-title">Day five:</p>
                   <p class="route-modal-body">
@@ -102,7 +108,9 @@
                 </div>
               </div>
               <div>
-                <h1 class="route-modal-nr">6</h1>
+                <div>
+                  <h1 class="route-modal-nr">6</h1>
+                </div>
                 <div>
                   <p class="route-modal-title">Day six:</p>
                   <p class="route-modal-body">
@@ -115,7 +123,9 @@
                 </div>
               </div>
               <div>
-                <h1 class="route-modal-nr">7</h1>
+                <div>
+                  <h1 class="route-modal-nr">7</h1>
+                </div>
                 <div>
                   <p class="route-modal-title">Day seven:</p>
                   <p class="route-modal-body">
@@ -126,7 +136,9 @@
                 </div>
               </div>
               <div>
-                <h1 class="route-modal-nr">8</h1>
+                <div>
+                  <h1 class="route-modal-nr">8</h1>
+                </div>
                 <div>
                   <p class="route-modal-title">Day eight:</p>
                   <p class="route-modal-body">Return to Murter and check-out</p>

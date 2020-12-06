@@ -159,11 +159,13 @@
                 class="absolute bottom-cdesk10"
                 src="/images/split-elipse-desk.svg"
               />
-              <span class="flex pt-8"
+              <span class="flex pt-8 group"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.split') }}
                 </p>
-                <img class="pl-1" src="/images/arrow-lg-r.svg"
+                <img
+                  class="pl-1 group-hover:animate-rightbounce"
+                  src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
@@ -176,11 +178,13 @@
 
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/zadar-xs.jpg" />
-              <span class="flex pt-8"
+              <span class="flex pt-8 group"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.zadar') }}
                 </p>
-                <img class="pl-1" src="/images/arrow-lg-r.svg"
+                <img
+                  class="pl-1 group-hover:animate-rightbounce"
+                  src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
@@ -194,11 +198,13 @@
                 class="absolute top-cdesk10"
                 src="/images/krk-elipse-desk.svg"
               />
-              <span class="flex pt-8"
+              <span class="flex pt-8 group"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.krk') }}
                 </p>
-                <img class="pl-1" src="/images/arrow-lg-r.svg"
+                <img
+                  class="pl-1 group-hover:animate-rightbounce"
+                  src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
