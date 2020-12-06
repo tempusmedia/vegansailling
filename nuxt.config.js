@@ -31,7 +31,9 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'normalize.css/normalize.css',
-    '@/assets/css/main.css'
+    '@/assets/css/main.css',
+    'aos/dist/aos.css'
+
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -40,13 +42,12 @@ export default {
     { src: '~/plugins/vue-datepicker', ssr: false },
     { src: '~/plugins/vue-number-input', ssr: false },
     { src: '~/plugins/vue-carousel-3d', ssr: false },
-    { src: "~plugins/aos", ssr: false }
+    { src: '~/plugins/aos', ssr: false },
 
 
 
   ],
   purgeCSS: {
-    whitelist: ["aos-init", "aos-animate", "data-aos-delay", "data-aos-duration", "fade-up", "zoom-in"],
   },
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

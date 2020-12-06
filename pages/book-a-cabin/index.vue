@@ -46,6 +46,8 @@
         class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-center xs:justify-end items-center"
       >
         <TitleCta
+          data-aos="fade-left"
+          data-aos-duration="500"
           :route="titleCta.route"
           :content="titleCta.content"
           class="relative -top-16"
@@ -142,7 +144,11 @@
     <!-- info -->
     <InfoCarousel class="sm:hidden sm:mt-5" />
     <section class="hidden sm:block max-w-screen-xl mx-auto my-32">
-      <div class="flex max-w-6xl justify-evenly my-12 mx-auto">
+      <div
+        class="flex max-w-6xl justify-evenly my-12 mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         <div>
           <div class="h-50 flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/where.svg" />
@@ -180,7 +186,12 @@
         </div>
       </div>
 
-      <div class="flex max-w-5xl justify-evenly mx-auto">
+      <div
+        class="flex max-w-5xl justify-evenly mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
         <div>
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/skipper.svg" />
@@ -226,7 +237,9 @@
 
     <Reviews />
 
-    <ModalCabin v-show="isModalVisible" @close="closeModal" />
+    <transition name="fade">
+      <ModalCabin v-show="isModalVisible" @close="closeModal" />
+    </transition>
     <!-- Footer in layout-->
   </div>
 </template>
@@ -248,6 +261,7 @@ export default {
       },
     }
   },
+  //ako promjenim stanje radit će tranzicija npr. dodam još nešto
   methods: {
     showModal() {
       this.isModalVisible = true
@@ -258,8 +272,16 @@ export default {
   },
 }
 </script>
-<style>
+<style scoped>
 .slide-transition {
   scroll-behavior: smooth;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>
