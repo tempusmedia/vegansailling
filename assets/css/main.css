@@ -189,6 +189,18 @@ h1 {
   @apply flex justify-center items-center bg-qna px-10 py-4 mx-5 rounded-xl;
 }
 
+.route-modal-nr {
+  @apply text-vegan-red opacity-20 font-black text-modal-route;
+}
+
+.route-modal-title {
+  @apply font-poppins text-vegan-blue font-medium text-lg;
+}
+
+.route-modal-body {
+  @apply font-poppins text-vegan-blue font-light text-base;
+}
+
 @tailwind utilities;
 
 .vue-number-input__btn-dec {

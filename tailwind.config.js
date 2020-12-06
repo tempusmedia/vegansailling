@@ -25,6 +25,7 @@ module.exports = {
                 ]
             },
             opacity: {
+                '20': '0.20',
                 '15': '0.15',
                 '30': '0.3',
                 '80': '.8',
@@ -54,6 +55,7 @@ module.exports = {
                 'title': '1.625rem',
                 'title-regular': '36px',
                 'title-elipse': '32px',
+                'modal-route': '68px'
 
             },
             height: {

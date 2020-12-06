@@ -40,7 +40,100 @@
             </div>
           </header>
 
-          <div class="flex"></div>
+          <div class="flex mx-16">
+            <div>
+              <div>
+                <h1 class="route-modal-nr">1</h1>
+                <div>
+                  <p class="route-modal-title">Day one (usually Saturday):</p>
+                  <p class="route-modal-body">
+                    Check-in from 1pm till 8pm at Murter, marina Haramina If
+                    needed, shopping for food and water (supply for 3-7 days,
+                    depending on chosen type of route-with or without supply
+                    stops) If check-in and supply are finished before 5PM, start
+                    sailing to island Tijat (2:30-3:00h 19NM)
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h1 class="route-modal-nr">2</h1>
+                <div>
+                  <p class="route-modal-title">Day two:</p>
+                  <p class="route-modal-body">
+                    Morning at Tijat island; yoga and meditation program
+                    available Departure towards Krka falls after lunch, with
+                    optional stop in Šibenik (1:30h 11NM)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1 class="route-modal-nr">3</h1>
+                <div>
+                  <p class="route-modal-title">Day three:</p>
+                  <p class="route-modal-body">
+                    Visit Krka falls in the morning (3-5h) Afternoon departure
+                    to Žirje (if buoy is reserved in advance) 2:30-3:00h 18NM
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h1 class="route-modal-nr">4</h1>
+                <div>
+                  <p class="route-modal-title">Day four:</p>
+                  <p class="route-modal-body">
+                    Departure from Žirje to Kornati after morning activities
+                    (yoga and meditation/swimming/breakfast)
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h1 class="route-modal-nr">5</h1>
+                <div>
+                  <p class="route-modal-title">Day five:</p>
+                  <p class="route-modal-body">
+                    (optional early morning hike to attractive “rock plate” at
+                    island Kornat) Departure to natural park Telaščica after
+                    breakfast Trip to salty lake; diving/jumping/ hiking cliffs
+                    Peaceful afternoon onboard in Telaščica bay or other nearby
+                    bay
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h1 class="route-modal-nr">6</h1>
+                <div>
+                  <p class="route-modal-title">Day six:</p>
+                  <p class="route-modal-body">
+                    Departure towards Žut island marina after breakfast (1:10h
+                    8NM) Replenish supplies in local store Hike (20-30min) to
+                    the top of the island for one of the most beautiful sunsets
+                    behind Kornati archipelagos Dinner onboard or at one of the
+                    local restaurants
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h1 class="route-modal-nr">7</h1>
+                <div>
+                  <p class="route-modal-title">Day seven:</p>
+                  <p class="route-modal-body">
+                    Departure to Kakan island (or other nearby island according
+                    to weathercast) after breakfast 3:00h 20NM Lunch, afternoon
+                    swimming and relaxing onboard
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h1 class="route-modal-nr">8</h1>
+                <div>
+                  <p class="route-modal-title">Day eight:</p>
+                  <p class="route-modal-body">Return to Murter and check-out</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
