@@ -129,18 +129,14 @@ body {
 .bottom-btn {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
   position: absolute;
   left: -999em;
-}
-.content-text,
-.bottom-btn {
   height: 0;
   position: absolute;
-  left: -999em;
+  transition: visibility 4s, height 0.5s, opacity 0.5s linear;
 }
+
 .landing-desk:hover .content-text {
-  display: block;
   visibility: visible;
   opacity: 1;
   height: initial;

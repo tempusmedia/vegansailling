@@ -43,13 +43,15 @@
 
     <!-- desktop overflow-x-hidden-->
     <div
-      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main relative"
+      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main relative overflow-x-hidden overflow-y-hidden"
       style="background-image: url('/images/private-bg.jpg')"
     >
       <div
         class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-end items-center"
       >
         <TitleCta
+          data-aos="fade-left"
+          data-aos-duration="500"
           :route="route"
           :content="this.$t('pages.private_sailing.content')"
           class="relative -top-16"
@@ -102,7 +104,11 @@
     <InfoCarousel class="sm:hidden" />
 
     <section class="hidden sm:block max-w-screen-xl mx-auto my-32 mt-8">
-      <div class="flex max-w-6xl justify-evenly my-12 mx-auto">
+      <div
+        class="flex max-w-6xl justify-evenly my-12 mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         <div>
           <div class="h-50 flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/where.svg" />
@@ -140,7 +146,12 @@
         </div>
       </div>
 
-      <div class="flex max-w-5xl justify-evenly mx-auto">
+      <div
+        class="flex max-w-5xl justify-evenly mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
         <div>
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/skipper.svg" />
@@ -193,9 +204,9 @@
       <slide :index="1"> Slide 2 Content </slide>
       <slide :index="2"> Slide 3 Content </slide>
     </carousel-3d> -->
-
-    <ModalCabin v-show="isModalVisible" @close="closeModal" />
-
+    <transition name="fade">
+      <ModalPrivate v-show="isModalVisible" @close="closeModal" />
+    </transition>
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
     <!-- Footer in layout-->
   </div>
@@ -225,5 +236,13 @@ export default {
 }
 .slide-transition {
   scroll-behavior: smooth;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

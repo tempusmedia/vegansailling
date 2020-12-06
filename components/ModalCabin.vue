@@ -2,7 +2,7 @@
   <transition name="modal-fade">
     <div class="modal-shade overflow-y-auto z-50">
       <div
-        class="modal-bg top-0 mt-10 mb-10 max-w-screen-xl"
+        class="modal-bg top-0 mt-10 mb-10 max-w-screen-lg"
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"

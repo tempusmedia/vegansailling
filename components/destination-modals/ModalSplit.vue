@@ -200,24 +200,24 @@
 
           <!-- orange footer -->
           <!-- <footer class="modal-footer content">
-            <div class="flex flex-col items-center mx-auto my-5">
-              <h1 class="font-semibold leading-tight">
-                Have
-                <span class="font-light italic">more</span>
-              </h1>
-              <h1 class="font-semibold leading-tight hidden xs:block">
-                <span class="font-light italic"> questions?</span>
-              </h1>
-              <p class="content text-white text-base mt-3">
-                + 385(0)98 953 5476
-              </p>
-              <p class="font-semibold">info@vegansailing.eu</p>
-              <div class="flex mt-3">
-                <img src="/images/instagram.svg" />
-                <img src="/images/facebook.svg" />
+              <div class="flex flex-col items-center mx-auto my-5">
+                <h1 class="font-semibold leading-tight">
+                  Have
+                  <span class="font-light italic">more</span>
+                </h1>
+                <h1 class="font-semibold leading-tight hidden xs:block">
+                  <span class="font-light italic"> questions?</span>
+                </h1>
+                <p class="content text-white text-base mt-3">
+                  + 385(0)98 953 5476
+                </p>
+                <p class="font-semibold">info@vegansailing.eu</p>
+                <div class="flex mt-3">
+                  <img src="/images/instagram.svg" />
+                  <img src="/images/facebook.svg" />
+                </div>
               </div>
-            </div>
-          </footer> -->
+            </footer> -->
         </div>
       </div>
     </div>

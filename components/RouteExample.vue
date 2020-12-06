@@ -9,7 +9,7 @@
     <div class="py-10 mx-5 sm:mt-24">
       <div class="flex">
         <div class="hidden sm:flex sm:w-1/2 relative justify-end pr-10">
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000">
             <img
               src="/images/boat01-lg.jpg"
               class="relative"
@@ -17,7 +17,12 @@
             />
           </div>
           <!-- for transparent img  opacity-80-->
-          <div class="relative">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            class="relative"
+          >
             <img src="/images/boat02-lg.jpg" class="relative -left-20" />
             <svg
               class="w-full absolute -bottom-6 -left-16"
@@ -47,7 +52,13 @@
             </svg>
           </div>
         </div>
-        <div class="sm:w-1/2 sm:max-w-md sm:-mt-10">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          class="sm:w-1/2 sm:max-w-md sm:-mt-10"
+        >
           <h2
             class="section-title font-semibold text-center sm:text-left mb-10"
           >
