@@ -100,7 +100,7 @@
       </div>
 
       <!-- MOBILE route img container MOBILE-->
-      <div class="mt-12 lg:hidden max-w-lg mx-auto">
+      <div class="mt-12 lg:hidden max-w-lg mx-auto overflow-x-hidden">
         <div class="flex justify-between">
           <!-- Split -->
           <div class="relative" @click="showModalSplit">
@@ -150,7 +150,7 @@
         <div class="flex justify-evenly">
           <!-- Split -->
           <div
-            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90 group"
             @click="showModalSplit"
           >
             <div class="flex flex-col items-center">
@@ -159,7 +159,7 @@
                 class="absolute bottom-cdesk10"
                 src="/images/split-elipse-desk.svg"
               />
-              <span class="flex pt-8 group"
+              <span class="flex pt-8"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.split') }}
                 </p>
@@ -171,14 +171,14 @@
           </div>
           <!-- Zadar -->
           <div
-            class="relative cursor-pointer hover:opacity-90"
+            class="relative cursor-pointer hover:opacity-90 group"
             @click="showModalZadar"
           >
             <img class="absolute wave-pos" src="/images/wave-orange.svg" />
 
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/zadar-xs.jpg" />
-              <span class="flex pt-8 group"
+              <span class="flex pt-8"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.zadar') }}
                 </p>
@@ -189,7 +189,7 @@
             </div>
           </div>
           <div
-            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+            class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90 group"
             @click="showModalKrk"
           >
             <div class="flex flex-col items-center">
@@ -198,7 +198,7 @@
                 class="absolute top-cdesk10"
                 src="/images/krk-elipse-desk.svg"
               />
-              <span class="flex pt-8 group"
+              <span class="flex pt-8"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.krk') }}
                 </p>
