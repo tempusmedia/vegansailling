@@ -107,7 +107,8 @@ module.exports = {
                 '-16': '-4rem',
                 '-20': '-5rem',
                 '24': '6rem',
-                '18': '4.5rem'
+                '18': '4.5rem',
+                '-modalnr': '-1.3rem'
 
             },
             transitionDuration: {

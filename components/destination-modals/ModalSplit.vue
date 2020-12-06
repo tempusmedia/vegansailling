@@ -6,7 +6,6 @@
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
-        style="background-image: url('/images/bg-wavy.jpg')"
       >
         <div class="modal-content">
           <button
@@ -23,28 +22,17 @@
               />
             </svg>
           </button>
-          <header id="modalTitle" class="mt-3 mb-10">
-            <div class="text-center text-vegan-blue sm:hidden font-poppins">
-              <h1 class="font-semibold leading-tight">
-                Split
-                <span class="font-light italic"><p>Route</p></span>
-              </h1>
-            </div>
-            <div
-              class="text-center text-vegan-blue hidden sm:block font-poppins"
-            >
-              <h1 class="font-semibold leading-tight">
-                Split
-                <span class="font-light italic">Route </span>
-              </h1>
-            </div>
-          </header>
 
           <div class="flex mx-16">
-            <div>
-              <div>
-                <div><h1 class="route-modal-nr">1</h1></div>
+            <div class="-mt-24">
+              <div class="-mt-10 mb-8">
+                <img src="/images/weekly-split.jpg" alt="Weekly Split" />
+              </div>
+              <div class="flex items-start pt-8">
                 <div>
+                  <h1 class="route-modal-nr relative my-top3">1</h1>
+                </div>
+                <div class="ml-10">
                   <p class="route-modal-title">Day one (usually Saturday):</p>
                   <p class="route-modal-body">
                     Check-in from 1pm till 8pm at Murter, marina Haramina If
@@ -55,9 +43,9 @@
                   </p>
                 </div>
               </div>
-              <div>
-                <div><h1 class="route-modal-nr">2</h1></div>
-                <div>
+              <div class="flex items-start pt-8">
+                <div><h1 class="route-modal-nr relative my-top3">2</h1></div>
+                <div class="ml-8">
                   <p class="route-modal-title">Day two:</p>
                   <p class="route-modal-body">
                     Morning at Tijat island; yoga and meditation program
@@ -66,13 +54,21 @@
                   </p>
                 </div>
               </div>
+              <div class="relative">
+                <img
+                  class="absolute top-18 w-64"
+                  style="left: -10rem"
+                  src="/images/wave-orange.svg"
+                  alt="Orange Wave"
+                />
+              </div>
             </div>
             <div>
-              <div>
+              <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr">3</h1>
+                  <h1 class="route-modal-nr relative my-top3">3</h1>
                 </div>
-                <div>
+                <div class="ml-10">
                   <p class="route-modal-title">Day three:</p>
                   <p class="route-modal-body">
                     Visit Krka falls in the morning (3-5h) Afternoon departure
@@ -80,11 +76,11 @@
                   </p>
                 </div>
               </div>
-              <div>
+              <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr">4</h1>
+                  <h1 class="route-modal-nr relative my-top3">4</h1>
                 </div>
-                <div>
+                <div class="ml-10">
                   <p class="route-modal-title">Day four:</p>
                   <p class="route-modal-body">
                     Departure from Žirje to Kornati after morning activities
@@ -92,11 +88,11 @@
                   </p>
                 </div>
               </div>
-              <div>
+              <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr">5</h1>
+                  <h1 class="route-modal-nr relative my-top3">5</h1>
                 </div>
-                <div>
+                <div class="ml-10">
                   <p class="route-modal-title">Day five:</p>
                   <p class="route-modal-body">
                     (optional early morning hike to attractive “rock plate” at
@@ -107,11 +103,11 @@
                   </p>
                 </div>
               </div>
-              <div>
+              <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr">6</h1>
+                  <h1 class="route-modal-nr relative my-top3">6</h1>
                 </div>
-                <div>
+                <div class="ml-10">
                   <p class="route-modal-title">Day six:</p>
                   <p class="route-modal-body">
                     Departure towards Žut island marina after breakfast (1:10h
@@ -122,11 +118,11 @@
                   </p>
                 </div>
               </div>
-              <div>
+              <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr">7</h1>
+                  <h1 class="route-modal-nr relative my-top3">7</h1>
                 </div>
-                <div>
+                <div class="ml-10">
                   <p class="route-modal-title">Day seven:</p>
                   <p class="route-modal-body">
                     Departure to Kakan island (or other nearby island according
@@ -135,11 +131,11 @@
                   </p>
                 </div>
               </div>
-              <div>
+              <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr">8</h1>
+                  <h1 class="route-modal-nr relative my-top3">8</h1>
                 </div>
-                <div>
+                <div class="ml-8">
                   <p class="route-modal-title">Day eight:</p>
                   <p class="route-modal-body">Return to Murter and check-out</p>
                 </div>
@@ -163,6 +159,9 @@ export default {
 }
 </script>
 <style>
+.my-top3 {
+  top: -1.3rem;
+}
 .lefty {
   left: -8.3rem;
 }
