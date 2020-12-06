@@ -1,7 +1,7 @@
 <template>
   <div class="mt-10 flex flex-col">
     <!-- zamjeniti ove dvije fotke -->
-    <div class="flex sm:hidden">
+    <div class="flex sm:hidden overflow-x-hidden">
       <img src="/images/boat01-xs.jpg" />
       <img src="/images/boat02-xs.jpg" />
     </div>
