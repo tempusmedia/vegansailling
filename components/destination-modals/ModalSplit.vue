@@ -6,7 +6,6 @@
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
-        style="background-image: url('/images/bg-wavy.jpg')"
       >
         <div class="modal-content">
           <button
@@ -23,25 +22,12 @@
               />
             </svg>
           </button>
-          <header id="modalTitle" class="mt-3 mb-10">
-            <div class="text-center text-vegan-blue sm:hidden font-poppins">
-              <h1 class="font-semibold leading-tight">
-                Split
-                <span class="font-light italic"><p>Route</p></span>
-              </h1>
-            </div>
-            <div
-              class="text-center text-vegan-blue hidden sm:block font-poppins"
-            >
-              <h1 class="font-semibold leading-tight">
-                Split
-                <span class="font-light italic">Route </span>
-              </h1>
-            </div>
-          </header>
 
           <div class="flex mx-16">
             <div>
+              <div>
+                <img src="/images/weekly-split.jpg" alt="Weekly Split" />
+              </div>
               <div>
                 <div><h1 class="route-modal-nr">1</h1></div>
                 <div>

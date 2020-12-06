@@ -178,7 +178,7 @@ h1 {
 }
 
 .modal-content {
-  @apply bg-white m-4 p-3 rounded-3xl flex flex-col;
+  @apply bg-white m-8 p-3 rounded-3xl flex flex-col;
 }
 
 .modal-footer {
