@@ -103,7 +103,7 @@
       <div class="mt-12 lg:hidden max-w-lg mx-auto">
         <div class="flex justify-between">
           <!-- Split -->
-          <div class="relative">
+          <div class="relative" @click="showModalSplit">
             <div class="flex flex-col items-center">
               <img class="rounded-full h-36 w-36" src="/images/split-xs.jpg" />
               <span class="flex pt-2"
@@ -116,7 +116,7 @@
             <img class="absolute bottom-c10" src="/images/elipse-bottom.svg" />
           </div>
           <!-- Zadar -->
-          <div class="relative">
+          <div class="relative" @click="showModalZadar">
             <img class="absolute wave-pos" src="/images/waves-on-cyrcle.svg" />
 
             <div class="flex flex-col items-center">
@@ -131,7 +131,7 @@
           </div>
         </div>
         <!-- Krk -->
-        <div class="flex justify-center mt-4 relative">
+        <div class="flex justify-center mt-4 relative" @click="showModalKrk">
           <img class="absolute top-c10" src="/images/elipse-top.svg" />
           <div class="flex flex-col items-center">
             <img class="rounded-full h-36 w-36" src="/images/krk-xs.jpg" />
@@ -151,6 +151,7 @@
           <!-- Split -->
           <div
             class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+            @click="showModalSplit"
           >
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/split-xs.jpg" />
@@ -158,30 +159,38 @@
                 class="absolute bottom-cdesk10"
                 src="/images/split-elipse-desk.svg"
               />
-              <span class="flex pt-8"
+              <span class="flex pt-8 group"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.split') }}
                 </p>
-                <img class="pl-1" src="/images/arrow-lg-r.svg"
+                <img
+                  class="pl-1 group-hover:animate-rightbounce"
+                  src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
           <!-- Zadar -->
-          <div class="relative cursor-pointer hover:opacity-90">
+          <div
+            class="relative cursor-pointer hover:opacity-90"
+            @click="showModalZadar"
+          >
             <img class="absolute wave-pos" src="/images/wave-orange.svg" />
 
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/zadar-xs.jpg" />
-              <span class="flex pt-8"
+              <span class="flex pt-8 group"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.zadar') }}
                 </p>
-                <img class="pl-1" src="/images/arrow-lg-r.svg"
+                <img
+                  class="pl-1 group-hover:animate-rightbounce"
+                  src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
           <div
             class="relative w-1/3 flex flex-col justify-center cursor-pointer hover:opacity-90"
+            @click="showModalKrk"
           >
             <div class="flex flex-col items-center">
               <img class="rounded-full h-76 w-76" src="/images/krk-xs.jpg" />
@@ -189,11 +198,13 @@
                 class="absolute top-cdesk10"
                 src="/images/krk-elipse-desk.svg"
               />
-              <span class="flex pt-8"
+              <span class="flex pt-8 group"
                 ><p class="orange-medium title-elipse">
                   {{ $t('components.route_example.krk') }}
                 </p>
-                <img class="pl-1" src="/images/arrow-lg-r.svg"
+                <img
+                  class="pl-1 group-hover:animate-rightbounce"
+                  src="/images/arrow-lg-r.svg"
               /></span>
             </div>
           </div>
@@ -201,9 +212,50 @@
         <!-- Krk -->
       </div>
     </div>
+    <transition name="fade">
+      <ModalSplit v-show="isModalVisibleSplit" @close="closeModalSplit" />
+    </transition>
+    <transition name="fade">
+      <ModalZadar v-show="isModalVisibleZadar" @close="closeModalZadar" />
+    </transition>
+    <transition name="fade">
+      <ModalKrk v-show="isModalVisibleKrk" @close="closeModalKrk" />
+    </transition>
   </div>
 </template>
-
+<script>
+//po potrebi dodati da čita da li se korisnik nalazi na /private ili /book-a-cabin i sukladno tome prikazivati odgovarajući modal u skripti
+//napraviti private i cabin varijante components
+export default {
+  data() {
+    return {
+      isModalVisibleSplit: false,
+      isModalVisibleKrk: false,
+      isModalVisibleZadar: false,
+    }
+  },
+  methods: {
+    showModalSplit() {
+      this.isModalVisibleSplit = true
+    },
+    closeModalSplit() {
+      this.isModalVisibleSplit = false
+    },
+    showModalKrk() {
+      this.isModalVisibleKrk = true
+    },
+    closeModalKrk() {
+      this.isModalVisibleKrk = false
+    },
+    showModalZadar() {
+      this.isModalVisibleZadar = true
+    },
+    closeModalZadar() {
+      this.isModalVisibleZadar = false
+    },
+  },
+}
+</script>
 <style>
 ul {
   list-style: none; /* Remove default bullets */
@@ -244,5 +296,13 @@ li {
 .wave-pos {
   top: 25px;
   left: -20px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>
