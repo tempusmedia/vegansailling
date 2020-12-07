@@ -82,6 +82,9 @@ export default {
   }),
 
   layout: 'landing-layout',
+  transition: {
+    name: 'fade',
+  },
 }
 
 // for mobile -> fetch height of viewport (process.browser -> client side js)
@@ -151,6 +154,14 @@ body {
   height: initial;
   position: relative;
   left: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 @media only screen and (min-width: 375px) {
   .my-title {

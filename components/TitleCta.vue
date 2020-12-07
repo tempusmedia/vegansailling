@@ -16,6 +16,19 @@
 
       <slot name="button"></slot>
     </div>
+    <svg
+      class="w-full -mb-20"
+      style="position: relative; top: 20px"
+      viewBox="0 0 335 57"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.8"
+        d="M335 0.5H0V12C74 8.5 107 25.5 210.5 50C314 74.5 335 19.5 335 19.5V0.5Z"
+        fill="white"
+      />
+    </svg>
   </div>
 </template>
 

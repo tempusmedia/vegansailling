@@ -79,11 +79,9 @@
           class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
           >Book now</Btn
         > -->
-
             <div class="max-w-btn mx-auto xs:mx-0">
               <a
                 class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
-                type="button"
                 @click="showModal"
               >
                 <p
@@ -127,7 +125,6 @@
           <div class="flex justify-center">
             <a
               class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
-              type="button"
               @click="showModal"
             >
               <p
@@ -269,6 +266,9 @@ export default {
     closeModal() {
       this.isModalVisible = false
     },
+  },
+  transition: {
+    name: 'fade',
   },
 }
 </script>

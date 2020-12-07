@@ -69,7 +69,8 @@ module.exports = {
                 'footer-desk': '525.25px',
                 '69pic': '69rem',
                 '76': '19rem',
-                'navh': '72px'
+                'navh': '72px',
+                'orange-cta': '286px'
 
             },
             width: {
@@ -78,7 +79,9 @@ module.exports = {
                 '36': '9rem',
                 'modal-inputs': '255px',
                 '76': '19rem',
-                'txtarea': '32.375rem'
+                'txtarea': '32.375rem',
+                'orange-cta': '1200px'
+
 
 
             },
