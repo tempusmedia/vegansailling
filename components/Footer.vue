@@ -8,7 +8,8 @@
         <h2
           class="section-title text-white font-semibold text-center pt-12 mb-8 font-poppins"
         >
-          Lorem<span class="font-light font-poppins"> ipsum dolor</span>
+          Contact
+          <!-- <span class="font-light font-poppins"> us</span> -->
         </h2>
         <p class="content text-white text-center mb-8">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

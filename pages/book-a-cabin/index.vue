@@ -139,7 +139,7 @@
     </div>
 
     <!-- info -->
-    <InfoCarousel class="sm:hidden sm:mt-5" />
+    <BcaInfoCarousel class="sm:hidden sm:mt-5" />
     <section class="hidden sm:block max-w-screen-xl mx-auto my-32">
       <div
         class="flex max-w-6xl justify-evenly my-12 mx-auto"
@@ -164,21 +164,22 @@
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/people.svg" />
             <h2 class="icon-title pt-2">How many people</h2>
-            <p class="icon-content">4 - 10</p>
+            <p class="icon-content">6 - 10</p>
           </div>
         </div>
         <div>
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/much.svg" />
             <h2 class="icon-title pt-2">How much</h2>
-            <p class="icon-content">2000-10 000 eur</p>
+            <p class="icon-content">900-1050 eur</p>
+            <p class="icon-content">per person</p>
           </div>
         </div>
         <div>
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/duration.svg" />
             <h2 class="icon-title pt-2">Duration</h2>
-            <p class="icon-content">7 - 14 days</p>
+            <p class="icon-content">7 days</p>
           </div>
         </div>
       </div>
@@ -201,8 +202,8 @@
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/boat.svg" />
             <h2 class="icon-title pt-2">What boat</h2>
-            <p class="icon-content">Any sailing boat or</p>
-            <p class="icon-content">catamaran in Croatia</p>
+            <p class="icon-content">Sailing boat or a catamaran</p>
+            <p class="icon-content">from 45-55 feet</p>
           </div>
         </div>
         <div>

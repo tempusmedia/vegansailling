@@ -1,6 +1,7 @@
 <template>
   <div
-    class="landing-btn h-title-cta w-full bg-cta-orange font-poppins mt-5 sm:mt-0 xs:flex xs:flex-col xs:items-start md:h-orange-cta md:w-orange-cta mx-auto relative z-50"
+    class="landing-btn h-title-cta w-full bg-cta-orange font-poppins mt-5 sm:mt-0 xs:flex xs:flex-col xs:items-start md:h-orange-cta md:w-orange-cta mx-auto relative z-50 bg-cover"
+    style="background-image: url('/images/orange-bg-pattern.jpg')"
   >
     <!-- TITLE in slot because mixed styles -->
     <div class="xs:px-12 xs:mx-auto">

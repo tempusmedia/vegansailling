@@ -194,7 +194,7 @@ h1 {
 }
 
 .route-modal-title {
-  @apply font-poppins text-vegan-blue font-medium text-lg;
+  @apply relative font-poppins text-vegan-blue font-medium text-lg;
 }
 
 .route-modal-body {

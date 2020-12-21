@@ -103,7 +103,7 @@
     <!-- info -->
     <!-- white wave on mobile -->
 
-    <InfoCarousel class="sm:hidden" />
+    <PrivateInfoCarousel class="sm:hidden" />
 
     <section class="hidden sm:block max-w-screen-xl mx-auto my-32 mt-8">
       <div
