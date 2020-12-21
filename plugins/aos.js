@@ -5,10 +5,7 @@ import "aos/dist/aos.css";
 
 Vue.use(AOS.init({
     // Global settings:
-    disable: function () {
-        var maxWidth = 600;
-        return window.innerWidth < maxWidth;
-    },// accepts following values: 'phone', 'tablet', 'mobile', boolean, 'false' expression or function
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
     initClassName: 'aos-init', // class applied after initialization
     animatedClassName: 'aos-animate', // class applied on animation

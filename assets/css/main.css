@@ -96,7 +96,7 @@ h1 {
 }
 
 .hamburger-menu {
-  @apply absolute bg-white top-0 w-full flex flex-col justify-evenly;
+  @apply fixed bg-white top-0 w-full flex flex-col justify-evenly;
 }
 .hamburger-items {
   @apply flex flex-col justify-center items-center py-8;

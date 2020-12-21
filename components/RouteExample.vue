@@ -1,11 +1,23 @@
 <template>
   <div class="mt-10 flex flex-col">
     <!-- zamjeniti ove dvije fotke -->
-    <div class="flex sm:hidden overflow-x-hidden">
-      <img src="/images/boat01-xs.jpg" />
-      <img src="/images/boat02-xs.jpg" />
+    <div class="relative">
+      <svg
+        style="transform: scaleX(1) rotate(180deg)"
+        class="w-full sm:hidden absolute -top-10 -mt-1"
+        viewBox="0 0 389 119"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 27.0874V23.5C48.3928 6.15647 113.574 -6.16145 184 4.16331L188.322 4.79715C269.9 16.7643 333.653 26.1166 389 10.1272L389 118.5H0V27.0874Z"
+          fill="#EAECF1"
+        />
+      </svg>
+      <div class="flex sm:hidden overflow-x-hidden pt-20 w-full">
+        <img class="w-1/2" src="/images/boat01-xs.jpg" />
+        <img class="w-1/2" src="/images/boat02-xs.jpg" />
+      </div>
     </div>
-
     <div class="py-10 mx-5 sm:mt-24">
       <div class="flex">
         <div class="hidden sm:flex sm:w-1/2 relative justify-end pr-10">

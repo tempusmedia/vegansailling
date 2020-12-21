@@ -71,6 +71,12 @@ export default {
         vueI18n: i18n
       }
     ],
+    ['nuxt-mail', {
+      smtp: {
+        host: "smtp.example.com",
+        port: 587,
+      },
+    },],
     'nuxt-i18n-link'
   ],
 
