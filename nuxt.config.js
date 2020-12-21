@@ -43,6 +43,7 @@ export default {
     { src: '~/plugins/vue-number-input', ssr: false },
     { src: '~/plugins/vue-carousel-3d', ssr: false },
     { src: '~/plugins/aos', ssr: false },
+    { src: '~/plugins/vue-video-background', ssr: false }
 
 
 

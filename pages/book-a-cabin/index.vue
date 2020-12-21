@@ -40,7 +40,7 @@
     <!--xs: desktop rai-->
     <div
       class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main overflow-x-hidden relative z-10"
-      style="background-image: url('/images/public-bg.jpg')"
+      style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <div
         class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-center xs:justify-end items-center"

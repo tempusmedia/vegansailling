@@ -57,7 +57,7 @@
       class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20"
       style="right: -9rem"
     >
-      <img src="/images/boat-qna.jpg" alt="Boat QnA" />
+      <img :src="qnaimage" alt="QnA Image" />
 
       <img
         data-aos="fade-right"
@@ -78,6 +78,7 @@ export default {
       this.$nuxt.$route.path == '/hr/private-sailing'
     ) {
       return {
+        qnaimage: '/images/private-food.jpg',
         items: {
           q1: {
             title: this.$t('components.qna.what'),
@@ -117,6 +118,7 @@ export default {
       this.$nuxt.$route.path == '/hr/book-a-cabin'
     ) {
       return {
+        qnaimage: '/images/cabin-woman.jpg',
         items: {
           q1: {
             title: 'Book a Cabin Page (Radi)',

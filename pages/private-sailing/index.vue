@@ -44,7 +44,7 @@
     <!-- desktop overflow-x-hidden-->
     <div
       class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main relative overflow-x-hidden overflow-y-hidden"
-      style="background-image: url('/images/private-bg.jpg')"
+      style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <div
         class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-end items-center"
