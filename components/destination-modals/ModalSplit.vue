@@ -59,8 +59,7 @@
               </div>
               <div class="relative">
                 <img
-                  class="absolute top-18 w-64"
-                  style="left: -10rem"
+                  class="absolute top-18 w-64 -left-40"
                   src="/images/wave-orange.svg"
                   alt="Orange Wave"
                 />

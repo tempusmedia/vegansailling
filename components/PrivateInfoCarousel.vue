@@ -12,7 +12,7 @@
       :margin="5"
     >
       <template slot="prev"
-        ><span class="prev absolute ml-5 z-10" style="top: 5.5rem">
+        ><span class="prev absolute ml-5 z-10 top-22">
           <!-- without <p> not showing arrow? -->
 
           <img class="icon-height" src="/nav/left-arrow.svg"
@@ -108,7 +108,7 @@
       </div>
       <!-- ex </slide> -->
       <template slot="next"
-        ><span class="next absolute right-0 mr-5 z-10" style="top: 5.5rem"
+        ><span class="next absolute right-0 mr-5 z-10 top-22"
           ><img
             class="icon-height"
             src="/nav/right-arrow.svg"

@@ -54,8 +54,7 @@
       data-aos="fade-up"
       data-aos-delay="600"
       data-aos-duration="700"
-      class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20"
-      style="right: -9rem"
+      class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20 -right-36"
     >
       <img :src="qnaimage" alt="QnA Image" />
 

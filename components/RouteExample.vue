@@ -1,10 +1,9 @@
 <template>
   <div class="mt-10 flex flex-col">
-    <!-- zamjeniti ove dvije fotke -->
+    <!-- mobile -->
     <div class="relative">
       <svg
-        style="transform: scaleX(1) rotate(180deg)"
-        class="w-full sm:hidden absolute -top-10 -mt-1"
+        class="w-full sm:hidden absolute -top-10 -mt-1 route-xs-wave"
         viewBox="0 0 389 119"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -18,15 +17,14 @@
         <img class="w-1/2" src="/images/boat02-xs.jpg" />
       </div>
     </div>
+
+    <!-- desktop -->
+
     <div class="py-10 mx-5 sm:mt-24">
       <div class="flex">
         <div class="hidden sm:flex sm:w-1/2 relative justify-end pr-10">
           <div data-aos="fade-up" data-aos-duration="1000">
-            <img
-              src="/images/boat01-lg.jpg"
-              class="relative"
-              style="top: -5rem"
-            />
+            <img src="/images/boat01-lg.jpg" class="relative -top-20" />
           </div>
           <!-- for transparent img  opacity-80-->
           <div
@@ -316,5 +314,11 @@ li {
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+}
+.route-xs-wave {
+  transform: scaleX(1) rotate(180deg);
+}
+.negative-5 {
+  top: -5rem;
 }
 </style>

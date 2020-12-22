@@ -77,8 +77,7 @@
         </div>
 
         <div
-          class="w-1/6 flex justify-end align-middle z-50 absolute"
-          style="top: 25px; right: 20px"
+          class="w-1/6 flex justify-end align-middle z-50 absolute btn-position"
         >
           <button
             @click="isOpen = !isOpen"
@@ -275,5 +274,9 @@ export default {
 <style>
 .highlight-none {
   -webkit-tap-highlight-color: transparent;
+}
+.btn-position {
+  top: 25px;
+  right: 20px;
 }
 </style>

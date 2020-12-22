@@ -15,7 +15,7 @@
       Meet<span class="font-light"> our crew</span>
     </h2>
     <div class="crew-container flex justify-center"></div>
-    <div style="margin-top: -610px">
+    <div class="my-mr-top">
       <ThreeCarousel />
       <!-- <SkipperCard />
       <br />
@@ -30,5 +30,8 @@
   background-color: #eaecf1;
   position: relative;
   z-index: -1;
+}
+.my-mr-top {
+  margin-top: -610px;
 }
 </style>

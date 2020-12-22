@@ -94,26 +94,35 @@ module.exports = {
                 '36': '9rem',
                 '80': '20rem',
                 '28': '7rem',
-                'beneath-booking': '11.68rem'
+                'beneath-booking': '11.68rem',
+
+
 
             },
+
             inset: {
-                '-6': '-1.5rem',
-                '10': '2.5rem',
-                '-10': '-2.5rem',
-                '14': '3.5rem',
-                '20': '5rem',
-                'minus20': '-5rem',
-                '28': '7rem',
-                'cust': '10vw',
-                'land': '10rem',
-                '-16': '-4rem',
-                '-20': '-5rem',
-                '24': '6rem',
-                '18': '4.5rem',
-                '-modalnr': '-1.3rem'
+                '-modalnr': '-1.3rem',
 
+                '-4': '-1rem',
+                '-6': '-1.5rem',
+                '-10': '-2.5rem',
+                '-16': '-4rem',
+
+                '-20': '-5rem',
+                '-36': '-9rem',
+                '-40': '-10rem',
+                '10': '2.5rem',
+                '14': '3.5rem',
+                '18': '4.5rem',
+                '20': '5rem',
+                '22': '5.5rem',
+                '24': '6rem',
+                '28': '7rem',
+                '32': '8rem',
+                'cust': '10vw',
+                'land': '10rem'
             },
+
             transitionDuration: {
                 '0': '0ms',
                 '2000': '2000ms',

@@ -75,10 +75,7 @@
         />
       </svg>
     </div>
-    <div
-      class="my-wave hidden sm:block absolute"
-      style="width: 100%; bottom: -9rem; left: -1rem"
-    >
+    <div class="my-wave hidden sm:block absolute w-full -bottom-36 -left-4">
       <svg
         class="my-svg-wave"
         viewBox="0 0 2101 460"

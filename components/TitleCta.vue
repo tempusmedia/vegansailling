@@ -8,8 +8,7 @@
         <slot name="title"></slot>
 
         <p
-          class="font-poppins text-center xs:text-left max-w-md xs:text-xl font-light leading-snug text-vegan-blue"
-          style="white-space: pre-line"
+          class="font-poppins text-center xs:text-left max-w-md xs:text-xl font-light leading-snug text-vegan-blue whitespace-pre-line"
         >
           {{ content }}
           {{ contentMobile }}
