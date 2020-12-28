@@ -1,3 +1,4 @@
+
 module.exports = {
     prefix: '',
     important: false,
@@ -35,9 +36,10 @@ module.exports = {
 
             },
             screens: {
-                navBreak: '939px',
                 xs: '450px',
-                landing: '974px'
+                navBreak: '939px',
+                landing: '974px',
+                big: '1950px'
             },
             minWidth: {
                 '32': '8rem'
@@ -69,6 +71,7 @@ module.exports = {
                 'title-cta': '28rem',
                 'desk-cta': '30rem',
                 'landing-main': '780px',
+                'landing-main-big': '1000px',
                 'route-img': '141px',
                 '36': '9rem',
                 'footer': "545px",
@@ -87,7 +90,6 @@ module.exports = {
                 '76': '19rem',
                 'txtarea': '32.375rem',
                 'orange-cta': '1200px'
-
 
 
             },
@@ -113,13 +115,13 @@ module.exports = {
             },
 
             inset: {
+                '-wave': '-1px',
                 '-modalnr': '-1.3rem',
                 '-4': '-1rem',
                 '-6': '-1.5rem',
                 '-8': '-1.75rem',
                 '-10': '-2.5rem',
                 '-16': '-4rem',
-
                 '-28': '-7rem',
                 '-30': '-7.5rem',
                 '-32': '-8rem',
@@ -134,8 +136,8 @@ module.exports = {
                 '-74': '-18.5rem',
                 '-220p': '-220%',
                 '-400p': '-400%',
-                '475p': '-475%',
-                '480p': '-480%',
+                '-475p': '-475%',
+                '-480p': '-480%',
                 '8': '2rem',
                 '10': '2.5rem',
                 '14': '3.5rem',
@@ -188,6 +190,7 @@ module.exports = {
         height: ['responsive', 'hover', 'focus', 'active'],
         display: ['responsive', 'hover', 'focus', 'active'],
         animation: ['hover', 'focus', 'group-hover'],
+
     },
     plugins: []
 }

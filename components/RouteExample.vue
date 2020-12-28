@@ -61,7 +61,7 @@
       >
         <!-- na malim ekranima dodati i max-w tako da se može fiksno podesiti elipsa -->
         <div
-          class="min-w-32 max-w-route-c relative px-3.5 mx-auto"
+          class="min-w-32 max-w-route-c relative px-2 xs:px-3.5 mx-auto"
           style="min-width: 133px"
         >
           <div class="rounded-full relative overflow-hidden pb-full">
@@ -80,8 +80,8 @@
             />
           </div>
         </div>
-        <div class="flex justify-center">
-          <p class="orange-medium title-elipse">
+        <div class="-mt-5 sm:mt-0 flex justify-center">
+          <p class="orange-medium font-size--transition">
             {{ $t('components.route_example.split') }}
           </p>
           <img
@@ -96,7 +96,7 @@
         class="relative col-span-6 md:col-span-4 cursor-pointer hover:opacity-90 group"
         @click="showModalZadar"
       >
-        <div class="min-w-32 max-w-route-c relative px-3.5 mx-auto">
+        <div class="min-w-32 max-w-route-c relative px-2 xs:px-3.5 mx-auto">
           <div class="rounded-full relative overflow-hidden pb-full">
             <img
               class="absolute h-full w-full object-cover"
@@ -113,8 +113,8 @@
             />
           </div>
         </div>
-        <div class="flex justify-center">
-          <p class="orange-medium title-elipse">
+        <div class="-mt-5 sm:mt-0 flex justify-center">
+          <p class="orange-medium font-size--transition">
             {{ $t('components.route_example.zadar') }}
           </p>
           <img
@@ -131,7 +131,9 @@
         @click="showModalKrk"
       >
         <!-- max-w-32 sm:max-w-route-c i onda samo smooth-->
-        <div class="min-w-32 max-w-64 sm:max-w-route-c relative px-3.5 mx-auto">
+        <div
+          class="min-w-32 max-w-64 sm:max-w-route-c relative px-2 xs:px-3.5 mx-auto"
+        >
           <div class="rounded-full relative overflow-hidden pb-full">
             <img
               class="absolute h-full w-full object-cover"
@@ -148,8 +150,8 @@
             />
           </div>
         </div>
-        <div class="flex justify-center">
-          <p class="orange-medium title-elipse">
+        <div class="-mt-5 sm:mt-0 flex justify-center">
+          <p class="orange-medium font-size--transition">
             {{ $t('components.route_example.krk') }}
           </p>
           <img
@@ -227,5 +229,8 @@ export default {
 }
 .negative-5 {
   top: -5rem;
+}
+.font-size--transition {
+  transition: all 0.7s ease-in-out !important;
 }
 </style>

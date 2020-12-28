@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: absolute">
     <div
       class="landing-btn h-title-cta xs:h-desk-cta bg-white bg-opacity-80 font-poppins mx-5 mt-5 xs:flex xs:flex-col xs:items-start xs:w-title-wta"
     >

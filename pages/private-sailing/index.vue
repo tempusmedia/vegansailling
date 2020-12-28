@@ -43,18 +43,18 @@
 
     <!-- desktop overflow-x-hidden-->
     <div
-      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main relative overflow-x-hidden overflow-y-hidden"
+      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main big:h-landing-main-big relative overflow-x-hidden overflow-y-hidden"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <div
-        class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-end items-center"
+        class="max-w-screen-xl xs:h-landing-main big:h-landing-main-big mx-auto flex justify-end items-center"
       >
         <TitleCta
           data-aos="fade-left"
           data-aos-duration="500"
           :route="route"
           :content="this.$t('pages.private_sailing.content')"
-          class="relative -top-16"
+          class="relative top-20"
         >
           <template #title>
             <div class="text-left text-vegan-blue">
@@ -62,6 +62,11 @@
                 class="relative top-wave-line z-0"
                 src="/images/wave-orange.svg"
               />
+
+
+
+
+              
               <h1 class="font-semibold leading-tight">
                 {{ $t('pages.private_sailing.experience_private') }}
                 <p>
@@ -188,8 +193,7 @@
         </div>
       </div>
     </section>
-
-    <section class="max-w-screen-xl mx-auto">
+    <section class="w-full mx-auto overflow-x-hidden">
       <QnA />
     </section>
     <section>

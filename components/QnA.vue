@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col sm:flex-row relative sm:mt-56">
+  <div
+    class="max-w-screen-xl mx-auto flex flex-col sm:flex-row relative sm:mt-56"
+  >
     <svg
       class="w-full sm:hidden"
       viewBox="0 0 389 119"

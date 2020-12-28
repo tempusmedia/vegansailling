@@ -50,7 +50,7 @@
           data-aos-duration="500"
           :route="titleCta.route"
           :content="titleCta.content"
-          class="relative -top-16"
+          class="relative top-16"
         >
           <template #title>
             <div class="text-left text-vegan-blue">
@@ -225,7 +225,7 @@
       </div>
     </section>
 
-    <section class="max-w-screen-xl mx-auto">
+    <section class="w-full mx-auto overflow-x-hidden">
       <QnA />
     </section>
     <section>
