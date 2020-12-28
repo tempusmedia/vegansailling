@@ -13,14 +13,14 @@
       :autoplayHoverPause="true"
     >
       <slide :index="0" class="carousel-container">
-        <SkipperCard />
+        <CookCard />
         <!-- <img src="https://placehold.it/827x554" /> -->
       </slide>
       <slide :index="1" class="carousel-container">
-        <SkipperCard />
+        <CookCard02 />
       </slide>
       <slide :index="2" class="carousel-container">
-        <CookCard />
+        <CookCard03 />
       </slide>
     </carousel-3d>
   </div>

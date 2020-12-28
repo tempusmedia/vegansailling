@@ -6,7 +6,6 @@
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
-        style="background-image: url('/images/bg-wavy.jpg')"
       >
         <div class="modal-content">
           <button
@@ -23,43 +22,141 @@
               />
             </svg>
           </button>
-          <header id="modalTitle" class="mt-3 mb-10">
-            <div class="text-center text-vegan-blue sm:hidden font-poppins">
-              <h1 class="font-semibold leading-tight">
-                Zadar
-                <span class="font-light italic"><p>Route</p></span>
-              </h1>
-            </div>
-            <div
-              class="text-center text-vegan-blue hidden sm:block font-poppins"
-            >
-              <h1 class="font-semibold leading-tight">
-                Zadar
-                <span class="font-light italic">Route </span>
-              </h1>
-            </div>
-          </header>
 
-          <!-- orange footer -->
-          <!-- <footer class="modal-footer content">
-              <div class="flex flex-col items-center mx-auto my-5">
-                <h1 class="font-semibold leading-tight">
-                  Have
-                  <span class="font-light italic">more</span>
+          <div class="flex mx-16">
+            <div class="-mt-24">
+              <div class="-mt-10 mb-8">
+                <img src="/images/weekly-zadar.jpg" alt="Weekly Zadar" />
+              </div>
+              <div class="pl-6 py-5">
+                <h1 class="route-main-title">
+                  Zadar region (Central Adriatic)
                 </h1>
-                <h1 class="font-semibold leading-tight hidden xs:block">
-                  <span class="font-light italic"> questions?</span>
-                </h1>
-                <p class="content text-white text-base mt-3">
-                  + 385(0)98 953 5476
-                </p>
-                <p class="font-semibold">info@vegansailing.eu</p>
-                <div class="flex mt-3">
-                  <img src="/images/instagram.svg" />
-                  <img src="/images/facebook.svg" />
+              </div>
+              <div class="flex items-start pt-8">
+                <div>
+                  <h1 class="route-modal-nr relative my-top3">1</h1>
+                </div>
+                <div class="ml-10">
+                  <p class="route-modal-title mb-3">
+                    Day one
+                    <span class="italic text-light">(usually Saturday):</span>
+                  </p>
+                  <p class="route-modal-body">
+                    Check-in from 5 pm in one of the marinas in Zadar Region. If
+                    so agreed, shopping will be done with you before leaving the
+                    marina. Welcoming drink. Unpacking and getting ready to
+                    sail.Short afternoon sailing to one of the nice close-by
+                    islands Ugljan or Sestrunj for overnight anchoring.
+                  </p>
                 </div>
               </div>
-            </footer> -->
+              <div class="flex items-start pt-8">
+                <div><h1 class="route-modal-nr relative my-top3">2</h1></div>
+                <div class="ml-8">
+                  <p class="route-modal-title mb-3">Day two:</p>
+                  <p class="route-modal-body">
+                    Breakfast, slow morning, navigation with optional (group
+                    choice) snorkeling at the shipwreck which is on our way to
+                    Dugi otok, Saharun bay, famous sandy beach where we will
+                    have lunch and stay overnight.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  class="absolute top-14 w-64 -left-40"
+                  src="/images/wave-orange.svg"
+                  alt="Orange Wave"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="flex items-start pt-8">
+                <div>
+                  <h1 class="route-modal-nr relative my-top3">3</h1>
+                </div>
+                <div class="ml-10">
+                  <p class="route-modal-title mb-3">Day three:</p>
+                  <p class="route-modal-body">
+                    After breakfast, navigation to the nearby cave and a natural
+                    pool. You can enter the cave by swimming, and it’s light
+                    since there is a hole in the sealing. Anchoring in Natural
+                    Park Telaščica.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start pt-8">
+                <div>
+                  <h1 class="route-modal-nr relative my-top3">4</h1>
+                </div>
+                <div class="ml-10">
+                  <p class="route-modal-title mb-3">Day four:</p>
+                  <p class="route-modal-body">
+                    Morning visit to the cliffs and snorkeling at open sea
+                    vertical underwater wall.Navigation through the National
+                    Park Kornati Islands to Žirje, Mala Stupica. Optional walk
+                    around Žirje Island where you will see some remainings of
+                    the military bunkers with a great view.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start pt-8">
+                <div>
+                  <h1 class="route-modal-nr relative my-top3">5</h1>
+                </div>
+                <div class="ml-10">
+                  <p class="route-modal-title mb-3">Day five:</p>
+                  <p class="route-modal-body">
+                    Early morning departure towards Skradin. After breakfast a
+                    trip to the amazing Krka Falls. You will get a lunch box.
+                    Evening visit to the Town of Šibenik or, if group decides
+                    so, staying on the anchor in one of the bays in front of
+                    city entrance.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start pt-8">
+                <div>
+                  <h1 class="route-modal-nr relative my-top3">6</h1>
+                </div>
+                <div class="ml-10">
+                  <p class="route-modal-title mb-3">Day six:</p>
+                  <p class="route-modal-body">
+                    After breakfast, departure towards Žut Island where we stay
+                    anchored or on the buoy for the lunch. Evening hiking on top
+                    of the hill for a spectacular and unforgettable sunset. *Žut
+                    Marina has showers, toilets, and a small shop.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start pt-8">
+                <div>
+                  <h1 class="route-modal-nr relative my-top3">7</h1>
+                </div>
+                <div class="ml-10">
+                  <p class="route-modal-title mb-3">Day seven:</p>
+                  <p class="route-modal-body">
+                    Morning at Marina Žut or some of the nearby bays. Afternoon
+                    moving towards the marina from which we’ve left, with a
+                    break for swimming. We have to reach the marina till 5 pm.
+                    Dinner onboard in the marina.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start pt-8">
+                <div>
+                  <h1 class="route-modal-nr relative my-top3">8</h1>
+                </div>
+                <div class="ml-8">
+                  <p class="route-modal-title mb-3">Day eight:</p>
+                  <p class="route-modal-body">
+                    Early breakfast in the marina and check-out.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -77,6 +174,9 @@ export default {
 }
 </script>
 <style>
+.my-top3 {
+  top: -1.3rem;
+}
 .lefty {
   left: -8.3rem;
 }
@@ -163,5 +263,14 @@ textarea.input-name::placeholder {
   font-family: 'Poppins', sans-serif;
   color: #154752;
   font-weight: 300;
+}
+
+.route-modal-title::before {
+  width: 100px;
+  border-bottom: 1px solid #ef5f23;
+  content: '';
+  position: absolute;
+  top: 1.7rem;
+  left: -1.5rem;
 }
 </style>
