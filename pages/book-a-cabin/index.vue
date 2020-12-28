@@ -27,7 +27,7 @@
               @click="showModal"
             >
               <p
-                class="font-medium text-btn text-center xs:text-left select-none"
+                class="font-medium text-btn text-center xs:text-left select-none" 
               >
                 Book Now
               </p>
@@ -225,7 +225,7 @@
       </div>
     </section>
 
-    <section class="max-w-screen-xl mx-auto">
+    <section class="w-full mx-auto overflow-x-hidden">
       <QnA />
     </section>
     <section>

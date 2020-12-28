@@ -7,7 +7,7 @@
     > -->
 
     <video-background
-      src="https://paras.hr/vegansailing.mp4"
+      src="https://paras.hr/vegansailing2.mp4"
       class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
     >
       <div

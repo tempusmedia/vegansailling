@@ -51,6 +51,7 @@
 
 <template>
   <div>
+    <!-- for mobile -->
     <div>
       <svg
         class="w-full sm:hidden -mt-8"
@@ -75,10 +76,12 @@
         />
       </svg>
     </div>
-    <div class="my-wave hidden sm:block absolute w-full -bottom-36 -left-4">
+
+    <!-- for desktop -->
+    <div class="my-wave hidden sm:block absolute w-full -bottom-wave -left-16">
       <svg
         class="my-svg-wave"
-        viewBox="0 0 2101 460"
+        viewBox="0 0 2101 300"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -125,10 +128,14 @@
 </template>
 <style>
 .my-svg-wave {
-  min-width: 2101px;
+  /* min-width: 2101px;
   min-height: 460px;
-  width: 120%;
+  width: 120%; */
 
   margin: 0 auto;
+}
+
+.my-wave {
+  width: 110% !important;
 }
 </style>
