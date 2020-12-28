@@ -54,7 +54,7 @@
           data-aos-duration="500"
           :route="route"
           :content="this.$t('pages.private_sailing.content')"
-          class="relative top-16"
+          class="relative top-20"
         >
           <template #title>
             <div class="text-left text-vegan-blue">
@@ -62,6 +62,11 @@
                 class="relative top-wave-line z-0"
                 src="/images/wave-orange.svg"
               />
+
+
+
+
+              
               <h1 class="font-semibold leading-tight">
                 {{ $t('pages.private_sailing.experience_private') }}
                 <p>

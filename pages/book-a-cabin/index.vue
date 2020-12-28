@@ -27,7 +27,7 @@
               @click="showModal"
             >
               <p
-                class="font-medium text-btn text-center xs:text-left select-none" 
+                class="font-medium text-btn text-center xs:text-left select-none"
               >
                 Book Now
               </p>
@@ -50,7 +50,7 @@
           data-aos-duration="500"
           :route="titleCta.route"
           :content="titleCta.content"
-          class="relative -top-16"
+          class="relative top-16"
         >
           <template #title>
             <div class="text-left text-vegan-blue">

@@ -71,7 +71,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .my-cont {
   width: 1111px;
