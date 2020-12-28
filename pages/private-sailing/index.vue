@@ -4,8 +4,8 @@
 
     <!-- mobile -->
     <div
-      class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between overflow-x-hidden"
-      style="background-image: url('/images/private-bg-xs.jpg')"
+      class="bg-no-repeat bg-cover bg-top w-full flex xs:hidden flex-col justify-between overflow-x-hidden"
+      style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <TitleCta
         :route="route"

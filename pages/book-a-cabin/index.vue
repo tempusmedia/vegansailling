@@ -2,8 +2,8 @@
   <div class="slide-transition">
     <!--xs mobile -->
     <div
-      class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between overflow-x-hidden"
-      style="background-image: url('/images/public-bg-xs.jpg')"
+      class="bg-no-repeat bg-cover bg-left w-full flex xs:hidden flex-col justify-between overflow-x-hidden"
+      style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <TitleCta
         :route="titleCta.route"
@@ -239,6 +239,8 @@
       <ModalCabin v-show="isModalVisible" @close="closeModal" />
     </transition>
     <!-- Footer in layout-->
+
+    <probna />
   </div>
 </template>
 

@@ -58,6 +58,14 @@ export default {
 .carousel-h {
   height: 900px;
 }
+
+@media only screen and (max-width: 500px) {
+  .carousel-3d-slide.carousel-container.current,
+  .carousel-3d-slide.carousel-container,
+  .carousel-3d-container {
+    height: 1000px !important;
+  }
+}
 </style>
 
 <!-- 

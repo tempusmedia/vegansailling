@@ -1,10 +1,10 @@
 <template>
-  <div class="sm:-mt-16">
+  <div class="-mt-40 sm:-mt-16">
     <div class="xs:hidden section-title text-center mt-10">
       <h2 class="font-semibold">Boat and cabin</h2>
       <h2 class="font-light">Example</h2>
     </div>
-    <div class="hidden sm:block section-title text-center mt-28 pb-1">
+    <div class="hidden xs:block section-title text-center mt-28 pb-1">
       <h2 class="font-semibold">Boat and cabin example</h2>
     </div>
     <client-only>

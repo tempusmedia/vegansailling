@@ -7,7 +7,7 @@
     > -->
 
     <video-background
-      src="https://static.videezy.com/system/resources/previews/000/039/967/original/drone-circles-tourist-boat-4K.mp4"
+      src="https://paras.hr/vegansailing.mp4"
       class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
     >
       <div
@@ -44,7 +44,7 @@
       style="background-image: url('/images/bg-main.jpg')"
     > -->
     <video-background
-      src="https://static.videezy.com/system/resources/previews/000/039/967/original/drone-circles-tourist-boat-4K.mp4"
+      src="https://paras.hr/vegansailing.mp4"
       class="h-screen bg-no-repeat bg-cover bg-center w-full object-center object-cover hidden xs:block"
     >
       <div
@@ -179,7 +179,7 @@ body {
 .fade-leave-active {
   opacity: 0;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 450px) {
   .my-title {
     margin-top: 0 !important;
   }

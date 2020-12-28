@@ -28,13 +28,17 @@
       </div>
       <div class="flex justify-end w-2/5">
         <div class="nav-link-container relative">
-          <nuxt-i18n-link
+          <!-- <nuxt-i18n-link
             exact
             class="nav-link nav-desk pl-8"
             :to="route.gallery"
             >{{ $t('components.header.gallery') }}</nuxt-i18n-link
-          >
+          > -->
+          <a class="nav-link nav-desk pl-8" :href="route.galleryHash">{{
+            $t('components.header.gallery')
+          }}</a>
         </div>
+
         <div class="nav-link-container relative">
           <!-- <nuxt-i18n-link
             exact
@@ -65,9 +69,9 @@
       </div>
     </div>
 
-    <!-- mobile -->
+    <!-- mobile w-100-->
 
-    <div class="z-50 w-100" :class="isOpen ? 'fixed' : 'static'">
+    <div class="z-50 w-screen" :class="isOpen ? 'fixed' : 'static'">
       <div class="flex px-5 py-3 navBreak:hidden">
         <div class="w-1/6"></div>
         <div class="w-4/6 flex justify-center">
@@ -180,9 +184,13 @@
             :to="route.bookCabin"
             >{{ $t('components.header.book') }}</nuxt-i18n-link
           >
-          <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.gallery">{{
+          <!-- <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.gallery">{{
             $t('components.header.gallery')
-          }}</nuxt-i18n-link>
+          }}</nuxt-i18n-link> -->
+
+          <a class="nav-link nav-mob" :href="route.galleryHash">{{
+            $t('components.header.gallery')
+          }}</a>
           <!-- <nuxt-i18n-link exact class="nav-link nav-mob" :to="route.about">{{
           $t('components.header.about')
         }}</nuxt-i18n-link>
@@ -256,6 +264,7 @@ export default {
         gallery: 'gallery',
         about: 'about',
         contact: 'contact',
+        galleryHash: '#gallery',
         aboutHash: '#about',
         contactHash: '#contact',
       },
