@@ -119,7 +119,6 @@ module.exports = {
                 '-8': '-1.75rem',
                 '-10': '-2.5rem',
                 '-16': '-4rem',
-
                 '-28': '-7rem',
                 '-30': '-7.5rem',
                 '-32': '-8rem',
@@ -134,8 +133,8 @@ module.exports = {
                 '-74': '-18.5rem',
                 '-220p': '-220%',
                 '-400p': '-400%',
-                '475p': '-475%',
-                '480p': '-480%',
+                '-475p': '-475%',
+                '-480p': '-480%',
                 '8': '2rem',
                 '10': '2.5rem',
                 '14': '3.5rem',
@@ -188,6 +187,7 @@ module.exports = {
         height: ['responsive', 'hover', 'focus', 'active'],
         display: ['responsive', 'hover', 'focus', 'active'],
         animation: ['hover', 'focus', 'group-hover'],
+       
     },
     plugins: []
 }
