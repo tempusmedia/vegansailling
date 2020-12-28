@@ -143,7 +143,7 @@
         <div class="max-w-route-c mx-auto relative">
           <div class="relative pb-2/10">
             <img
-              class="absolute w-full object-cover -top-480p lg:-top-73.5"
+              class="absolute w-full object-cover -top-475p sm:-top-480p lg:-top-73.5"
               src="/images/krk-elipse-desk.svg"
             />
           </div>
