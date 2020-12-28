@@ -43,6 +43,7 @@ export default {
     { src: '~/plugins/vue-number-input', ssr: false },
     { src: '~/plugins/vue-carousel-3d', ssr: false },
     { src: '~/plugins/aos', ssr: false },
+    { src: '~/plugins/vue-video-background', ssr: false }
 
 
 
@@ -71,6 +72,12 @@ export default {
         vueI18n: i18n
       }
     ],
+    ['nuxt-mail', {
+      smtp: {
+        host: "smtp.example.com",
+        port: 587,
+      },
+    },],
     'nuxt-i18n-link'
   ],
 

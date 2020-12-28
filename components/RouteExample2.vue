@@ -1,6 +1,6 @@
 <template>
-  <div class="xl:container grid grid-cols-12 px-5 mx-auto mt-28">
-    <div class="col-span-12 grid grid-cols-1 lg:grid-cols-2">
+  <div class="xl:container px-5 mx-auto mt-28" style="border: 2px solid red">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div class="flex relative">
         <div class="w-1/2">
           <img style="width: 100%" src="/images/boat01-xs.jpg" />
@@ -17,33 +17,33 @@
         <h2 class="section-title font-semibold text-center sm:text-left mb-10">
           Route<span class="font-light"> Example</span>
         </h2>
-        <ul class="text-left list-none">
-          <li class="content flex">
+        <ul class="text-left">
+          <li class="content">
             <span class="bullet"></span>
             Route is designed individually, according to your wishes, habits and
             preferences.
           </li>
-          <li class="content flex">
+          <li class="content">
             <span class="bullet"></span>
             Usually the route is organized as a round trip but it is also
             possible to make it one way.
           </li>
-          <li class="content flex">
+          <li class="content">
             <span class="bullet"></span>Minimum duration of the route is one
             week.
           </li>
-          <li class="content flex">
+          <li class="content">
             <span class="bullet"></span>
             We can start from (and return to) any charter base marina in
             Croatia.
           </li>
-          <li class="content flex">
+          <li class="content">
             <span class="bullet"></span>
             Bay or marina is generally changed every day or two, preferably in
             the morning in order to catch free buoys/berths or good anchor
             spots.
           </li>
-          <li class="content flex">
+          <li class="content">
             <span class="bullet"></span>
             Final route, as well as day-to-day changes are made according to
             weathercast
@@ -53,17 +53,13 @@
     </div>
 
     <!-- DESKTOP route image container DESKTOP-->
-    <div class="col-span-12 grid grid-cols-12 mt-36 gap-x-3 md:gap-x-8 gap-y-8">
+    <div class="grid grid-cols-3 gap-10 mt-36">
       <!-- Split -->
       <div
-        class="relative col-span-6 md:col-span-4 cursor-pointer hover:opacity-90 group"
+        class="relative col-span-1 cursor-pointer hover:opacity-90 group"
         @click="showModalSplit"
       >
-        <!-- na malim ekranima dodati i max-w tako da se može fiksno podesiti elipsa -->
-        <div
-          class="min-w-32 max-w-route-c relative px-3.5 mx-auto"
-          style="min-width: 133px"
-        >
+        <div class="max-w-route-c relative px-3 mx-auto">
           <div class="rounded-full relative overflow-hidden pb-full">
             <img
               class="absolute h-full w-full object-cover"
@@ -75,7 +71,7 @@
         <div class="max-w-route-c mx-auto relative">
           <div class="relative pb-2/10">
             <img
-              class="absolute w-full object-cover -top-220p lg:-top-34.5"
+              class="absolute w-full object-cover -top-220p lg:-top-35"
               src="/images/split-elipse-desk.svg"
             />
           </div>
@@ -93,10 +89,12 @@
       <!-- Zadar -->
 
       <div
-        class="relative col-span-6 md:col-span-4 cursor-pointer hover:opacity-90 group"
+        class="relative col-span-1 cursor-pointer hover:opacity-90 group"
         @click="showModalZadar"
       >
-        <div class="min-w-32 max-w-route-c relative px-3.5 mx-auto">
+        <!-- <img class="absolute wave-pos" src="/images/wave-orange.svg" /> -->
+
+        <div class="max-w-route-c relative px-3 mx-auto">
           <div class="rounded-full relative overflow-hidden pb-full">
             <img
               class="absolute h-full w-full object-cover"
@@ -108,7 +106,7 @@
         <div class="max-w-route-c mx-auto relative">
           <div class="relative pb-2/10">
             <img
-              class="absolute w-3/4 object-cover -top-400p lg:-top-62 -left-8"
+              class="absolute w-full object-cover -top-220p lg:-top-35"
               src="/images/wave-orange.svg"
             />
           </div>
@@ -127,11 +125,11 @@
       <!-- krk -->
 
       <div
-        class="relative col-start-4 col-end-10 md:col-start-9 md:col-end-13 cursor-pointer hover:opacity-90 group"
+        class="relative col-span-1 cursor-pointer hover:opacity-90 group"
         @click="showModalKrk"
       >
-        <!-- max-w-32 sm:max-w-route-c i onda samo smooth-->
-        <div class="min-w-32 max-w-64 sm:max-w-route-c relative px-3.5 mx-auto">
+        <!-- <img class="absolute top-cdesk10" src="/images/krk-elipse-desk.svg" /> -->
+        <div class="max-w-route-c relative px-3 mx-auto">
           <div class="rounded-full relative overflow-hidden pb-full">
             <img
               class="absolute h-full w-full object-cover"
@@ -143,7 +141,7 @@
         <div class="max-w-route-c mx-auto relative">
           <div class="relative pb-2/10">
             <img
-              class="absolute w-full object-cover -top-475p sm:-top-480p lg:-top-73.5"
+              class="absolute w-full object-cover -top-220p lg:-top-35"
               src="/images/krk-elipse-desk.svg"
             />
           </div>
@@ -205,15 +203,46 @@ export default {
 }
 </script>
 <style>
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+li {
+  display: flex;
+}
+
 .bullet::before {
   content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ef5e23; /* Change the color */
+  color: red; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   /* Needed to add space between the bullet and the text */
   width: 1.5rem; /* Also needed for space (tweak if needed) */
   margin-right: 1.5rem;
 }
 
+.top-c10 {
+  top: -7px;
+}
+
+.top-cdesk10 {
+  top: -14px;
+  width: 330px;
+}
+
+.bottom-c10 {
+  bottom: 35px;
+  left: 10px;
+}
+
+.bottom-cdesk10 {
+  bottom: 65px;
+  width: 330px;
+}
+
+.wave-pos {
+  top: 25px;
+  left: -20px;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

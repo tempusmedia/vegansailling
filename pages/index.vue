@@ -1,36 +1,51 @@
 <template>
   <div>
     <!-- mobile -->
-    <div
+    <!-- <div
       class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
       style="background-image: url('/images/bg-main-xs.jpg')"
-    >
-      <HeaderLanding />
-      <!-- <img src="/images/bg-main.jpg" />
-    <img src="~/assets/images/bg-main.jpg" /> -->
-      <div class="flex h-64 items-end">
-        <landing-button
-          class="w-1/2"
-          variant="primary"
-          :title="landingBtn.primary.title"
-          :subtitle="landingBtn.primary.subtitle"
-          :route="landingBtn.primary.route"
-        />
+    > -->
 
-        <landing-button
-          class="w-1/2"
-          variant="secondary"
-          :title="landingBtn.secondary.title"
-          :subtitle="landingBtn.secondary.subtitle"
-          :route="landingBtn.secondary.route"
-        />
+    <video-background
+      src="https://paras.hr/vegansailing.mp4"
+      class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
+    >
+      <div
+        class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
+      >
+        <HeaderLanding />
+        <!-- <img src="/images/bg-main.jpg" />
+    <img src="~/assets/images/bg-main.jpg" /> -->
+        <div class="flex h-64 items-end">
+          <landing-button
+            class="w-1/2"
+            variant="primary"
+            :title="landingBtn.primary.title"
+            :subtitle="landingBtn.primary.subtitle"
+            :route="landingBtn.primary.route"
+          />
+
+          <landing-button
+            class="w-1/2"
+            variant="secondary"
+            :title="landingBtn.secondary.title"
+            :subtitle="landingBtn.secondary.subtitle"
+            :route="landingBtn.secondary.route"
+          />
+        </div>
       </div>
-    </div>
+    </video-background>
+
+    <!-- </div> -->
 
     <!-- desktop -->
-    <div
+    <!-- <div
       class="h-screen bg-no-repeat bg-cover bg-center w-full object-center object-cover hidden xs:block"
       style="background-image: url('/images/bg-main.jpg')"
+    > -->
+    <video-background
+      src="https://paras.hr/vegansailing.mp4"
+      class="h-screen bg-no-repeat bg-cover bg-center w-full object-center object-cover hidden xs:block"
     >
       <div
         class="h-screen flex flex-col justify-between max-w-screen-landing mx-auto"
@@ -60,8 +75,9 @@
         </div>
       </div>
       <!-- <h1>{{ $t('message') }}</h1> -->
-    </div>
+    </video-background>
   </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -82,6 +98,9 @@ export default {
   }),
 
   layout: 'landing-layout',
+  transition: {
+    name: 'fade',
+  },
 }
 
 // for mobile -> fetch height of viewport (process.browser -> client side js)
@@ -152,7 +171,15 @@ body {
   position: relative;
   left: 0;
 }
-@media only screen and (min-width: 375px) {
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+@media only screen and (min-width: 450px) {
   .my-title {
     margin-top: 0 !important;
   }

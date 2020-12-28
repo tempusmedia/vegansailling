@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 900px">
+  <div class="carousel-h">
     <carousel-3d
       :perspective="0"
       :space="400"
@@ -54,6 +54,17 @@ export default {
 .carousel-3d-slide.carousel-container.current {
   background: none;
   opacity: 1 !important;
+}
+.carousel-h {
+  height: 900px;
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-3d-slide.carousel-container.current,
+  .carousel-3d-slide.carousel-container,
+  .carousel-3d-container {
+    height: 1000px !important;
+  }
 }
 </style>
 

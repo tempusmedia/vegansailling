@@ -1,6 +1,18 @@
 <template>
-  <div class="flex relative sm:mt-56">
-    <div class="bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64 w-full">
+  <div class="flex flex-col sm:flex-row relative sm:mt-56">
+    <svg
+      class="w-full sm:hidden"
+      viewBox="0 0 389 119"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 27.0874V23.5C48.3928 6.15647 113.574 -6.16145 184 4.16331L188.322 4.79715C269.9 16.7643 333.653 26.1166 389 10.1272L389 118.5H0V27.0874Z"
+        fill="#EAECF1"
+      />
+    </svg>
+    <div
+      class="bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64 w-full -mt-28 sm:mt-0 sm:pt-24"
+    >
       <h2
         class="section-title font-semibold text-center py-10 sm:pt-0 sm:text-left sm:pl-10"
       >
@@ -42,12 +54,10 @@
       data-aos="fade-up"
       data-aos-delay="600"
       data-aos-duration="700"
-      class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20"
-      style="right: -9rem"
+      class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20 -right-36"
     >
-      <img src="/images/boat-qna.jpg" alt="Boat QnA" />
+      <img :src="qnaimage" alt="QnA Image" />
 
-      <!-- <img src="/images/boat-qna.webp" alt="Boat QnA" /> -->
       <img
         data-aos="fade-right"
         data-aos-delay="600"
@@ -67,6 +77,7 @@ export default {
       this.$nuxt.$route.path == '/hr/private-sailing'
     ) {
       return {
+        qnaimage: '/images/private-food.jpg',
         items: {
           q1: {
             title: this.$t('components.qna.what'),
@@ -101,12 +112,12 @@ export default {
         },
       }
     }
-
     if (
       this.$nuxt.$route.path == '/book-a-cabin' ||
       this.$nuxt.$route.path == '/hr/book-a-cabin'
     ) {
       return {
+        qnaimage: '/images/cabin-woman.jpg',
         items: {
           q1: {
             title: 'Book a Cabin Page (Radi)',

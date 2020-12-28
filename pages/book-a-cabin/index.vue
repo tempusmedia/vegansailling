@@ -2,8 +2,8 @@
   <div class="slide-transition">
     <!--xs mobile -->
     <div
-      class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between overflow-x-hidden"
-      style="background-image: url('/images/public-bg-xs.jpg')"
+      class="bg-no-repeat bg-cover bg-left w-full flex xs:hidden flex-col justify-between overflow-x-hidden"
+      style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <TitleCta
         :route="titleCta.route"
@@ -40,7 +40,7 @@
     <!--xs: desktop rai-->
     <div
       class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main overflow-x-hidden relative z-10"
-      style="background-image: url('/images/public-bg.jpg')"
+      style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <div
         class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-center xs:justify-end items-center"
@@ -79,11 +79,9 @@
           class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
           >Book now</Btn
         > -->
-
             <div class="max-w-btn mx-auto xs:mx-0">
               <a
                 class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
-                type="button"
                 @click="showModal"
               >
                 <p
@@ -127,7 +125,6 @@
           <div class="flex justify-center">
             <a
               class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
-              type="button"
               @click="showModal"
             >
               <p
@@ -142,7 +139,7 @@
     </div>
 
     <!-- info -->
-    <InfoCarousel class="sm:hidden sm:mt-5" />
+    <BcaInfoCarousel class="sm:hidden sm:mt-5" />
     <section class="hidden sm:block max-w-screen-xl mx-auto my-32">
       <div
         class="flex max-w-6xl justify-evenly my-12 mx-auto"
@@ -167,21 +164,22 @@
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/people.svg" />
             <h2 class="icon-title pt-2">How many people</h2>
-            <p class="icon-content">4 - 10</p>
+            <p class="icon-content">6 - 10</p>
           </div>
         </div>
         <div>
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/much.svg" />
             <h2 class="icon-title pt-2">How much</h2>
-            <p class="icon-content">2000-10 000 eur</p>
+            <p class="icon-content">900-1050 eur</p>
+            <p class="icon-content">per person</p>
           </div>
         </div>
         <div>
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/duration.svg" />
             <h2 class="icon-title pt-2">Duration</h2>
-            <p class="icon-content">7 - 14 days</p>
+            <p class="icon-content">7 days</p>
           </div>
         </div>
       </div>
@@ -204,8 +202,8 @@
           <div class="h-50 max-w-sm flex flex-col items-center justify-center">
             <img class="icon-height" src="/icons/boat.svg" />
             <h2 class="icon-title pt-2">What boat</h2>
-            <p class="icon-content">Any sailing boat or</p>
-            <p class="icon-content">catamaran in Croatia</p>
+            <p class="icon-content">Sailing boat or a catamaran</p>
+            <p class="icon-content">from 45-55 feet</p>
           </div>
         </div>
         <div>
@@ -241,6 +239,8 @@
       <ModalCabin v-show="isModalVisible" @close="closeModal" />
     </transition>
     <!-- Footer in layout-->
+
+    <probna />
   </div>
 </template>
 
@@ -269,6 +269,9 @@ export default {
     closeModal() {
       this.isModalVisible = false
     },
+  },
+  transition: {
+    name: 'fade',
   },
 }
 </script>

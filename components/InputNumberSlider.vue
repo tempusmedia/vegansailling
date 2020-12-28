@@ -6,16 +6,14 @@
       class="flex border border-modal-input overflow-hidden relative rounded-md h-10 w-12"
     >
       <input
-        class="w-12 absolute outline-none"
-        style="top: 7.5px; left: 9px; font-family: 'Poppins'; color: #828282"
+        class="w-12 absolute outline-none input-nr-sld"
         id="numberp"
         :value="persons"
         type="number"
         readonly
       />
       <button
-        class="absolute text-modal-input hover:text-arrow-active focus:outline-none"
-        style="right: 7px; bottom: 6px"
+        class="absolute text-modal-input hover:text-arrow-active focus:outline-none input-nr-btn"
         @click="dec"
       >
         <svg
@@ -30,8 +28,7 @@
       </button>
 
       <button
-        class="absolute text-modal-input hover:text-arrow-active focus:outline-none"
-        style="right: 7px; top: 7px"
+        class="absolute text-modal-input hover:text-arrow-active focus:outline-none input-nr-btn2"
         @click="inc"
       >
         <svg
@@ -69,4 +66,19 @@ export default {
   },
 }
 </script>
-<style></style>
+<style scoped>
+.input-nr-sld {
+  top: 7.5px;
+  left: 9px;
+  font-family: 'Poppins';
+  color: #828282;
+}
+.input-nr-btn {
+  right: 7px;
+  bottom: 6px;
+}
+.input-nr-btn2 {
+  right: 7px;
+  top: 7px;
+}
+</style>

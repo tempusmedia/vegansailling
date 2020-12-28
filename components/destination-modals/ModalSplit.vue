@@ -33,7 +33,10 @@
                   <h1 class="route-modal-nr relative my-top3">1</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title">Day one (usually Saturday):</p>
+                  <p class="route-modal-title mb-3">
+                    Day one
+                    <span class="italic text-light">(usually Saturday):</span>
+                  </p>
                   <p class="route-modal-body">
                     Check-in from 1pm till 8pm at Murter, marina Haramina If
                     needed, shopping for food and water (supply for 3-7 days,
@@ -46,7 +49,7 @@
               <div class="flex items-start pt-8">
                 <div><h1 class="route-modal-nr relative my-top3">2</h1></div>
                 <div class="ml-8">
-                  <p class="route-modal-title">Day two:</p>
+                  <p class="route-modal-title mb-3">Day two:</p>
                   <p class="route-modal-body">
                     Morning at Tijat island; yoga and meditation program
                     available Departure towards Krka falls after lunch, with
@@ -56,8 +59,7 @@
               </div>
               <div class="relative">
                 <img
-                  class="absolute top-18 w-64"
-                  style="left: -10rem"
+                  class="absolute top-18 w-64 -left-40"
                   src="/images/wave-orange.svg"
                   alt="Orange Wave"
                 />
@@ -69,7 +71,7 @@
                   <h1 class="route-modal-nr relative my-top3">3</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title">Day three:</p>
+                  <p class="route-modal-title mb-3">Day three:</p>
                   <p class="route-modal-body">
                     Visit Krka falls in the morning (3-5h) Afternoon departure
                     to Žirje (if buoy is reserved in advance) 2:30-3:00h 18NM
@@ -81,7 +83,7 @@
                   <h1 class="route-modal-nr relative my-top3">4</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title">Day four:</p>
+                  <p class="route-modal-title mb-3">Day four:</p>
                   <p class="route-modal-body">
                     Departure from Žirje to Kornati after morning activities
                     (yoga and meditation/swimming/breakfast)
@@ -93,7 +95,7 @@
                   <h1 class="route-modal-nr relative my-top3">5</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title">Day five:</p>
+                  <p class="route-modal-title mb-3">Day five:</p>
                   <p class="route-modal-body">
                     (optional early morning hike to attractive “rock plate” at
                     island Kornat) Departure to natural park Telaščica after
@@ -108,7 +110,7 @@
                   <h1 class="route-modal-nr relative my-top3">6</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title">Day six:</p>
+                  <p class="route-modal-title mb-3">Day six:</p>
                   <p class="route-modal-body">
                     Departure towards Žut island marina after breakfast (1:10h
                     8NM) Replenish supplies in local store Hike (20-30min) to
@@ -123,7 +125,7 @@
                   <h1 class="route-modal-nr relative my-top3">7</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title">Day seven:</p>
+                  <p class="route-modal-title mb-3">Day seven:</p>
                   <p class="route-modal-body">
                     Departure to Kakan island (or other nearby island according
                     to weathercast) after breakfast 3:00h 20NM Lunch, afternoon
@@ -136,7 +138,7 @@
                   <h1 class="route-modal-nr relative my-top3">8</h1>
                 </div>
                 <div class="ml-8">
-                  <p class="route-modal-title">Day eight:</p>
+                  <p class="route-modal-title mb-3">Day eight:</p>
                   <p class="route-modal-body">Return to Murter and check-out</p>
                 </div>
               </div>
@@ -248,5 +250,14 @@ textarea.input-name::placeholder {
   font-family: 'Poppins', sans-serif;
   color: #154752;
   font-weight: 300;
+}
+
+.route-modal-title::before {
+  width: 100px;
+  border-bottom: 1px solid #ef5f23;
+  content: '';
+  position: absolute;
+  top: 1.7rem;
+  left: -1.5rem;
 }
 </style>

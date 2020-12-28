@@ -8,7 +8,8 @@
         <h2
           class="section-title text-white font-semibold text-center pt-12 mb-8 font-poppins"
         >
-          Lorem<span class="font-light font-poppins"> ipsum dolor</span>
+          Contact
+          <!-- <span class="font-light font-poppins"> us</span> -->
         </h2>
         <p class="content text-white text-center mb-8">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -16,11 +17,23 @@
           <span class="font-semibold">+385 98 953 5476 </span>or
           <span class="font-semibold">info(a)vegansialing.eu</span>
         </p>
-        <Btn
+        <!-- <Btn
           :route="route"
           class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
           >Book Now</Btn
-        >
+        > -->
+        <div class="flex justify-center">
+          <a
+            class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
+            @click="showModal"
+          >
+            <p
+              class="font-medium text-btn text-center xs:text-left select-none"
+            >
+              Book Now
+            </p>
+          </a>
+        </div>
       </div>
       <div class="flex">
         <a href="/" class="hover:opacity-80"
@@ -31,13 +44,51 @@
         /></a>
       </div>
     </div>
+
+    <transition name="fade">
+      <ModalCabin v-show="isModalVisibleCabin" @close="closeModalCabin" />
+    </transition>
+    <transition name="fade">
+      <ModalPrivate v-show="isModalVisiblePrivate" @close="closeModalPrivate" />
+    </transition>
   </div>
 </template>
 <script>
 export default {
-  data: () => ({
-    route: '/',
-  }),
+  data() {
+    return {
+      isModalVisibleCabin: false,
+      isModalVisiblePrivate: false,
+    }
+  },
+  methods: {
+    showModal() {
+      if (
+        this.$nuxt.$route.path == '/private-sailing' ||
+        this.$nuxt.$route.path == '/hr/private-sailing'
+      ) {
+        this.showModalPrivate()
+      }
+      if (
+        this.$nuxt.$route.path == '/book-a-cabin' ||
+        this.$nuxt.$route.path == '/hr/book-a-cabin'
+      ) {
+        this.showModalCabin()
+      }
+    },
+    showModalCabin() {
+      this.isModalVisibleCabin = true
+    },
+    closeModalCabin() {
+      this.isModalVisibleCabin = false
+    },
+    showModalPrivate() {
+      this.isModalVisiblePrivate = true
+    },
+    closeModalPrivate() {
+      this.isModalVisiblePrivate = false
+    },
+  },
 }
 </script>
 <style>

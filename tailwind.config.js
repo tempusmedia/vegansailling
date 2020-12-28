@@ -36,10 +36,15 @@ module.exports = {
             },
             screens: {
                 navBreak: '939px',
-                xs: '375px',
+                xs: '450px',
                 landing: '974px'
             },
+            minWidth: {
+                '32': '8rem'
+            },
             maxWidth: {
+                '32': '8rem',
+                '36': '9rem',
                 'landing': '300px',
                 'btn': '177px',
                 'crew-card': '285px',
@@ -48,7 +53,8 @@ module.exports = {
                 'modal-inputs': '255px',
                 'more-questions': '532px',
                 'reviews-reach': '44rem',
-                'crew-card-desk': '552px'
+                'crew-card-desk': '552px',
+                'route-c': '307px'
             },
             fontSize: {
                 'btn': '1.375rem',
@@ -69,7 +75,8 @@ module.exports = {
                 'footer-desk': '525.25px',
                 '69pic': '69rem',
                 '76': '19rem',
-                'navh': '72px'
+                'navh': '72px',
+                'orange-cta': '286px'
 
             },
             width: {
@@ -78,7 +85,9 @@ module.exports = {
                 '36': '9rem',
                 'modal-inputs': '255px',
                 '76': '19rem',
-                'txtarea': '32.375rem'
+                'txtarea': '32.375rem',
+                'orange-cta': '1200px'
+
 
 
             },
@@ -86,31 +95,61 @@ module.exports = {
                 'landing': '43.2px'
             },
             spacing: {
+                '3.5': '0.875rem',
                 '7': '1.75rem',
-                'modal-inputs': '255px',
+                '18': '4.5rem',
+                '28': '7rem',
                 '36': '9rem',
                 '80': '20rem',
-                '28': '7rem',
-                'beneath-booking': '11.68rem'
-
+                'modal-inputs': '255px',
+                'beneath-booking': '11.68rem',
+                '1/6': '16.666667%;',
+                '1/10': '10%',
+                '2/10': '20%',
+                '1/3': '33.333334%',
+                '2/3': '66.666667%',
+                '8/10': '80%',
+                'full': '100%'
             },
+
             inset: {
+                '-modalnr': '-1.3rem',
+                '-4': '-1rem',
                 '-6': '-1.5rem',
-                '10': '2.5rem',
+                '-8': '-1.75rem',
                 '-10': '-2.5rem',
-                '14': '3.5rem',
-                '20': '5rem',
-                'minus20': '-5rem',
-                '28': '7rem',
-                'cust': '10vw',
-                'land': '10rem',
                 '-16': '-4rem',
-                '-20': '-5rem',
-                '24': '6rem',
-                '18': '4.5rem',
-                '-modalnr': '-1.3rem'
 
+                '-28': '-7rem',
+                '-30': '-7.5rem',
+                '-32': '-8rem',
+                '-34': '-8.5rem',
+                '-34.5': '-8.65rem',
+                '-35': '-8.75rem',
+                '-20': '-5rem',
+                '-36': '-9rem',
+                '-40': '-10rem',
+                '-62': '-15.5rem',
+                '-73.5': '-18.4rem',
+                '-74': '-18.5rem',
+                '-220p': '-220%',
+                '-400p': '-400%',
+                '475p': '-475%',
+                '480p': '-480%',
+                '8': '2rem',
+                '10': '2.5rem',
+                '14': '3.5rem',
+                '16': '4rem',
+                '18': '4.5rem',
+                '20': '5rem',
+                '22': '5.5rem',
+                '24': '6rem',
+                '28': '7rem',
+                '32': '8rem',
+                'cust': '10vw',
+                'land': '10rem'
             },
+
             transitionDuration: {
                 '0': '0ms',
                 '2000': '2000ms',

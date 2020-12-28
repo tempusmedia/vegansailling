@@ -12,7 +12,7 @@
       :margin="5"
     >
       <template slot="prev"
-        ><span class="prev absolute ml-5 z-10" style="top: 5.5rem">
+        ><span class="prev absolute ml-5 z-10 top-22">
           <!-- without <p> not showing arrow? -->
 
           <img class="icon-height" src="/nav/left-arrow.svg"
@@ -44,7 +44,7 @@
           <img class="icon-height" src="/icons/people.svg" />
           <h2 class="icon-title pt-2 leading-tight">How many</h2>
           <h2 class="icon-title leading-tight">people</h2>
-          <p class="icon-content">4 - 10</p>
+          <p class="icon-content">6 - 10</p>
         </div>
       </div>
       <!-- ex </slide> -->
@@ -53,8 +53,8 @@
         <div class="h-50 max-w-sm flex flex-col items-center justify-center">
           <img class="icon-height" src="/icons/much.svg" />
           <h2 class="icon-title pt-2">How much</h2>
-          <p class="icon-content">2000-10 000</p>
-          <p class="icon-content">eur</p>
+          <p class="icon-content">900-1050 eur</p>
+          <p class="icon-content">per person</p>
         </div>
       </div>
       <!-- ex </slide> -->
@@ -63,7 +63,7 @@
         <div class="h-50 max-w-sm flex flex-col items-center justify-center">
           <img class="icon-height" src="/icons/duration.svg" />
           <h2 class="icon-title pt-2">Duration</h2>
-          <p class="icon-content">7 - 14 days</p>
+          <p class="icon-content">7 days</p>
         </div>
       </div>
       <!-- ex </slide> -->
@@ -108,7 +108,7 @@
       </div>
       <!-- ex </slide> -->
       <template slot="next"
-        ><span class="next absolute right-0 mr-5 z-10" style="top: 5.5rem"
+        ><span class="next absolute right-0 mr-5 z-10 top-22"
           ><img
             class="icon-height"
             src="/nav/right-arrow.svg"

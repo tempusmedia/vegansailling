@@ -4,8 +4,8 @@
 
     <!-- mobile -->
     <div
-      class="bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between overflow-x-hidden"
-      style="background-image: url('/images/private-bg-xs.jpg')"
+      class="bg-no-repeat bg-cover bg-top w-full flex xs:hidden flex-col justify-between overflow-x-hidden"
+      style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <TitleCta
         :route="route"
@@ -44,7 +44,7 @@
     <!-- desktop overflow-x-hidden-->
     <div
       class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main relative overflow-x-hidden overflow-y-hidden"
-      style="background-image: url('/images/private-bg.jpg')"
+      style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <div
         class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-end items-center"
@@ -101,7 +101,9 @@
     </div>
 
     <!-- info -->
-    <InfoCarousel class="sm:hidden" />
+    <!-- white wave on mobile -->
+
+    <PrivateInfoCarousel class="sm:hidden" />
 
     <section class="hidden sm:block max-w-screen-xl mx-auto my-32 mt-8">
       <div
@@ -198,6 +200,7 @@
     <OurCrew />
 
     <BoatAndCabin />
+
     <Reviews />
     <!-- <carousel-3d>
       <slide :index="0"> Slide 1 Content </slide>
@@ -227,6 +230,9 @@ export default {
     closeModal() {
       this.isModalVisible = false
     },
+  },
+  transition: {
+    name: 'fade',
   },
 }
 </script>
