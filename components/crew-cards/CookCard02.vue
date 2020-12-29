@@ -9,7 +9,7 @@
       <div
         class="max-w-crew-card sm:max-w-crew-card-desk mx-auto pb-5 bg-white"
       >
-        <div class="bg-qna relative">
+        <div class="relative">
           <svg
             class="absolute z-50"
             viewBox="0 0 554 128"
@@ -24,10 +24,12 @@
             />
           </svg>
 
-          <img class="cook-mask" src="/images/cook01.jpg" />
+          <img class="cook-mask" src="/images/cook02.jpg" />
         </div>
         <div class="text-center py-6 sm:py-10 px-2 card-shadow">
-          <h2 class="card-title pb-2 sm:text-2xl sm:pb-8 sm:pt-0">Cook</h2>
+          <h2 class="card-title pb-2 sm:text-2xl sm:pb-8 sm:pt-0">
+            Doris Valković
+          </h2>
 
           <table id="thirdTable" class="content sm:mr-12">
             <tbody>
@@ -70,18 +72,23 @@ export default {
   data() {
     return {
       rows: [
-        { item: 'Name', desc: 'Helena Smoljanić' },
-        { item: 'Date of birth', desc: '25.06.1981' },
+        { item: 'Name', desc: 'Doris Valković' },
+        { item: 'Date of birth', desc: '1990' },
         { item: 'Nationality', desc: 'Croatian' },
-        { item: 'Profession', desc: 'Translator, homeopath, yoga teacher' },
-        { item: 'Languages', desc: 'English, Italian, German' },
+        {
+          item: 'Profession',
+          desc:
+            'BA in Cultural Studies, social media content creator, recipe creator, food photographer, food blogger',
+        },
+        { item: 'Languages', desc: 'English, Croatian' },
         {
           item: 'Cooking experience',
           desc: 'vegan cooking classes and preparation of vegan meals',
         },
         {
           item: 'Hobbies',
-          desc: 'Cooking, mountaineering, natural cures, homeopathy',
+          desc:
+            'cooking, photography, travel, yoga, hiking, various physical activities',
         },
       ],
     }

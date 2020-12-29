@@ -45,7 +45,7 @@
         :autoplay="true"
         :navigation="true"
         :dots="true"
-        class="relative pt-10 pb-5 mx-auto max-w-reviews-reach"
+        class="relative pt-6 pb-2 mx-auto max-w-reviews-reach"
         :margin="5"
       >
         <template slot="prev"
@@ -60,7 +60,7 @@
             <p class="content px-10 text-center">
               {{ review.content }}
             </p>
-            <p class="content px-10 text-center pt-5 pb-10">
+            <p class="content px-10 text-center pt-3 pb-2">
               - {{ review.person }}
             </p>
           </dt>
@@ -87,16 +87,16 @@ export default {
           content: this.$t('components.reviews.r1_content'),
         },
         r2: {
-          person: this.$t('components.reviews.r1'),
-          content: this.$t('components.reviews.r1_content'),
+          person: this.$t('components.reviews.r2'),
+          content: this.$t('components.reviews.r2_content'),
         },
         r3: {
-          person: this.$t('components.reviews.r1'),
-          content: this.$t('components.reviews.r1_content'),
+          person: this.$t('components.reviews.r3'),
+          content: this.$t('components.reviews.r3_content'),
         },
         r4: {
-          person: this.$t('components.reviews.r1'),
-          content: this.$t('components.reviews.r1_content'),
+          person: this.$t('components.reviews.r4'),
+          content: this.$t('components.reviews.r4_content'),
         },
       },
     }

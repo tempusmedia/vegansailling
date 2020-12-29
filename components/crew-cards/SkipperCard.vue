@@ -27,7 +27,9 @@
           <img class="skipper-mask" src="/images/skipper01.jpg" />
         </div>
         <div class="text-center py-6 sm:py-10 px-2 card-shadow">
-          <h2 class="card-title pb-2 sm:text-2xl sm:pb-8 sm:pt-0">Skipper</h2>
+          <h2 class="card-title pb-2 sm:text-2xl sm:pb-8 sm:pt-0">
+            Filip Đurić
+          </h2>
 
           <table id="thirdTable" class="content sm:mr-12">
             <tbody>

@@ -12,10 +12,11 @@
           <!-- <span class="font-light font-poppins"> us</span> -->
         </h2>
         <p class="content text-white text-center mb-8">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut
-          <span class="font-semibold">+385 98 953 5476 </span>or
-          <span class="font-semibold">info(a)vegansialing.eu</span>
+          Have more questions? Contact us directly at
+          <br />
+          <a href="mailto:info@vegansailing.eu" class="font-semibold">
+            <span class="font-semibold">info(a)vegansialing.eu</span></a
+          >
         </p>
         <!-- <Btn
           :route="route"

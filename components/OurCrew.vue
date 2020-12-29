@@ -27,7 +27,8 @@
     </h2>
     <div class="crew-container flex justify-center"></div>
     <div class="my-mr-top">
-      <ThreeCarousel />
+      <ThreeCarouselSkipper />
+      <ThreeCarouselCook />ž
       <!-- <SkipperCard />
       <br />
       <br />

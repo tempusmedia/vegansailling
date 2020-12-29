@@ -195,6 +195,9 @@ h1 {
 .radio-bg {
   @apply flex justify-center items-center bg-qna px-10 py-4 mx-5 rounded-xl;
 }
+.route-main-title {
+  @apply font-poppins text-vegan-blue font-medium text-2xl;
+}
 
 .route-modal-nr {
   @apply text-vegan-red opacity-20 font-black text-modal-route;

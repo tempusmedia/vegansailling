@@ -28,6 +28,9 @@
               <div class="-mt-10 mb-8">
                 <img src="/images/weekly-split.jpg" alt="Weekly Split" />
               </div>
+              <div class="pl-6 py-5">
+                <h1 class="route-main-title">Split region (South Adriatic)</h1>
+              </div>
               <div class="flex items-start pt-8">
                 <div>
                   <h1 class="route-modal-nr relative my-top3">1</h1>
@@ -59,7 +62,7 @@
               </div>
               <div class="relative">
                 <img
-                  class="absolute top-18 w-64 -left-40"
+                  class="absolute top-14 w-64 -left-40"
                   src="/images/wave-orange.svg"
                   alt="Orange Wave"
                 />
