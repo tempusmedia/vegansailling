@@ -4,7 +4,7 @@
 
     <!-- mobile -->
     <div
-      class="bg-no-repeat bg-cover bg-top w-full flex xs:hidden flex-col justify-between overflow-x-hidden"
+      class="flex flex-col justify-between w-full overflow-x-hidden bg-top bg-no-repeat bg-cover xs:hidden"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <TitleCta
@@ -15,7 +15,7 @@
           <div class="text-center text-vegan-blue">
             <h1 class="font-semibold leading-tight">
               {{ $t('pages.private_sailing.experience_private') }}
-              <span class="font-light italic"
+              <span class="italic font-light"
                 ><p>{{ $t('pages.private_sailing.vegan_sailing') }}</p></span
               >
               {{ $t('pages.private_sailing.in') }}
@@ -24,14 +24,14 @@
           </div></template
         >
         <template #button>
-          <div class="max-w-btn mx-auto xs:mx-0">
+          <div class="mx-auto max-w-btn xs:mx-0">
             <a
-              class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+              class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
               type="button"
               @click="showModal"
             >
               <p
-                class="font-medium text-btn text-center xs:text-left select-none"
+                class="font-medium text-center select-none text-btn xs:text-left"
               >
                 Book Now
               </p>
@@ -43,11 +43,11 @@
 
     <!-- desktop overflow-x-hidden-->
     <div
-      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main big:h-landing-main-big relative overflow-x-hidden overflow-y-hidden"
+      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main big:h-landing-main-big"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <div
-        class="max-w-screen-xl xs:h-landing-main big:h-landing-main-big mx-auto flex justify-end items-center"
+        class="flex items-center justify-end max-w-screen-xl mx-auto xs:h-landing-main big:h-landing-main-big"
       >
         <TitleCta
           data-aos="fade-left"
@@ -59,18 +59,14 @@
           <template #title>
             <div class="text-left text-vegan-blue">
               <img
-                class="relative top-wave-line z-0"
+                class="relative z-0 top-wave-line"
                 src="/images/wave-orange.svg"
               />
 
-
-
-
-              
               <h1 class="font-semibold leading-tight">
                 {{ $t('pages.private_sailing.experience_private') }}
                 <p>
-                  <span class="font-light italic">
+                  <span class="italic font-light">
                     {{ $t('pages.private_sailing.vegan_sailing') }}</span
                   >
                   {{ $t('pages.private_sailing.in') }}
@@ -86,13 +82,13 @@
           class=""
           >Book now</Btn
         > -->
-            <div class="max-w-btn mx-auto xs:mx-0">
+            <div class="mx-auto max-w-btn xs:mx-0">
               <a
-                class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+                class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
                 @click="showModal"
               >
                 <p
-                  class="font-medium text-btn text-center xs:text-left select-none"
+                  class="font-medium text-center select-none text-btn xs:text-left"
                 >
                   Book Now
                 </p>
@@ -110,83 +106,83 @@
 
     <PrivateInfoCarousel class="sm:hidden" />
 
-    <section class="hidden sm:block max-w-screen-xl mx-auto my-32 mt-8">
+    <section class="hidden max-w-screen-xl mx-auto my-32 mt-8 sm:block">
       <div
-        class="flex max-w-6xl justify-evenly my-12 mx-auto"
+        class="flex max-w-6xl mx-auto my-12 justify-evenly"
         data-aos="fade-up"
         data-aos-duration="800"
       >
         <div>
-          <div class="h-50 flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center h-50">
             <img class="icon-height" src="/icons/where.svg" />
-            <h2 class="icon-title pt-2">Where</h2>
+            <h2 class="pt-2 icon-title">Where</h2>
             <p class="icon-content">Krk / Zadar / Split</p>
           </div>
         </div>
         <div>
-          <div class="h-50 flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center h-50">
             <img class="icon-height" src="/icons/when.svg" />
-            <h2 class="icon-title pt-2">When</h2>
+            <h2 class="pt-2 icon-title">When</h2>
             <p class="icon-content">May / September</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/people.svg" />
-            <h2 class="icon-title pt-2">How many people</h2>
+            <h2 class="pt-2 icon-title">How many people</h2>
             <p class="icon-content">4 - 10</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/much.svg" />
-            <h2 class="icon-title pt-2">How much</h2>
+            <h2 class="pt-2 icon-title">How much</h2>
             <p class="icon-content">2000-10 000 eur</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/duration.svg" />
-            <h2 class="icon-title pt-2">Duration</h2>
+            <h2 class="pt-2 icon-title">Duration</h2>
             <p class="icon-content">7 - 14 days</p>
           </div>
         </div>
       </div>
 
       <div
-        class="flex max-w-5xl justify-evenly mx-auto"
+        class="flex max-w-5xl mx-auto justify-evenly"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-delay="200"
       >
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/skipper.svg" />
-            <h2 class="icon-title pt-2">Skipper</h2>
+            <h2 class="pt-2 icon-title">Skipper</h2>
             <p class="icon-content">For safety and</p>
             <p class="icon-content">comfort</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/boat.svg" />
-            <h2 class="icon-title pt-2">What boat</h2>
+            <h2 class="pt-2 icon-title">What boat</h2>
             <p class="icon-content">Any sailing boat or</p>
             <p class="icon-content">catamaran in Croatia</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/extras.svg" />
-            <h2 class="icon-title pt-2">Extras</h2>
+            <h2 class="pt-2 icon-title">Extras</h2>
             <p class="icon-content">Yoga, snorkling,</p>
             <p class="icon-content">caves, hiking</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/cook.svg" />
-            <h2 class="icon-title pt-2">Cook</h2>
+            <h2 class="pt-2 icon-title">Cook</h2>
             <p class="icon-content">Experienced in</p>
             <p class="icon-content">vegan dishes</p>
           </div>

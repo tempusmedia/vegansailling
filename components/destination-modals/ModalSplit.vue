@@ -262,5 +262,4 @@ textarea.input-name::placeholder {
   position: absolute;
   top: 1.7rem;
   left: -1.5rem;
-}
-</style>
+}</style>

@@ -11,6 +11,7 @@
           Contact
           <!-- <span class="font-light font-poppins"> us</span> -->
         </h2>
+        
         <p class="content text-white text-center mb-8">
           Have more questions? Contact us directly at
           <br />

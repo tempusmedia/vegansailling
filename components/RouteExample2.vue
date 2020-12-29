@@ -1,20 +1,20 @@
 <template>
-  <div class="xl:container px-5 mx-auto mt-28" style="border: 2px solid red">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div class="flex relative">
+  <div class="px-5 mx-auto xl:container mt-28" style="border: 2px solid red">
+    <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+      <div class="relative flex">
         <div class="w-1/2">
           <img style="width: 100%" src="/images/boat01-xs.jpg" />
         </div>
         <div class="w-1/2">
           <img
-            class="w-full relative -left-10 top-14 object-contain"
+            class="relative object-contain w-full -left-10 top-14"
             src="/images/boat02-xs.jpg"
           />
         </div>
       </div>
 
-      <div class="mt-28 md:mt-0 px-5 lg:px-0">
-        <h2 class="section-title font-semibold text-center sm:text-left mb-10">
+      <div class="px-5 mt-28 md:mt-0 lg:px-0">
+        <h2 class="mb-10 font-semibold text-center section-title sm:text-left">
           Route<span class="font-light"> Example</span>
         </h2>
         <ul class="text-left">
@@ -59,19 +59,19 @@
         class="relative col-span-1 cursor-pointer hover:opacity-90 group"
         @click="showModalSplit"
       >
-        <div class="max-w-route-c relative px-3 mx-auto">
-          <div class="rounded-full relative overflow-hidden pb-full">
+        <div class="relative px-3 mx-auto max-w-route-c">
+          <div class="relative overflow-hidden rounded-full pb-full">
             <img
-              class="absolute h-full w-full object-cover"
+              class="absolute object-cover w-full h-full"
               src="/images/split-xs.jpg"
             />
           </div>
         </div>
 
-        <div class="max-w-route-c mx-auto relative">
+        <div class="relative mx-auto max-w-route-c">
           <div class="relative pb-2/10">
             <img
-              class="absolute w-full object-cover -top-220p lg:-top-35"
+              class="absolute object-cover w-full -top-220p lg:-top-35"
               src="/images/split-elipse-desk.svg"
             />
           </div>
@@ -94,19 +94,19 @@
       >
         <!-- <img class="absolute wave-pos" src="/images/wave-orange.svg" /> -->
 
-        <div class="max-w-route-c relative px-3 mx-auto">
-          <div class="rounded-full relative overflow-hidden pb-full">
+        <div class="relative px-3 mx-auto max-w-route-c">
+          <div class="relative overflow-hidden rounded-full pb-full">
             <img
-              class="absolute h-full w-full object-cover"
+              class="absolute object-cover w-full h-full"
               src="/images/zadar-xs.jpg"
             />
           </div>
         </div>
 
-        <div class="max-w-route-c mx-auto relative">
+        <div class="relative mx-auto max-w-route-c">
           <div class="relative pb-2/10">
             <img
-              class="absolute w-full object-cover -top-220p lg:-top-35"
+              class="absolute object-cover w-full -top-220p lg:-top-35"
               src="/images/wave-orange.svg"
             />
           </div>
@@ -129,19 +129,19 @@
         @click="showModalKrk"
       >
         <!-- <img class="absolute top-cdesk10" src="/images/krk-elipse-desk.svg" /> -->
-        <div class="max-w-route-c relative px-3 mx-auto">
-          <div class="rounded-full relative overflow-hidden pb-full">
+        <div class="relative px-3 mx-auto max-w-route-c">
+          <div class="relative overflow-hidden rounded-full pb-full">
             <img
-              class="absolute h-full w-full object-cover"
+              class="absolute object-cover w-full h-full"
               src="/images/krk-xs.jpg"
             />
           </div>
         </div>
 
-        <div class="max-w-route-c mx-auto relative">
+        <div class="relative mx-auto max-w-route-c">
           <div class="relative pb-2/10">
             <img
-              class="absolute w-full object-cover -top-220p lg:-top-35"
+              class="absolute object-cover w-full -top-220p lg:-top-35"
               src="/images/krk-elipse-desk.svg"
             />
           </div>

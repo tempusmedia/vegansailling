@@ -1,15 +1,12 @@
 <template>
   <div>
     <div>
-      <!-- <h2 class="section-title font-semibold text-center mb-10">
-          Meet<span class="font-light"> our crew</span>
-        </h2> -->
-
+ 
       <!-- first card -->
       <div
-        class="max-w-crew-card sm:max-w-crew-card-desk mx-auto pb-5 bg-white"
+        class="pb-5 mx-auto bg-white max-w-crew-card sm:max-w-crew-card-desk"
       >
-        <div class="bg-qna relative">
+        <div class="relative bg-qna">
           <svg
             class="absolute z-50"
             viewBox="0 0 554 128"
@@ -26,8 +23,8 @@
 
           <img class="skipper-mask" src="/images/skipper01.jpg" />
         </div>
-        <div class="text-center py-6 sm:py-10 px-2 card-shadow">
-          <h2 class="card-title pb-2 sm:text-2xl sm:pb-8 sm:pt-0">Skipper</h2>
+        <div class="px-2 py-6 text-center sm:py-10 card-shadow">
+          <h2 class="pb-2 card-title sm:text-2xl sm:pb-8 sm:pt-0">Skipper</h2>
 
           <table id="thirdTable" class="content sm:mr-12">
             <tbody>
@@ -59,7 +56,7 @@
         </defs>
       </svg>
     </div>
-    <!-- <div class="max-w-crew-card mx-auto">
+    <!-- <div class="mx-auto max-w-crew-card">
         <img src="/images/cook01.jpg" />
       </div> -->
   </div>

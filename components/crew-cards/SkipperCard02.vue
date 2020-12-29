@@ -1,9 +1,7 @@
 <template>
   <div>
     <div>
-      <!-- <h2 class="section-title font-semibold text-center mb-10">
-          Meet<span class="font-light"> our crew</span>
-        </h2> -->
+ 
 
       <!-- first card -->
       <div
