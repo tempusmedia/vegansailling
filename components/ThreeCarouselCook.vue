@@ -19,9 +19,6 @@
       <slide :index="1" class="carousel-container">
         <CookCard02 />
       </slide>
-      <slide :index="2" class="carousel-container">
-        <CookCard03 />
-      </slide>
     </carousel-3d>
   </div>
 </template>

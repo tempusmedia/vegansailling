@@ -43,7 +43,8 @@ export default {
     { src: '~/plugins/vue-number-input', ssr: false },
     { src: '~/plugins/vue-carousel-3d', ssr: false },
     { src: '~/plugins/aos', ssr: false },
-    { src: '~/plugins/vue-video-background', ssr: false }
+    { src: '~/plugins/vue-video-background', ssr: false },
+    { src: '~/plugins/vue-gtag', ssr: false }
 
 
 
@@ -64,6 +65,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+
     [
       'nuxt-i18n',
       {
@@ -74,12 +76,23 @@ export default {
     ],
     ['nuxt-mail', {
       smtp: {
-        host: "smtp.example.com",
-        port: 587,
+        host: "mail.tempusmedia.hr",
+        port: 465,
+        secure: true,
       },
-    },],
+      auth: {
+        user: "vegan@tempusmedia.hr",
+        pass: "EdQj4RkA4fB6"
+      },
+      tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false
+      }
+    },
+    ],
     'nuxt-i18n-link'
   ],
+
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},

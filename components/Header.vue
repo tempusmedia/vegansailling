@@ -1,16 +1,16 @@
 <template>
   <header class="bg-white">
-    <div class="px-5 py-3 hidden navBreak:flex">
+    <div class="hidden px-5 py-3 navBreak:flex">
       <div class="flex justify-start w-2/5">
-        <div class="nav-link-container relative">
+        <div class="relative nav-link-container">
           <nuxt-i18n-link
             exact
-            class="nav-link nav-desk pr-8"
+            class="pr-8 nav-link nav-desk"
             :to="route.privateSailing"
             >{{ $t('components.header.private') }}</nuxt-i18n-link
           >
         </div>
-        <div class="nav-link-container relative">
+        <div class="relative nav-link-container">
           <nuxt-i18n-link
             exact
             class="nav-link nav-desk"
@@ -19,46 +19,46 @@
           >
         </div>
       </div>
-      <div class="w-1/5 flex justify-center">
-        <div class="nav-link-container relative">
+      <div class="flex justify-center w-1/5">
+        <div class="relative nav-link-container">
           <nuxt-i18n-link class="nav-link" :to="route.home">
             <img src="/images/logo.svg" alt="Vegan Sailing Logo"
           /></nuxt-i18n-link>
         </div>
       </div>
       <div class="flex justify-end w-2/5">
-        <div class="nav-link-container relative">
+        <div class="relative nav-link-container">
           <!-- <nuxt-i18n-link
             exact
-            class="nav-link nav-desk pl-8"
+            class="pl-8 nav-link nav-desk"
             :to="route.gallery"
             >{{ $t('components.header.gallery') }}</nuxt-i18n-link
           > -->
-          <a class="nav-link nav-desk pl-8" :href="route.galleryHash">{{
+          <a class="pl-8 nav-link nav-desk" :href="route.galleryHash">{{
             $t('components.header.gallery')
           }}</a>
         </div>
 
-        <div class="nav-link-container relative">
+        <div class="relative nav-link-container">
           <!-- <nuxt-i18n-link
             exact
-            class="nav-link nav-desk pl-8"
+            class="pl-8 nav-link nav-desk"
             :to="route.about"
             >{{ $t('components.header.about') }}</nuxt-i18n-link
           > -->
-          <a class="nav-link nav-desk pl-8" :href="route.aboutHash">{{
+          <a class="pl-8 nav-link nav-desk" :href="route.aboutHash">{{
             $t('components.header.about')
           }}</a>
         </div>
 
-        <div class="nav-link-container relative">
+        <div class="relative nav-link-container">
           <!-- <nuxt-i18n-link
             exact
-            class="nav-link nav-desk pl-8"
+            class="pl-8 nav-link nav-desk"
             :to="route.contact"
             >{{ $t('components.header.contact') }}</nuxt-i18n-link
           > -->
-          <a class="nav-link nav-desk pl-8" :href="route.contactHash">
+          <a class="pl-8 nav-link nav-desk" :href="route.contactHash">
             {{ $t('components.header.contact') }}
           </a>
         </div>
@@ -74,21 +74,21 @@
     <div class="z-50 w-screen" :class="isOpen ? 'fixed' : 'static'">
       <div class="flex px-5 py-3 navBreak:hidden">
         <div class="w-1/6"></div>
-        <div class="w-4/6 flex justify-center">
+        <div class="flex justify-center w-4/6">
           <nuxt-i18n-link :to="route.home">
             <img src="/images/logo.svg" alt="Vegan Sailing Logo"
           /></nuxt-i18n-link>
         </div>
 
         <div
-          class="w-1/6 flex justify-end align-middle z-50 absolute btn-position"
+          class="absolute z-50 flex justify-end w-1/6 align-middle btn-position"
         >
           <button
             @click="isOpen = !isOpen"
             type="button"
             class="focus:outline-none highlight-none"
           >
-            <svg class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 v-if="isOpen"
                 stroke="#154752"
@@ -107,7 +107,7 @@
         </div>
       </div>
       <div
-        class="py-20 navBreak:hidden z-40"
+        class="z-40 py-20 navBreak:hidden"
         :class="isOpen ? 'hamburger-menu' : 'hidden'"
       >
         <svg
@@ -205,7 +205,7 @@
           }}</a>
         </div>
         <svg
-          class="ml-auto mt-6"
+          class="mt-6 ml-auto"
           width="135"
           height="25"
           fill="none"

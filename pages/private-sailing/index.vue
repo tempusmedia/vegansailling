@@ -23,6 +23,8 @@
             </h1>
           </div></template
         >
+
+        <!-- mobile -->
         <template #button>
           <div class="mx-auto max-w-btn xs:mx-0">
             <a
@@ -76,16 +78,16 @@
             </div></template
           >
 
+          <!-- desktop -->
           <template #button>
-            <!-- <Btn
-          :route="route"
-          class=""
-          >Book now</Btn
-        > -->
             <div class="mx-auto max-w-btn xs:mx-0">
               <a
                 class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
-                @click="showModal"
+                @click="
+                  showModal()
+                  sendMail()
+                  privatePush()
+                "
               >
                 <p
                   class="font-medium text-center select-none text-btn xs:text-left"
@@ -200,7 +202,7 @@
     <OurCrew />
 
     <BoatAndCabin />
-
+    <Gallery />
     <Reviews />
     <!-- <carousel-3d>
       <slide :index="0"> Slide 1 Content </slide>
@@ -224,6 +226,17 @@ export default {
     }
   },
   methods: {
+    sendMail() {
+      this.$mail.send({
+        from: 'edo@tempusmedia.hr',
+        subject: 'Valjda radi',
+        text: 'Eh, kad bi ovo radilo kako bi to bilo krasno',
+        to: 'vegan@tempusmedia.hr',
+      })
+    },
+    privatePush() {
+      this.$gtag.event('booking-private')
+    },
     showModal() {
       this.isModalVisible = true
     },

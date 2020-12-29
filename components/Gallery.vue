@@ -1,11 +1,10 @@
 <template>
-  <div class="-mt-40 sm:-mt-32">
+  <div class="-mt-40 sm:-mt-32" id="gallery">
     <div class="mt-10 text-center xs:hidden section-title">
-      <h2 class="font-semibold">Boat and cabin</h2>
-      <h2 class="font-light">Example</h2>
+      <h2 class="font-semibold">Gallery</h2>
     </div>
     <div class="hidden pb-1 text-center xs:block section-title mt-28">
-      <h2 class="font-semibold">Boat and cabin example</h2>
+      <h2 class="font-semibold">Gallery</h2>
     </div>
     <client-only>
       <carousel

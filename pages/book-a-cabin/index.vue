@@ -2,7 +2,7 @@
   <div class="slide-transition">
     <!--xs mobile -->
     <div
-      class="bg-no-repeat bg-cover bg-left w-full flex xs:hidden flex-col justify-between overflow-x-hidden"
+      class="flex flex-col justify-between w-full overflow-x-hidden bg-left bg-no-repeat bg-cover xs:hidden"
       style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <TitleCta
@@ -13,21 +13,21 @@
           <div class="text-center text-vegan-blue">
             <h1 class="font-semibold leading-tight">
               {{ $t('pages.book_a_cabin.book') }}
-              <span class="font-light italic"
+              <span class="italic font-light"
                 ><p>{{ $t('pages.book_a_cabin.a_cabin') }}</p></span
               >
             </h1>
           </div></template
         >
         <template #button>
-          <div class="max-w-btn mx-auto xs:mx-0">
+          <div class="mx-auto max-w-btn xs:mx-0">
             <a
-              class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+              class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
               type="button"
               @click="showModal"
             >
               <p
-                class="font-medium text-btn text-center xs:text-left select-none"
+                class="font-medium text-center select-none text-btn xs:text-left"
               >
                 Book Now
               </p>
@@ -39,11 +39,11 @@
 
     <!--xs: desktop rai-->
     <div
-      class="bg-no-repeat bg-cover w-full object-center object-cover hidden xs:block xs:h-landing-main overflow-x-hidden relative z-10"
+      class="relative z-10 hidden object-cover object-center w-full overflow-x-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main"
       style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <div
-        class="max-w-screen-xl xs:h-landing-main mx-auto flex justify-center xs:justify-end items-center"
+        class="flex items-center justify-center max-w-screen-xl mx-auto xs:h-landing-main xs:justify-end"
       >
         <TitleCta
           data-aos="fade-left"
@@ -55,19 +55,18 @@
           <template #title>
             <div class="text-left text-vegan-blue">
               <img
-                class="relative"
-                style="left: -105px; bottom: -250px; margin-bottom: -90px"
+                class="relative wave-props-1"
                 src="/images/wave-orange.svg"
               />
               <h1 class="font-semibold leading-tight xs:hidden">
                 {{ $t('pages.book_a_cabin.book') }}
-                <span class="font-light italic"
+                <span class="italic font-light"
                   ><p>{{ $t('pages.book_a_cabin.a_cabin') }}</p></span
                 >
               </h1>
-              <h1 class="font-semibold leading-tight hidden xs:block">
+              <h1 class="hidden font-semibold leading-tight xs:block">
                 {{ $t('pages.book_a_cabin.book') }}
-                <span class="font-light italic">{{
+                <span class="italic font-light">{{
                   $t('pages.book_a_cabin.a_cabin')
                 }}</span>
               </h1>
@@ -76,16 +75,16 @@
           <template #button>
             <!-- <Btn
           :route="route"
-          class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+          class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
           >Book now</Btn
         > -->
-            <div class="max-w-btn mx-auto xs:mx-0">
+            <div class="mx-auto max-w-btn xs:mx-0">
               <a
-                class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+                class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
                 @click="showModal"
               >
                 <p
-                  class="font-medium text-btn text-center xs:text-left select-none"
+                  class="font-medium text-center select-none text-btn xs:text-left"
                 >
                   Book Now
                 </p>
@@ -97,26 +96,25 @@
     </div>
     <MapDates />
     <div
-      class="bg-no-repeat w-full object-center object-cover flex flex-col justify-between overflow-x-hidden xs:mx-auto relative sm:-mt-40"
+      class="relative flex flex-col justify-between object-cover object-center w-full overflow-x-hidden bg-no-repeat xs:mx-auto sm:-mt-40"
     >
-      <!-- style="background-image: url('/images/bg-orangecta.jpg')" -->
       <OrangeCta>
         <template #title>
           <div class="sm:hidden">
-            <h1 class="font-semibold leading-tight text-white text-center">
+            <h1 class="font-semibold leading-tight text-center text-white">
               All inclusive
-              <span class="font-light italic"><p>vegan sailing</p></span>
+              <span class="italic font-light"><p>vegan sailing</p></span>
             </h1>
           </div>
           <div class="hidden sm:block">
-            <h1 class="font-semibold leading-tight text-white text-center">
+            <h1 class="font-semibold leading-tight text-center text-white">
               All inclusive
-              <span class="font-light italic">vegan sailing</span>
+              <span class="italic font-light">vegan sailing</span>
             </h1>
           </div></template
         >
         <template #content
-          ><p class="text-white text-center max-w-lg py-5">
+          ><p class="max-w-lg py-5 text-center text-white">
             Single cabin or bunkbed price: €900 / Double bed cabin price: €2100
             *all reservations are closed 30 days before the trip
           </p></template
@@ -124,13 +122,13 @@
         <template #button>
           <div class="flex justify-center">
             <a
-              class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
+              class="mt-5 mb-5 text-white btn btn--primary xs:block xs:mt-2 xs:mb-0"
               @click="showModal"
             >
               <p
-                class="font-medium text-btn text-center xs:text-left select-none"
+                class="font-medium text-center select-none text-btn xs:text-left"
               >
-                Reserve <span class="font-light italic">cabin</span> now
+                Reserve <span class="italic font-light">cabin</span> now
               </p>
             </a>
           </div>
@@ -140,84 +138,84 @@
 
     <!-- info -->
     <BcaInfoCarousel class="sm:hidden sm:mt-5" />
-    <section class="hidden sm:block max-w-screen-xl mx-auto my-32">
+    <section class="hidden max-w-screen-xl mx-auto my-32 sm:block">
       <div
-        class="flex max-w-6xl justify-evenly my-12 mx-auto"
+        class="flex max-w-6xl mx-auto my-12 justify-evenly"
         data-aos="fade-up"
         data-aos-duration="800"
       >
         <div>
-          <div class="h-50 flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center h-50">
             <img class="icon-height" src="/icons/where.svg" />
-            <h2 class="icon-title pt-2">Where</h2>
+            <h2 class="pt-2 icon-title">Where</h2>
             <p class="icon-content">Krk / Zadar / Split</p>
           </div>
         </div>
         <div>
-          <div class="h-50 flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center h-50">
             <img class="icon-height" src="/icons/when.svg" />
-            <h2 class="icon-title pt-2">When</h2>
+            <h2 class="pt-2 icon-title">When</h2>
             <p class="icon-content">May / September</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/people.svg" />
-            <h2 class="icon-title pt-2">How many people</h2>
+            <h2 class="pt-2 icon-title">How many people</h2>
             <p class="icon-content">6 - 10</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/much.svg" />
-            <h2 class="icon-title pt-2">How much</h2>
+            <h2 class="pt-2 icon-title">How much</h2>
             <p class="icon-content">900-1050 eur</p>
             <p class="icon-content">per person</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/duration.svg" />
-            <h2 class="icon-title pt-2">Duration</h2>
+            <h2 class="pt-2 icon-title">Duration</h2>
             <p class="icon-content">7 days</p>
           </div>
         </div>
       </div>
 
       <div
-        class="flex max-w-5xl justify-evenly mx-auto"
+        class="flex max-w-5xl mx-auto justify-evenly"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-delay="200"
       >
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/skipper.svg" />
-            <h2 class="icon-title pt-2">Skipper</h2>
+            <h2 class="pt-2 icon-title">Skipper</h2>
             <p class="icon-content">For safety and</p>
             <p class="icon-content">comfort</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/boat.svg" />
-            <h2 class="icon-title pt-2">What boat</h2>
+            <h2 class="pt-2 icon-title">What boat</h2>
             <p class="icon-content">Sailing boat or a catamaran</p>
             <p class="icon-content">from 45-55 feet</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/extras.svg" />
-            <h2 class="icon-title pt-2">Extras</h2>
+            <h2 class="pt-2 icon-title">Extras</h2>
             <p class="icon-content">Yoga, snorkling,</p>
             <p class="icon-content">caves, hiking</p>
           </div>
         </div>
         <div>
-          <div class="h-50 max-w-sm flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/cook.svg" />
-            <h2 class="icon-title pt-2">Cook</h2>
+            <h2 class="pt-2 icon-title">Cook</h2>
             <p class="icon-content">Experienced in</p>
             <p class="icon-content">vegan dishes</p>
           </div>
@@ -232,7 +230,7 @@
       <RouteExample />
     </section>
     <OurCrew />
-
+    <Gallery />
     <Reviews />
 
     <transition name="fade">
@@ -286,5 +284,10 @@ export default {
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+}
+.wave-props-1 {
+  left: -105px;
+  bottom: -250px;
+  margin-bottom: -90px;
 }
 </style>

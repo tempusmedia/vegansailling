@@ -2,11 +2,11 @@
   <div>
     <!-- mobile -->
     <div
-      class="xs:hidden bg-no-repeat w-full object-center object-cover"
+      class="object-cover object-center w-full bg-no-repeat xs:hidden"
       style="background-image: url('/images/review-bg.jpg')"
     >
       <div>
-        <h2 class="section-title font-semibold text-center pt-16">Reviews</h2>
+        <h2 class="pt-16 font-semibold text-center section-title">Reviews</h2>
       </div>
 
       <carousel
@@ -20,10 +20,10 @@
       >
         <dl v-for="(review, id) in reviews">
           <dt>
-            <p class="content px-10 text-center">
+            <p class="px-10 text-center content">
               {{ review.content }}
             </p>
-            <p class="content px-10 text-center pt-6 pb-10">
+            <p class="px-10 pt-6 pb-10 text-center content">
               - {{ review.person }}
             </p>
           </dt>
@@ -33,11 +33,11 @@
 
     <!-- desktop -->
     <div
-      class="hidden xs:block bg-no-repeat w-full object-center object-cover my-reviews my-desk-height pt-1"
+      class="hidden object-cover object-center w-full pt-1 bg-no-repeat xs:block my-reviews my-desk-height"
       style="background-image: url('/images/reviews-desk.jpg')"
     >
       <div>
-        <h2 class="section-title font-semibold text-center pt-12">Reviews</h2>
+        <h2 class="pt-12 font-semibold text-center section-title">Reviews</h2>
       </div>
 
       <carousel
@@ -49,24 +49,31 @@
         :margin="5"
       >
         <template slot="prev"
-          ><span class="prev absolute ml-5 z-10 top-18">
+          ><span class="absolute z-10 ml-5 prev top-18">
             <!-- without <p> not showing arrow? -->
 
             <img class="blue-icon-height" src="/nav/arrow-blue-l.svg"
           /></span>
         </template>
-        <dl v-for="(review, id) in reviews" class="carousel-w mx-auto">
+
+        <dl v-for="(review, id) in reviews" class="mx-auto carousel-w">
           <dt>
-            <p class="content px-10 text-center">
-              {{ review.content }}
-            </p>
-            <p class="content px-10 text-center pt-3 pb-2">
-              - {{ review.person }}
-            </p>
+            <a
+              target="_blank"
+              href="https://www.tripadvisor.com/Attraction_Review-g295370-d21245700-Reviews-Vegan_Sailing-Split_Split_Dalmatia_County_Dalmatia.html"
+            >
+              <p class="px-10 text-center content">
+                {{ review.content }}
+              </p>
+              <p class="px-10 pt-3 pb-2 text-center content">
+                - {{ review.person }}
+              </p>
+            </a>
           </dt>
         </dl>
+
         <template slot="next"
-          ><span class="next absolute right-0 mr-5 z-10 top-18"
+          ><span class="absolute right-0 z-10 mr-5 next top-18"
             ><img
               class="blue-icon-height"
               src="/nav/arrow-blue-r.svg"
