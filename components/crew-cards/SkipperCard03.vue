@@ -75,7 +75,7 @@ export default {
         { item: 'Languages', desc: 'English, Croatian' },
         {
           item: 'Yachting experience',
-          desc: 'from childhood',
+          desc: '8 years',
         },
         {
           item: 'Skipper from',

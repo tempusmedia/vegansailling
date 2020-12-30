@@ -79,7 +79,8 @@ export default {
         { item: 'Languages', desc: 'English, Croatian' },
         {
           item: 'Cooking experience',
-          desc: 'vegan cooking classes and preparation of vegan meals',
+          desc:
+            'school of natural cuisine, creation and production of natural products of my own brand of healthy food, holding cooking workshops, more than 5 years of food blogging and creating vegan recipes',
         },
         {
           item: 'Hobbies',

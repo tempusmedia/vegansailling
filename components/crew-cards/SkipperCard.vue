@@ -69,7 +69,7 @@ export default {
     return {
       rows: [
         { item: 'Name', desc: 'Filip Đurić' },
-        { item: 'Date of birth', desc: '05.01.1992' },
+        { item: 'Date of birth', desc: '1992' },
         { item: 'Nationality', desc: 'Croatian' },
         { item: 'Profession', desc: 'Product designer' },
         { item: 'Languages', desc: 'English, Slovenian, Croatian' },
