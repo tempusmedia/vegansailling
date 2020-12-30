@@ -56,7 +56,7 @@
           data-aos-duration="500"
           :route="route"
           :content="this.$t('pages.private_sailing.content')"
-          class="relative top-20"
+          class="relative -top-10"
         >
           <template #title>
             <div class="text-left text-vegan-blue">

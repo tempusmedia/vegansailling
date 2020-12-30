@@ -50,7 +50,7 @@
           data-aos-duration="500"
           :route="titleCta.route"
           :content="titleCta.content"
-          class="relative top-16"
+          class="relative -top-10"
         >
           <template #title>
             <div class="text-left text-vegan-blue">
