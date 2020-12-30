@@ -23,7 +23,7 @@
           <img class="cook-mask" src="/images/cook02.jpg" />
         </div>
         <div class="px-2 py-6 text-center sm:py-10 card-shadow">
-          <h2 class="pb-2 card-title sm:text-2xl sm:pb-8 sm:pt-0">
+          <h2 class="pb-2 card-title sm:text-2xl sm:pb-2 sm:pt-0">
             Doris Valković
           </h2>
 
@@ -37,6 +37,12 @@
               </tr>
             </tbody>
           </table>
+          <div
+            class="pt-0 text-base cursor-pointer text-vegan-red font-poppins"
+            @click="isModalVisible"
+          >
+            <p>Read more</p>
+          </div>
         </div>
       </div>
       <svg
@@ -73,24 +79,26 @@ export default {
         { item: 'Nationality', desc: 'Croatian' },
         {
           item: 'Profession',
-          desc:
-            'BA in Cultural Studies, social media content creator, recipe creator, food photographer, food blogger',
+          desc: 'BA in Cultural Studies, social media content creator...',
         },
         { item: 'Languages', desc: 'English, Croatian' },
         {
           item: 'Cooking experience',
           desc:
-            'school of natural cuisine, creation and production of natural products of my own brand of healthy food, holding cooking workshops, more than 5 years of food blogging and creating vegan recipes',
+            'school of natural cuisine, holding cooking workshops, food blogging...',
         },
         {
           item: 'Hobbies',
-          desc:
-            'cooking, photography, travel, yoga, hiking, various physical activities',
+          desc: 'cooking, photography, travel, yoga...',
         },
       ],
     }
   },
-
+  methods: {
+    isModalVisible(event) {
+      this.$emit('clicked', true)
+    },
+  },
   computed: {
     columns: function columns() {
       if (this.rows.length == 0) {

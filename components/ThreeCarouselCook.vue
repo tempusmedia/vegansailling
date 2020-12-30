@@ -17,7 +17,7 @@
         <!-- <img src="https://placehold.it/827x554" /> -->
       </slide>
       <slide :index="1" class="carousel-container">
-        <CookCard02 />
+        <CookCard02 @clicked="showCookCard02" />
       </slide>
     </carousel-3d>
 
