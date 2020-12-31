@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 <template>
   <div
     class="relative flex flex-col max-w-screen-xl mx-auto sm:flex-row sm:mt-56"
@@ -20,6 +21,7 @@
       >
         Q<span class="font-light">&</span>A
       </h2>
+     
 
       <div class="accordions lg:max-w-xl">
         <dl
@@ -27,17 +29,19 @@
           v-for="(item, id) in items"
           class="px-8 py-4 mx-5 mb-3 bg-white rounded-lg cursor-pointer"
         >
-          <dt class="flex select-none accordion-title">
+          <dt class="flex pt-1 select-none accordion-title">
             <span class="mr-2 accordion-signal" v-if="item.open">+</span>
             <span class="mr-2 accordion-signal" v-if="!item.open">-</span>
-            <p>{{ item.title }}</p>
-          </dt>
-          <dd v-if="item.open" class="mt-5 select-none accordion-content">
+            <p >{{ item.title }}</p>
+          </dt><dd
+            v-if="item.open"
+            class="pb-3 whitespace-pre-line select-none accordion-content"
+          >
             {{ item.content }}
           </dd>
         </dl>
       </div>
-
+   
       <div
         class="px-6 py-4 mx-5 mb-3 text-center bg-white border border-solid rounded-lg sm:mb-10 border-vegan-red lg:max-w-more-questions"
       >

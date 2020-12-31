@@ -74,7 +74,7 @@ export default {
 
 
       "prices_private": "Prices and estimated costs",
-      "prices_content_private": "skipper fee: 1,050 € / week \n cook fee: 1,050 €/ week  \n boat rent: 2,000-5,000 €/week \n buoys/marinas 30-150 € night \n tourist tax 10.50 € per person \n transit log 100-300 € week \n gas 100-300 € week \n APA: starting from 30 € person/day \n national/natural parks entry fee (Krka falls 20-30 €/person, Kornati 80 €/day per boat, Telascica 60€/day per boat, Mljet 80 € day per boat ) \n any off-board expenses",
+      "prices_content_private": "skipper fee: 1,050 € / week \n cook fee: 1,050 €/ week  \n boat rent: 2,000-5,000 €/week \n buoys/marinas 30-150 € night \n tourist tax 10.50 € per person \n transit log 100-300 € week \n gas 100-300 € week \n APA: starting from 30 € person/day \n national/natural parks entry fee (Krka falls 20-30 €/person, \n  Kornati 80 €/day per boat, \n  Telascica 60€/day per boat, \n  Mljet 80 € day per boat ) \n any off-board expenses",
 
       "onboard_private": "What you will find onboard",
       "onboard_content_private": "We will take care of the entire food and water supply, as well as kitchen and bathroom necessities. \n You will find all the bedding on board",
@@ -98,14 +98,14 @@ export default {
       "selection_content": "The sailingboat or or a catamaran we will choose for the tour depends on the number of people and availability. We will inform you about our choice one month before the sailing trip. You can see boat examples by clicking on virtual tours at the bottom of the web page.",
 
       "prices": "Prices and estimated costs",
-      "prices_private_content": "skipper fee: 1,050 € /week \n cook fee: 1,050 €/ week  \n boat rent: 2,000-5,000 €/week \n buoys/marinas 30-150 € night \n tourist tax 10.50 € per person \n transit log 100-300 € week \n gas 100-300 € week \n APA: starting from 30 € person/day \n national/natural parks entry fee (Krka falls 20-30 €/person, Kornati 80 €/day per boat, Telascica 60€/day per boat, Mljet 80 € day per boat ) \n any off-board expenses",
+      "prices_content": "skipper fee: 1,050 € /week \n cook fee: 1,050 €/ week  \n boat rent: 2,000-5,000 €/week \n buoys/marinas 30-150 € night \n tourist tax 10.50 € per person \n transit log 100-300 € week \n gas 100-300 € week \n APA: starting from 30 € person/day \n national/natural parks entry fee (Krka falls 20-30 €/person, Kornati 80 €/day per boat, Telascica 60€/day per boat, Mljet 80 € day per boat ) \n any off-board expenses",
 
 
       "onboard": "What you will find onboard",
       "onboard_content": "We will take care of the entire food and water supply, as well as kitchen and bathroom necessities. \n You will find all the bedding on board",
 
       "pack": "What you have to bring with you",
-      "pack_content_private": "sunscreen \n sunglasses \n towels \n hats \n snorkeling equipment (can be rented in some charters) \n SUP (can be rented in some charters) \n shoes for light hiking/walking \n yoga mat (if you wish to join us for the morning yoga and meditation practice ) \n swimming suit \n clothes (including warm one, like wind jacket) \n 12V car or USB chargers (there is no 220V except when boat is in marina *where necessary, we can use inverter while motoring for 220 chargers) \n hand gloves, if you want to learn or be involved in sailing \n if you like to sleep outside on the deck you can bring an inflatable yoga mat and a sleeping bag",
+      "pack_content": "sunscreen \n sunglasses \n towels \n hats \n snorkeling equipment (can be rented in some charters) \n SUP (can be rented in some charters) \n shoes for light hiking/walking \n yoga mat (if you wish to join us for the morning yoga and meditation practice ) \n swimming suit \n clothes (including warm one, like wind jacket) \n 12V car or USB chargers (there is no 220V except when boat is in marina *where necessary, we can use inverter while motoring for 220 chargers) \n hand gloves, if you want to learn or be involved in sailing \n if you like to sleep outside on the deck you can bring an inflatable yoga mat and a sleeping bag",
 
     },
     "titlecta": {
