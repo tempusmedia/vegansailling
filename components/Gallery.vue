@@ -23,24 +23,11 @@
             <img class="icon-height sm:mt-6" src="/nav/left-arrow.svg"
           /></span>
         </template>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat01.jpg" />
+
+        <div class="slide" v-for="img in imgs">
+          <img class="mx-auto my-auto img-width" :src="img.src" />
         </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat02.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat03.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat01.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat02.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat03.jpg" />
-        </div>
+
         <template slot="next"
           ><span class="absolute right-0 z-10 mr-5 next top-32"
             ><img
@@ -53,7 +40,21 @@
   </div>
 </template>
 
-<script></script>
+<!-- dodati key i povezati s lightbox pluginom -->
+
+<script>
+export default {
+  data() {
+    return {
+      imgs: [
+        { src: '/images/boat01.jpg' },
+        { src: '/images/boat02.jpg' },
+        { src: '/images/boat03.jpg' },
+      ],
+    }
+  },
+}
+</script>
 <style>
 .owl-nav {
   display: none;
