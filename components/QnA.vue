@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-screen-xl mx-auto flex flex-col sm:flex-row relative sm:mt-56"
+    class="relative flex flex-col max-w-screen-xl mx-auto sm:flex-row sm:mt-56"
   >
     <svg
       class="w-full sm:hidden"
@@ -13,10 +13,10 @@
       />
     </svg>
     <div
-      class="bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64 w-full -mt-28 sm:mt-0 sm:pt-24"
+      class="w-full bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64 -mt-28 sm:mt-0 sm:pt-24"
     >
       <h2
-        class="section-title font-semibold text-center py-10 sm:pt-0 sm:text-left sm:pl-10"
+        class="py-10 font-semibold text-center section-title sm:pt-0 sm:text-left sm:pl-10"
       >
         Q<span class="font-light">&</span>A
       </h2>
@@ -25,29 +25,29 @@
         <dl
           @click="item.open = !item.open"
           v-for="(item, id) in items"
-          class="bg-white rounded-lg mx-5 mb-3 px-8 py-4 cursor-pointer"
+          class="px-8 py-4 mx-5 mb-3 bg-white rounded-lg cursor-pointer"
         >
-          <dt class="accordion-title flex select-none">
-            <span class="accordion-signal mr-2" v-if="item.open">+</span>
-            <span class="accordion-signal mr-2" v-if="!item.open">-</span>
+          <dt class="flex select-none accordion-title">
+            <span class="mr-2 accordion-signal" v-if="item.open">+</span>
+            <span class="mr-2 accordion-signal" v-if="!item.open">-</span>
             <p>{{ item.title }}</p>
           </dt>
-          <dd v-if="item.open" class="accordion-content mt-5 select-none">
+          <dd v-if="item.open" class="mt-5 select-none accordion-content">
             {{ item.content }}
           </dd>
         </dl>
       </div>
 
       <div
-        class="bg-white rounded-lg mx-5 mb-3 sm:mb-10 px-6 py-4 text-center border-vegan-red border border-solid lg:max-w-more-questions"
+        class="px-6 py-4 mx-5 mb-3 text-center bg-white border border-solid rounded-lg sm:mb-10 border-vegan-red lg:max-w-more-questions"
       >
-        <h2 class="section-title font-light italic">
-          <span class="font-bold not-italic">Have</span> more questions?
+        <h2 class="italic font-light section-title">
+          <span class="not-italic font-bold">Have</span> more questions?
         </h2>
         <p class="content">Contact us directly at</p>
         <a
           href="mailto:info@vegansailing.eu"
-          class="content font-medium text-vegan-red"
+          class="font-medium content text-vegan-red"
           >info@vegansailing.eu</a
         >
       </div>
@@ -56,7 +56,7 @@
       data-aos="fade-up"
       data-aos-delay="600"
       data-aos-duration="700"
-      class="hidden lg:block lg:w-3/5 h-69pic absolute -top-28 -mt-20 -right-36"
+      class="absolute hidden -mt-20 lg:block lg:w-3/5 h-69pic -top-28 -right-36"
     >
       <img :src="qnaimage" alt="QnA Image" />
 
@@ -64,7 +64,7 @@
         data-aos="fade-right"
         data-aos-delay="600"
         data-aos-duration="600"
-        class="w-56 h-28 absolute z-30 -mt-32 hidden lg:block xl:bottom-24"
+        class="absolute z-30 hidden w-56 -mt-32 h-28 lg:block xl:bottom-24"
         src="/images/white-waves.svg"
         alt="White waves"
       />
@@ -89,24 +89,34 @@ export default {
           q2: {
             title: this.$t('components.qna.food_private'),
             content: this.$t('components.qna.food_content_private'),
-            open: true,
+            open: false,
           },
           q3: {
+            title: this.$t('components.qna.apa_private'),
+            content: this.$t('components.qna.apa_content_private'),
+            open: false,
+          },
+          q4: {
             title: this.$t('components.qna.safety_private'),
             content: this.$t('components.qna.safety_content_private'),
             open: false,
           },
-          q4: {
+          q5: {
             title: this.$t('components.qna.selection_private'),
             content: this.$t('components.qna.selection_content_private'),
             open: false,
           },
-          q5: {
+          q6: {
+            title: this.$t('components.qna.prices_private'),
+            content: this.$t('components.qna.prices_content_private'),
+            open: false,
+          },
+          q7: {
             title: this.$t('components.qna.onboard_private'),
             content: this.$t('components.qna.onboard_content_private'),
             open: false,
           },
-          q6: {
+          q8: {
             title: this.$t('components.qna.pack_private'),
             content: this.$t('components.qna.pack_content_private'),
             open: false,
@@ -122,14 +132,14 @@ export default {
         qnaimage: '/images/cabin-woman.jpg',
         items: {
           q1: {
-            title: 'Book a Cabin Page (Radi)',
+            title: 'Book-a-Cabin',
             content: this.$t('components.qna.what_content'),
             open: false,
           },
           q2: {
             title: this.$t('components.qna.food'),
             content: this.$t('components.qna.food_content'),
-            open: true,
+            open: false,
           },
           q3: {
             title: this.$t('components.qna.safety'),
@@ -142,11 +152,16 @@ export default {
             open: false,
           },
           q5: {
+            title: this.$t('components.qna.prices'),
+            content: this.$t('components.qna.prices_content'),
+            open: false,
+          },
+          q6: {
             title: this.$t('components.qna.onboard'),
             content: this.$t('components.qna.onboard_content'),
             open: false,
           },
-          q6: {
+          q7: {
             title: this.$t('components.qna.pack'),
             content: this.$t('components.qna.pack_content'),
             open: false,

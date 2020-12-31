@@ -2,21 +2,21 @@
   <div>
     <!-- mobile -->
     <!-- <div
-      class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
+      class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
       style="background-image: url('/images/bg-main-xs.jpg')"
     > -->
 
     <video-background
       src="https://paras.hr/vegansailing2.mp4"
-      class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
+      class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
     >
       <div
-        class="custom-height bg-no-repeat w-full object-center object-cover flex xs:hidden flex-col justify-between"
+        class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
       >
         <HeaderLanding />
         <!-- <img src="/images/bg-main.jpg" />
     <img src="~/assets/images/bg-main.jpg" /> -->
-        <div class="flex h-64 items-end">
+        <div class="flex items-end h-64">
           <landing-button
             class="w-1/2"
             variant="primary"
@@ -40,15 +40,15 @@
 
     <!-- desktop -->
     <!-- <div
-      class="h-screen bg-no-repeat bg-cover bg-center w-full object-center object-cover hidden xs:block"
+      class="hidden object-cover object-center w-full h-screen bg-center bg-no-repeat bg-cover xs:block"
       style="background-image: url('/images/bg-main.jpg')"
     > -->
     <video-background
-      src="https://paras.hr/vegansailing.mp4"
-      class="h-screen bg-no-repeat bg-cover bg-center w-full object-center object-cover hidden xs:block"
+      src="https://paras.hr/desktop.mp4"
+      class="hidden object-cover object-center w-full h-screen bg-center bg-no-repeat bg-cover xs:block"
     >
       <div
-        class="h-screen flex flex-col justify-between max-w-screen-landing mx-auto"
+        class="flex flex-col justify-between h-screen mx-auto max-w-screen-landing"
       >
         <HeaderLanding />
 

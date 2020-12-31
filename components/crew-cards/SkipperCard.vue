@@ -37,6 +37,12 @@
               </tr>
             </tbody>
           </table>
+          <div
+            class="pt-4 text-base cursor-pointer text-vegan-red font-poppins hover:opacity-80"
+            @click="isModalVisible"
+          >
+            <p>Read more</p>
+          </div>
         </div>
       </div>
       <svg
@@ -69,7 +75,7 @@ export default {
     return {
       rows: [
         { item: 'Name', desc: 'Filip Đurić' },
-        { item: 'Date of birth', desc: '05.01.1992' },
+        { item: 'Date of birth', desc: '1992' },
         { item: 'Nationality', desc: 'Croatian' },
         { item: 'Profession', desc: 'Product designer' },
         { item: 'Languages', desc: 'English, Slovenian, Croatian' },
@@ -89,7 +95,11 @@ export default {
       ],
     }
   },
-
+  methods: {
+    isModalVisible(event) {
+      this.$emit('clicked', true)
+    },
+  },
   computed: {
     columns: function columns() {
       if (this.rows.length == 0) {

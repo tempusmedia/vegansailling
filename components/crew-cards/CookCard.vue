@@ -1,8 +1,6 @@
 <template>
   <div>
     <div>
-
-
       <!-- first card -->
       <div
         class="pb-5 mx-auto bg-white max-w-crew-card sm:max-w-crew-card-desk"
@@ -24,8 +22,10 @@
 
           <img class="cook-mask" src="/images/cook01.jpg" />
         </div>
-        <div class="px-2 py-6 text-center sm:py-10 card-shadow">
-          <h2 class="pb-2 card-title sm:text-2xl sm:pb-8 sm:pt-0">Cook</h2>
+        <div class="px-2 py-6 text-center sm:pt-8 sm:pb-10 card-shadow">
+          <h2 class="pb-2 card-title sm:text-2xl sm:pb-4 sm:pt-0">
+            Helena Smoljanić
+          </h2>
 
           <table id="thirdTable" class="content sm:mr-12">
             <tbody>
@@ -37,6 +37,12 @@
               </tr>
             </tbody>
           </table>
+          <div
+            class="pt-4 text-base cursor-pointer text-vegan-red font-poppins hover:opacity-80"
+            @click="isModalVisible"
+          >
+            <p>Read more</p>
+          </div>
         </div>
       </div>
       <svg
@@ -69,13 +75,13 @@ export default {
     return {
       rows: [
         { item: 'Name', desc: 'Helena Smoljanić' },
-        { item: 'Date of birth', desc: '25.06.1981' },
+        { item: 'Date of birth', desc: '1981' },
         { item: 'Nationality', desc: 'Croatian' },
-        { item: 'Profession', desc: 'Translator, homeopath, yoga teacher' },
+        { item: 'Profession', desc: 'translator, homeopath, yoga teacher' },
         { item: 'Languages', desc: 'English, Italian, German' },
         {
           item: 'Cooking experience',
-          desc: 'vegan cooking classes and preparation of vegan meals',
+          desc: 'vegan cooking classes and daily preparation of vegan meals',
         },
         {
           item: 'Hobbies',
@@ -83,6 +89,11 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    isModalVisible(event) {
+      this.$emit('clicked', true)
+    },
   },
 
   computed: {

@@ -13,24 +13,44 @@
       :autoplayHoverPause="true"
     >
       <slide :index="0" class="carousel-container">
-        <CookCard />
+        <CookCard @clicked="showCookCard" />
         <!-- <img src="https://placehold.it/827x554" /> -->
       </slide>
       <slide :index="1" class="carousel-container">
-        <CookCard02 />
-      </slide>
-      <slide :index="2" class="carousel-container">
-        <CookCard03 />
+        <CookCard02 @clicked="showCookCard02" />
       </slide>
     </carousel-3d>
+
+    <transition name="fade">
+      <CookCardModal v-show="cookCard" @close="closeCookCard" />
+    </transition>
+    <transition name="fade">
+      <CookCardModal02 v-show="cookCard02" @close="closeCookCard02" />
+    </transition>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
+      cookCard: false,
+      cookCard02: false,
       slides: 7,
     }
+  },
+  methods: {
+    showCookCard(value) {
+      this.cookCard = value
+    },
+    closeCookCard() {
+      this.cookCard = false
+    },
+    showCookCard02(value) {
+      this.cookCard02 = value
+    },
+    closeCookCard02() {
+      this.cookCard02 = false
+    },
   },
 }
 </script>
