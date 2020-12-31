@@ -37,6 +37,12 @@
               </tr>
             </tbody>
           </table>
+          <div
+            class="pt-4 text-base cursor-pointer text-vegan-red font-poppins hover:opacity-80"
+            @click="isModalVisible"
+          >
+            <p>Read more</p>
+          </div>
         </div>
       </div>
       <svg
@@ -88,7 +94,11 @@ export default {
       ],
     }
   },
-
+  methods: {
+    isModalVisible(event) {
+      this.$emit('clicked', true)
+    },
+  },
   computed: {
     columns: function columns() {
       if (this.rows.length == 0) {

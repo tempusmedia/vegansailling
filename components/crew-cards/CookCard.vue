@@ -38,7 +38,7 @@
             </tbody>
           </table>
           <div
-            class="pt-4 text-base cursor-pointer text-vegan-red font-poppins"
+            class="pt-4 text-base cursor-pointer text-vegan-red font-poppins hover:opacity-80"
             @click="isModalVisible"
           >
             <p>Read more</p>

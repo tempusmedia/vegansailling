@@ -13,24 +13,57 @@
       :autoplayHoverPause="true"
     >
       <slide :index="0" class="carousel-container">
-        <SkipperCard />
+        <SkipperCard @clicked="showSkipperCard" />
         <!-- <img src="https://placehold.it/827x554" /> -->
       </slide>
       <slide :index="1" class="carousel-container">
-        <SkipperCard02 />
+        <SkipperCard02 @clicked="showSkipperCard02" />
       </slide>
       <slide :index="2" class="carousel-container">
-        <SkipperCard03 />
+        <SkipperCard03 @clicked="showSkipperCard03" />
       </slide>
     </carousel-3d>
+
+    <transition name="fade">
+      <SkipperCardModal v-show="skipperCard" @close="closeSkipperCard" />
+    </transition>
+    <transition name="fade">
+      <SkipperCardModal02 v-show="skipperCard02" @close="closeSkipperCard02" />
+    </transition>
+    <transition name="fade">
+      <SkipperCardModal03 v-show="skipperCard03" @close="closeSkipperCard03" />
+    </transition>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
+      skipperCard: false,
+      skipperCard02: false,
+      skipperCard03: false,
       slides: 7,
     }
+  },
+  methods: {
+    showSkipperCard(value) {
+      this.skipperCard = value
+    },
+    closeSkipperCard() {
+      this.skipperCard = false
+    },
+    showSkipperCard02(value) {
+      this.skipperCard02 = value
+    },
+    closeSkipperCard02() {
+      this.skipperCard02 = false
+    },
+    showSkipperCard03(value) {
+      this.skipperCard03 = value
+    },
+    closeSkipperCard03() {
+      this.skipperCard03 = false
+    },
   },
 }
 </script>

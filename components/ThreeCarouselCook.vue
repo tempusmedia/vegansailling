@@ -24,9 +24,9 @@
     <transition name="fade">
       <CookCardModal v-show="cookCard" @close="closeCookCard" />
     </transition>
-    <!-- <transition name="fade">
+    <transition name="fade">
       <CookCardModal02 v-show="cookCard02" @close="closeCookCard02" />
-    </transition> -->
+    </transition>
   </div>
 </template>
 <script>

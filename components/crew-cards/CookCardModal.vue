@@ -23,9 +23,9 @@
             </svg>
           </button>
 
-          <div class="mx-16">
-            <div class="w-2/3 mb-8 -mt-32">
-              <img class="cook-mask" src="/images/cook01.jpg" />
+          <div class="mx-8 sm:mx-16">
+            <div class="hidden w-full mb-8 sm:block sm:w-2/3">
+              <img class="-mt-32 cook-mask" src="/images/cook01.jpg" />
             </div>
             <div class="relative pt-3 pb-12 pl-6">
               <h1 class="carousel-main-title">Helena Smoljanić</h1>
@@ -33,20 +33,20 @@
           </div>
           <div class="grid grid-cols-1 row-gap-3 pb-5 mx-16 sm:grid-cols-3">
             <div>
-              <div class="ml-10">
+              <div class="ml-0 sm:ml-10">
                 <p class="mb-3 carousel-modal-title">Date of birth:</p>
                 <p class="route-modal-body">1981</p>
               </div>
             </div>
 
             <div>
-              <div class="ml-10">
+              <div class="ml-0 sm:ml-10">
                 <p class="mb-3 carousel-modal-title">Nationality:</p>
                 <p class="route-modal-body">Croatian</p>
               </div>
             </div>
             <div>
-              <div class="ml-10">
+              <div class="ml-0 sm:ml-10">
                 <p class="mb-3 carousel-modal-title">Profession:</p>
                 <p class="route-modal-body">
                   translator, homeopath, yoga teacher
@@ -54,13 +54,13 @@
               </div>
             </div>
             <div>
-              <div class="ml-10">
+              <div class="ml-0 sm:ml-10">
                 <p class="mb-3 carousel-modal-title">Languages:</p>
                 <p class="route-modal-body">English, Italian, German</p>
               </div>
             </div>
             <div>
-              <div class="ml-10">
+              <div class="ml-0 sm:ml-10">
                 <p class="mb-3 carousel-modal-title">Cooking experience:</p>
                 <p class="route-modal-body">
                   vegan cooking classes and daily preparation of vegan meals
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div>
-              <div class="ml-10">
+              <div class="ml-0 sm:ml-10">
                 <p class="mb-3 carousel-modal-title">Hobbies:</p>
                 <p class="route-modal-body">
                   Cooking, mountaineering, natural cures, homeopathy
@@ -80,7 +80,7 @@
           <div class="pb-24 mx-16">
             <div>
               <div class="flex items-start pt-8">
-                <div class="ml-10">
+                <div class="ml-0 sm:ml-10">
                   <p class="mb-3 route-modal-title">
                     An extra person on your sailing trip to make all your cares
                     float away!
@@ -100,7 +100,7 @@
               </div>
 
               <div class="flex items-start pt-8">
-                <div class="ml-10">
+                <div class="ml-0 sm:ml-10">
                   <p class="route-modal-body">
                     I will serve them proficiently and clean up everything
                     afterwards, so forget about wasting your time in the kitchen

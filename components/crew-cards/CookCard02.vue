@@ -22,7 +22,7 @@
 
           <img class="cook-mask" src="/images/cook02.jpg" />
         </div>
-        <div class="px-2 py-6 text-center sm:py-10 card-shadow">
+        <div class="px-2 py-6 text-center sm:pt-8 sm:pb-10 card-shadow">
           <h2 class="pb-2 card-title sm:text-2xl sm:pb-2 sm:pt-0">
             Doris Valković
           </h2>
@@ -38,7 +38,7 @@
             </tbody>
           </table>
           <div
-            class="pt-0 text-base cursor-pointer text-vegan-red font-poppins"
+            class="pt-4 text-base cursor-pointer text-vegan-red font-poppins hover:opacity-80"
             @click="isModalVisible"
           >
             <p>Read more</p>
