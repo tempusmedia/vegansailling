@@ -24,7 +24,12 @@
           /></span>
         </template>
 
-        <div class="slide" v-for="img in imgs">
+        <div
+          class="slide"
+          @click="() => showImg(id)"
+          v-for="img in imgs"
+          :key="img.id"
+        >
           <img class="mx-auto my-auto img-width" :src="img.src" />
         </div>
 
@@ -37,6 +42,17 @@
         ></template>
       </carousel>
     </client-only>
+
+    <!-- <div v-for="img in filteredItems">
+      <img :src="img.src" />
+    </div> -->
+
+    <vue-easy-lightbox
+      :visible="visible"
+      :imgs="imgs"
+      :index="index"
+      @hide="handleHide"
+    ></vue-easy-lightbox>
   </div>
 </template>
 
@@ -46,12 +62,34 @@
 export default {
   data() {
     return {
+      visible: false,
+      index: 0, // default: 0
+      lightboxSrc: 0,
       imgs: [
-        { src: '/images/boat01.jpg' },
-        { src: '/images/boat02.jpg' },
-        { src: '/images/boat03.jpg' },
+        { id: 1, src: '/images/boat01.jpg', title: 'prva' },
+        { id: 2, src: '/images/boat02.jpg', title: 'druga' },
+        { id: 3, src: '/images/boat03.jpg', title: 'treca' },
       ],
     }
+  },
+  computed: {
+    filteredItems() {
+      return this.imgs.filter((img) => {
+        return img.id === this.lightboxSrc
+      })
+    },
+  },
+  methods: {
+    select(id) {
+      this.lightboxSrc = id
+    },
+    showImg(id) {
+      this.index = id
+      this.visible = true
+    },
+    handleHide() {
+      this.visible = false
+    },
   },
 }
 </script>
@@ -61,6 +99,10 @@ export default {
 }
 .img-width {
   width: 80% !important;
+}
+
+.full {
+  border: 3px solid red;
 }
 
 @media only screen and (min-width: 600px) {
