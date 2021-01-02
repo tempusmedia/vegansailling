@@ -3,13 +3,31 @@
     <div class="grid grid-cols-1 col-span-12 lg:grid-cols-2">
       <div class="relative flex">
         <div class="w-1/2">
-          <img style="width: 100%" src="/images/boat01-xs.jpg" />
+          <img class="w-full" src="/images/boat01-xs.jpg" />
         </div>
-        <div class="w-1/2">
+        <div class="relative w-1/2">
           <img
             class="relative object-contain w-full -left-10 top-14"
             src="/images/boat02-xs.jpg"
           />
+
+          <svg
+            class="relative w-full bottom-6 sm:bottom-8 md:bottom-14 lg:bottom-8 -left-10"
+            width="100%"
+            viewBox="15 0 415 150"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.913 99.637C178.392-4.507 282.126 210.724 478.98 6.52"
+              stroke="#fff"
+              stroke-width="4"
+            />
+            <path
+              d="M190.672 76.233C85.719 44.318 22.494 86.27 4 111.234v40.282h458.308V47.367c-77.931 56.436-140.445 68.76-271.636 28.866z"
+              fill="#fff"
+            />
+          </svg>
         </div>
       </div>
 

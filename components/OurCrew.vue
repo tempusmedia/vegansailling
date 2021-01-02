@@ -4,7 +4,7 @@
       viewBox="0 0 1920 279"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="relative hidden xs:block top-14"
+      class="relative hidden sm:block top-14"
     >
       <path
         d="M0 70.4156C284.537 -36.0454 563.384 -17.2181 1048.67 96.1064C1429.44 185.025 1689.99 95.2092 1892.51 25.3945C1901.8 22.195 1910.96 19.0374 1920 15.941V278.5L3.66508e-05 278.5L0 70.4156Z"
@@ -15,7 +15,7 @@
       viewBox="0 0 1920 279"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="relative xs:hidden"
+      class="relative mt-5 sm:hidden top-5"
     >
       <path
         d="M0 70.4156C284.537 -36.0454 563.384 -17.2181 1048.67 96.1064C1429.44 185.025 1689.99 95.2092 1892.51 25.3945C1901.8 22.195 1910.96 19.0374 1920 15.941V278.5L3.66508e-05 278.5L0 70.4156Z"
