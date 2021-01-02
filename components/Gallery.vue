@@ -17,7 +17,7 @@
         :responsive="{ 0: { items: 1 }, 960: { items: 3 } }"
       >
         <template slot="prev"
-          ><span class="absolute z-10 ml-5 prev top-32">
+          ><span class="absolute z-10 ml-5 cursor-pointer prev top-32">
             <!-- without <p> not showing arrow? -->
 
             <img class="icon-height sm:mt-6" src="/nav/left-arrow.svg"
@@ -25,8 +25,11 @@
         </template>
 
         <div
-          class="slide"
-          @click="() => showImg(id)"
+          class="cursor-pointer slide"
+          @click="
+            select(img.id)
+            showImg(id)
+          "
           v-for="img in imgs"
           :key="img.id"
         >
@@ -34,7 +37,7 @@
         </div>
 
         <template slot="next"
-          ><span class="absolute right-0 z-10 mr-5 next top-32"
+          ><span class="absolute right-0 z-10 mr-5 cursor-pointer next top-32"
             ><img
               class="icon-height sm:mt-6"
               src="/nav/right-arrow.svg"
@@ -66,9 +69,11 @@ export default {
       index: 0, // default: 0
       lightboxSrc: 0,
       imgs: [
-        { id: 1, src: '/images/boat01.jpg', title: 'prva' },
-        { id: 2, src: '/images/boat02.jpg', title: 'druga' },
-        { id: 3, src: '/images/boat03.jpg', title: 'treca' },
+        { id: 0, src: '/images/boat01.jpg' },
+        { id: 1, src: '/images/boat02.jpg' },
+        { id: 2, src: '/images/boat03.jpg' },
+        { id: 3, src: '/images/boat01.jpg' },
+        { id: 4, src: '/images/boat02.jpg' },
       ],
     }
   },
@@ -84,7 +89,8 @@ export default {
       this.lightboxSrc = id
     },
     showImg(id) {
-      this.index = id
+      this.index = this.lightboxSrc
+      console.log(this.lightboxSrc)
       this.visible = true
     },
     handleHide() {
