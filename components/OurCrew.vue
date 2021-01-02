@@ -1,5 +1,5 @@
 <template>
-  <div class="relative sm:pb-24" id="about">
+  <div class="relative sm:pb-24 sm:mt-12" id="about">
     <svg
       viewBox="0 0 1920 279"
       fill="none"

@@ -39,11 +39,11 @@
 
     <!--xs: desktop rai-->
     <div
-      class="relative z-10 hidden object-cover object-center w-full overflow-x-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main"
+      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main big:h-landing-main-big"
       style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <div
-        class="flex items-center justify-center max-w-screen-xl mx-auto xs:h-landing-main xs:justify-end"
+        class="flex items-center justify-end max-w-screen-xl mx-auto xs:h-landing-main big:h-landing-main-big"
       >
         <TitleCta
           data-aos="fade-left"
@@ -93,8 +93,10 @@
           </template>
         </TitleCta>
       </div>
+   
     </div>
     <MapDates />
+
     <div
       class="relative flex flex-col justify-between object-cover object-center w-full overflow-x-hidden bg-no-repeat xs:mx-auto sm:-mt-40"
     >
@@ -233,6 +235,7 @@
     <Gallery />
     <Reviews />
 
+    <mabgw />
     <transition name="fade">
       <ModalCabin v-show="isModalVisible" @close="closeModal" />
     </transition>
