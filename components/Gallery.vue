@@ -1,9 +1,6 @@
 <template>
   <div class="-mt-40 sm:-mt-32" id="gallery">
-    <div class="mt-10 text-center xs:hidden section-title">
-      <h2 class="font-semibold">Gallery</h2>
-    </div>
-    <div class="hidden pb-1 text-center xs:block section-title mt-28">
+    <div class="pb-1 text-center mt-28 xs:block section-title">
       <h2 class="font-semibold">Gallery</h2>
     </div>
     <client-only>
