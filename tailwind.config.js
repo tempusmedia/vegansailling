@@ -16,7 +16,8 @@ module.exports = {
                 'hr-border': '#e5ebec',
                 'modal-input': '#D3D3D3',
                 'arrow-active': '#828282',
-                'cta-orange': '#FF4800'
+                'cta-orange': '#FF4800',
+                'qna-smooth': '#f1f2f4'
 
             },
             fill: ['hover', 'focus'],
@@ -162,6 +163,8 @@ module.exports = {
                 '24': '6rem',
                 '28': '7rem',
                 '32': '8rem',
+                '80': '20rem',
+                '96': '24rem',
                 'cust': '10vw',
                 'land': '10rem'
             },
