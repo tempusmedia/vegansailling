@@ -28,13 +28,13 @@
 
     <!-- for desktop -->
 
-    <div class="-mt-40">
+    <div class="relative -mt-40 -mb-44 sm:-mb-64 lg:-mb-96">
       <svg
         class="relative z-10"
         id="mapbg"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 2000 800"
+        viewBox="0 0 2000 1050"
       >
         <defs>
           <pattern
@@ -45,7 +45,7 @@
             preserveAspectRatio="none"
           >
             <image
-              xlink:href="/images/bgmap01.jpg"
+              xlink:href="/images/bgmap02.jpg"
               width="100"
               height="100"
               viewBox="0 0 100 100"
@@ -96,6 +96,21 @@
           fill="#fbfb"
         />
       </svg>
+      <div class="container relative z-50 pl-20 mx-auto" style="bottom: 37vw">
+        <div class="relative z-40">
+          <MapDateItem name="Krk " region="(North Adriatic)" date="17 July" />
+          <MapDateItem
+            name="Zadar "
+            region="(Central Adriatic)"
+            date="31 July"
+          />
+          <MapDateItem
+            name="Split "
+            region="(South Adriatic)"
+            date="14 August"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>

@@ -92,17 +92,26 @@ module.exports = {
                 'orange-cta': '1200px'
 
 
+
             },
             lineHeight: {
                 'landing': '43.2px'
             },
             spacing: {
+
+                '-40': '-10rem',
+                '-44': '-11rem',
+                '-60': '-15rem',
+                '-64': '-16rem',
+                '-80': '-20rem',
+                '-96': '-24rem',
                 '3.5': '0.875rem',
                 '7': '1.75rem',
                 '18': '4.5rem',
                 '28': '7rem',
                 '36': '9rem',
                 '80': '20rem',
+                '88': '22rem',
                 'modal-inputs': '255px',
                 'beneath-booking': '11.68rem',
                 '1/6': '16.666667%;',

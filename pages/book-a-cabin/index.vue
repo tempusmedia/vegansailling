@@ -93,7 +93,6 @@
           </template>
         </TitleCta>
       </div>
-   
     </div>
     <MapDates />
 
@@ -235,13 +234,10 @@
     <Gallery />
     <Reviews />
 
-    <mabgw />
     <transition name="fade">
       <ModalCabin v-show="isModalVisible" @close="closeModal" />
     </transition>
     <!-- Footer in layout-->
-
-    <probna />
   </div>
 </template>
 

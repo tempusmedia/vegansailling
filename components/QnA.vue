@@ -30,8 +30,8 @@
           class="px-8 py-4 mx-5 mb-3 bg-white rounded-lg cursor-pointer"
         >
           <dt class="flex pt-1 select-none accordion-title">
-            <span class="mr-2 accordion-signal" v-if="item.open">+</span>
-            <span class="mr-2 accordion-signal" v-if="!item.open">-</span>
+            <span class="mr-2 accordion-signal" v-if="item.open">-</span>
+            <span class="mr-2 accordion-signal" v-if="!item.open">+</span>
             <p >{{ item.title }}</p>
           </dt><dd
             v-if="item.open"
