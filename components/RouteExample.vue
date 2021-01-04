@@ -1,9 +1,8 @@
 <template>
   <div class="grid grid-cols-12 mx-auto mt-0 sm:px-5 xl:container sm:mt-28">
     <svg
-      class="relative z-30 -top-10"
-      width="387"
-      height="90"
+      class="relative z-30 -top-10 sm:hidden"
+      width="100%"
       viewBox="0 0 387 90"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
