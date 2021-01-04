@@ -14,7 +14,7 @@
       />
     </svg>
     <div
-      class="w-full bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64 -mt-28 sm:mt-0 sm:pt-24"
+      class="w-full pb-10 bg-qna lg:pb-36 lg:pt-24 lg:-ml-80 lg:pl-80 lg:pr-64 -mt-28 sm:mt-0 sm:pt-24"
     >
       <h2
         class="py-10 font-semibold text-center section-title sm:pt-0 sm:text-left sm:pl-10"
