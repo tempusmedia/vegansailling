@@ -84,8 +84,7 @@ export default {
         { item: 'Languages', desc: 'English, Croatian' },
         {
           item: 'Cooking experience',
-          desc:
-            'school of natural cuisine, holding cooking workshops, food blogging...',
+          desc: 'school of natural cuisine, holding cooking workshops...',
         },
         {
           item: 'Hobbies',
