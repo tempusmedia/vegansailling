@@ -26,14 +26,14 @@
 
         <!-- mobile -->
         <template #button>
-          <div class="mx-auto max-w-btn xs:mx-0">
+          <div class="mx-auto max-w-btn sm:mx-0">
             <a
-              class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
+              class="mt-5 mb-5 btn btn--secondary sm:block sm:mt-2 sm:mb-0"
               type="button"
               @click="showModal"
             >
               <p
-                class="font-medium text-center select-none text-btn xs:text-left"
+                class="font-medium text-center select-none text-btn sm:text-left"
               >
                 Book Now
               </p>
@@ -45,11 +45,11 @@
 
     <!-- desktop overflow-x-hidden-->
     <div
-      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover sm:block xs:h-landing-main big:h-landing-main-big"
+      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover sm:block sm:h-landing-main big:h-landing-main-big"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <div
-        class="flex items-center justify-end max-w-screen-xl mx-auto xs:h-landing-main big:h-landing-main-big"
+        class="flex items-center justify-end max-w-screen-xl mx-auto sm:h-landing-main big:h-landing-main-big"
       >
         <TitleCta
           data-aos="fade-left"
@@ -80,9 +80,9 @@
 
           <!-- desktop -->
           <template #button>
-            <div class="mx-auto max-w-btn xs:mx-0">
+            <div class="mx-auto max-w-btn sm:mx-0">
               <a
-                class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
+                class="mt-5 mb-5 btn btn--secondary sm:block sm:mt-2 sm:mb-0"
                 @click="
                   showModal()
                   sendMail()
@@ -90,7 +90,7 @@
                 "
               >
                 <p
-                  class="font-medium text-center select-none text-btn xs:text-left"
+                  class="font-medium text-center select-none text-btn sm:text-left"
                 >
                   Book Now
                 </p>

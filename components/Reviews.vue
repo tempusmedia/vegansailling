@@ -2,8 +2,8 @@
   <div>
     <!-- mobile -->
     <div
-      class="object-cover object-center w-full bg-no-repeat xs:hidden"
-      style="background-image: url('/images/review-bg.jpg')"
+      class="w-full bg-top bg-no-repeat bg-cover xs:hidden"
+      style="background-image: url('/images/reviews-desk.jpg')"
     >
       <div>
         <h2 class="pt-16 font-semibold text-center section-title">Reviews</h2>
@@ -20,12 +20,17 @@
       >
         <dl v-for="(review, id) in reviews">
           <dt>
-            <p class="px-10 text-center content">
-              {{ review.content }}
-            </p>
-            <p class="px-10 pt-6 pb-10 text-center content">
-              - {{ review.person }}
-            </p>
+            <a
+              target="_blank"
+              href="https://www.tripadvisor.com/Attraction_Review-g295370-d21245700-Reviews-Vegan_Sailing-Split_Split_Dalmatia_County_Dalmatia.html"
+            >
+              <p class="px-10 text-center content">
+                {{ review.content }}
+              </p>
+              <p class="px-10 pt-6 pb-10 text-center content">
+                - {{ review.person }}
+              </p>
+            </a>
           </dt>
         </dl>
       </carousel>

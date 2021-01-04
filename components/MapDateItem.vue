@@ -5,9 +5,11 @@
     <div
       class="flex flex-col justify-center h-full pl-8 border-l-4 border-vegan-orange"
     >
-      <div class="text-2xl font-medium section-title">
+      <div class="text-xl font-medium sm:text-2xl section-title">
         {{ name
-        }}<span class="text-2xl font-normal section-title">{{ region }}</span>
+        }}<span class="text-xl font-normal sm:text-2xl section-title">{{
+          region
+        }}</span>
       </div>
       <div class="font-medium">{{ date }}</div>
     </div>

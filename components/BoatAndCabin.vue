@@ -9,7 +9,7 @@
     </div>
 
     <div
-      class="container grid grid-cols-2 col-gap-10 px-5 pt-20 pb-40 mx-auto md:px-10 lg:px-20"
+      class="container grid grid-cols-1 row-gap-5 col-gap-10 px-5 pt-10 pb-12 mx-auto sm:pb-40 sm:pt-20 sm:grid-cols-2 md:px-10 lg:px-20"
     >
       <a
         class="cursor-pointer hover:opacity-80"

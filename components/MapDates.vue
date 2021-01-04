@@ -79,7 +79,9 @@
           fill="#FFBBFF"
         />
       </svg>
-      <div class="container relative z-30 mx-auto pl-7 bottom-96">
+      <div
+        class="container relative z-30 mx-auto sm:pl-7 bottom-70 sm:bottom-96"
+      >
         <div class="relative z-20">
           <MapDateItem name="Krk " region="(North Adriatic)" date="17 July" />
           <MapDateItem
