@@ -26,11 +26,13 @@
       </svg>
     </div>
 
-    <!-- for desktop -->
+    <!-- for desktop 
+    0 100 2101 240
+  0 0 2101 300-->
     <div class="absolute hidden w-full my-wave sm:block -bottom-wave -left-16">
       <svg
         class="my-svg-wave"
-        viewBox="0 0 2101 300"
+        viewBox="0 100 2101 240"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
