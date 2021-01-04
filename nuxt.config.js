@@ -19,7 +19,9 @@ export default {
 
   },
 
-
+  serverMiddleware: [
+    '~/api/contact'
+  ],
   server: {
 
 
