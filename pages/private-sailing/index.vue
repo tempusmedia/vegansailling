@@ -4,12 +4,13 @@
 
     <!-- mobile -->
     <div
-      class="flex flex-col justify-between w-full overflow-x-hidden bg-top bg-no-repeat bg-cover xs:hidden"
+      class="flex flex-col justify-between w-full overflow-x-hidden bg-top bg-no-repeat bg-cover h-landing-xs sm:hidden"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <TitleCta
         :route="route"
         :content="this.$t('pages.private_sailing.content_mobile')"
+        
       >
         <template #title>
           <div class="text-center text-vegan-blue">
@@ -45,7 +46,7 @@
 
     <!-- desktop overflow-x-hidden-->
     <div
-      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main big:h-landing-main-big"
+      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover sm:block xs:h-landing-main big:h-landing-main-big"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <div

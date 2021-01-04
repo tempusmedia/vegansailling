@@ -80,7 +80,10 @@ module.exports = {
                 '69pic': '69rem',
                 '76': '19rem',
                 'navh': '72px',
-                'orange-cta': '286px'
+                'orange-cta': '286px',
+                'landing-xs': '505px',
+                'bac-landing-xs': '700px'
+
 
             },
             width: {
@@ -90,7 +93,11 @@ module.exports = {
                 'modal-inputs': '255px',
                 '76': '19rem',
                 'txtarea': '32.375rem',
-                'orange-cta': '1200px'
+                'orange-cta': '1200px',
+                '90vw': '90vw',
+                '527px': '527px',
+                '430px': '430px'
+
 
 
 
@@ -108,6 +115,7 @@ module.exports = {
                 '-96': '-24rem',
                 '3.5': '0.875rem',
                 '7': '1.75rem',
+                '14': '3.5rem',
                 '18': '4.5rem',
                 '28': '7rem',
                 '36': '9rem',

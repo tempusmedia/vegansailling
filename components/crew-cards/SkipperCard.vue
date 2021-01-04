@@ -2,9 +2,7 @@
   <div>
     <div>
       <!-- first card -->
-      <div
-        class="pb-5 mx-auto bg-white max-w-crew-card sm:max-w-crew-card-desk"
-      >
+      <div class="mx-auto bg-white max-w-crew-card sm:max-w-crew-card-desk">
         <div class="relative bg-qna">
           <svg
             class="absolute z-50"

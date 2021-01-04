@@ -1,5 +1,5 @@
 <template>
-  <div class="-mt-40 sm:-mt-32" id="gallery">
+  <div class="pb-16 -mt-20 sm:pb-0 sm:-mt-32" id="gallery">
     <div class="pb-1 text-center mt-28 xs:block section-title">
       <h2 class="font-semibold">Gallery</h2>
     </div>

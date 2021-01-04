@@ -1,5 +1,5 @@
 <template>
-  <div class="-mt-40 sm:-mt-32">
+  <div class="-mt-10 sm:-mt-32">
     <div class="mt-10 text-center xs:hidden section-title">
       <h2 class="font-semibold">Boat and cabin</h2>
       <h2 class="font-light">Example</h2>

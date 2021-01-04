@@ -1,6 +1,6 @@
 <template>
   <div
-    class="landing-btn h-title-cta w-full bg-cta-orange font-poppins mt-5 sm:mt-0 xs:flex xs:flex-col xs:items-start md:h-orange-cta md:w-orange-cta mx-auto relative z-50 bg-cover"
+    class="relative z-30 w-full mx-auto mt-5 bg-cover landing-btn h-title-cta bg-cta-orange font-poppins sm:mt-0 xs:flex xs:flex-col xs:items-start md:h-orange-cta md:w-orange-cta"
     style="background-image: url('/images/orange-bg-pattern.jpg')"
   >
     <!-- TITLE in slot because mixed styles -->
@@ -8,7 +8,7 @@
       <slot name="title"></slot>
       <slot name="content"></slot>
       <!-- <p
-        class="font-poppins text-center xs:text-left max-w-md xs:text-xl font-light leading-snug text-vegan-blue"
+        class="max-w-md font-light leading-snug text-center font-poppins xs:text-left xs:text-xl text-vegan-blue"
         style="white-space: pre-line"
       >
 

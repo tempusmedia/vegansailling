@@ -1,7 +1,7 @@
 <template>
-  <div class="absolute">
+  <div class="absolute w-full sm:w-527px">
     <div
-      class="mx-5 mt-5 bg-white landing-btn h-title-cta xs:h-desk-cta bg-opacity-80 font-poppins xs:flex xs:flex-col xs:items-start xs:w-title-wta"
+      class="mx-5 mt-5 bg-white landing-btn h-title-cta xs:h-desk-cta bg-opacity-80 font-poppins xs:flex xs:flex-col xs:items-start w-90vw xs:w-430px sm:w-title-wta"
     >
       <!-- TITLE in slot because mixed styles -->
       <div class="xs:px-12">

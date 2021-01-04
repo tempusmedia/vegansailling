@@ -29,7 +29,9 @@
     <div class="my-mr-top">
       <ThreeCarouselSkipper />
 
-      <h2 class="relative pt-12 font-semibold text-center section-title">
+      <h2
+        class="relative pt-0 -mt-24 font-semibold text-center sm:mt-0 sm:pt-12 section-title"
+      >
         Meet<span class="font-light"> your cook</span>
       </h2>
       <div class="mt-12">

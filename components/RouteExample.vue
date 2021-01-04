@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div v-if="route" class="px-5 mt-28 md:mt-0 lg:px-0">
+      <div v-if="route" class="px-5 mt-14 sm:mt-28 md:mt-0 lg:px-0">
         <h2 class="mb-10 font-semibold text-center section-title sm:text-left">
           Route<span class="font-light"> Example</span>
         </h2>
@@ -110,7 +110,9 @@
     </div>
 
     <!-- DESKTOP route image container DESKTOP-->
-    <div class="grid grid-cols-12 col-span-12 mt-36 gap-x-3 md:gap-x-8 gap-y-8">
+    <div
+      class="grid grid-cols-12 col-span-12 mt-16 sm:mt-36 gap-x-3 md:gap-x-8 gap-y-8"
+    >
       <!-- Split -->
       <div
         class="relative col-span-6 cursor-pointer md:col-span-4 hover:opacity-90 group"

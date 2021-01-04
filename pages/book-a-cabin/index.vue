@@ -2,7 +2,7 @@
   <div class="slide-transition">
     <!--xs mobile -->
     <div
-      class="flex flex-col justify-between w-full overflow-x-hidden bg-left bg-no-repeat bg-cover xs:hidden"
+      class="flex flex-col justify-between w-full overflow-x-hidden bg-left bg-no-repeat bg-cover xs:hidden h-bac-landing-xs"
       style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <TitleCta
@@ -231,6 +231,7 @@
       <RouteExample />
     </section>
     <OurCrew />
+
     <Gallery />
     <Reviews />
 
