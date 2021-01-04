@@ -119,6 +119,7 @@ module.exports = {
                 '18': '4.5rem',
                 '28': '7rem',
                 '36': '9rem',
+                '40': '10rem',
                 '80': '20rem',
                 '88': '22rem',
                 'modal-inputs': '255px',
@@ -171,6 +172,10 @@ module.exports = {
                 '24': '6rem',
                 '28': '7rem',
                 '32': '8rem',
+                '40': '10rem',
+                '60': '15rem',
+
+                '70': '17.5rem',
                 '80': '20rem',
                 '96': '24rem',
                 'cust': '10vw',

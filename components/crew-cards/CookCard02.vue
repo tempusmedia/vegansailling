@@ -6,8 +6,28 @@
         class="pb-5 mx-auto bg-white max-w-crew-card sm:max-w-crew-card-desk"
       >
         <div class="relative">
+          <!-- mobile -->
           <svg
-            class="absolute z-50"
+            class="absolute z-50 sm:hidden"
+            viewBox="0 10 284 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.8"
+              d="M1 69.1545C149.424 -12.6724 153.203 68.0384 256.151 93.4635C265.881 95.8667 279.044 96.9436 285.716 97.0324"
+              stroke="#ffffff"
+              stroke-width="4"
+            />
+            <path
+              d="M1.09721 0V55.5C148.603 -11.0035 162.097 74.5 285.597 86.5V0H1.09721Z"
+              fill="#ffffff"
+            />
+          </svg>
+
+          <!-- desktop -->
+          <svg
+            class="absolute z-50 hidden sm:block"
             viewBox="0 0 554 128"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

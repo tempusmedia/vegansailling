@@ -30,7 +30,7 @@
       <ThreeCarouselSkipper />
 
       <h2
-        class="relative pt-0 -mt-24 font-semibold text-center sm:mt-0 sm:pt-12 section-title"
+        class="relative pt-0 -mt-32 font-semibold text-center sm:mt-0 sm:pt-12 section-title"
       >
         Meet<span class="font-light"> your cook</span>
       </h2>

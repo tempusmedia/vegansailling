@@ -25,7 +25,7 @@
           />
 
           <svg
-            class="relative w-full bottom-14 sm:bottom-8 md:bottom-14 lg:bottom-8 sm:-left-10"
+            class="relative w-full bottom-18 sm:bottom-8 md:bottom-14 lg:bottom-8 sm:-left-10"
             width="100%"
             viewBox="15 0 415 150"
             fill="none"

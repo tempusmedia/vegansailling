@@ -14,7 +14,9 @@
         :responsive="{ 0: { items: 1 }, 960: { items: 3 } }"
       >
         <template slot="prev"
-          ><span class="absolute z-10 ml-5 cursor-pointer prev top-32">
+          ><span
+            class="absolute z-10 ml-5 cursor-pointer prev top-28 sm:top-32"
+          >
             <!-- without <p> not showing arrow? -->
 
             <img class="icon-height sm:mt-6" src="/nav/left-arrow.svg"
@@ -34,7 +36,8 @@
         </div>
 
         <template slot="next"
-          ><span class="absolute right-0 z-10 mr-5 cursor-pointer next top-32"
+          ><span
+            class="absolute right-0 z-10 mr-5 cursor-pointer next top-28 sm:top-32"
             ><img
               class="icon-height sm:mt-6"
               src="/nav/right-arrow.svg"

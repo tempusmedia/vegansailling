@@ -1,14 +1,14 @@
 <template>
   <div class="absolute w-full sm:w-527px">
     <div
-      class="mx-5 mt-5 bg-white landing-btn h-title-cta xs:h-desk-cta bg-opacity-80 font-poppins xs:flex xs:flex-col xs:items-start w-90vw xs:w-430px sm:w-title-wta"
+      class="mx-auto mt-5 bg-white md:mx-5 landing-btn h-title-cta sm:h-desk-cta bg-opacity-80 font-poppins sm:flex sm:flex-col sm:items-start w-90vw xs:w-430px sm:w-title-wta"
     >
       <!-- TITLE in slot because mixed styles -->
       <div class="xs:px-12">
         <slot name="title"></slot>
 
         <p
-          class="max-w-md font-light leading-snug text-center whitespace-pre-line font-poppins xs:text-left xs:text-xl text-vegan-blue"
+          class="max-w-md font-light leading-snug text-center whitespace-pre-line font-poppins sm:text-left sm:text-xl text-vegan-blue"
         >
           {{ content }}
           {{ contentMobile }}

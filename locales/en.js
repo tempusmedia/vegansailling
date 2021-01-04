@@ -116,7 +116,7 @@ export default {
     },
     "reviews": {
       "r1": "Mia",
-      "r1_content": "“Few remarkable days with my friends and Filip, exploring hidden treasures of the Croatian coast. Waking up surrounded by the magical beauty of the Adriatic Sea is something I would always recommend. Along with nature, great company, a friendly skipper, delicious food are just a part of a wonderful experience that I hope to repeat!”",
+      "r1_content": "“Few remarkable days with my friends and Filip, exploring hidden treasures of the Croatian coast. Waking up surrounded by the magical beauty of the Adriatic Sea is something I would always recommend.”",
       "r2": "Roma",
       "r2_content": "“It was a pleasure sailing with Vegan Sailing while discovering beauties of the Adriatic sea and enjoying good company with my friends!”",
       "r3": "Lea Skuflic",

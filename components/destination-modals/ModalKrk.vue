@@ -1,20 +1,44 @@
 <template>
   <transition name="modal-fade">
-    <div class="modal-shade overflow-y-auto z-50">
+    <div class="z-50 overflow-y-auto modal-shade">
       <div
-        class="modal-bg top-0 mt-10 mb-10 max-w-screen-lg"
+        class="top-0 max-w-screen-lg mb-10 sm:mt-10 modal-bg"
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
       >
         <div class="modal-content">
+          <div
+            class="flex flex-col justify-between w-full overflow-x-hidden bg-left bg-no-repeat bg-cover h-80 sm:hidden"
+            style="background-image: url('/images/weekly-krk.jpg')"
+          >
+            <button
+              type="button"
+              @click="close"
+              class="p-5 pr-4 ml-auto focus:outline-none highlight-none"
+              aria-label="Close modal"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke="#154752"
+                  stroke-width="2"
+                  d="M1.268 20.793l19.5-19.5M1.707 1.293l19.028 19.028"
+                />
+              </svg>
+            </button>
+          </div>
+
           <button
             type="button"
             @click="close"
-            class="focus:outline-none highlight-none ml-auto p-2"
+            class="hidden p-2 ml-auto focus:outline-none highlight-none sm:block"
             aria-label="Close modal"
           >
-            <svg class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 stroke="#154752"
                 stroke-width="2"
@@ -23,20 +47,68 @@
             </svg>
           </button>
 
-          <div class="flex mx-16">
-            <div class="-mt-24">
-              <div class="-mt-10 mb-8">
+          <div class="relative z-10 -mt-20 sm:hidden">
+            <svg
+              width="100vw"
+              viewBox="0 0 368 182"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M-5.00001 29.6805L-4.99999 66.3019L384.5 66.3019L384.5 38.8216C322.057 52.4771 247.441 35.9151 162.652 21.6278C88.0374 9.05506 35.1952 17.4076 -5.00001 29.6805Z"
+                  fill="white"
+                  fill-opacity="0.57"
+                />
+                <path
+                  d="M-0.499974 45.3331L-0.499979 182L384.5 182L384.5 32.5411C328.179 51.2421 263.154 39.7824 179.5 25.6864C109.074 13.8194 47.8928 25.399 -0.499974 45.3331Z"
+                  fill="white"
+                />
+                <path
+                  d="M-97 46.1863C5.50002 0.686348 30.3593 -5.66238 167.426 22.0514C277.652 44.3381 367.609 66.5576 443.043 22.0514"
+                  stroke="url(#paint0_linear)"
+                  stroke-width="3"
+                />
+                <path
+                  d="M-97 46.1863C5.50002 0.686348 30.3593 -5.66238 167.426 22.0514C277.652 44.3381 367.609 66.5576 443.043 22.0514"
+                  stroke="#D5DDDF"
+                  stroke-width="3"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="-71.7237"
+                  y1="45.4538"
+                  x2="441.56"
+                  y2="64.1642"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#ED4924" />
+                  <stop offset="1" stop-color="#F17322" />
+                </linearGradient>
+                <clipPath id="clip0">
+                  <rect width="385" height="182" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div
+            class="relative z-20 flex flex-col p-5 -mt-32 sm:mt-0 sm:mx-16 sm:flex-row"
+          >
+            <div class="sm:-mt-24">
+              <div class="hidden mb-8 -mt-10 sm:block">
                 <img src="/images/weekly-krk.jpg" alt="Weekly Krk" />
               </div>
-              <div class="pl-6 py-5">
+              <div class="py-5 pl-6">
                 <h1 class="route-main-title">Krk region (North Adriatic)</h1>
               </div>
               <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr relative my-top3">1</h1>
+                  <h1 class="relative route-modal-nr my-top3">1</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title mb-3">
+                  <p class="mb-3 route-modal-title">
                     Day one
                     <span class="italic text-light">(usually Saturday):</span>
                   </p>
@@ -50,9 +122,9 @@
                 </div>
               </div>
               <div class="flex items-start pt-8">
-                <div><h1 class="route-modal-nr relative my-top3">2</h1></div>
+                <div><h1 class="relative route-modal-nr my-top3">2</h1></div>
                 <div class="ml-8">
-                  <p class="route-modal-title mb-3">Day two:</p>
+                  <p class="mb-3 route-modal-title">Day two:</p>
                   <p class="route-modal-body">
                     Breakfast at boat, slow morning, navigation to the nearby
                     islad od Plavnik and visit to the Love Cave where you can
@@ -62,9 +134,9 @@
                   </p>
                 </div>
               </div>
-              <div class="relative">
+              <div class="relative hidden md:block">
                 <img
-                  class="absolute top-14 w-64 -left-40"
+                  class="absolute w-64 top-14 -left-40"
                   src="/images/wave-orange.svg"
                   alt="Orange Wave"
                 />
@@ -73,10 +145,10 @@
             <div>
               <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr relative my-top3">3</h1>
+                  <h1 class="relative route-modal-nr my-top3">3</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title mb-3">Day three:</p>
+                  <p class="mb-3 route-modal-title">Day three:</p>
                   <p class="route-modal-body">
                     After breakfast, navigation to Ilovik Island, Parzine Bay
                     with a big sandy beach and a beautiful turquoise colour of
@@ -87,10 +159,10 @@
               </div>
               <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr relative my-top3">4</h1>
+                  <h1 class="relative route-modal-nr my-top3">4</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title mb-3">Day four:</p>
+                  <p class="mb-3 route-modal-title">Day four:</p>
                   <p class="route-modal-body">
                     After breakfast, navigation to a nearby cave and a natural
                     pool. You can enter the cave by swimming, and it’s light
@@ -101,10 +173,10 @@
               </div>
               <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr relative my-top3">5</h1>
+                  <h1 class="relative route-modal-nr my-top3">5</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title mb-3">Day five:</p>
+                  <p class="mb-3 route-modal-title">Day five:</p>
                   <p class="route-modal-body">
                     Time for enjoying the Saharun Bay. We will stay on anchor
                     for breakfast and lunch. Afternoon departure to Silba
@@ -115,10 +187,10 @@
               </div>
               <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr relative my-top3">6</h1>
+                  <h1 class="relative route-modal-nr my-top3">6</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title mb-3">Day six:</p>
+                  <p class="mb-3 route-modal-title">Day six:</p>
                   <p class="route-modal-body">
                     After breakfast departure back to Čifnata Bay at the island
                     of Rab. We can stay anchored there or move to the bay of St.
@@ -128,10 +200,10 @@
               </div>
               <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr relative my-top3">7</h1>
+                  <h1 class="relative route-modal-nr my-top3">7</h1>
                 </div>
                 <div class="ml-10">
-                  <p class="route-modal-title mb-3">Day seven:</p>
+                  <p class="mb-3 route-modal-title">Day seven:</p>
                   <p class="route-modal-body">
                     After breakfast departure towards Krk with lunch break at
                     the “Golden beach” or some of the nearby bays on our way
@@ -141,14 +213,37 @@
               </div>
               <div class="flex items-start pt-8">
                 <div>
-                  <h1 class="route-modal-nr relative my-top3">8</h1>
+                  <h1 class="relative route-modal-nr my-top3">8</h1>
                 </div>
                 <div class="ml-8">
-                  <p class="route-modal-title mb-3">Day eight:</p>
+                  <p class="mb-3 route-modal-title">Day eight:</p>
                   <p class="route-modal-body">
                     Early breakfast on board in the marina and check out.
                   </p>
                 </div>
+              </div>
+
+              <div class="flex justify-center pt-5 sm:hidden">
+                <div class="pr-2">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 -2 20 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5 6.5L0.792893 5.79289C0.402369 6.18342 0.402369 6.81658 0.792893 7.20711L1.5 6.5ZM6.29289 12.7071C6.68342 13.0976 7.31658 13.0976 7.70711 12.7071C8.09763 12.3166 8.09763 11.6834 7.70711 11.2929L6.29289 12.7071ZM7.70711 1.70711C8.09763 1.31658 8.09763 0.683418 7.70711 0.292893C7.31658 -0.0976311 6.68342 -0.0976311 6.29289 0.292893L7.70711 1.70711ZM19.5 5.5H1.5V7.5H19.5V5.5ZM0.792893 7.20711L6.29289 12.7071L7.70711 11.2929L2.20711 5.79289L0.792893 7.20711ZM2.20711 7.20711L7.70711 1.70711L6.29289 0.292893L0.792893 5.79289L2.20711 7.20711Z"
+                      fill="#ED4C24"
+                    />
+                  </svg>
+                </div>
+                <p
+                  @click="close"
+                  class="font-medium font-poppins text-vegan-red"
+                >
+                  Go Back
+                </p>
               </div>
             </div>
           </div>

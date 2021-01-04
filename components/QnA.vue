@@ -4,7 +4,7 @@
     class="relative flex flex-col max-w-screen-xl mx-auto sm:flex-row sm:mt-56"
   >
     <svg
-      class="w-full sm:hidden"
+      class="w-full mb-10 sm:mb-0 sm:hidden"
       viewBox="0 0 389 119"
       xmlns="http://www.w3.org/2000/svg"
     >

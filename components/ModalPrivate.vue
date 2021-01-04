@@ -1,21 +1,21 @@
 <template>
   <transition name="modal-fade">
-    <div class="modal-shade overflow-y-auto z-50">
+    <div class="z-50 overflow-y-auto modal-shade">
       <div
-        class="modal-bg top-0 mt-10 mb-10 max-w-screen-lg"
+        class="top-0 max-w-screen-lg mt-10 mb-10 book-modal-bg"
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
         style="background-image: url('/images/bg-wavy.jpg')"
       >
-        <div class="modal-content">
+        <div class="book-modal-content">
           <button
             type="button"
             @click="close"
-            class="focus:outline-none highlight-none ml-auto p-2"
+            class="p-2 ml-auto focus:outline-none highlight-none"
             aria-label="Close modal"
           >
-            <svg class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 stroke="#154752"
                 stroke-width="2"
@@ -24,20 +24,22 @@
             </svg>
           </button>
           <header id="modalTitle" class="mt-3 mb-10">
-            <div class="text-center text-vegan-blue sm:hidden font-poppins">
+            <div
+              class="px-5 text-center text-vegan-blue sm:hidden font-poppins sm:px-0"
+            >
               <h1 class="font-semibold leading-tight">
                 Book
-                <span class="font-light italic"
+                <span class="italic font-light"
                   ><p>a private vegan sailing</p></span
                 >
               </h1>
             </div>
             <div
-              class="text-center text-vegan-blue hidden sm:block font-poppins"
+              class="hidden text-center text-vegan-blue sm:block font-poppins"
             >
               <h1 class="font-semibold leading-tight">
                 Book
-                <span class="font-light italic"> a private vegan sailing </span>
+                <span class="italic font-light"> a private vegan sailing </span>
               </h1>
             </div>
           </header>
@@ -65,7 +67,7 @@
               <div
                 class="flex flex-col justify-center sm:flex-row sm:w-76 sm:justify-between"
               >
-                <div class="text-left flex">
+                <div class="flex text-left">
                   <input
                     type="radio"
                     id="sailingboat"
@@ -74,7 +76,7 @@
                     checked="checked"
                   />
                   <label for="sailingboat"
-                    ><p class="content pl-3">Bunk bed</p></label
+                    ><p class="pl-3 content">Bunk bed</p></label
                   >
                 </div>
                 <div class="flex">
@@ -85,7 +87,7 @@
                     value="catamaran"
                   />
                   <label for="catamaran"
-                    ><p class="content pl-3">Double room</p></label
+                    ><p class="pl-3 content">Double room</p></label
                   >
                 </div>
               </div>
@@ -99,12 +101,12 @@
           <!-- INPUT DATE -->
           <div class="sm:flex sm:mx-auto">
             <div
-              class="w-modal-inputs modal-input mt-3 mx-auto sm:mx-0 sm:mr-1"
+              class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:mr-1"
             >
               <select
                 type="date"
                 name="date"
-                class="date relative focus:outline-none"
+                class="relative date focus:outline-none"
               >
                 <option class="content" value="">Pick a date</option>
                 <option value="01/01/2021-07/01/2021">
@@ -124,12 +126,12 @@
 
             <!-- INPUT LOCATION -->
             <div
-              class="w-modal-inputs modal-input mt-3 mx-auto sm:mx-0 sm:ml-1"
+              class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:ml-1"
             >
               <select
                 type="location"
                 name="location"
-                class="date relative focus:outline-none"
+                class="relative date focus:outline-none"
               >
                 <option class="content" value="">Pick location</option>
                 <option value="Krk">Krk</option>
@@ -139,26 +141,26 @@
             </div>
           </div>
           <!-- INPUT INFO -->
-          <div class="content flex justify-center w-modal-inputs mx-auto">
+          <div class="flex justify-center mx-auto content w-modal-inputs">
             <div class="flex flex-col w-modal-inputs">
               <div
                 class="flex flex-col sm:flex-row sm:mx-auto sm:relative lefty"
               >
                 <input
-                  class="modal-input mt-3 input-name sm:mr-1"
+                  class="mt-3 modal-input input-name sm:mr-1"
                   placeholder="Your name"
                   name="name"
                   id="name"
                 />
                 <input
-                  class="modal-input mt-3 input-name sm:ml-1"
+                  class="mt-3 modal-input input-name sm:ml-1"
                   placeholder="Your email"
                   name="email"
                   id="email"
                 />
               </div>
               <textarea
-                class="modal-input rounded-2xl mt-3 input-name sm:relative sm:w-txtarea lefty"
+                class="mt-3 modal-input rounded-2xl input-name sm:relative sm:w-txtarea lefty"
                 placeholder="Write your message"
                 name="message"
                 id="message"
@@ -167,10 +169,33 @@
           </div>
 
           <!-- Book now & close modal & send data & show success modal-->
-          <!-- xs:mx-0 -->
-          <div class="flex mx-auto items-center justify-between w-txtarea pt-5">
+
+          <!-- mobile -->
+          <div
+            class="flex flex-col items-center justify-between pt-6 pb-6 mx-auto sm:hidden"
+          >
             <div>
-              <p class="font-poppins text-vegan-blue text-base font-light">
+              <p class="text-base font-light font-poppins text-vegan-blue">
+                + 385(0)98 953 5476
+              </p>
+            </div>
+            <div>
+              <p class="text-base font-light text-vegan-red font-poppins">
+                info@vegansailing.eu
+              </p>
+            </div>
+            <div class="flex">
+              <img src="/images/facebook-dark.svg" alt="facebook" />
+              <img src="/images/instagram-dark.svg" alt="instagram" />
+            </div>
+          </div>
+
+          <!-- desktop -->
+          <div
+            class="items-center justify-between hidden pt-5 mx-auto sm:flex w-txtarea"
+          >
+            <div>
+              <p class="text-base font-light font-poppins text-vegan-blue">
                 + 385(0)98 953 5476
               </p>
             </div>
@@ -179,19 +204,19 @@
               <img src="/images/instagram-dark.svg" alt="instagram" />
             </div>
             <div>
-              <p class="text-vegan-red font-poppins text-base font-light">
+              <p class="text-base font-light text-vegan-red font-poppins">
                 info@vegansailing.eu
               </p>
             </div>
           </div>
-          <div class="max-w-btn mx-auto mt-4 mb-10">
+          <div class="mx-auto mt-4 mb-10 max-w-btn">
             <a
-              class="btn btn--secondary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0"
+              class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
               type="button"
               @click="close"
             >
               <p
-                class="font-medium text-btn text-center xs:text-left select-none"
+                class="font-medium text-center select-none text-btn xs:text-left"
               >
                 Book Now
               </p>
@@ -203,12 +228,12 @@
             <div class="flex flex-col items-center mx-auto my-5">
               <h1 class="font-semibold leading-tight">
                 Have
-                <span class="font-light italic">more</span>
+                <span class="italic font-light">more</span>
               </h1>
-              <h1 class="font-semibold leading-tight hidden xs:block">
-                <span class="font-light italic"> questions?</span>
+              <h1 class="hidden font-semibold leading-tight xs:block">
+                <span class="italic font-light"> questions?</span>
               </h1>
-              <p class="content text-white text-base mt-3">
+              <p class="mt-3 text-base text-white content">
                 + 385(0)98 953 5476
               </p>
               <p class="font-semibold">info@vegansailing.eu</p>
