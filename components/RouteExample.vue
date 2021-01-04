@@ -1,18 +1,32 @@
 <template>
-  <div class="grid grid-cols-12 px-5 mx-auto xl:container mt-28">
-    <div class="grid grid-cols-1 col-span-12 lg:grid-cols-2">
+  <div class="grid grid-cols-12 mx-auto mt-0 sm:px-5 xl:container sm:mt-28">
+    <svg
+      class="relative z-30 -top-10"
+      width="387"
+      height="90"
+      viewBox="0 0 387 90"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.586808 86.9769L0.58681 2.68015L385.587 2.68014L385.587 74.185C329.266 92.886 264.241 81.4262 180.587 67.3302C110.161 55.4632 48.9796 67.0428 0.586808 86.9769Z"
+        fill="#EAECF1"
+      />
+    </svg>
+
+    <div class="grid grid-cols-1 col-span-12 -mt-18 sm:mt-0 lg:grid-cols-2">
       <div class="relative flex">
         <div class="w-1/2">
           <img class="w-full" src="/images/boat01-xs.jpg" />
         </div>
-        <div class="relative w-1/2">
+        <div class="relative w-2/3 sm:w-1/2">
           <img
-            class="relative object-contain w-full -left-10 top-14"
+            class="relative top-0 object-contain w-full sm:-left-10 sm:top-14"
             src="/images/boat02-xs.jpg"
           />
 
           <svg
-            class="relative w-full bottom-6 sm:bottom-8 md:bottom-14 lg:bottom-8 -left-10"
+            class="relative w-full bottom-14 sm:bottom-8 md:bottom-14 lg:bottom-8 sm:-left-10"
             width="100%"
             viewBox="15 0 415 150"
             fill="none"
@@ -31,7 +45,7 @@
         </div>
       </div>
 
-      <div v-if="route" class="px-5 mt-14 sm:mt-28 md:mt-0 lg:px-0">
+      <div v-if="route" class="px-5 -mt-5 sm:mt-28 md:mt-0 lg:px-0">
         <h2 class="mb-10 font-semibold text-center section-title sm:text-left">
           Route<span class="font-light"> Example</span>
         </h2>
