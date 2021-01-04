@@ -87,8 +87,7 @@ export default {
         },
         {
           item: 'Hobbies',
-          desc:
-            'yoga, sailing, hiking, cycling, skiing, swimming, basketball, volleyball',
+          desc: 'yoga, sailing, hiking, cycling, skiing...',
         },
       ],
     }

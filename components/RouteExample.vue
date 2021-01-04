@@ -2,7 +2,7 @@
   <div class="grid grid-cols-12 mx-auto mt-0 sm:px-5 xl:container sm:mt-28">
     <svg
       class="relative z-30 -top-10 sm:hidden"
-      width="100%"
+      width="100vw"
       viewBox="0 0 387 90"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@
           </li>
         </ul>
       </div>
-      <div v-else class="px-5 mt-28 md:mt-0 lg:px-0">
+      <div v-else class="px-5 -mt-5 sm:mt-28 md:mt-0 lg:px-0">
         <h2 class="mb-10 font-semibold text-center section-title sm:text-left">
           Route<span class="font-light"> Example</span>
         </h2>
