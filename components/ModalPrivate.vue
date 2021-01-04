@@ -243,6 +243,8 @@
               </div>
             </div>
           </footer> -->
+
+          <MailSend />
         </div>
       </div>
     </div>
