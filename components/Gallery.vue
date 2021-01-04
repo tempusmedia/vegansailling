@@ -22,7 +22,7 @@
         </template>
 
         <div
-          class="cursor-pointer slide"
+          class="cursor-pointer slide hover:opacity-80"
           @click="
             select(img.id)
             showImg(id)
