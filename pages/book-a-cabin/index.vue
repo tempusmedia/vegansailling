@@ -271,6 +271,77 @@ export default {
   transition: {
     name: 'fade',
   },
+
+  head: {
+    title: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+    meta: [
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Book a cabin | Join an all-inclusive vegan sailing trip and share a boat with other vegans. Check more for dates and prices for your vegan sailing trip.',
+      },
+      //opengraph facebook
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://vegan.tempusmedia.hr/book-a-cabin',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Book a cabin | Join an all-inclusive vegan sailing trip and share a boat with other vegans. Check more for dates and prices for your vegan sailing trip.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/cover-bac-small.jpg',
+      },
+      //twitter
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:url',
+        property: 'twitter:url',
+        content: 'https://vegan.tempusmedia.hr/book-a-cabin',
+      },
+      {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content:
+          'Book a cabin | Join an all-inclusive vegan sailing trip and share a boat with other vegans. Check more for dates and prices for your vegan sailing trip.',
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: '/cover-bac-small.jpg',
+      },
+    ],
+  },
 }
 </script>
 <style scoped>

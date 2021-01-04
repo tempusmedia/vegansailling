@@ -27,6 +27,9 @@ export default {
     host: 'localhost'
     // host: '0.0.0.0',
   },
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
@@ -109,6 +112,8 @@ export default {
       },
     },
     // transpile: ['vue-carousel-3d']
-  }
+  },
+
+
 
 }
