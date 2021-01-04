@@ -63,7 +63,6 @@
             :route="landingBtn.primary.route"
             :content="this.$t('pages.private_sailing.content_mobile')"
           />
-
           <landing-button
             class="w-1/2 ml-2 landing-desk"
             variant="secondary"
@@ -100,6 +99,76 @@ export default {
   layout: 'landing-layout',
   transition: {
     name: 'fade',
+  },
+  head: {
+    title: 'Vegan Sailing | Experience Vegan Sailing In Croatia',
+    meta: [
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Vegan Sailing | Experience Vegan Sailing In Croatia',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Vegan Sailing | Rent a sailing boat with a vegan cook and/or skipper or join an all-inclusive vegan sailing trip and share a boat with other vegans',
+      },
+      //opengraph facebook
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://vegan.tempusmedia.hr/',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Vegan Sailing | Experience Vegan Sailing In Croatia',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Vegan Sailing | Rent a sailing boat with a vegan cook and/or skipper or join an all-inclusive vegan sailing trip and share a boat with other vegans',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/bg-main.jpg',
+      },
+      //twitter
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:url',
+        property: 'twitter:url',
+        content: 'https://vegan.tempusmedia.hr/',
+      },
+      {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Vegan Sailing | Experience Vegan Sailing In Croatia',
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content:
+          'Vegan Sailing | Rent a sailing boat with a vegan cook and/or skipper or join an all-inclusive vegan sailing trip and share a boat with other vegans',
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: `${process.env.BASE_URL}/images/bg-main.jpg`,
+      },
+    ],
   },
 }
 

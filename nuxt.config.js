@@ -27,6 +27,9 @@ export default {
     host: 'localhost'
     // host: '0.0.0.0',
   },
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
@@ -44,7 +47,8 @@ export default {
     { src: '~/plugins/vue-carousel-3d', ssr: false },
     { src: '~/plugins/aos', ssr: false },
     { src: '~/plugins/vue-video-background', ssr: false },
-    { src: '~/plugins/vue-gtag', ssr: false }
+    { src: '~/plugins/vue-gtag', ssr: false },
+    { src: '~/plugins/vue-easy-lightbox', ssr: false },
 
 
 
@@ -108,6 +112,8 @@ export default {
       },
     },
     // transpile: ['vue-carousel-3d']
-  }
+  },
+
+
 
 }

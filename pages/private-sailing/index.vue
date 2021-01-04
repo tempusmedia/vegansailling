@@ -4,7 +4,7 @@
 
     <!-- mobile -->
     <div
-      class="flex flex-col justify-between w-full overflow-x-hidden bg-top bg-no-repeat bg-cover xs:hidden"
+      class="flex flex-col justify-between w-full overflow-x-hidden bg-top bg-no-repeat bg-cover h-landing-xs sm:hidden"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <TitleCta
@@ -45,7 +45,7 @@
 
     <!-- desktop overflow-x-hidden-->
     <div
-      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main big:h-landing-main-big"
+      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover sm:block xs:h-landing-main big:h-landing-main-big"
       style="background-image: url('/images/cover-pvs-small.jpg')"
     >
       <div
@@ -246,6 +246,77 @@ export default {
   },
   transition: {
     name: 'fade',
+  },
+
+  head: {
+    title: 'Experience Private Vegan Sailing | Vegan Sailing',
+    meta: [
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Experience Private Vegan Sailing | Vegan Sailing',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Private Vegan Sailing | A vacation for all your senses. 7-14 days long sailing tour. Choose your days. Rent a boat with a vegan cook and/or skipper.',
+      },
+      //opengraph facebook
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://vegan.tempusmedia.hr/private-sailing',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Experience Private Vegan Sailing | Vegan Sailing',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Private Vegan Sailing | A vacation for all your senses. 7-14 days long sailing tour. Choose your days. Rent a boat with a vegan cook and/or skipper.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/private-bg.jpg',
+      },
+      //twitter
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:url',
+        property: 'twitter:url',
+        content: 'https://vegan.tempusmedia.hr/private-sailing',
+      },
+      {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Experience Private Vegan Sailing | Vegan Sailing',
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content:
+          'Private Vegan Sailing | A vacation for all your senses. 7-14 days long sailing tour. Choose your days. Rent a boat with a vegan cook and/or skipper.',
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: '/private-bg.jpg',
+      },
+    ],
   },
 }
 </script>

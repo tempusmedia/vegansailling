@@ -16,7 +16,8 @@ module.exports = {
                 'hr-border': '#e5ebec',
                 'modal-input': '#D3D3D3',
                 'arrow-active': '#828282',
-                'cta-orange': '#FF4800'
+                'cta-orange': '#FF4800',
+                'qna-smooth': '#f1f2f4'
 
             },
             fill: ['hover', 'focus'],
@@ -79,7 +80,10 @@ module.exports = {
                 '69pic': '69rem',
                 '76': '19rem',
                 'navh': '72px',
-                'orange-cta': '286px'
+                'orange-cta': '286px',
+                'landing-xs': '505px',
+                'bac-landing-xs': '700px'
+
 
             },
             width: {
@@ -89,7 +93,12 @@ module.exports = {
                 'modal-inputs': '255px',
                 '76': '19rem',
                 'txtarea': '32.375rem',
-                'orange-cta': '1200px'
+                'orange-cta': '1200px',
+                '90vw': '90vw',
+                '527px': '527px',
+                '430px': '430px'
+
+
 
 
             },
@@ -97,12 +106,21 @@ module.exports = {
                 'landing': '43.2px'
             },
             spacing: {
+
+                '-40': '-10rem',
+                '-44': '-11rem',
+                '-60': '-15rem',
+                '-64': '-16rem',
+                '-80': '-20rem',
+                '-96': '-24rem',
                 '3.5': '0.875rem',
                 '7': '1.75rem',
+                '14': '3.5rem',
                 '18': '4.5rem',
                 '28': '7rem',
                 '36': '9rem',
                 '80': '20rem',
+                '88': '22rem',
                 'modal-inputs': '255px',
                 'beneath-booking': '11.68rem',
                 '1/6': '16.666667%;',
@@ -134,10 +152,15 @@ module.exports = {
                 '-62': '-15.5rem',
                 '-73.5': '-18.4rem',
                 '-74': '-18.5rem',
+                '-80': '-20rem',
+                '-96': '-24rem',
                 '-220p': '-220%',
                 '-400p': '-400%',
                 '-475p': '-475%',
                 '-480p': '-480%',
+                '-670px': '-670px',
+                '4': '1rem',
+                '6': '1.5rem',
                 '8': '2rem',
                 '10': '2.5rem',
                 '14': '3.5rem',
@@ -148,8 +171,14 @@ module.exports = {
                 '24': '6rem',
                 '28': '7rem',
                 '32': '8rem',
+                '80': '20rem',
+                '96': '24rem',
                 'cust': '10vw',
                 'land': '10rem'
+            },
+            zIndex: {
+                '-10': '-10',
+                '-20': '-20'
             },
 
             transitionDuration: {

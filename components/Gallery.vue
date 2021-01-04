@@ -1,9 +1,6 @@
 <template>
-  <div class="-mt-40 sm:-mt-32" id="gallery">
-    <div class="mt-10 text-center xs:hidden section-title">
-      <h2 class="font-semibold">Gallery</h2>
-    </div>
-    <div class="hidden pb-1 text-center xs:block section-title mt-28">
+  <div class="pb-16 -mt-20 sm:pb-0 sm:-mt-32" id="gallery">
+    <div class="pb-1 text-center mt-28 xs:block section-title">
       <h2 class="font-semibold">Gallery</h2>
     </div>
     <client-only>
@@ -17,32 +14,27 @@
         :responsive="{ 0: { items: 1 }, 960: { items: 3 } }"
       >
         <template slot="prev"
-          ><span class="absolute z-10 ml-5 prev top-32">
+          ><span class="absolute z-10 ml-5 cursor-pointer prev top-32">
             <!-- without <p> not showing arrow? -->
 
             <img class="icon-height sm:mt-6" src="/nav/left-arrow.svg"
           /></span>
         </template>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat01.jpg" />
+
+        <div
+          class="cursor-pointer slide"
+          @click="
+            select(img.id)
+            showImg(id)
+          "
+          v-for="img in imgs"
+          :key="img.id"
+        >
+          <img class="mx-auto my-auto img-width" :src="img.src" />
         </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat02.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat03.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat01.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat02.jpg" />
-        </div>
-        <div class="slide">
-          <img class="mx-auto my-auto img-width" src="/images/boat03.jpg" />
-        </div>
+
         <template slot="next"
-          ><span class="absolute right-0 z-10 mr-5 next top-32"
+          ><span class="absolute right-0 z-10 mr-5 cursor-pointer next top-32"
             ><img
               class="icon-height sm:mt-6"
               src="/nav/right-arrow.svg"
@@ -50,16 +42,70 @@
         ></template>
       </carousel>
     </client-only>
+
+    <!-- <div v-for="img in filteredItems">
+      <img :src="img.src" />
+    </div> -->
+
+    <vue-easy-lightbox
+      :visible="visible"
+      :imgs="imgs"
+      :index="index"
+      @hide="handleHide"
+    ></vue-easy-lightbox>
   </div>
 </template>
 
-<script></script>
+<!-- dodati key i povezati s lightbox pluginom -->
+
+<script>
+export default {
+  data() {
+    return {
+      visible: false,
+      index: 0, // default: 0
+      lightboxSrc: 0,
+      imgs: [
+        { id: 0, src: '/images/boat01.jpg' },
+        { id: 1, src: '/images/boat02.jpg' },
+        { id: 2, src: '/images/boat03.jpg' },
+        { id: 3, src: '/images/boat01.jpg' },
+        { id: 4, src: '/images/boat02.jpg' },
+      ],
+    }
+  },
+  computed: {
+    filteredItems() {
+      return this.imgs.filter((img) => {
+        return img.id === this.lightboxSrc
+      })
+    },
+  },
+  methods: {
+    select(id) {
+      this.lightboxSrc = id
+    },
+    showImg(id) {
+      this.index = this.lightboxSrc
+      console.log(this.lightboxSrc)
+      this.visible = true
+    },
+    handleHide() {
+      this.visible = false
+    },
+  },
+}
+</script>
 <style>
 .owl-nav {
   display: none;
 }
 .img-width {
   width: 80% !important;
+}
+
+.full {
+  border: 3px solid red;
 }
 
 @media only screen and (min-width: 600px) {

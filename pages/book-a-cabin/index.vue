@@ -2,7 +2,7 @@
   <div class="slide-transition">
     <!--xs mobile -->
     <div
-      class="flex flex-col justify-between w-full overflow-x-hidden bg-left bg-no-repeat bg-cover xs:hidden"
+      class="flex flex-col justify-between w-full overflow-x-hidden bg-left bg-no-repeat bg-cover xs:hidden h-bac-landing-xs"
       style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <TitleCta
@@ -39,11 +39,11 @@
 
     <!--xs: desktop rai-->
     <div
-      class="relative z-10 hidden object-cover object-center w-full overflow-x-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main"
+      class="relative hidden object-cover object-center w-full overflow-x-hidden overflow-y-hidden bg-no-repeat bg-cover xs:block xs:h-landing-main big:h-landing-main-big"
       style="background-image: url('/images/cover-bac-small.jpg')"
     >
       <div
-        class="flex items-center justify-center max-w-screen-xl mx-auto xs:h-landing-main xs:justify-end"
+        class="flex items-center justify-end max-w-screen-xl mx-auto xs:h-landing-main big:h-landing-main-big"
       >
         <TitleCta
           data-aos="fade-left"
@@ -95,6 +95,7 @@
       </div>
     </div>
     <MapDates />
+
     <div
       class="relative flex flex-col justify-between object-cover object-center w-full overflow-x-hidden bg-no-repeat xs:mx-auto sm:-mt-40"
     >
@@ -230,6 +231,7 @@
       <RouteExample />
     </section>
     <OurCrew />
+
     <Gallery />
     <Reviews />
 
@@ -237,8 +239,6 @@
       <ModalCabin v-show="isModalVisible" @close="closeModal" />
     </transition>
     <!-- Footer in layout-->
-
-    <probna />
   </div>
 </template>
 
@@ -270,6 +270,77 @@ export default {
   },
   transition: {
     name: 'fade',
+  },
+
+  head: {
+    title: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+    meta: [
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Book a cabin | Join an all-inclusive vegan sailing trip and share a boat with other vegans. Check more for dates and prices for your vegan sailing trip.',
+      },
+      //opengraph facebook
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://vegan.tempusmedia.hr/book-a-cabin',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Book a cabin | Join an all-inclusive vegan sailing trip and share a boat with other vegans. Check more for dates and prices for your vegan sailing trip.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/cover-bac-small.jpg',
+      },
+      //twitter
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:url',
+        property: 'twitter:url',
+        content: 'https://vegan.tempusmedia.hr/book-a-cabin',
+      },
+      {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Book a cabin and join an all-inclusive trip | Vegan Sailing',
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content:
+          'Book a cabin | Join an all-inclusive vegan sailing trip and share a boat with other vegans. Check more for dates and prices for your vegan sailing trip.',
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: '/cover-bac-small.jpg',
+      },
+    ],
   },
 }
 </script>
