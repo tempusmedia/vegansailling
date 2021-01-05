@@ -85,7 +85,7 @@
                 class="mt-5 mb-5 btn btn--secondary sm:block sm:mt-2 sm:mb-0"
                 @click="
                   showModal()
-                  sendMail()
+
                   privatePush()
                 "
               >
@@ -205,8 +205,6 @@
     <Gallery />
     <Reviews />
 
-
-
     <!-- <carousel-3d>
       <slide :index="0"> Slide 1 Content </slide>
       <slide :index="1"> Slide 2 Content </slide>
@@ -229,14 +227,6 @@ export default {
     }
   },
   methods: {
-    sendMail() {
-      this.$mail.send({
-        from: 'edo@tempusmedia.hr',
-        subject: 'Valjda radi',
-        text: 'Eh, kad bi ovo radilo kako bi to bilo krasno',
-        to: 'vegan@tempusmedia.hr',
-      })
-    },
     privatePush() {
       this.$gtag.event('booking-private')
     },

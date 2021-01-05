@@ -12,9 +12,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@smartweb/vue-number-input": "^1.1.0",
     "aos": "^2.3.4",
-    "body-parser": "^1.19.0",
     "core-js": "^3.6.5",
-    "express": "^4.17.1",
     "nodemailer": "^6.4.17",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.14.6",
@@ -22,14 +20,12 @@
     "nuxt-i18n-link": "^1.0.1",
     "nuxt-mail": "^1.0.2",
     "v-owl-carousel": "^1.0.8",
-    "validator": "^13.5.2",
     "vue-carousel-3d": "^1.0.1",
     "vue-easy-lightbox": "^0.14.1",
     "vue-gtag": "^1.10.0",
     "vue-in-viewport-directive": "^2.0.2",
     "vue-responsive-video-background-player": "^1.2.1",
-    "vuejs-datepicker": "^1.6.2",
-    "xss-filters": "^1.2.7"
+    "vuejs-datepicker": "^1.6.2"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.1.0",
