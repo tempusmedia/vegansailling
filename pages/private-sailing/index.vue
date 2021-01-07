@@ -86,7 +86,7 @@
                 @click="
                   showModal()
 
-                  privatePush()
+               
                 "
               >
                 <p
@@ -203,6 +203,8 @@
 
     <BoatAndCabin />
     <Gallery />
+
+ 
     <Reviews />
 
     <!-- <carousel-3d>
@@ -210,16 +212,24 @@
       <slide :index="1"> Slide 2 Content </slide>
       <slide :index="2"> Slide 3 Content </slide>
     </carousel-3d> -->
+
     <transition name="fade">
       <ModalPrivate v-show="isModalVisible" @close="closeModal" />
     </transition>
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
     <!-- Footer in layout-->
+    <!-- <DataFetcher /> -->
   </div>
 </template>
 
 <script>
 export default {
+  // async asyncData({ $axios }) {
+  //   const api = 'http://localhost:3000/api/'
+  //   const mountains = await $axios.$get(api)
+  //   return { mountains }
+  // },
+
   data() {
     return {
       route: '/',
@@ -227,9 +237,7 @@ export default {
     }
   },
   methods: {
-    privatePush() {
-      this.$gtag.event('booking-private')
-    },
+   
     showModal() {
       this.isModalVisible = true
     },

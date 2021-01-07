@@ -213,7 +213,10 @@
             <a
               class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
               type="button"
-              @click="close"
+              @click="
+                close()
+                sendMail()
+              "
             >
               <p
                 class="font-medium text-center select-none text-btn xs:text-left"
@@ -255,6 +258,18 @@ export default {
   name: 'modal',
 
   methods: {
+    sendMail() {
+      this.$axios.$post('http://localhost:3000/api/').then((response) => {
+        if (response == 'success') {
+          this.privatePush()
+        } else {
+          alert(response)
+        }
+      })
+    },
+    privatePush() {
+      this.$gtag.event('booking-private')
+    },
     close() {
       this.$emit('close')
     },
