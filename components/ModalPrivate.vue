@@ -28,7 +28,7 @@
               class="px-5 text-center text-vegan-blue sm:hidden font-poppins sm:px-0"
             >
               <h1 class="font-semibold leading-tight">
-                Book
+                Bookk
                 <span class="italic font-light"
                   ><p>a private vegan sailing</p></span
                 >
