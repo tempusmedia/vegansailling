@@ -50,12 +50,18 @@
               <div class="sm:flex sm:w-76 sm:justify-between">
                 <label class="box content"
                   >Hire skipper
-                  <input type="checkbox" checked="checked" />
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    v-model="hireSkipper"
+                  />
+                  <!-- {{ hireSkipper ? 'yes' : 'no' }} -->
                   <span class="checkmark"></span>
                 </label>
                 <label class="box content"
                   >Hire cook
-                  <input type="checkbox" />
+                  <input type="checkbox" v-model="hireCook" />
+                  <!-- {{ hireCook ? 'yes' : 'no' }} -->
                   <span class="checkmark"></span>
                 </label>
               </div>
@@ -70,23 +76,24 @@
                 <div class="flex text-left">
                   <input
                     type="radio"
-                    id="sailingboat"
-                    name="boat"
-                    value="sailingboat"
-                    checked="checked"
+                    id="bunkBed"
+                    name="accomodation"
+                    value="bunkBed"
+                    v-model="accomodation"
                   />
-                  <label for="sailingboat"
+                  <label for="bunkBed"
                     ><p class="pl-3 content">Bunk bed</p></label
                   >
                 </div>
                 <div class="flex">
                   <input
                     type="radio"
-                    id="catamaran"
-                    name="boat"
-                    value="catamaran"
+                    id="doubleRoom"
+                    name="accomodation"
+                    value="doubleRoom"
+                    v-model="accomodation"
                   />
-                  <label for="catamaran"
+                  <label for="doubleRoom"
                     ><p class="pl-3 content">Double room</p></label
                   >
                 </div>
@@ -96,7 +103,7 @@
 
           <section class="mt-3">
             <!-- INPUT NUMBER -->
-            <InputNumberSlider />
+            <InputNumberSlider @eventname="updatenumber" />
           </section>
           <!-- INPUT DATE -->
           <div class="sm:flex sm:mx-auto">
@@ -107,6 +114,7 @@
                 type="date"
                 name="date"
                 class="relative date focus:outline-none"
+                v-model="date"
               >
                 <option class="content" value="">Pick a date</option>
                 <option value="01/01/2021-07/01/2021">
@@ -132,6 +140,7 @@
                 type="location"
                 name="location"
                 class="relative date focus:outline-none"
+                v-model="location"
               >
                 <option class="content" value="">Pick location</option>
                 <option value="Krk">Krk</option>
@@ -150,20 +159,23 @@
                   class="mt-3 modal-input input-name sm:mr-1"
                   placeholder="Your name"
                   name="name"
-                  id="name"
+                  id="namePrivate"
+                  v-model="name"
                 />
                 <input
                   class="mt-3 modal-input input-name sm:ml-1"
                   placeholder="Your email"
                   name="email"
-                  id="email"
+                  id="emailPrivate"
+                  v-model="userMail"
                 />
               </div>
               <textarea
                 class="mt-3 modal-input rounded-2xl input-name sm:relative sm:w-txtarea lefty"
                 placeholder="Write your message"
                 name="message"
-                id="message"
+                id="messagePrivate"
+                v-model="message"
               ></textarea>
             </div>
           </div>
@@ -246,8 +258,6 @@
               </div>
             </div>
           </footer> -->
-
-          <MailSend />
         </div>
       </div>
     </div>
@@ -256,16 +266,47 @@
 <script>
 export default {
   name: 'modal',
+  data() {
+    return {
+      subject: 'Private vegan sailing',
+      name: '',
+      userMail: '',
+      numberOfPeople: '1',
+      date: '',
+      location: '',
+      message: '',
+      accomodation: '',
+      hireCook: true,
+      hireSkipper: true,
+    }
+  },
 
   methods: {
+    updatenumber(persons) {
+      this.numberOfPeople = persons
+    },
     sendMail() {
-      this.$axios.$post('http://localhost:3000/api/').then((response) => {
-        if (response == 'success') {
-          this.privatePush()
-        } else {
-          alert(response)
-        }
-      })
+      this.$axios
+        .$post('https://vegan.tempusmedia.hr//api/api/', {
+          subject: this.subject,
+          userMail: this.userMail,
+          name: this.name,
+          numberOfPeople: this.numberOfPeople,
+          date: this.date,
+          location: this.location,
+          text: this.message,
+          accomodation: this.accomodation,
+          hireCook: this.hireCook,
+          hireSkipper: this.hireSkipper,
+        })
+        .then((response) => {
+          if (response == 'success') {
+            this.privatePush()
+            this.$emit('modalsuccess')
+          } else {
+            alert(response)
+          }
+        })
     },
     privatePush() {
       this.$gtag.event('booking-private')

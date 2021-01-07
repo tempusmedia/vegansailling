@@ -96,7 +96,8 @@ module.exports = {
                 'orange-cta': '1200px',
                 '90vw': '90vw',
                 '527px': '527px',
-                '430px': '430px'
+                '430px': '430px',
+                '197px': '197px'
 
 
 
@@ -122,6 +123,9 @@ module.exports = {
                 '40': '10rem',
                 '80': '20rem',
                 '88': '22rem',
+                '120': '30rem',
+                '130': '32.5rem',
+                '150': '37.5rem',
                 'modal-inputs': '255px',
                 'beneath-booking': '11.68rem',
                 '1/6': '16.666667%;',

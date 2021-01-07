@@ -93,7 +93,7 @@
           </div>
           <div class="relative z-30 mx-8 -mt-36 sm:mt-0 sm:mx-16">
             <div class="hidden w-full mb-8 sm:block sm:w-2/3">
-              <img class="-mt-32 cook-mask" src="/images/skipper01.jpg" />
+              <img class="-mt-32 cook-mask" src="/images/skipper03.jpg" />
             </div>
             <div class="relative pt-3 pb-12 pl-8 text-left sm:pl-6">
               <h1 class="carousel-main-title">Saša Kurtanjek</h1>

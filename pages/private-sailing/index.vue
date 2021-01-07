@@ -83,11 +83,7 @@
             <div class="mx-auto max-w-btn sm:mx-0">
               <a
                 class="mt-5 mb-5 btn btn--secondary sm:block sm:mt-2 sm:mb-0"
-                @click="
-                  showModal()
-
-               
-                "
+                @click="showModal()"
               >
                 <p
                   class="font-medium text-center select-none text-btn sm:text-left"
@@ -204,7 +200,6 @@
     <BoatAndCabin />
     <Gallery />
 
- 
     <Reviews />
 
     <!-- <carousel-3d>
@@ -214,7 +209,14 @@
     </carousel-3d> -->
 
     <transition name="fade">
-      <ModalPrivate v-show="isModalVisible" @close="closeModal" />
+      <ModalPrivate
+        v-show="isModalVisible"
+        @close="closeModal"
+        @modalsuccess="showSuccess"
+      />
+    </transition>
+    <transition name="fade">
+      <ModalSuccess v-show="isSuccessVisible" @close="closeSuccess" />
     </transition>
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
     <!-- Footer in layout-->
@@ -234,10 +236,16 @@ export default {
     return {
       route: '/',
       isModalVisible: false,
+      isSuccessVisible: false,
     }
   },
   methods: {
-   
+    showSuccess() {
+      this.isSuccessVisible = true
+    },
+    closeSuccess() {
+      this.isSuccessVisible = false
+    },
     showModal() {
       this.isModalVisible = true
     },

@@ -44,24 +44,6 @@
             </div>
           </header>
 
-          <!-- CHECKBOX -->
-          <!-- <section>
-            <div class="flex justify-center">
-              <div class="sm:flex sm:w-76 sm:justify-between">
-                <label class="box content"
-                  >Hire skipper
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                <label class="box content"
-                  >Hire cook
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-            </div>
-          </section> -->
-          <!-- RADIO BUTTON -->
           <section id="modalDescription">
             <div class="radio-bg sm:w-txtarea sm:mx-auto">
               <div
@@ -70,25 +52,23 @@
                 <div class="flex text-left">
                   <input
                     type="radio"
-                    id="sailingboat"
-                    name="boat"
-                    value="sailingboat"
+                    id="single"
+                    name="accomodation"
+                    value="single"
                     checked="checked"
+                    v-model="accomodation"
                   />
-                  <label for="sailingboat"
-                    ><p class="pl-3 content">Single</p></label
-                  >
+                  <label for="single"><p class="pl-3 content">Single</p></label>
                 </div>
                 <div class="flex">
                   <input
                     type="radio"
-                    id="catamaran"
-                    name="boat"
-                    value="catamaran"
+                    id="double"
+                    name="accomodation"
+                    value="double"
+                    v-model="accomodation"
                   />
-                  <label for="catamaran"
-                    ><p class="pl-3 content">Double</p></label
-                  >
+                  <label for="double"><p class="pl-3 content">Double</p></label>
                 </div>
               </div>
             </div>
@@ -96,7 +76,7 @@
 
           <section class="mt-3">
             <!-- INPUT NUMBER -->
-            <InputNumberSlider />
+            <InputNumberSlider @eventname="updatenumber" />
           </section>
           <!-- INPUT DATE -->
           <div class="sm:flex sm:mx-auto">
@@ -107,6 +87,7 @@
                 type="date"
                 name="date"
                 class="relative date focus:outline-none"
+                v-model="dateLocation"
               >
                 <option class="content" value="">Pick a date & location</option>
                 <option value="17July-Krk">17 July - Krk</option>
@@ -114,22 +95,6 @@
                 <option value="14August-Split">14 August - Split</option>
               </select>
             </div>
-
-            <!-- INPUT LOCATION -->
-            <!-- <div
-              class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:ml-1"
-            >
-              <select
-                type="location"
-                name="location"
-                class="relative date focus:outline-none"
-              >
-                <option class="content" value="">Pick location</option>
-                <option value="Krk">Krk</option>
-                <option value="Zadar">Zadar</option>
-                <option value="Split">Split</option>
-              </select>
-            </div> -->
           </div>
           <!-- INPUT INFO -->
           <div class="flex justify-center mx-auto content w-modal-inputs">
@@ -142,12 +107,14 @@
                   placeholder="Your name"
                   name="name"
                   id="name"
+                  v-model="name"
                 />
                 <input
                   class="mt-3 modal-input input-name sm:ml-1"
                   placeholder="Your email"
                   name="email"
                   id="email"
+                  v-model="userMail"
                 />
               </div>
               <textarea
@@ -155,12 +122,14 @@
                 placeholder="Write your message"
                 name="message"
                 id="message"
+                v-model="message"
               ></textarea>
               <input
                 class="mt-3 modal-input input-name sm:ml-1"
                 placeholder="Discount code"
                 name="discount"
                 id="discount"
+                v-model="discountCode"
               />
             </div>
           </div>
@@ -171,7 +140,10 @@
             <a
               class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
               type="button"
-              @click="close"
+              @click="
+                sendMail()
+                close()
+              "
             >
               <p
                 class="font-medium text-center select-none text-btn xs:text-left"
@@ -207,8 +179,47 @@
 <script>
 export default {
   name: 'modal',
-
+  data() {
+    return {
+      subject: 'Book-a-Cabin',
+      name: '',
+      userMail: '',
+      numberOfPeople: '1',
+      dateLocation: '',
+      message: '',
+      accomodation: '',
+      discountCode: '',
+    }
+  },
   methods: {
+    updatenumber(persons) {
+      this.numberOfPeople = persons
+    },
+
+    sendMail() {
+      this.$axios
+        .$post('https://vegan.tempusmedia.hr//api/', {
+          subject: this.subject,
+          userMail: this.userMail,
+          name: this.name,
+          numberOfPeople: this.numberOfPeople,
+          dateLocation: this.dateLocation,
+          accomodation: this.accomodation,
+          text: this.message,
+          discountCode: this.discountCode,
+        })
+        .then((response) => {
+          if (response == 'success') {
+            this.cabinPush()
+            this.$emit('modalsuccess')
+          } else {
+            alert(response)
+          }
+        })
+    },
+    cabinPush() {
+      this.$gtag.event('book-a-cabin')
+    },
     close() {
       this.$emit('close')
     },
