@@ -287,7 +287,7 @@ export default {
     },
     sendMail() {
       this.$axios
-        .$post('https://vegan.tempusmedia.hr//api/api/', {
+        .$post('https://vegan.tempusmedia.hr/api/', {
           subject: this.subject,
           userMail: this.userMail,
           name: this.name,
