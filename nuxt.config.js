@@ -18,10 +18,8 @@ export default {
     ]
 
   },
-
-  serverMiddleware: [
-    '~/api/contact'
-  ],
+  // { path: '/api', handler: '~api/index.js' },  
+  serverMiddleware: ["~/api/index.js"],
   server: {
 
 
@@ -29,9 +27,21 @@ export default {
     // host: 'localhost'
     host: '0.0.0.0',
   },
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+
+  mail: {
+    smtp: {
+      host: "mail.tempusmedia.hr",
+      port: 465,
+      secure: true, // true for 465, false for other ports
+      auth: {
+        user: 'vegan@tempusmedia.hr', // generated ethereal user
+        pass: 'EdQj4RkA4fB6', // generated ethereal password
+      },
+    },
   },
+  // env: {
+  //   baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  // },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [

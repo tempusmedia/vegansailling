@@ -85,8 +85,8 @@
                 class="mt-5 mb-5 btn btn--secondary sm:block sm:mt-2 sm:mb-0"
                 @click="
                   showModal()
-                  sendMail()
-                  privatePush()
+
+               
                 "
               >
                 <p
@@ -203,25 +203,33 @@
 
     <BoatAndCabin />
     <Gallery />
+
+ 
     <Reviews />
-
-
 
     <!-- <carousel-3d>
       <slide :index="0"> Slide 1 Content </slide>
       <slide :index="1"> Slide 2 Content </slide>
       <slide :index="2"> Slide 3 Content </slide>
     </carousel-3d> -->
+
     <transition name="fade">
       <ModalPrivate v-show="isModalVisible" @close="closeModal" />
     </transition>
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
     <!-- Footer in layout-->
+    <!-- <DataFetcher /> -->
   </div>
 </template>
 
 <script>
 export default {
+  // async asyncData({ $axios }) {
+  //   const api = 'http://localhost:3000/api/'
+  //   const mountains = await $axios.$get(api)
+  //   return { mountains }
+  // },
+
   data() {
     return {
       route: '/',
@@ -229,17 +237,7 @@ export default {
     }
   },
   methods: {
-    sendMail() {
-      this.$mail.send({
-        from: 'edo@tempusmedia.hr',
-        subject: 'Valjda radi',
-        text: 'Eh, kad bi ovo radilo kako bi to bilo krasno',
-        to: 'vegan@tempusmedia.hr',
-      })
-    },
-    privatePush() {
-      this.$gtag.event('booking-private')
-    },
+   
     showModal() {
       this.isModalVisible = true
     },
