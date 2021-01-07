@@ -1,17 +1,18 @@
 <!-- custom component -->
 <template>
   <section class="flex items-center justify-center">
-    <label class="content pr-3" for="numberp">Number of people</label>
+    <label class="pr-3 content" for="numberp">Number of people</label>
     <div
-      class="flex border border-modal-input overflow-hidden relative rounded-md h-10 w-12"
+      class="relative flex w-12 h-10 overflow-hidden border rounded-md border-modal-input"
     >
       <input
-        class="w-12 absolute outline-none input-nr-sld"
+        class="absolute w-12 outline-none input-nr-sld"
         id="numberp"
-        :value="persons"
+        v-model="persons"
         type="number"
         readonly
       />
+
       <button
         class="absolute text-modal-input hover:text-arrow-active focus:outline-none input-nr-btn"
         @click="dec"
@@ -53,15 +54,21 @@ export default {
     }
   },
   methods: {
+    updateValue: function (value) {
+      this.$emit('input', value)
+    },
     dec: function () {
       if (this.persons > 0) {
         this.persons--
+        this.$emit('eventname', this.persons)
       } else {
         this.persons = 0
+        this.$emit('eventname', this.persons)
       }
     },
     inc: function () {
       this.persons++
+      this.$emit('eventname', this.persons)
     },
   },
 }

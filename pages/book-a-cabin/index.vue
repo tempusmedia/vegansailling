@@ -236,7 +236,14 @@
     <Reviews />
 
     <transition name="fade">
-      <ModalCabin v-show="isModalVisible" @close="closeModal" />
+      <ModalCabin
+        v-show="isModalVisible"
+        @close="closeModal"
+        @modalsuccess="showSuccess"
+      />
+    </transition>
+    <transition name="fade">
+      <ModalSuccess v-show="isSuccessVisible" @close="closeSuccess" />
     </transition>
     <!-- Footer in layout-->
   </div>
@@ -247,6 +254,7 @@ export default {
   data() {
     return {
       isModalVisible: false,
+      isSuccessVisible: false,
       titleCta: {
         route: '/',
         contentMobile:
@@ -261,6 +269,12 @@ export default {
   },
   //ako promjenim stanje radit će tranzicija npr. dodam još nešto
   methods: {
+    showSuccess() {
+      this.isSuccessVisible = true
+    },
+    closeSuccess() {
+      this.isSuccessVisible = false
+    },
     showModal() {
       this.isModalVisible = true
     },

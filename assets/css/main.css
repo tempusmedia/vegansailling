@@ -209,7 +209,7 @@ h1 {
 
 @screen sm {
   .modal-content {
-    @apply m-8 p-3 rounded-3xl flex flex-col;
+    @apply m-8 p-4 rounded-3xl flex flex-col;
   }
 }
 
