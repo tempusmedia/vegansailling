@@ -197,6 +197,7 @@ export default {
     },
 
     sendMail() {
+      console.log('poslan')
       this.$axios
         .$post('https://vegan.tempusmedia.hr/api/', {
           subject: this.subject,

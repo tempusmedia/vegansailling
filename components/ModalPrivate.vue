@@ -159,7 +159,7 @@
                   class="mt-3 modal-input input-name sm:mr-1"
                   placeholder="Your name"
                   name="name"
-                  id="namePrivate"
+                  id="namePrivate1"
                   v-model="name"
                 />
                 <input
