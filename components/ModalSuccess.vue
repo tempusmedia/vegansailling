@@ -38,17 +38,13 @@
               </p>
             </div>
           </header>
-          <div class="mx-auto mt-4 mb-10 sm:mt-8 w-197px">
+          <div class="mx-auto mt-0 mb-10 sm:mt-0 w-197px">
             <a
               class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
               type="button"
               @click="close()"
             >
-              <p
-                class="font-medium text-center select-none text-btn xs:text-left"
-              >
-                Ok
-              </p>
+              <p class="font-medium text-center select-none text-btn">Ok</p>
             </a>
           </div>
         </div>

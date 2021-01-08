@@ -28,17 +28,6 @@ export default {
     host: '0.0.0.0',
   },
 
-  mail: {
-    smtp: {
-      host: "mail.tempusmedia.hr",
-      port: 465,
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: 'vegan@tempusmedia.hr', // generated ethereal user
-        pass: 'EdQj4RkA4fB6', // generated ethereal password
-      },
-    },
-  },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
@@ -75,12 +64,30 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    ['nuxt-cookie-control', {
+      controlButton: false,
+      colors: {
+
+        modalOverlay: '#000',
+        modalTextColor: '#154752',
+        modalBackground: 'rgba(255,255,255)',
+        modalOverlayOpacity: 0.8,
+        modalButtonColor: '#154752',
+        modalUnsavedColor: '#fff',
+        modalButtonHoverColor: '#154752',
+        modalButtonBackground: '#fff',
+        modalButtonHoverBackground: '#ffffff4d',
+
+      }
+
+    }],
 
     [
       'nuxt-i18n',
@@ -90,25 +97,56 @@ export default {
         vueI18n: i18n
       }
     ],
-    ['nuxt-mail', {
-      smtp: {
-        host: "mail.tempusmedia.hr",
-        port: 465,
-        secure: true,
-      },
-      auth: {
-        user: "vegan@tempusmedia.hr",
-        pass: "EdQj4RkA4fB6"
-      },
-      tls: {
-        // do not fail on invalid certs
-        rejectUnauthorized: false
-      }
-    },
-    ],
+
     'nuxt-i18n-link'
   ],
 
+  cookies: {
+    necessary: [
+      {
+        //if multilanguage
+        name: {
+          en: 'Default Cookies'
+        },
+        //else
+        name: 'Default Cookies',
+        //if multilanguage
+        description: {
+          en: 'Used for cookie control.'
+        },
+        //else
+        description: 'Used for cookie control.',
+        cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
+      }
+    ],
+    optional: [
+      {
+        name: 'Google Analitycs',
+        //if you don't set identifier, slugified name will be used
+        identifier: 'vegan',
+        //if multilanguage
+        description: {
+          en: 'Google GTM is ...'
+        },
+        //else
+        description: 'Google GTM is...',
+
+        initialState: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=<API-KEY>',
+        async: true,
+        cookies: ['_ga', '_gat', '_gid'],
+        accepted: () => {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+        },
+        declined: () => {
+        }
+      }
+    ]
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {

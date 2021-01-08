@@ -1,18 +1,18 @@
 <template>
   <div id="contact">
     <div
-      class="h-footer sm:h-footer-desk bg-no-repeat w-full object-center object-cover flex flex-col items-center justify-evenly my-foot"
+      class="flex flex-col items-center object-cover object-center w-full bg-no-repeat h-footer sm:h-footer-desk justify-evenly my-foot"
       style="background-image: url('/images/footer-bg-desk.jpg')"
     >
-      <div class="flex flex-col items-center justify-evenly -mt-2 sm:max-w-xl">
+      <div class="flex flex-col items-center -mt-2 justify-evenly sm:max-w-xl">
         <h2
-          class="section-title text-white font-semibold text-center pt-12 mb-8 font-poppins"
+          class="pt-12 mb-8 font-semibold text-center text-white section-title font-poppins"
         >
           Contact
           <!-- <span class="font-light font-poppins"> us</span> -->
         </h2>
-        
-        <p class="content text-white text-center mb-8">
+
+        <p class="mb-8 text-center text-white content">
           Have more questions? Contact us directly at
           <br />
           <a href="mailto:info@vegansailing.eu" class="font-semibold">
@@ -21,16 +21,16 @@
         </p>
         <!-- <Btn
           :route="route"
-          class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
+          class="mt-5 mb-5 text-white btn btn--primary xs:block xs:mt-2 xs:mb-0"
           >Book Now</Btn
         > -->
         <div class="flex justify-center">
           <a
-            class="btn btn--primary xs:block mt-5 mb-5 xs:mt-2 xs:mb-0 text-white"
+            class="mt-5 mb-5 text-white btn btn--primary xs:block xs:mt-2 xs:mb-0"
             @click="showModal"
           >
             <p
-              class="font-medium text-btn text-center xs:text-left select-none"
+              class="font-medium text-center select-none text-btn xs:text-left"
             >
               Book Now
             </p>
@@ -53,6 +53,16 @@
     <transition name="fade">
       <ModalPrivate v-show="isModalVisiblePrivate" @close="closeModalPrivate" />
     </transition>
+    <CookieControl class="absolute bottom-0 z-50 bg-vegan-orange">
+      <template v-slot:bar>
+        <p class="font-poppins">
+          This website uses cookies to give you an incredible experience. By
+          using our website you consent to our cookies in accordance with our
+          Privacy Policy.
+        </p>
+        <!-- <n-link>Go somewhere</n-link> -->
+      </template>
+    </CookieControl>
   </div>
 </template>
 <script>
@@ -100,5 +110,69 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.cookieControl__Bar {
+  background: linear-gradient(
+    90deg,
+    rgba(237, 73, 36, 0.85) 7%,
+    rgba(241, 115, 34, 0.85) 100%
+  );
+}
+
+.cookieControl__BarButtons button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255);
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 2px;
+  font-family: Poppins;
+  cursor: pointer;
+  background: none;
+  color: #fff;
+}
+
+.cookieControl__ModalButtons {
+  margin-top: 70px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.cookieControl__BarButtons button:hover {
+  background: #ffffff4d;
+}
+
+.cookieControl__ModalButtons button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-color: #154752;
+
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 2px;
+  font-family: Poppins;
+  cursor: pointer;
+  background: none;
+  color: #154752;
+  width: 142px;
+}
+
+.cookieControl__ModalButtons button:hover {
+  background-color: #15475226;
+  border-color: rgba(47, 124, 140);
+  color: rgba(47, 124, 140);
+}
+
+.cookieControl__ModalContent {
+  border-radius: 1.5rem;
+  padding-top: 90px;
 }
 </style>
