@@ -28,17 +28,6 @@ export default {
     host: '0.0.0.0',
   },
 
-  mail: {
-    smtp: {
-      host: "mail.tempusmedia.hr",
-      port: 465,
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: 'vegan@tempusmedia.hr', // generated ethereal user
-        pass: 'EdQj4RkA4fB6', // generated ethereal password
-      },
-    },
-  },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
@@ -75,6 +64,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -82,7 +72,21 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     ['nuxt-cookie-control', {
-      controlButton: false
+      controlButton: false,
+      colors: {
+
+        modalOverlay: '#000',
+        modalTextColor: '#154752',
+        modalBackground: 'rgba(255,255,255)',
+        modalOverlayOpacity: 0.8,
+        modalButtonColor: '#154752',
+        modalUnsavedColor: '#fff',
+        modalButtonHoverColor: '#154752',
+        modalButtonBackground: '#fff',
+        modalButtonHoverBackground: '#ffffff4d',
+
+      }
+
     }],
 
     [

@@ -291,7 +291,7 @@ export default {
 
     sendMail() {
       this.$axios
-        .$post('http://localhost:3000/api/', {
+        .$post(`${process.env.baseUrl}/api/`, {
           subject: this.subject,
           userMail: this.userMail,
           name: this.name,

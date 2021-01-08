@@ -205,7 +205,7 @@ export default {
 
     sendMail() {
       this.$axios
-        .$post('https://vegan.tempusmedia.hr/api/', {
+        .$post(`${process.env.baseUrl}/api/`, {
           subject: this.subject,
           userMail: this.userMail,
           name: this.name,

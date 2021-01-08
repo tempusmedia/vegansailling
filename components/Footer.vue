@@ -137,7 +137,42 @@ export default {
   color: #fff;
 }
 
+.cookieControl__ModalButtons {
+  margin-top: 70px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
 .cookieControl__BarButtons button:hover {
   background: #ffffff4d;
+}
+
+.cookieControl__ModalButtons button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-color: #154752;
+
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 2px;
+  font-family: Poppins;
+  cursor: pointer;
+  background: none;
+  color: #154752;
+  width: 142px;
+}
+
+.cookieControl__ModalButtons button:hover {
+  background-color: #15475226;
+  border-color: rgba(47, 124, 140);
+  color: rgba(47, 124, 140);
+}
+
+.cookieControl__ModalContent {
+  border-radius: 1.5rem;
+  padding-top: 90px;
 }
 </style>

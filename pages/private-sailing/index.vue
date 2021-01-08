@@ -194,7 +194,6 @@
       <RouteExample />
     </section>
     <!-- route example će voditi na svoje pojedinačne pageve zbog mogućih promjena u budućnosti -->
-
     <OurCrew />
 
     <BoatAndCabin />
