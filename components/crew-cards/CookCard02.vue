@@ -99,7 +99,7 @@ export default {
         { item: 'Nationality', desc: 'Croatian' },
         {
           item: 'Profession',
-          desc: 'BA in Cultural Studies, social media content creator...',
+          desc: 'BA in Cultural Studies, content creator...',
         },
         { item: 'Languages', desc: 'English, Croatian' },
         {
