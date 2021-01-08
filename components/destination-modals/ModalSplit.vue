@@ -149,7 +149,7 @@
                 </div>
               </div>
               <div>
-                <div class="flex items-start pt-8">
+                <div class="flex items-start pt-8 sm:ml-5">
                   <div>
                     <h1 class="relative route-modal-nr my-top3">3</h1>
                   </div>
@@ -161,7 +161,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start pt-8">
+                <div class="flex items-start pt-8 sm:ml-5">
                   <div>
                     <h1 class="relative route-modal-nr my-top3">4</h1>
                   </div>
@@ -173,7 +173,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start pt-8">
+                <div class="flex items-start pt-8 sm:ml-5">
                   <div>
                     <h1 class="relative route-modal-nr my-top3">5</h1>
                   </div>
@@ -188,7 +188,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start pt-8">
+                <div class="flex items-start pt-8 sm:ml-5">
                   <div>
                     <h1 class="relative route-modal-nr my-top3">6</h1>
                   </div>
@@ -203,7 +203,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start pt-8">
+                <div class="flex items-start pt-8 sm:ml-5">
                   <div>
                     <h1 class="relative route-modal-nr my-top3">7</h1>
                   </div>
@@ -216,7 +216,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start pt-8">
+                <div class="flex items-start pt-8 sm:ml-5">
                   <div>
                     <h1 class="relative route-modal-nr my-top3">8</h1>
                   </div>

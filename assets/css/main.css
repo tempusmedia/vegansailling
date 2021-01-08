@@ -190,6 +190,16 @@ h1 {
   }
 }
 
+.modal-bg-skipper {
+  @apply shadow-sm flex flex-col w-full mx-auto rounded-3xl absolute;
+}
+
+@screen sm {
+  .modal-bg-skipper {
+    @apply shadow-sm flex flex-col w-11/12 mx-auto rounded-3xl absolute;
+  }
+}
+
 .book-modal-bg {
   @apply bg-white shadow-sm flex flex-col w-11/12 mx-auto rounded-3xl absolute;
 }
