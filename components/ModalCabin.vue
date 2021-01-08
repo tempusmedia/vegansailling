@@ -44,114 +44,121 @@
             </div>
           </header>
 
-          <section id="modalDescription">
-            <div class="radio-bg sm:w-txtarea sm:mx-auto">
-              <div
-                class="flex flex-col justify-center sm:flex-row sm:w-76 sm:justify-between"
-              >
-                <div class="flex text-left">
-                  <input
-                    type="radio"
-                    id="single"
-                    name="accomodation"
-                    value="single"
-                    checked="checked"
-                    v-model="accomodation"
-                  />
-                  <label for="single"><p class="pl-3 content">Single</p></label>
-                </div>
-                <div class="flex">
-                  <input
-                    type="radio"
-                    id="double"
-                    name="accomodation"
-                    value="double"
-                    v-model="accomodation"
-                  />
-                  <label for="double"><p class="pl-3 content">Double</p></label>
+          <form @submit.prevent="sendMail()">
+            <section id="modalDescription">
+              <div class="radio-bg sm:w-txtarea sm:mx-auto">
+                <div
+                  class="flex flex-col justify-center sm:flex-row sm:w-76 sm:justify-between"
+                >
+                  <div class="flex text-left">
+                    <input
+                      type="radio"
+                      id="single"
+                      name="accomodation"
+                      value="single"
+                      checked="checked"
+                      v-model="accomodation"
+                    />
+                    <label for="single"
+                      ><p class="pl-3 content">Single</p></label
+                    >
+                  </div>
+                  <div class="flex">
+                    <input
+                      type="radio"
+                      id="double"
+                      name="accomodation"
+                      value="double"
+                      v-model="accomodation"
+                    />
+                    <label for="double"
+                      ><p class="pl-3 content">Double</p></label
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <section class="mt-3">
-            <!-- INPUT NUMBER -->
-            <InputNumberSlider @eventname="updatenumber" />
-          </section>
-          <!-- INPUT DATE -->
-          <div class="sm:flex sm:mx-auto">
-            <div
-              class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:mr-1"
-            >
-              <select
-                type="date"
-                name="date"
-                class="relative date focus:outline-none"
-                v-model="dateLocation"
-              >
-                <option class="content" value="">Pick a date & location</option>
-                <option value="17July-Krk">17 July - Krk</option>
-                <option value="31July-Zadar">31 July - Zadar</option>
-                <option value="14August-Split">14 August - Split</option>
-              </select>
+            <section class="mt-3">
+              <!-- INPUT NUMBER -->
+              <InputNumberSlider @eventname="updatenumber" />
+            </section>
+            <!-- INPUT DATE -->
+            <div class="sm:flex sm:mx-auto">
+              <div class="mx-auto mt-3 w-modal-inputs modal-input">
+                <select
+                  type="date"
+                  name="date"
+                  class="relative date focus:outline-none"
+                  v-model="dateLocation"
+                  required
+                >
+                  <option class="content" value="">
+                    Pick a date & location
+                  </option>
+                  <option value="17July-Krk">17 July - Krk</option>
+                  <option value="31July-Zadar">31 July - Zadar</option>
+                  <option value="14August-Split">14 August - Split</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <!-- INPUT INFO -->
-          <div class="flex justify-center mx-auto content w-modal-inputs">
-            <div class="flex flex-col w-modal-inputs">
-              <div
-                class="flex flex-col sm:flex-row sm:mx-auto sm:relative lefty"
-              >
-                <input
-                  class="mt-3 modal-input input-name sm:mr-1"
-                  placeholder="Your name"
-                  name="name"
-                  id="name"
-                  v-model="name"
-                />
+            <!-- INPUT INFO -->
+            <div class="flex justify-center mx-auto content w-modal-inputs">
+              <div class="flex flex-col w-modal-inputs">
+                <div
+                  class="flex flex-col sm:flex-row sm:mx-auto sm:relative lefty"
+                >
+                  <input
+                    class="mt-3 modal-input input-name sm:mr-1"
+                    placeholder="Your name"
+                    name="name"
+                    id="name"
+                    v-model="name"
+                    required
+                  />
+                  <input
+                    class="mt-3 modal-input input-name sm:ml-1"
+                    placeholder="Your email"
+                    name="email"
+                    id="email"
+                    v-model="userMail"
+                    required
+                    type="email"
+                  />
+                </div>
+                <textarea
+                  class="mt-3 modal-input rounded-2xl input-name sm:relative sm:w-txtarea lefty"
+                  placeholder="Write your message"
+                  name="message"
+                  id="message"
+                  v-model="message"
+                ></textarea>
                 <input
                   class="mt-3 modal-input input-name sm:ml-1"
-                  placeholder="Your email"
-                  name="email"
-                  id="email"
-                  v-model="userMail"
+                  placeholder="Discount code"
+                  name="discount"
+                  id="discount"
+                  v-model="discountCode"
                 />
               </div>
-              <textarea
-                class="mt-3 modal-input rounded-2xl input-name sm:relative sm:w-txtarea lefty"
-                placeholder="Write your message"
-                name="message"
-                id="message"
-                v-model="message"
-              ></textarea>
-              <input
-                class="mt-3 modal-input input-name sm:ml-1"
-                placeholder="Discount code"
-                name="discount"
-                id="discount"
-                v-model="discountCode"
-              />
             </div>
-          </div>
 
-          <!-- Book now & close modal & send data & show success modal-->
-          <!-- xs:mx-0 -->
-          <div class="mx-auto mt-6 mb-8 max-w-btn">
-            <a
-              class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
-              type="button"
-              @click="
-                sendMail()
-                close()
-              "
-            >
-              <p
-                class="font-medium text-center select-none text-btn xs:text-left"
+            <!-- Book now & close modal & send data & show success modal-->
+            <!-- xs:mx-0 -->
+            <div class="mx-auto mt-6 mb-8 max-w-btn">
+              <button
+                class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
+                type="submit"
+                value="Submit"
               >
-                Book Now
-              </p>
-            </a>
-          </div>
+                <p
+                  class="font-medium text-center select-none text-btn xs:text-left"
+                >
+                  Book Now
+                </p>
+              </button>
+            </div>
+          </form>
           <footer class="modal-footer content">
             <div class="flex flex-col items-center mx-auto my-5">
               <h1 class="font-semibold leading-tight">
@@ -197,7 +204,6 @@ export default {
     },
 
     sendMail() {
-      console.log('poslan')
       this.$axios
         .$post('https://vegan.tempusmedia.hr/api/', {
           subject: this.subject,
@@ -217,6 +223,7 @@ export default {
             alert(response)
           }
         })
+      this.close()
     },
     cabinPush() {
       this.$gtag.event('book-a-cabin')
