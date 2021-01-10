@@ -5,7 +5,7 @@
       class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
       style="background-image: url('/images/bg-main-xs.jpg')"
     > -->
-
+    <Preloader id="preloader" />
     <video-background
       src="https://paras.hr/mobile.mp4"
       class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
@@ -43,6 +43,7 @@
       class="hidden object-cover object-center w-full h-screen bg-center bg-no-repeat bg-cover xs:block"
       style="background-image: url('/images/bg-main.jpg')"
     > -->
+
     <video-background
       src="https://paras.hr/desktop.mp4"
       class="hidden object-cover object-center w-full h-screen bg-center bg-no-repeat bg-cover xs:block"
@@ -76,6 +77,7 @@
       <!-- <h1>{{ $t('message') }}</h1> -->
     </video-background>
   </div>
+
   <!-- </div> -->
 </template>
 
@@ -184,6 +186,15 @@ if (process.browser) {
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
   })
+}
+
+if (process.browser) {
+  document.onreadystatechange = function () {
+    if (document.readyState == 'complete') {
+      console.log('gotov load')
+      document.getElementById('preloader').style.display = 'none'
+    }
+  }
 }
 </script>
 
