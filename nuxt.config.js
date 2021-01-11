@@ -85,6 +85,9 @@ export default {
         modalButtonBackground: '#fff',
         modalButtonHoverBackground: '#ffffff4d',
 
+
+
+
       }
 
     }],
@@ -119,6 +122,9 @@ export default {
         cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
       }
     ],
+
+
+
     optional: [
       {
         name: 'Google Analitycs',
@@ -147,6 +153,10 @@ export default {
       }
     ]
   },
+
+
+
+
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
