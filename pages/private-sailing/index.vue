@@ -212,10 +212,14 @@
         v-show="isModalVisible"
         @close="closeModal"
         @modalsuccess="showSuccess"
+        @modalfail="showFail"
       />
     </transition>
     <transition name="fade">
       <ModalSuccess v-show="isSuccessVisible" @close="closeSuccess" />
+    </transition>
+    <transition name="fade">
+      <ModalFail v-show="isFailVisible" @close="closeFail" />
     </transition>
     <!-- <ModalPrivate v-show="isModalVisible" @close="closeModal" /> -->
     <!-- Footer in layout-->
@@ -236,9 +240,16 @@ export default {
       route: '/',
       isModalVisible: false,
       isSuccessVisible: false,
+      isFailVisible: false,
     }
   },
   methods: {
+    showFail() {
+      this.isFailVisible = true
+    },
+    closeFail() {
+      this.isFailVisible = false
+    },
     showSuccess() {
       this.isSuccessVisible = true
     },

@@ -24,13 +24,11 @@
             </svg>
           </button>
           <header id="modalTitle" class="mt-3 mb-10">
-            <div
-              class="px-5 text-center text-vegan-blue sm:hidden font-poppins sm:px-0"
-            >
+            <div class="text-center text-vegan-blue sm:hidden font-poppins">
               <h1 class="font-semibold leading-tight">
-                Book
+                {{ $t('pages.book_a_cabin.book') }}
                 <span class="italic font-light"
-                  ><p>a private vegan sailing</p></span
+                  ><p>{{ $t('pages.book_a_cabin.a_cabin') }}</p></span
                 >
               </h1>
             </div>
@@ -38,37 +36,15 @@
               class="hidden text-center text-vegan-blue sm:block font-poppins"
             >
               <h1 class="font-semibold leading-tight">
-                Book
-                <span class="italic font-light"> a private vegan sailing </span>
+                {{ $t('pages.book_a_cabin.book') }}
+                <span class="italic font-light">{{
+                  $t('pages.book_a_cabin.a_cabin')
+                }}</span>
               </h1>
             </div>
           </header>
 
-          <form @submit.prevent="sendMail()" id="app">
-            <!-- CHECKBOX -->
-            <section>
-              <div class="flex justify-center">
-                <div class="sm:flex sm:w-76 sm:justify-between">
-                  <label class="box content"
-                    >Hire skipper
-                    <input
-                      type="checkbox"
-                      checked="checked"
-                      v-model="hireSkipper"
-                    />
-                    <!-- {{ hireSkipper ? 'yes' : 'no' }} -->
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="box content"
-                    >Hire cook
-                    <input type="checkbox" v-model="hireCook" />
-                    <!-- {{ hireCook ? 'yes' : 'no' }} -->
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </div>
-            </section>
-            <!-- RADIO BUTTON -->
+          <form @submit.prevent="sendMail()">
             <section id="modalDescription">
               <div class="radio-bg sm:w-txtarea sm:mx-auto">
                 <div
@@ -77,25 +53,26 @@
                   <div class="flex text-left">
                     <input
                       type="radio"
-                      id="bunkBed"
+                      id="single"
                       name="accomodation"
-                      value="bunkBed"
+                      value="single"
+                      checked="checked"
                       v-model="accomodation"
                     />
-                    <label for="bunkBed"
-                      ><p class="pl-3 content">Bunk bed</p></label
+                    <label for="single"
+                      ><p class="pl-3 content">Single</p></label
                     >
                   </div>
                   <div class="flex">
                     <input
                       type="radio"
-                      id="doubleRoom"
+                      id="double"
                       name="accomodation"
-                      value="doubleRoom"
+                      value="double"
                       v-model="accomodation"
                     />
-                    <label for="doubleRoom"
-                      ><p class="pl-3 content">Double room</p></label
+                    <label for="double"
+                      ><p class="pl-3 content">Double</p></label
                     >
                   </div>
                 </div>
@@ -107,48 +84,21 @@
               <InputNumberSlider @eventname="updatenumber" />
             </section>
             <!-- INPUT DATE -->
-            <div class="sm:flex sm:mx-auto sm:w-523px">
-              <div
-                class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:mr-1"
-              >
+            <div class="sm:flex sm:mx-auto">
+              <div class="mx-auto mt-3 w-modal-inputs modal-input">
                 <select
                   type="date"
                   name="date"
                   class="relative date focus:outline-none"
-                  v-model="date"
+                  v-model="dateLocation"
                   required
                 >
-                  <option class="content" value="">Pick a date</option>
-                  <option value="01/01/2021-07/01/2021">
-                    01/01/2021 - 05/01/2021
+                  <option class="content" value="">
+                    Pick a date & location
                   </option>
-                  <option value="07/01/2021-14/01/2021">
-                    07/01/2021 - 14/01/2021
-                  </option>
-                  <option value="14/01/2021-21/01/2021">
-                    14/01/2021 - 21/01/2021
-                  </option>
-                  <option value="21/01/2021-28/01/2021">
-                    21/01/2021 - 28/01/2021
-                  </option>
-                </select>
-              </div>
-
-              <!-- INPUT LOCATION -->
-              <div
-                class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:ml-1"
-              >
-                <select
-                  type="location"
-                  name="location"
-                  class="relative date focus:outline-none"
-                  v-model="location"
-                  required
-                >
-                  <option class="content" value="">Pick location</option>
-                  <option value="Krk">Krk</option>
-                  <option value="Zadar">Zadar</option>
-                  <option value="Split">Split</option>
+                  <option value="17July-Krk">17 July - Krk</option>
+                  <option value="31July-Zadar">31 July - Zadar</option>
+                  <option value="14August-Split">14 August - Split</option>
                 </select>
               </div>
             </div>
@@ -162,7 +112,7 @@
                     class="mt-3 modal-input input-name sm:mr-1"
                     placeholder="Your name"
                     name="name"
-                    id="namePrivate1"
+                    id="name"
                     v-model="name"
                     required
                   />
@@ -170,64 +120,32 @@
                     class="mt-3 modal-input input-name sm:ml-1"
                     placeholder="Your email"
                     name="email"
-                    type="email"
-                    id="emailPrivate"
+                    id="email"
                     v-model="userMail"
                     required
+                    type="email"
                   />
                 </div>
                 <textarea
                   class="mt-3 modal-input rounded-2xl input-name sm:relative sm:w-txtarea lefty"
                   placeholder="Write your message"
                   name="message"
-                  id="messagePrivate"
+                  id="message"
                   v-model="message"
                 ></textarea>
+                <input
+                  class="mt-3 modal-input input-name sm:ml-1"
+                  placeholder="Discount code"
+                  name="discount"
+                  id="discount"
+                  v-model="discountCode"
+                />
               </div>
             </div>
 
             <!-- Book now & close modal & send data & show success modal-->
-
-            <!-- mobile -->
-            <div
-              class="flex flex-col items-center justify-between pt-6 pb-6 mx-auto sm:hidden"
-            >
-              <div>
-                <p class="text-base font-light font-poppins text-vegan-blue">
-                  + 385(0)98 953 5476
-                </p>
-              </div>
-              <div>
-                <p class="text-base font-light text-vegan-red font-poppins">
-                  info@vegansailing.eu
-                </p>
-              </div>
-              <div class="flex">
-                <img src="/images/facebook-dark.svg" alt="facebook" />
-                <img src="/images/instagram-dark.svg" alt="instagram" />
-              </div>
-            </div>
-
-            <!-- desktop -->
-            <div
-              class="items-center justify-between hidden pt-5 mx-auto sm:flex w-txtarea"
-            >
-              <div>
-                <p class="text-base font-light font-poppins text-vegan-blue">
-                  + 385(0)98 953 5476
-                </p>
-              </div>
-              <div class="flex">
-                <img src="/images/facebook-dark.svg" alt="facebook" />
-                <img src="/images/instagram-dark.svg" alt="instagram" />
-              </div>
-              <div>
-                <p class="text-base font-light text-vegan-red font-poppins">
-                  info@vegansailing.eu
-                </p>
-              </div>
-            </div>
-            <div class="mx-auto mt-4 mb-10 max-w-btn">
+            <!-- xs:mx-0 -->
+            <div class="mx-auto mt-6 mb-8 max-w-btn">
               <button
                 class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
                 type="submit"
@@ -241,8 +159,7 @@
               </button>
             </div>
           </form>
-          <!-- orange footer -->
-          <!-- <footer class="modal-footer content">
+          <footer class="modal-footer content">
             <div class="flex flex-col items-center mx-auto my-5">
               <h1 class="font-semibold leading-tight">
                 Have
@@ -260,7 +177,7 @@
                 <img src="/images/facebook.svg" />
               </div>
             </div>
-          </footer> -->
+          </footer>
         </div>
       </div>
     </div>
@@ -271,19 +188,16 @@ export default {
   name: 'modal',
   data() {
     return {
-      subject: 'Private vegan sailing',
+      subject: 'Book-a-Cabin',
       name: '',
       userMail: '',
       numberOfPeople: '1',
-      date: '',
-      location: '',
+      dateLocation: '',
       message: '',
       accomodation: '',
-      hireCook: true,
-      hireSkipper: true,
+      discountCode: '',
     }
   },
-
   methods: {
     updatenumber(persons) {
       this.numberOfPeople = persons
@@ -296,26 +210,23 @@ export default {
           userMail: this.userMail,
           name: this.name,
           numberOfPeople: this.numberOfPeople,
-          date: this.date,
-          location: this.location,
-          text: this.message,
+          dateLocation: this.dateLocation,
           accomodation: this.accomodation,
-          hireCook: this.hireCook,
-          hireSkipper: this.hireSkipper,
+          text: this.message,
+          discountCode: this.discountCode,
         })
         .then((response) => {
           if (response == 'success') {
-            this.privatePush()
+            this.cabinPush()
             this.$emit('modalsuccess')
           } else {
-            alert(response)
+            this.$emit('modalfail')
           }
         })
       this.close()
     },
-
-    privatePush() {
-      this.$gtag.event('booking-private')
+    cabinPush() {
+      this.$gtag.event('book-a-cabin')
     },
     close() {
       this.$emit('close')
@@ -410,9 +321,5 @@ textarea.input-name::placeholder {
   font-family: 'Poppins', sans-serif;
   color: #154752;
   font-weight: 300;
-}
-
-button option {
-  -webkit-appearance: none;
 }
 </style>
