@@ -150,13 +150,14 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-
+    proxyHeaders: false,
+    credentials: false
     // baseURL: process.env.BASE_URL || 'http://localhost:3000', // Used as fallback if no runtime config is provided
 
   },
-  proxy: {
-    '/api/': { target: 'https://api.example.com/', pathRewrite: { '^/api/': '' }, changeOrigin: true }
-  },
+  // proxy: {
+  //   '/api/': { target: 'https://api.example.com/', pathRewrite: { '^/api/': '' }, changeOrigin: true }
+  // },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
 

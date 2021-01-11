@@ -240,10 +240,14 @@
         v-show="isModalVisible"
         @close="closeModal"
         @modalsuccess="showSuccess"
+        @modalfail="showFail"
       />
     </transition>
     <transition name="fade">
       <ModalSuccess v-show="isSuccessVisible" @close="closeSuccess" />
+    </transition>
+    <transition name="fade">
+      <ModalFail v-show="isFailVisible" @close="closeFail" />
     </transition>
     <!-- Footer in layout-->
   </div>
@@ -255,6 +259,7 @@ export default {
     return {
       isModalVisible: false,
       isSuccessVisible: false,
+      isFailVisible: false,
       titleCta: {
         route: '/',
         contentMobile:
@@ -269,6 +274,12 @@ export default {
   },
   //ako promjenim stanje radit će tranzicija npr. dodam još nešto
   methods: {
+    showFail() {
+      this.isFailVisible = true
+    },
+    closeFail() {
+      this.isFailVisible = false
+    },
     showSuccess() {
       this.isSuccessVisible = true
     },
