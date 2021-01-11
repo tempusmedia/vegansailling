@@ -233,9 +233,15 @@ export default {
           if (response == 'success') {
             this.cabinPush()
             this.$emit('modalsuccess')
+            
           } else {
             this.$emit('modalfail')
           }
+        })
+        .catch((err) => {
+          this.$emit('modalfail')
+          
+          
         })
       this.close()
     },

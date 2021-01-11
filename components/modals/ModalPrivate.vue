@@ -329,6 +329,10 @@ export default {
             this.$emit('modalfail')
           }
         })
+        .catch((error) => {
+          this.$emit('modalfail')
+          const response = error.response
+        })
       this.close()
     },
 
