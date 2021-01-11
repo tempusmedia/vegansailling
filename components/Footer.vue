@@ -48,10 +48,21 @@
     </div>
 
     <transition name="fade">
-      <ModalCabin v-show="isModalVisibleCabin" @close="closeModalCabin" />
+      <ModalCabin
+        v-show="isModalVisibleCabin"
+        @close="closeModalCabin"
+        @modalsuccess="showSuccess"
+      />
     </transition>
     <transition name="fade">
-      <ModalPrivate v-show="isModalVisiblePrivate" @close="closeModalPrivate" />
+      <ModalPrivate
+        v-show="isModalVisiblePrivate"
+        @close="closeModalPrivate"
+        @modalsuccess="showSuccess"
+      />
+    </transition>
+    <transition name="fade">
+      <ModalSuccess v-show="isSuccessVisible" @close="closeSuccess" />
     </transition>
     <CookieControl class="absolute bottom-0 z-50 bg-vegan-orange">
       <template v-slot:bar>
@@ -69,11 +80,18 @@
 export default {
   data() {
     return {
+      isSuccessVisible: false,
       isModalVisibleCabin: false,
       isModalVisiblePrivate: false,
     }
   },
   methods: {
+    showSuccess() {
+      this.isSuccessVisible = true
+    },
+    closeSuccess() {
+      this.isSuccessVisible = false
+    },
     showModal() {
       if (
         this.$nuxt.$route.path == '/private-sailing' ||
