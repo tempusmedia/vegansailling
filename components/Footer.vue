@@ -180,7 +180,7 @@ export default {
   cursor: pointer;
   background: none;
   color: #154752;
-  width: 142px;
+  width: 148px;
 }
 
 .cookieControl__ModalButtons button:hover {
@@ -192,5 +192,9 @@ export default {
 .cookieControl__ModalContent {
   border-radius: 1.5rem;
   padding-top: 90px;
+}
+
+.cookieControl__ModalContent input:checked + label {
+  background-color: rgba(237, 73, 36);
 }
 </style>

@@ -143,8 +143,21 @@
               </div>
             </div>
 
-            <!-- Book now & close modal & send data & show success modal-->
-            <!-- xs:mx-0 -->
+            <div
+              class="flex justify-between pt-5 pl-2 mx-auto mt-5 sm:items-center w-76 sm:w-txtarea"
+            >
+              <input
+                class="mt-2 sm:mt-0 sm:mb-5"
+                type="checkbox"
+                checked="checked"
+                v-model="acceptance"
+                required
+              />
+              <p class="text-base box content">
+                By clicking on “Book Now”, you agree to Vegan Sailing’s Privacy
+                Policy
+              </p>
+            </div>
             <div class="mx-auto mt-6 mb-8 max-w-btn">
               <button
                 class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
@@ -196,6 +209,7 @@ export default {
       message: '',
       accomodation: '',
       discountCode: '',
+      acceptance: false,
     }
   },
   methods: {
