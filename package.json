@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "dev": "BASE_URL=https://vegan.tempusmedia.hr nuxt",
+    "build": " nuxt build",
     "start": "nuxt start",
+
     "generate": "nuxt generate"
+ 
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",

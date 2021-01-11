@@ -1,15 +1,18 @@
 <template>
-  <div
+  <!-- <div
     class="absolute z-50 justify-center w-full h-screen bg-black bg-opacity-80"
+  > -->
+  <div
+    class="absolute z-50 justify-center w-full h-screen bg-white bg-opacity-90"
   >
     <div class="relative top-1/3 loader"></div>
   </div>
 </template>
 <style scoped>
 .loader {
-  /* color: #ed4924; */
-  color: white;
-  font-size: 40px;
+  color: #ed4924;
+  /* color: white; */
+  font-size: 30px;
   text-indent: -9999em;
   overflow: hidden;
   width: 1em;
