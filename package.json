@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/proxy": "^2.1.0",
     "@smartweb/vue-number-input": "^1.1.0",
     "aos": "^2.3.4",
     "core-js": "^3.6.5",
