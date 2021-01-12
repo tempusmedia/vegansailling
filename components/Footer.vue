@@ -38,10 +38,14 @@
         </div>
       </div>
       <div class="flex">
-        <a href="/" class="hover:opacity-80"
+        <a
+          href="https://www.instagram.com/vegan_sailing/"
+          class="hover:opacity-80"
           ><img src="/images/instagram.svg"
         /></a>
-        <a href="/" class="hover:opacity-80"
+        <a
+          href="https://www.facebook.com/vegansailing.eu/"
+          class="hover:opacity-80"
           ><img src="/images/facebook.svg"
         /></a>
       </div>

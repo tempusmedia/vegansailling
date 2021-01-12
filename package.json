@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "BASE_URL=http://localhost:3000 nuxt",
+    "dev": "BASE_URL=https://vegan.tempusmedia.hr nuxt",
     "build": "BASE_URL=https://vegan.tempusmedia.hr nuxt build",
     "start": "BASE_URL=https://vegan.tempusmedia.hr nuxt start",
-    "generate": "nuxt generate"
+    "generate": "BASE_URL=https://vegan.tempusmedia.hr nuxt generate"
  
   },
   "dependencies": {

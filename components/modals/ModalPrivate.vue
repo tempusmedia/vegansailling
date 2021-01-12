@@ -203,8 +203,13 @@
                 </p>
               </div>
               <div class="flex">
-                <img src="/images/facebook-dark.svg" alt="facebook" />
-                <img src="/images/instagram-dark.svg" alt="instagram" />
+                <a href="https://www.instagram.com/vegan_sailing/"
+                  ><img src="/images/instagram.svg"
+                /></a>
+
+                <a href="https://www.facebook.com/vegansailing.eu/"
+                  ><img src="/images/facebook.svg"
+                /></a>
               </div>
             </div>
 
@@ -218,8 +223,13 @@
                 </p>
               </div>
               <div class="flex">
-                <img src="/images/facebook-dark.svg" alt="facebook" />
-                <img src="/images/instagram-dark.svg" alt="instagram" />
+                <a href="https://www.instagram.com/vegan_sailing/"
+                  ><img src="/images/instagram.svg"
+                /></a>
+
+                <a href="https://www.facebook.com/vegansailing.eu/"
+                  ><img src="/images/facebook.svg"
+                /></a>
               </div>
               <div>
                 <p class="text-base font-light text-vegan-red font-poppins">
