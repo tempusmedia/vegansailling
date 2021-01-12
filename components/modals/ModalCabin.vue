@@ -186,11 +186,15 @@
               </p>
               <p class="font-semibold">info@vegansailing.eu</p>
               <div class="flex mt-3">
-                <a href="https://www.instagram.com/vegan_sailing/"
+                <a
+                  href="https://www.instagram.com/vegan_sailing/"
+                  target="_blank"
                   ><img src="/images/instagram.svg"
                 /></a>
 
-                <a href="https://www.facebook.com/vegansailing.eu/"
+                <a
+                  href="https://www.facebook.com/vegansailing.eu/"
+                  target="_blank"
                   ><img src="/images/facebook.svg"
                 /></a>
               </div>

@@ -41,11 +41,13 @@
         <a
           href="https://www.instagram.com/vegan_sailing/"
           class="hover:opacity-80"
+          target="_blank"
           ><img src="/images/instagram.svg"
         /></a>
         <a
           href="https://www.facebook.com/vegansailing.eu/"
           class="hover:opacity-80"
+          target="_blank"
           ><img src="/images/facebook.svg"
         /></a>
       </div>
