@@ -229,11 +229,7 @@
 
 <script>
 export default {
-  // async asyncData({ $axios }) {
-  //   const api = 'http://localhost:3000/api/'
-  //   const mountains = await $axios.$get(api)
-  //   return { mountains }
-  // },
+
 
   data() {
     return {

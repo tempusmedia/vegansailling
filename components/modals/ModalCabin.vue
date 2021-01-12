@@ -186,8 +186,13 @@
               </p>
               <p class="font-semibold">info@vegansailing.eu</p>
               <div class="flex mt-3">
-                <img src="/images/instagram.svg" />
-                <img src="/images/facebook.svg" />
+                <a href="https://www.instagram.com/vegan_sailing/"
+                  ><img src="/images/instagram.svg"
+                /></a>
+
+                <a href="https://www.facebook.com/vegansailing.eu/"
+                  ><img src="/images/facebook.svg"
+                /></a>
               </div>
             </div>
           </footer>
@@ -233,15 +238,12 @@ export default {
           if (response == 'success') {
             this.cabinPush()
             this.$emit('modalsuccess')
-            
           } else {
             this.$emit('modalfail')
           }
         })
         .catch((err) => {
           this.$emit('modalfail')
-          
-          
         })
       this.close()
     },
