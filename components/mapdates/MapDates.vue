@@ -79,6 +79,7 @@
           fill="#FFBBFF"
         />
       </svg>
+
       <div
         class="container relative z-30 mx-auto sm:pl-7 bottom-70 sm:bottom-96"
       >
@@ -169,16 +170,23 @@
       </svg>
       <div class="container relative z-30 pl-20 mx-auto" style="bottom: 37vw">
         <div class="relative z-30">
-          <MapDateItem name="Krk " region="(North Adriatic)" date="17 July" />
+          <MapDateItem
+            name="Krk "
+            region="(North Adriatic)"
+            date="17 July"
+            route="#routeexample"
+          />
           <MapDateItem
             name="Zadar "
             region="(Central Adriatic)"
             date="31 July"
+            route="#routeexample"
           />
           <MapDateItem
             name="Split "
             region="(South Adriatic)"
             date="14 August"
+            route="#routeexample"
           />
         </div>
       </div>

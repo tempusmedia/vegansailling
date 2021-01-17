@@ -83,7 +83,7 @@ export default {
       this.$nuxt.$route.path == '/hr/private-sailing'
     ) {
       return {
-        qnaimage: '/images/private-food.jpg',
+        qnaimage: '/images/private-food-xl.jpg',
         items: {
           q1: {
             title: this.$t('components.qna.what_private'),

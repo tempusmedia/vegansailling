@@ -26,16 +26,16 @@
           <header class="mt-3 mb-10">
             <div class="text-center text-vegan-blue font-poppins">
               <h1 class="font-semibold leading-tight">
-                Thanks
+                Thank you
                 <span class="italic font-light"> for reservation</span>
               </h1>
               <p class="mt-4 text-base font-light font-poppins text-vegan-blue">
-                we will contact you with all informations needed via email as
-                soon as posible.
+                for your request, we will send you additional information
+                directly by e-mail.
               </p>
-              <p class="mt-2 text-base font-light font-poppins text-vegan-red">
+              <!-- <p class="mt-2 text-base font-light font-poppins text-vegan-red">
                 RESERVATION IS VALID AFTER DEPOSIT PAYMENT
-              </p>
+              </p> -->
             </div>
           </header>
           <div class="mx-auto mt-0 mb-10 sm:mt-0 w-197px">

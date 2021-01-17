@@ -1,5 +1,10 @@
 <template>
-  <img class="mt-10" src="/images/logo-landing.svg" />
+  <img class="mx-auto mt-10 logo-width" src="/images/logo-landing.svg" />
 </template>
 
-<style></style>
+<style scoped>
+.logo-width {
+  max-width: 254px;
+  max-height: 62px;
+}
+</style>

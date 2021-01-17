@@ -10,9 +10,7 @@
     <!-- <Preloader v-if="loaderVisibility" id="preloader" /> -->
     <!-- <Preloader id="preloader" /> -->
     <Preloader v-if="loaderVisibility" />
-    <div class="absolute z-50">
-      {{ loadingIndicator }}
-    </div>
+
     <video-background
       ref="mobilevideo"
       src="https://paras.hr/mobile.mp4"
@@ -98,6 +96,7 @@ export default {
         this.loaderVisibility = false
       }
     }
+    setTimeout(() => (this.loaderVisibility = false), 5000)
   },
   data: () => ({
     loaderVisibility: true,

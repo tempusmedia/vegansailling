@@ -77,25 +77,25 @@
                   <div class="flex text-left">
                     <input
                       type="radio"
-                      id="bunkBed"
+                      id="sailingboatprivate"
                       name="accomodation"
-                      value="bunkBed"
+                      value="sailingboatPrivate"
                       v-model="accomodation"
                     />
-                    <label for="bunkBed"
-                      ><p class="pl-3 content">Bunk bed</p></label
+                    <label for="sailingboatprivate"
+                      ><p class="pl-3 content">Sailing boat</p></label
                     >
                   </div>
                   <div class="flex">
                     <input
                       type="radio"
-                      id="doubleRoom"
+                      id="catamaranprivate"
                       name="accomodation"
-                      value="doubleRoom"
+                      value="catamaranPrivate"
                       v-model="accomodation"
                     />
-                    <label for="doubleRoom"
-                      ><p class="pl-3 content">Double room</p></label
+                    <label for="catamaranprivate"
+                      ><p class="pl-3 content">Catamaran</p></label
                     >
                   </div>
                 </div>
@@ -146,9 +146,10 @@
                   required
                 >
                   <option class="content" value="">Pick location</option>
-                  <option value="Krk">Krk</option>
-                  <option value="Zadar">Zadar</option>
-                  <option value="Split">Split</option>
+                  <option value="Krk">North Adriatic (Krk)</option>
+                  <option value="Zadar">Central Adriatic (Zadar)</option>
+                  <option value="Split">South Adriatic (Split)</option>
+                  <option value="Split">South Adriatic (Dubrovnik)</option>
                 </select>
               </div>
             </div>
@@ -192,7 +193,7 @@
             <div
               class="flex flex-col items-center justify-between pt-6 pb-6 mx-auto sm:hidden"
             >
-              <div>
+              <!-- <div>
                 <p class="text-base font-light font-poppins text-vegan-blue">
                   + 385(0)98 953 5476
                 </p>
@@ -201,6 +202,19 @@
                 <p class="text-base font-light text-vegan-red font-poppins">
                   info@vegansailing.eu
                 </p>
+              </div> -->
+              <div>
+                <p class="text-base font-light font-poppins text-vegan-blue">
+                  Any questions? Contact us directly:
+                </p>
+              </div>
+              <div>
+                <a href="mailto:info@vegansailing.eu"
+                  ><span
+                    class="text-base font-light text-vegan-red font-poppins"
+                    >info@vegansailing.eu</span
+                  ></a
+                >
               </div>
               <div class="flex">
                 <a
@@ -218,7 +232,7 @@
             </div>
 
             <!-- desktop -->
-            <div
+            <!-- <div
               class="items-center justify-between hidden pt-5 mx-auto sm:flex w-txtarea"
             >
               <div>
@@ -244,6 +258,18 @@
                   info@vegansailing.eu
                 </p>
               </div>
+            </div> -->
+            <div
+              class="items-center hidden pt-6 mx-auto justify-evenly sm:flex w-txtarea"
+            >
+              <p class="text-base font-light font-poppins text-vegan-blue">
+                Any questions? Contact us directly:
+              </p>
+              <a href="mailto:info@vegansailing.eu"
+                ><span class="text-base font-light text-vegan-red font-poppins"
+                  >info@vegansailing.eu</span
+                ></a
+              >
             </div>
 
             <div
