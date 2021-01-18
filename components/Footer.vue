@@ -16,7 +16,7 @@
           Have more questions? Contact us directly at
           <br />
           <a href="mailto:info@vegansailing.eu" class="font-semibold">
-            <span class="font-semibold">info(a)vegansialing.eu</span></a
+            <span class="font-semibold">info@vegansialing.eu</span></a
           >
         </p>
         <!-- <Btn
@@ -41,11 +41,13 @@
         <a
           href="https://www.instagram.com/vegan_sailing/"
           class="hover:opacity-80"
+          target="_blank"
           ><img src="/images/instagram.svg"
         /></a>
         <a
           href="https://www.facebook.com/vegansailing.eu/"
           class="hover:opacity-80"
+          target="_blank"
           ><img src="/images/facebook.svg"
         /></a>
       </div>
@@ -73,7 +75,7 @@
         <p class="font-poppins">
           This website uses cookies to give you an incredible experience. By
           using our website you consent to our cookies in accordance with our
-          Privacy Policy.
+          <nuxt-link to="/privacy-policy"> Privacy Policy.</nuxt-link>
         </p>
         <!-- <n-link>Go somewhere</n-link> -->
       </template>

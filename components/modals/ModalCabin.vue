@@ -181,16 +181,21 @@
               <h1 class="hidden font-semibold leading-tight xs:block">
                 <span class="italic font-light"> questions?</span>
               </h1>
-              <p class="mt-3 text-base text-white content">
+              <!-- <p class="mt-3 text-base text-white content">
                 + 385(0)98 953 5476
-              </p>
+              </p> -->
+              <br />
               <p class="font-semibold">info@vegansailing.eu</p>
               <div class="flex mt-3">
-                <a href="https://www.instagram.com/vegan_sailing/"
+                <a
+                  href="https://www.instagram.com/vegan_sailing/"
+                  target="_blank"
                   ><img src="/images/instagram.svg"
                 /></a>
 
-                <a href="https://www.facebook.com/vegansailing.eu/"
+                <a
+                  href="https://www.facebook.com/vegansailing.eu/"
+                  target="_blank"
                   ><img src="/images/facebook.svg"
                 /></a>
               </div>

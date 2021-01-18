@@ -1,7 +1,4 @@
 <template>
-  <!-- <div
-    class="absolute z-50 justify-center w-full h-screen bg-black bg-opacity-80"
-  > -->
   <div
     class="absolute z-50 justify-center w-full h-screen bg-white bg-opacity-90"
   >

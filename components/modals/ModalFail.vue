@@ -34,7 +34,7 @@
                 <p>
                 <span
                   ><a class="font-semibold text-vegan-blue" href="mailto:info@vegansailing.eu">
-                    info(a)vegansialing.eu</a
+                    info@vegansialing.eu</a
                   ></span
                 >
             </p>

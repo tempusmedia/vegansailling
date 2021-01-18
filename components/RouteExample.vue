@@ -1,5 +1,8 @@
 <template>
-  <div class="grid grid-cols-12 mx-auto mt-0 sm:px-5 xl:container sm:mt-28">
+  <div
+    id="routeexample"
+    class="grid grid-cols-12 mx-auto mt-0 sm:px-5 xl:container sm:mt-28"
+  >
     <svg
       class="relative z-30 -top-10 sm:hidden"
       width="100vw"
@@ -16,16 +19,16 @@
     <div class="grid grid-cols-1 col-span-12 -mt-18 sm:mt-0 lg:grid-cols-2">
       <div class="relative flex">
         <div class="w-1/2">
-          <img class="w-full" src="/images/boat01-xs.jpg" />
+          <img class="w-full" src="/images/boat01-blue.jpg" />
         </div>
         <div class="relative w-2/3 sm:w-1/2">
           <img
             class="relative top-0 object-contain w-full sm:-left-10 sm:top-14"
-            src="/images/boat02-xs.jpg"
+            src="/images/boat02-blue.jpg"
           />
 
           <svg
-            class="relative w-full bottom-18 sm:bottom-8 md:bottom-14 lg:bottom-8 sm:-left-10"
+            class="relative w-full bottom-18 sm:bottom-8 md:bottom-14 lg:bottom-8 xl:bottom-14 sm:-left-10"
             width="100%"
             viewBox="15 0 415 150"
             fill="none"

@@ -5,8 +5,14 @@
       class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
       style="background-image: url('/images/bg-main-xs.jpg')"
     > -->
-    <Preloader id="preloader" />
+
+    <!-- for pure js preloader (uncomment code in script)-->
+    <!-- <Preloader v-if="loaderVisibility" id="preloader" /> -->
+    <!-- <Preloader id="preloader" /> -->
+    <Preloader v-if="loaderVisibility" />
+
     <video-background
+      ref="mobilevideo"
       src="https://paras.hr/mobile.mp4"
       class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
     >
@@ -45,6 +51,7 @@
     > -->
 
     <video-background
+      ref="desktopvideo"
       src="https://paras.hr/desktop.mp4"
       class="hidden object-cover object-center w-full h-screen bg-center bg-no-repeat bg-cover xs:block"
     >
@@ -83,7 +90,16 @@
 
 <script>
 export default {
+  mounted() {
+    document.onreadystatechange = () => {
+      if (document.readyState == 'complete') {
+        this.loaderVisibility = false
+      }
+    }
+    setTimeout(() => (this.loaderVisibility = false), 5000)
+  },
   data: () => ({
+    loaderVisibility: true,
     landingBtn: {
       primary: {
         title: 'Private',
@@ -97,6 +113,13 @@ export default {
       },
     },
   }),
+  computed: {
+    loadingIndicator() {
+      if (process.browser) {
+        return window.$nuxt.$root.$loading.percent
+      }
+    },
+  },
 
   layout: 'landing-layout',
   transition: {
@@ -187,15 +210,6 @@ if (process.browser) {
     document.documentElement.style.setProperty('--vh', `${vh}px`)
   })
 }
-
-if (process.browser) {
-  document.onreadystatechange = function () {
-    if (document.readyState == 'complete') {
-      console.log('gotov load')
-      document.getElementById('preloader').style.display = 'none'
-    }
-  }
-}
 </script>
 
 <style>
@@ -266,5 +280,9 @@ body {
   .landing-desk:hover .my-title {
     margin-top: 1.5rem !important;
   }
+}
+
+.newstyle {
+  visibility: hidden;
 }
 </style>
