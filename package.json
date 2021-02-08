@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "BASE_URL=https://vegan.tempusmedia.hr nuxt",
-    "build": "BASE_URL=https://vegan.tempusmedia.hr nuxt build",
-    "start": "BASE_URL=https://vegan.tempusmedia.hr nuxt start",
-    "generate": "BASE_URL=https://vegan.tempusmedia.hr nuxt generate"
+    "dev": "BASE_URL=https://vegansailing.eu nuxt",
+    "build": "BASE_URL=https://vegansailing.eu nuxt build",
+    "start": "BASE_URL=https://vegansailing.eu nuxt start",
+    "generate": "BASE_URL=https://vegansailing.eu nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
