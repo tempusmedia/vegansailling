@@ -6,6 +6,6 @@
 
 var vars = {
     file: 'index.html',
-    path: 'https://vegansailing.eu/mytour/theasys01',//path to the index.html
+    path: 'https://vegansailing.eu/mytour/theasys01/',//path to the index.html
     theme: 'theasys',
 };

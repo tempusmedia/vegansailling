@@ -65,7 +65,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    "nuxt-compress"
+    // "nuxt-compress"
 
   ],
 
