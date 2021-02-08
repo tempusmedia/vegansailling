@@ -49,7 +49,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys01/index.html"
-            ><img src="/images/boat01.jpg"
+            ><img src="/images/theasys01.jpg"
           /></a>
         </div>
         <div>
@@ -65,7 +65,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys03/index.html"
-            ><img src="/images/boat01.jpg"
+            ><img src="/images/theasys03.jpg"
           /></a>
         </div>
         <div>
@@ -73,7 +73,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys04/index.html"
-            ><img src="/images/boat02.jpg"
+            ><img src="/images/theasys04.jpg"
           /></a>
         </div>
 
