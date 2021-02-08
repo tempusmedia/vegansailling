@@ -33,23 +33,22 @@
         :dots="false"
         class="relative pt-10 pb-10 sm:pb-beneath-booking sm:pt-16 bnc-carousel"
         :margin="5"
-        :responsive="{ 0: { items: 1 }, 960: { items: 1 } }"
+        :responsive="{ 0: { items: 1 } }"
       >
-        <template slot="prev"
+        <!-- <template slot="prev"
           ><span
-            class="absolute z-10 ml-5 cursor-pointer prev top-28 sm:top-32"
+            class="absolute z-10 ml-5 cursor-pointer prev top-40 sm:top-70"
           >
-            <!-- without <p> not showing arrow? -->
 
             <img class="icon-height sm:mt-6" src="/nav/left-arrow.svg"
           /></span>
-        </template>
+        </template> -->
         <div>
           <a
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys01/index.html"
-            ><img src="/images/theasys01.jpg"
+            ><img class="mx-auto my-auto img-width" src="/images/theasys01.jpg"
           /></a>
         </div>
         <div>
@@ -57,7 +56,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys02/index.html"
-            ><img src="/images/theasys02.jpg"
+            ><img class="mx-auto my-auto img-width" src="/images/theasys02.jpg"
           /></a>
         </div>
         <div>
@@ -65,7 +64,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys03/index.html"
-            ><img src="/images/theasys03.jpg"
+            ><img class="mx-auto my-auto img-width" src="/images/theasys03.jpg"
           /></a>
         </div>
         <div>
@@ -73,18 +72,18 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys04/index.html"
-            ><img src="/images/theasys04.jpg"
+            ><img class="mx-auto my-auto img-width" src="/images/theasys04.jpg"
           /></a>
         </div>
 
-        <template slot="next"
+        <!-- <template slot="next"
           ><span
-            class="absolute right-0 z-10 mr-5 cursor-pointer next top-28 sm:top-32"
+            class="absolute right-0 z-10 mr-5 cursor-pointer next top-40 sm:top-70"
             ><img
               class="icon-height sm:mt-6"
               src="/nav/right-arrow.svg"
               alt="next" /></span
-        ></template>
+        ></template> -->
       </carousel>
     </client-only>
   </div>
@@ -103,11 +102,11 @@
   border: 3px solid red;
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .img-width {
     width: 303px !important;
   }
-}
+} */
 .slide {
   max-width: 303px;
 }
