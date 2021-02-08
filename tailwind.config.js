@@ -228,10 +228,12 @@ module.exports = {
         }
     },
     variants: {
-        backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+        backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
         height: ['responsive', 'hover', 'focus', 'active'],
         display: ['responsive', 'hover', 'focus', 'active'],
         animation: ['hover', 'focus', 'group-hover'],
+        textColor: ['group-hover'],
+
 
     },
     plugins: []
