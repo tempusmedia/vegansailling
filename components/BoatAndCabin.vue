@@ -33,7 +33,7 @@
         :dots="false"
         class="relative pt-10 pb-10 sm:pb-beneath-booking sm:pt-16 bnc-carousel"
         :margin="5"
-        :responsive="{ 0: { items: 1 }, 960: { items: 3 } }"
+        :responsive="{ 0: { items: 1 }, 960: { items: 2 } }"
       >
         <template slot="prev"
           ><span
@@ -49,7 +49,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys01/index.html"
-            ><img src="/images/boat01.jpg"
+            ><img src="/images/theasys01.jpg"
           /></a>
         </div>
         <div>
@@ -65,7 +65,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys03/index.html"
-            ><img src="/images/boat01.jpg"
+            ><img src="/images/theasys03.jpg"
           /></a>
         </div>
         <div>
@@ -73,7 +73,7 @@
             class="cursor-pointer hover:opacity-80"
             target="_blank"
             href="https://vegansailing.eu/mytour/theasys04/index.html"
-            ><img src="/images/boat02.jpg"
+            ><img src="/images/theasys04.jpg"
           /></a>
         </div>
 
