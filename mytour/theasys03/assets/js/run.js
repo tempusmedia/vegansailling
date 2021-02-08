@@ -1,0 +1,1 @@
+THEASYS.params = {q:'yGbpjiI8pi4Am5K',qe:'Xu0ic6kHoeSrzlu',e:0,s:'',t:vars.theme};THEASYS.base_url = vars.path;THEASYS.cache.init();THEASYS.theme.cache_files_in_browser = false;THEASYS.theme.init(function(){THEASYS.theme.load(function(){THEASYS.params.o = -1;THEASYS.renderer.beforeLoad();THEASYS.renderer.load(null);});});
