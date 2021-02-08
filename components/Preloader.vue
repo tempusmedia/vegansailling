@@ -1,8 +1,7 @@
 <template>
-  <div
-    class="absolute z-50 justify-center w-full h-screen bg-white bg-opacity-90"
-  >
-    <div class="relative top-1/3 loader"></div>
+  <div class="absolute z-50 justify-center w-full h-screen bg-white">
+    <img class="w-64 h-64" src="/images/carrot-loader.gif" />
+    <!-- <div class="relative top-1/3 loader"></div> -->
   </div>
 </template>
 <style scoped>
