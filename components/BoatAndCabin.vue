@@ -14,13 +14,13 @@
       <a
         class="cursor-pointer hover:opacity-80"
         target="_blank"
-        href="https://vegansailing.eu/mytour/theasys01"
+        href="https://vegansailing.eu/mytour/theasys01/index.html"
         ><img src="/images/boat01.jpg"
       /></a>
       <a
         class="cursor-pointer hover:opacity-80"
         target="_blank"
-        href="https://vegansailing.eu/mytour/theasys02/index.html"
+        href="https://vegansailing.eu/mytour/theasys02/"
         ><img src="/images/boat02.jpg"
       /></a>
     </div>
