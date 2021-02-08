@@ -96,7 +96,7 @@ export default {
         this.loaderVisibility = false
       }
     }
-    setTimeout(() => (this.loaderVisibility = false), 5000)
+    // setTimeout(() => (this.loaderVisibility = false), 5000)
   },
   data: () => ({
     loaderVisibility: true,
