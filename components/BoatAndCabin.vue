@@ -7,7 +7,7 @@
     <div class="hidden pb-1 text-center xs:block section-title mt-28">
       <h2 class="font-semibold">Boat and cabin example</h2>
     </div>
-
+    <!-- 
     <div
       class="container grid grid-cols-1 row-gap-5 col-gap-10 px-5 pt-10 pb-12 mx-auto sm:pb-40 sm:pt-20 sm:grid-cols-2 md:px-10 lg:px-20"
     >
@@ -23,7 +23,7 @@
         href="https://vegansailing.eu/mytour/theasys02/index.html"
         ><img src="/images/boat02.jpg"
       /></a>
-    </div>
+    </div> -->
 
     <client-only>
       <carousel
@@ -33,7 +33,7 @@
         :dots="false"
         class="relative pt-10 pb-10 sm:pb-beneath-booking sm:pt-16 bnc-carousel"
         :margin="5"
-        :responsive="{ 0: { items: 1 }, 960: { items: 2 } }"
+        :responsive="{ 0: { items: 1 }, 960: { items: 1 } }"
       >
         <template slot="prev"
           ><span
@@ -91,4 +91,32 @@
 </template>
 
 <script></script>
-<style></style>
+<style scoped>
+.owl-nav {
+  display: none;
+}
+.img-width {
+  width: 80% !important;
+}
+
+.full {
+  border: 3px solid red;
+}
+
+@media only screen and (min-width: 600px) {
+  .img-width {
+    width: 303px !important;
+  }
+}
+.slide {
+  max-width: 303px;
+}
+.owl-item {
+  display: flex;
+  justify-content: center;
+}
+.bnc-carousel {
+  max-width: 1215px;
+  margin: 0 auto;
+}
+</style>
