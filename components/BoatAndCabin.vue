@@ -33,7 +33,7 @@
         :dots="false"
         class="relative pt-10 pb-10 sm:pb-beneath-booking sm:pt-16 bnc-carousel"
         :margin="5"
-        :responsive="{ 0: { items: 1 }, 960: { items: 3 } }"
+        :responsive="{ 0: { items: 1 }, 960: { items: 2 } }"
       >
         <template slot="prev"
           ><span
