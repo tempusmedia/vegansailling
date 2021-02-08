@@ -51,6 +51,10 @@
           ><img src="/images/facebook.svg"
         /></a>
       </div>
+
+      <p class="text-white font-poppins">
+        Designed by <a target="_blank" href="https://paras.hr/">Paras</a>
+      </p>
     </div>
 
     <transition name="fade">

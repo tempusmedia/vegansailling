@@ -116,7 +116,7 @@
         >
         <template #content
           ><p class="max-w-lg py-5 text-center text-white">
-            Single cabin or bunkbed price: €900 / Double bed cabin price: €2100
+            Single cabin or bunkbed price: €1300 / Double bed cabin price: €2300
             *all reservations are closed 30 days before the trip
           </p></template
         >
@@ -170,7 +170,7 @@
           <div class="flex flex-col items-center justify-center max-w-sm h-50">
             <img class="icon-height" src="/icons/much.svg" />
             <h2 class="pt-2 icon-title">How much</h2>
-            <p class="icon-content">900-1050 eur</p>
+            <p class="icon-content">1300-2300 eur</p>
             <p class="icon-content">per person</p>
           </div>
         </div>
