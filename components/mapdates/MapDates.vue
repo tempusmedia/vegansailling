@@ -174,26 +174,65 @@
             name="Krk "
             region="(North Adriatic)"
             date="17 July"
-            route="#routeexample"
+            @click.native="showModalKrk"
           />
           <MapDateItem
             name="Zadar "
             region="(Central Adriatic)"
             date="31 July"
-            route="#routeexample"
+            @click.native="showModalZadar"
           />
           <MapDateItem
             name="Split "
             region="(South Adriatic)"
             date="14 August"
-            route="#routeexample"
+            @click.native="showModalSplit"
           />
         </div>
       </div>
     </div>
+    <transition name="fade">
+      <ModalSplit v-show="isModalVisibleSplit" @close="closeModalSplit" />
+    </transition>
+    <transition name="fade">
+      <ModalZadar v-show="isModalVisibleZadar" @close="closeModalZadar" />
+    </transition>
+    <transition name="fade">
+      <ModalKrk v-show="isModalVisibleKrk" @close="closeModalKrk" />
+    </transition>
   </div>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      isModalVisibleSplit: false,
+      isModalVisibleKrk: false,
+      isModalVisibleZadar: false,
+    }
+  },
+  methods: {
+    showModalSplit() {
+      this.isModalVisibleSplit = true
+    },
+    closeModalSplit() {
+      this.isModalVisibleSplit = false
+    },
+    showModalKrk() {
+      this.isModalVisibleKrk = true
+    },
+    closeModalKrk() {
+      this.isModalVisibleKrk = false
+    },
+    showModalZadar() {
+      this.isModalVisibleZadar = true
+    },
+    closeModalZadar() {
+      this.isModalVisibleZadar = false
+    },
+  },
+}
+</script>
 <style scoped>
 .mt-landing {
   margin-top: -10rem;

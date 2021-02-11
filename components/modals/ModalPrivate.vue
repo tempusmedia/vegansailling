@@ -283,8 +283,10 @@
                 required
               />
               <p class="text-base box content">
-                By clicking on “Book Now”, you agree to Vegan Sailing’s Privacy
-                Policy
+                By clicking on “Book Now”, you agree to Vegan Sailing’s
+                <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
+                and
+                <nuxt-link to="/terms-and-conditions">Terms of Use</nuxt-link>
               </p>
             </div>
 

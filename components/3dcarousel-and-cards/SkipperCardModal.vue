@@ -110,7 +110,7 @@
               >
                 <div>
                   <div class="ml-0 sm:ml-10">
-                    <p class="mb-3 carousel-modal-title">Date of birth:</p>
+                    <p class="mb-3 carousel-modal-title">Year of birth:</p>
                     <p class="route-modal-body">1992</p>
                   </div>
                 </div>

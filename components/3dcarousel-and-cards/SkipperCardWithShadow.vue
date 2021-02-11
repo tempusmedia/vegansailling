@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
- 
       <!-- first card -->
       <div
         class="pb-5 mx-auto bg-white max-w-crew-card sm:max-w-crew-card-desk"
@@ -68,7 +67,7 @@ export default {
     return {
       rows: [
         { item: 'Name', desc: 'Filip Đurić' },
-        { item: 'Date of birth', desc: '05.01.1992' },
+        { item: 'Year of birth', desc: '05.01.1992' },
         { item: 'Nationality', desc: 'Croatian' },
         { item: 'Profession', desc: 'Product designer' },
         { item: 'Languages', desc: 'English, Slovenian, Croatian' },

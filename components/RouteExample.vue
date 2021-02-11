@@ -49,7 +49,7 @@
 
       <div v-if="route" class="px-5 -mt-5 sm:mt-28 md:mt-0 lg:px-0">
         <h2 class="mb-10 font-semibold text-center section-title sm:text-left">
-          Route<span class="font-light"> Example</span>
+          Route<span class="font-light"> example</span>
         </h2>
         <ul class="text-left list-none">
           <li class="flex content">
@@ -88,38 +88,26 @@
       </div>
       <div v-else class="px-5 -mt-5 sm:mt-28 md:mt-0 lg:px-0">
         <h2 class="mb-10 font-semibold text-center section-title sm:text-left">
-          Route<span class="font-light"> Example</span>
+          Route<span class="font-light"> and date choices</span>
         </h2>
         <ul class="text-left list-none">
           <li class="flex content">
             <span class="bullet"></span>
-            Route is designed individually, according to your wishes, habits and
-            preferences.
+            Each route is designed to give you a combination of natural beauties
+            and cultural heritage of the Adriatic Region.
           </li>
           <li class="flex content">
             <span class="bullet"></span>
-            Usually the route is organized as a round trip but it is also
-            possible to make it one way.
+            Generally we change 1 bay per day, what means 2-4 h of motoring or
+            sailing, if the weather allows it.
           </li>
           <li class="flex content">
-            <span class="bullet"></span>Minimum duration of the route is one
-            week.
-          </li>
-          <li class="flex content">
-            <span class="bullet"></span>
-            We can start from (and return to) any charter base marina in
-            Croatia.
-          </li>
-          <li class="flex content">
-            <span class="bullet"></span>
-            Bay or marina is generally changed every day or two, preferably in
-            the morning in order to catch free buoys/berths or good anchor
-            spots.
-          </li>
-          <li class="flex content">
-            <span class="bullet"></span>
-            Final route, as well as day-to-day changes are made according to
-            weathercast
+            <span class="bullet"></span> The route we will actually make depends
+            on the weather forecast, so in order to keep you safe, you should
+            also be prepared to accept the necessary day-to-day changes. No need
+            to worry about not sailing enough, we love sailing and we will use
+            every moment to share that experience with you if it does not
+            undermine your safety on board.
           </li>
         </ul>
       </div>
@@ -268,6 +256,28 @@ export default {
         return true
       } else return false
     },
+    // title1: function () {
+    //   if (
+    //     this.$nuxt.$route.path == '/private-sailing' ||
+    //     this.$nuxt.$route.path == '/hr/private-sailing'
+    //   ) {
+    //     return this.$t('components.route_example.route')
+    //   } else return this.$t('components.route_example.route')
+    // },
+    // title2: function () {
+    //   if (
+    //     this.$nuxt.$route.path == '/private-sailing' ||
+    //     this.$nuxt.$route.path == '/hr/private-sailing'
+    //   ) {
+    //     return this.$t('components.route_example.example')
+    //   }
+    //   if (
+    //     this.$nuxt.$route.path == '/book-a-cabin' ||
+    //     this.$nuxt.$route.path == '/hr/book-a-cabin'
+    //   ) {
+    //     return this.$t('components.route_example.and_date_choices')
+    //   }
+    // },
   },
   methods: {
     showModalSplit() {
