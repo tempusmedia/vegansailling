@@ -46,9 +46,9 @@
 
           <form @submit.prevent="sendMail()">
             <section id="modalDescription">
-              <div class="radio-bg sm:w-txtarea sm:mx-auto">
+              <div class="flex flex-col radio-bg sm:w-txtarea sm:mx-auto">
                 <div
-                  class="flex flex-col justify-center sm:flex-row sm:w-76 sm:justify-between"
+                  class="flex flex-col justify-center mt-4 sm:flex-row sm:w-76 sm:justify-between"
                 >
                   <div class="flex text-left">
                     <input
@@ -76,10 +76,21 @@
                     >
                   </div>
                 </div>
+                <div
+                  class="flex justify-center mx-auto mt-5 mb-3 text-xs align-center content"
+                >
+                  <p>
+                    *When speaking about accommodation, everything about leisure
+                    boats design is finding the optimal space-saving/number of
+                    people ratio. This means that single beds can mostly be
+                    found either in form of a skipper cabin, cabin with two bunk
+                    beds or simply a sleeping place in the saloon
+                  </p>
+                </div>
               </div>
             </section>
 
-            <section class="mt-3">
+            <section class="mt-5">
               <!-- INPUT NUMBER -->
               <InputNumberSlider @eventname="updatenumber" />
             </section>
@@ -154,8 +165,10 @@
                 required
               />
               <p class="text-base box content">
-                By clicking on “Book Now”, you agree to Vegan Sailing’s Privacy
-                Policy
+                By clicking on “Book Now”, you agree to Vegan Sailing’s
+                <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
+                and
+                <nuxt-link to="/terms-and-conditions">Terms of Use</nuxt-link>
               </p>
             </div>
             <div class="mx-auto mt-6 mb-8 max-w-btn">

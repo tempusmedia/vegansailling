@@ -58,7 +58,7 @@
             </tbody>
           </table>
           <div
-            class="pt-4 text-base cursor-pointer text-vegan-red font-poppins hover:opacity-80"
+            class="pt-4 text-xl cursor-pointer text-vegan-red font-poppins hover:opacity-80"
             @click="isModalVisible"
           >
             <p>Read more</p>
@@ -95,7 +95,7 @@ export default {
     return {
       rows: [
         { item: 'Name', desc: 'Helena Smoljanić' },
-        { item: 'Date of birth', desc: '1981' },
+        { item: 'Year of birth', desc: '1981' },
         { item: 'Nationality', desc: 'Croatian' },
         { item: 'Profession', desc: 'translator, homeopath, yoga teacher' },
         { item: 'Languages', desc: 'English, Italian, German' },

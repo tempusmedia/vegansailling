@@ -51,10 +51,12 @@
           ><img src="/images/facebook.svg"
         /></a>
       </div>
-
-      <p class="text-white font-poppins">
-        Designed by <a target="_blank" href="https://paras.hr/">Paras</a>
-      </p>
+      <div class="flex flex-col justify-center text-center align-center">
+        <p class="text-white font-poppins">Designed by</p>
+        <a class="mx-auto" target="_blank" href="https://paras.hr/"
+          ><img class="w-1/2 mx-auto" src="/icons/paras-logo.png"
+        /></a>
+      </div>
     </div>
 
     <transition name="fade">
@@ -79,7 +81,10 @@
         <p class="font-poppins">
           This website uses cookies to give you an incredible experience. By
           using our website you consent to our cookies in accordance with our
-          <nuxt-link to="/privacy-policy"> Privacy Policy.</nuxt-link>
+          <nuxt-link to="/privacy-policy"> Privacy Policy</nuxt-link> and
+          <nuxt-link to="/terms-and-conditions"
+            >Terms and Conditions.</nuxt-link
+          >
         </p>
         <!-- <n-link>Go somewhere</n-link> -->
       </template>

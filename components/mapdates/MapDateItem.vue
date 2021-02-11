@@ -3,7 +3,7 @@
     class="relative h-20 max-w-xl mx-5 my-1 bg-white border bg-opacity-80 content xs:w-88 group"
   >
     <div class="w-0 h-20 group-hover:bg-vegan-orange stretcher">
-      <a :href="route">
+      <div class="cursor-pointer">
         <div
           class="absolute z-20 flex flex-col justify-center h-full pl-8 border-l-4 border-vegan-orange"
         >
@@ -17,13 +17,13 @@
             {{ date }}
           </div>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  props: ['name', 'date', 'region', 'route'],
+  props: ['name', 'date', 'region'],
 }
 </script>
 <style scoped>

@@ -98,7 +98,7 @@ export default {
       "selection_content": "The sailingboat or or a catamaran we will choose for the tour depends on the number of people and availability. We will inform you about our choice one month before the sailing trip. You can see boat examples by clicking on virtual tours at the bottom of the web page.",
 
       "prices": "Prices and estimated costs",
-      "prices_content": "- skipper fee: 1,050 € /week \n - cook fee: 1,050 €/ week  \n - boat rent: 2,000-5,000 €/week \n - buoys/marinas 30-150 € night \n - tourist tax 10.50 € per person \n - transit log 100-300 € week \n - gas 100-300 € week \n - APA: starting from 30 € person/day \n - national/natural parks entry fee (Krka falls 20-30 €/person, Kornati 80 €/day per boat, Telascica 60€/day per boat, Mljet 80 € day per boat ) \n - any off-board expenses",
+      "prices_content": "Included in price: \n - skipper fee: 1,050 € /week \n - cook fee: 1,050 €/ week  \n - food: 30 € person/day \n - boat rent: 2,000-5,000 €/week \n - buoys/marinas 30-150 € night \n - tourist tax 10.50 € per person \n - transit log 100-300 € week \n - gas 100-300 € week \n \n \n Not included: \n - national/natural parks entry fee (Krka falls 20-30 €/person, Kornati 80 €/day per boat, Telascica 60€/day per boat, Mljet 80 € day per boat ) \n - any off-board expenses",
 
 
       "onboard": "What you will find onboard",
@@ -127,6 +127,9 @@ export default {
     },
     "route_example": {
 
+      "route": "Route",
+      "example": "example",
+      "and_date_choices": " and date choices",
       "private_1": "Routes are designed individually, according to your wishes, expectations and preferences.",
       "private_2": "Routes are usually organized as a round trip, but it is also possible to make it one-way.",
       "private_3": "Minimum duration of the route is one week.",

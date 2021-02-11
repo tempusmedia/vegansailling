@@ -231,7 +231,7 @@
       <RouteExample />
     </section>
     <OurCrew />
-
+    <BoatAndCabin />
     <Gallery />
     <Reviews />
 

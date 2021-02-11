@@ -101,7 +101,12 @@
                 <img src="/images/weekly-krk.jpg" alt="Weekly Krk" />
               </div>
               <div class="py-5 pl-6">
-                <h1 class="route-main-title">Krk region (North Adriatic)</h1>
+                <h1 v-if="route" class="route-main-title">
+                  Krk region (North Adriatic)
+                </h1>
+                <h1 v-else class="route-main-title">
+                  17 July - Krk region (North Adriatic)
+                </h1>
               </div>
               <div class="flex items-start pt-8">
                 <div>
@@ -259,6 +264,16 @@ export default {
   methods: {
     close() {
       this.$emit('close')
+    },
+  },
+  computed: {
+    route: function () {
+      if (
+        this.$nuxt.$route.path == '/private-sailing' ||
+        this.$nuxt.$route.path == '/hr/private-sailing'
+      ) {
+        return true
+      } else return false
     },
   },
 }

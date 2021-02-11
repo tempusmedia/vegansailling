@@ -107,8 +107,11 @@
                   <img src="/images/weekly-split.jpg" alt="Weekly Split"  />
                 </div>
                 <div class="py-5 pl-6">
-                  <h1 class="route-main-title">
+                  <h1 v-if="route" class="route-main-title">
                     Split region (South Adriatic)
+                  </h1>
+                  <h1 v-else class="route-main-title">
+                    4 August – Split (South Adriatic)
                   </h1>
                 </div>
                 <div class="flex items-start pt-8">
@@ -261,12 +264,23 @@
     export default {
       name: 'modal',
 
-      methods: {
-        close() {
-          this.$emit('close')
-        },
-      },
-    }
+  methods: {
+    close() {
+      this.$emit('close')
+    },
+  },
+  computed: {
+    route: function () {
+      if (
+        this.$nuxt.$route.path == '/private-sailing' ||
+        this.$nuxt.$route.path == '/hr/private-sailing'
+      ) {
+        return true
+      } else return false
+    },
+  },
+}
+    
   </script>
   <style>
     .my-top3 {
