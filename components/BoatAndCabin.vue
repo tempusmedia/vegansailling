@@ -9,10 +9,10 @@
     </div>
 
     <div
-      class="container hidden grid-cols-1 row-gap-5 col-gap-10 px-5 pt-10 pb-12 mx-auto sm:grid sm:pb-40 sm:pt-20 sm:grid-cols-2 md:px-10 lg:px-20"
+      class="hidden max-w-screen-xl grid-cols-1 row-gap-5 col-gap-10 px-5 pt-10 pb-12 mx-auto sm:grid sm:pb-40 sm:pt-20 sm:grid-cols-2 md:px-10 lg:px-20"
     >
       <a
-        class="relative cursor-pointer hover:opacity-80"
+        class="relative cursor-pointer hover:opacity-80 max-w-360-card"
         target="_blank"
         :href="'https://vegansailing.eu/mytour/' + sailing + '/index.html'"
         ><div
@@ -22,10 +22,10 @@
             SAILING BOAT 360 VIRTUAL TOUR
           </p>
         </div>
-        <img :src="'/images/' + sailing + '.jpg'"
+        <img class="w-full" :src="'/images/' + sailing + '.jpg'"
       /></a>
       <a
-        class="relative cursor-pointer hover:opacity-80"
+        class="relative cursor-pointer hover:opacity-80 max-w-360-card"
         target="_blank"
         :href="'https://vegansailing.eu/mytour/' + catamaran + '/index.html'"
         ><div
@@ -35,7 +35,7 @@
             CATAMARAN 360 VIRTUAL TOUR
           </p>
         </div>
-        <img :src="'/images/' + catamaran + '.jpg'"
+        <img class="w-full" :src="'/images/' + catamaran + '.jpg'"
       /></a>
     </div>
     <div class="sm:hidden">
@@ -51,7 +51,7 @@
         >
           <template slot="prev"
             ><span
-              class="absolute z-10 ml-5 cursor-pointer prev top-36 sm:top-70"
+              class="absolute z-10 ml-5 cursor-pointer prev top-1/45 sm:top-70"
             >
               <img class="icon-height sm:mt-6" src="/nav/left-arrow.svg"
             /></span>
@@ -62,9 +62,9 @@
             target="_blank"
             :href="'https://vegansailing.eu/mytour/' + sailing + '/index.html'"
             ><div
-              class="absolute w-full h-10 text-center bg-gray-900 bg-opacity-30 top-10"
+              class="absolute w-full h-auto text-center bg-gray-900 h bg-opacity-30 top-10"
             >
-              <p class="text-2xl font-bold text-white font-poppins">
+              <p class="text-base font-bold text-white font-poppins">
                 SAILING BOAT 360 VIRTUAL TOUR
               </p>
             </div>
@@ -77,9 +77,9 @@
               'https://vegansailing.eu/mytour/' + catamaran + '/index.html'
             "
             ><div
-              class="absolute w-full h-10 text-center bg-gray-900 bg-opacity-30 top-10"
+              class="absolute w-full h-auto text-center bg-gray-900 bg-opacity-30 top-10"
             >
-              <p class="text-2xl font-bold text-white font-poppins">
+              <p class="text-base font-bold text-white font-poppins">
                 CATAMARAN 360 VIRTUAL TOUR
               </p>
             </div>
@@ -128,7 +128,7 @@
           <!-- 02 catamaran private; 03 monohul private ;01 catamaran bac; 04 sailing boat bac-->
           <template slot="next"
             ><span
-              class="absolute right-0 z-10 mr-5 cursor-pointer next top-36 sm:top-70"
+              class="absolute right-0 z-10 mr-5 cursor-pointer next top-1/45 sm:top-70"
               ><img
                 class="icon-height sm:mt-6"
                 src="/nav/right-arrow.svg"

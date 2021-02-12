@@ -38,7 +38,7 @@
             />
           </svg>
 
-          <img class="skipper-mask" src="/images/skipper01.jpg" />
+          <img class="pt-5 skipper-mask sm:pt-0" src="/images/skipper01.jpg" />
         </div>
         <div class="px-2 py-6 text-center sm:py-10 card-shadow">
           <h2 class="pb-2 card-title sm:text-2xl sm:pb-8 sm:pt-0">

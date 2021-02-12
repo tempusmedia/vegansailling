@@ -25,7 +25,7 @@
         >
 
         <!-- mobile -->
-        <template #button>
+        <!-- <template #button>
           <div class="mx-auto max-w-btn sm:mx-0">
             <a
               class="mt-5 mb-5 btn btn--secondary sm:block sm:mt-2 sm:mb-0"
@@ -37,6 +37,17 @@
               >
                 Book Now
               </p>
+            </a>
+          </div>
+        </template> -->
+        <template #button>
+          <div class="flex justify-center mx-auto max-w-btn sm:mx-0">
+            <a
+              class="mt-5 mb-5 font-medium btn btn--secondary sm:block sm:mt-2 sm:mb- text-btn"
+              type="button"
+              @click="showModal"
+            >
+              Book Now
             </a>
           </div>
         </template>
@@ -229,8 +240,6 @@
 
 <script>
 export default {
-
-
   data() {
     return {
       route: '/',
