@@ -58,7 +58,8 @@ module.exports = {
                 'more-questions': '532px',
                 'reviews-reach': '44rem',
                 'crew-card-desk': '552px',
-                'route-c': '307px'
+                'route-c': '307px',
+                '360-card': '540px'
             },
             fontSize: {
                 'btn': '1.375rem',
@@ -189,7 +190,8 @@ module.exports = {
                 'cust': '10vw',
                 'land': '10rem',
                 '1/2': '50%',
-                '1/3': '33%'
+                '1/3': '33%',
+                '1/45': '45%'
             },
             zIndex: {
                 '-10': '-10',

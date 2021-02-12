@@ -13,6 +13,7 @@
 
     <video-background
       ref="mobilevideo"
+      poster="/images/bg-main.jpg"
       src="https://paras.hr/mobile.mp4"
       class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
     >
@@ -52,6 +53,7 @@
 
     <video-background
       ref="desktopvideo"
+      poster="/images/bg-main.jpg"
       src="https://paras.hr/desktop.mp4"
       class="hidden object-cover object-center w-full h-screen bg-center bg-no-repeat bg-cover xs:block"
     >
