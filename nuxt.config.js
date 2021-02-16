@@ -127,33 +127,33 @@ export default {
 
 
 
-    optional: [
-      {
-        name: 'Google Analitycs',
-        //if you don't set identifier, slugified name will be used
-        identifier: 'vegan',
-        //if multilanguage
-        description: {
-          en: 'Google GTM is ...'
-        },
-        //else
-        description: 'Google GTM is...',
+    //   optional: [
+    //     {
+    //       name: 'Google Analitycs',
+    //       //if you don't set identifier, slugified name will be used
+    //       identifier: 'vegan',
+    //       //if multilanguage
+    //       description: {
+    //         en: 'Google GTM is ...'
+    //       },
+    //       //else
+    //       description: 'Google GTM is...',
 
-        initialState: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=<API-KEY>',
-        async: true,
-        cookies: ['_ga', '_gat', '_gid'],
-        accepted: () => {
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-          });
-        },
-        declined: () => {
-        }
-      }
-    ]
+    //       initialState: true,
+    //       src: 'https://www.googletagmanager.com/gtag/js?id=<API-KEY>',
+    //       async: true,
+    //       cookies: ['_ga', '_gat', '_gid'],
+    //       accepted: () => {
+    //         window.dataLayer = window.dataLayer || [];
+    //         window.dataLayer.push({
+    //           'gtm.start': new Date().getTime(),
+    //           event: 'gtm.js'
+    //         });
+    //       },
+    //       declined: () => {
+    //       }
+    //     }
+    //   ]
   },
 
 
