@@ -402,8 +402,11 @@ export default {
     },
 
     privatePush() {
-      // this.$gtag.event('booking-private')
-      this.$gtm.push({ event: 'booking-private' })
+      this.$gtag.event('booking-private')
+      // this.$gtm.push({ event: 'booking-private' })
+      // dataLayer.push({
+      //   event: 'prekoDataLayerPushzaPRIVATE',
+      // })
     },
     close() {
       this.$emit('close')
