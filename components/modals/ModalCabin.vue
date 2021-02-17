@@ -285,8 +285,8 @@ export default {
       this.close()
     },
     cabinPush() {
-      // this.$gtag.event('book-a-cabin')
-      this.$gtm.push({ event: 'book-a-cabin' })
+      this.$gtag.event('book-a-cabin')
+      // this.$gtm.push({ event: 'book-a-cabin' })
     },
     close() {
       this.$emit('close')

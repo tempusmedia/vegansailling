@@ -402,8 +402,8 @@ export default {
     },
 
     privatePush() {
-      // this.$gtag.event('booking-private')
-      this.$gtm.push({ event: 'booking-private' })
+      this.$gtag.event('booking-private')
+      // this.$gtm.push({ event: 'booking-private' })
     },
     close() {
       this.$emit('close')
