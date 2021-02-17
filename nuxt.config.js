@@ -51,7 +51,7 @@ export default {
     { src: '~/plugins/vue-carousel-3d', ssr: false },
     { src: '~/plugins/aos', ssr: false },
     { src: '~/plugins/vue-video-background', ssr: false },
-    { src: '~/plugins/vue-gtag', ssr: false },
+    // { src: '~/plugins/vue-gtag', ssr: false },
     { src: '~/plugins/vue-easy-lightbox', ssr: false }
 
 
