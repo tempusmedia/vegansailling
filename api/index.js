@@ -31,7 +31,7 @@ app.post('/', (req, res) => {
                 from: 'vegan@tempusmedia.hr', // sender address
                 to: "vegan@tempusmedia.hr, info@vegansailing.eu", // list of receivers
                 subject: req.body.subject, // Subject line
-                text: 'subject: ' + req.body.subject + '\n' + 'user mail: ' + req.body.userMail + '\n' + 'name: ' + req.body.name + '\n' + 'accomodation type' + req.body.accomodation + '\n' + 'number of people: ' + req.body.numberOfPeople + '\n' + 'date: ' + req.body.date + '\n' + 'location: ' + req.body.location + '\n' + 'message: ' + req.body.text + '\n' + 'cook: ' + req.body.hireCook + '\n' + 'skipper: ' + req.body.hireSkipper
+                text: 'subject: ' + req.body.subject + '\n' + 'user mail: ' + req.body.userMail + '\n' + 'name: ' + req.body.name + '\n' + 'accomodation type' + req.body.accomodation + '\n' + 'number of people: ' + req.body.numberOfPeople + '\n' + 'start date: ' + req.body.startDate + '\n' + 'end date: ' + req.body.endDate + '\n' + 'location: ' + req.body.location + '\n' + 'message: ' + req.body.text + '\n' + 'cook: ' + req.body.hireCook + '\n' + 'skipper: ' + req.body.hireSkipper
 
             });
         } if (req.body.subject == 'Book-a-Cabin') {

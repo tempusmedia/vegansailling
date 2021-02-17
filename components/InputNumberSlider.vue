@@ -54,9 +54,9 @@ export default {
     }
   },
   methods: {
-    updateValue: function (value) {
-      this.$emit('input', value)
-    },
+    // updateValue: function (value) {
+    //   this.$emit('input', value)
+    // },
     dec: function () {
       if (this.persons > 0) {
         this.persons--
