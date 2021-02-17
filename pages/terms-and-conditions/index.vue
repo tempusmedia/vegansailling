@@ -101,10 +101,10 @@
       <p class="pt-5 font-semibold">THE PERSON’S RIGHTS</p>
       <ul class="pt-5">
         <li>
-          (1) Upon the person’s request, PARAS will provide insight into all data it holds on the person. Such a request is to be made by mail and titled “Insight into Personal Details” via the email address info@vegansialing.eu or submitted at the points of sale.
+          (1) Upon the person’s request, PARAS will provide insight into all data it holds on the person. Such a request is to be made by mail and titled “Insight into Personal Details” via the email address info@vegansailing.eu or submitted at the points of sale.
   
         </li>
-        <li>            (2) The person may seek via the email address info@vegansialing.eu deletion from the list of contacts. In addition to that, the person may always use the “Unsubscribe” option, which will subsequently halt the sending of further information to the person.
+        <li>            (2) The person may seek via the email address info@vegansailing.eu deletion from the list of contacts. In addition to that, the person may always use the “Unsubscribe” option, which will subsequently halt the sending of further information to the person.
 
         </li>
      
@@ -219,7 +219,7 @@
     <p>
       If there are reasons for dissatisfaction with any part of a program, the participant is
       obligated to immediately lodge a complaint to the skipper, base manager or other person in charge at PARAS. If the participants does not immediately do so, there can be no guarantee of subsequently finding an appropriate solution. If dissatisfaction becomes significant and continual, the participant may lodge a complaint, via the official
-      email address info@vegansialing.eu, as soon as possible but no later than within 14 days of completing the cruise or program. PARAS will respond to the complaint within the legally stipulated deadlines.
+      email address info@vegansailing.eu, as soon as possible but no later than within 14 days of completing the cruise or program. PARAS will respond to the complaint within the legally stipulated deadlines.
       These Terms of Service relate to all PARAS programs, but should there be complaints or disputes, the terms defined and specific for each program shall have priority.
    
        </p>

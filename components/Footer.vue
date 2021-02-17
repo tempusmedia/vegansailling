@@ -16,7 +16,7 @@
           Have more questions? Contact us directly at
           <br />
           <a href="mailto:info@vegansailing.eu" class="font-semibold">
-            <span class="font-semibold">info@vegansialing.eu</span></a
+            <span class="font-semibold">info@vegansailing.eu</span></a
           >
         </p>
         <!-- <Btn
