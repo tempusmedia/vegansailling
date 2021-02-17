@@ -331,25 +331,25 @@
 </template>
 <script>
 export default {
-  head() {
-    return {
-      script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=GTM-MHGR4PQ',
-          async: true,
-        },
-      ],
-    }
-  },
-  mounted() {
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
+  // head() {
+  //   return {
+  //     script: [
+  //       {
+  //         src: 'https://www.googletagmanager.com/gtag/js?id=GTM-MHGR4PQ',
+  //         async: true,
+  //       },
+  //     ],
+  //   }
+  // },
+  // mounted() {
+  //   window.dataLayer = window.dataLayer || []
+  //   function gtag() {
+  //     dataLayer.push(arguments)
+  //   }
+  //   gtag('js', new Date())
 
-    gtag('config', 'GTM-MHGR4PQ')
-  },
+  //   gtag('config', 'GTM-MHGR4PQ')
+  // },
   name: 'modal',
   data() {
     return {
@@ -402,7 +402,7 @@ export default {
     },
 
     privatePush() {
-      this.$gtag.event('booking-private')
+      // this.$gtag.event('booking-private')
       // this.$gtm.push({ event: 'booking-private' })
       // dataLayer.push({
       //   event: 'prekoDataLayerPushzaPRIVATE',
