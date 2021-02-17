@@ -221,6 +221,25 @@
 </template>
 <script>
 export default {
+  head() {
+    return {
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=GTM-MHGR4PQ',
+          async: true,
+        },
+      ],
+    }
+  },
+  mounted() {
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'GTM-MHGR4PQ')
+  },
   name: 'modal',
   data() {
     return {
@@ -266,7 +285,8 @@ export default {
       this.close()
     },
     cabinPush() {
-      this.$gtag.event('book-a-cabin')
+      // this.$gtag.event('book-a-cabin')
+      this.$gtm.push({ event: 'book-a-cabin' })
     },
     close() {
       this.$emit('close')

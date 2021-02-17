@@ -1,5 +1,6 @@
 <template>
   <div class="w-full">
+    
     <Header class="max-w-screen-xl mx-auto" />
     <Nuxt />
     <Footer />

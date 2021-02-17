@@ -40,7 +40,10 @@
             />
           </svg>
 
-          <img class="cook-mask" src="/images/cook02.jpg" />
+          <img
+            class="pt-5 cook-mask skipper-mask sm:pt-0"
+            src="/images/cook02.jpg"
+          />
         </div>
         <div class="px-2 py-6 text-center sm:pt-8 sm:pb-10 card-shadow">
           <h2 class="pb-2 card-title sm:text-2xl sm:pb-2 sm:pt-0">
