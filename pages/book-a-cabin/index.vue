@@ -1,5 +1,6 @@
 <template>
   <div class="slide-transition">
+    <!-- v nova -->
     <!--xs mobile -->
     <div
       class="flex flex-col justify-between w-full overflow-x-hidden bg-left bg-no-repeat bg-cover xs:hidden h-bac-landing-xs"
