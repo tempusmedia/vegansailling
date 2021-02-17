@@ -18,6 +18,7 @@ export default {
     ],
 
 
+
   },
   // { path: '/api', handler: '~api/index.js' },  
   serverMiddleware: ["~/api/index.js"],
