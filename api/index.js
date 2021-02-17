@@ -29,7 +29,7 @@ app.post('/', (req, res) => {
             let info = await transporter.sendMail({
                 replyTo: req.body.userMail,
                 from: 'vegan@tempusmedia.hr', // sender address
-                to: "vegan@tempusmedia.hr, info@vegansailing.hr", // list of receivers
+                to: "vegan@tempusmedia.hr, info@vegansailing.eu", // list of receivers
                 subject: req.body.subject, // Subject line
                 text: 'subject: ' + req.body.subject + '\n' + 'user mail: ' + req.body.userMail + '\n' + 'name: ' + req.body.name + '\n' + 'accomodation type' + req.body.accomodation + '\n' + 'number of people: ' + req.body.numberOfPeople + '\n' + 'date: ' + req.body.date + '\n' + 'location: ' + req.body.location + '\n' + 'message: ' + req.body.text + '\n' + 'cook: ' + req.body.hireCook + '\n' + 'skipper: ' + req.body.hireSkipper
 
@@ -38,7 +38,7 @@ app.post('/', (req, res) => {
             let info = await transporter.sendMail({
                 replyTo: req.body.userMail,
                 from: 'vegan@tempusmedia.hr', // sender address
-                to: "vegan@tempusmedia.hr, info@vegansailing.hr", // list of receivers
+                to: "vegan@tempusmedia.hr, info@vegansailing.eu", // list of receivers
                 subject: req.body.subject, // Subject line
                 text: 'subject: ' + req.body.subject + '\n' + 'user mail: ' + req.body.userMail + '\n' + 'name: ' + req.body.name + '\n' + 'accomodation type' + req.body.accomodation + '\n' + 'number of people: ' + req.body.numberOfPeople + '\n' + 'Date and Location: ' + req.body.dateLocation + '\n' + 'message: ' + req.body.text + '\n' + 'Discount code: ' + req.body.discountCode
 
