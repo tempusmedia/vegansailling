@@ -52,7 +52,8 @@ export default {
     { src: '~/plugins/aos', ssr: false },
     { src: '~/plugins/vue-video-background', ssr: false },
     // { src: '~/plugins/vue-gtag', ssr: false },
-    { src: '~/plugins/vue-easy-lightbox', ssr: false }
+    { src: '~/plugins/vue-easy-lightbox', ssr: false },
+    { src: '~/plugins/custom-gtm.js', ssr: false },
 
 
 
