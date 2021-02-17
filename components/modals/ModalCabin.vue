@@ -90,9 +90,17 @@
               </div>
             </section>
 
-            <section class="mt-5">
+            <section class="flex justify-center mt-5">
               <!-- INPUT NUMBER -->
-              <InputNumberSlider @eventname="updatenumber" />
+              <!-- <InputNumberSlider @eventname="updatenumber" /> -->
+              <label class="pr-3 content">Number of people</label>
+              <input
+                class="pl-3 my-cust-nr-input"
+                min="0"
+                value="1"
+                type="number"
+                v-model="numberOfPeople"
+              />
             </section>
             <!-- INPUT DATE -->
             <div class="sm:flex sm:mx-auto">
@@ -382,5 +390,17 @@ textarea.input-name::placeholder {
   font-family: 'Poppins', sans-serif;
   color: #154752;
   font-weight: 300;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  opacity: 1;
+}
+input[type='number'] {
+  border: 1px solid #d3d3d3;
+  font-family: 'Poppins', sans-serif;
+  color: #154752;
+}
+.my-cust-nr-input {
+  width: 50px;
 }
 </style>

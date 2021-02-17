@@ -104,11 +104,23 @@
 
             <section class="mt-3">
               <!-- INPUT NUMBER -->
-              <InputNumberSlider @eventname="updatenumber" />
+              <!-- <InputNumberSlider @eventname="updatenumber" /> -->
+              <section class="flex justify-center mt-5">
+                <!-- INPUT NUMBER -->
+                <!-- <InputNumberSlider @eventname="updatenumber" /> -->
+                <label class="pr-3 content">Number of people</label>
+                <input
+                  class="pl-3 my-cust-nr-input"
+                  min="0"
+                  value="1"
+                  type="number"
+                  v-model="numberOfPeople"
+                />
+              </section>
             </section>
             <!-- INPUT DATE -->
             <div class="sm:flex sm:mx-auto sm:w-523px">
-              <div
+              <!-- <div
                 class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:mr-1"
               >
                 <select
@@ -132,9 +144,43 @@
                     21/01/2021 - 28/01/2021
                   </option>
                 </select>
+              </div> -->
+
+              <div
+                class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:mr-1"
+              >
+                <label class="pr-3 content">Start date:</label>
+                <input
+                  class="w-full"
+                  type="date"
+                  v-model="startDate"
+                  name="trip-start"
+                  value="2021-01-01"
+                  min="2021-01-01"
+                  max="2023-12-31"
+                />
               </div>
 
               <!-- INPUT LOCATION -->
+              <div
+                class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:ml-1"
+              >
+                <label class="pr-3 content">End date:</label>
+                <input
+                  class="w-full"
+                  type="date"
+                  v-model="endDate"
+                  name="trip-end"
+                  value="2021-01-01"
+                  min="2021-01-01"
+                  max="2023-12-31"
+                />
+              </div>
+            </div>
+
+            <!-- INPUT LOCATION -->
+            <!-- 
+            <div class="sm:flex sm:mx-auto sm:w-523px">
               <div
                 class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:ml-1"
               >
@@ -152,7 +198,32 @@
                   <option value="Split">South Adriatic (Dubrovnik)</option>
                 </select>
               </div>
-            </div>
+            </div> -->
+
+            <section class="mt-3">
+              <!-- INPUT NUMBER -->
+              <!-- <InputNumberSlider @eventname="updatenumber" /> -->
+              <section class="flex justify-center mt-5">
+                <div
+                  class="mx-auto mt-3 w-modal-inputs modal-input sm:mx-0 sm:ml-1"
+                >
+                  <select
+                    type="location"
+                    name="location"
+                    class="relative date focus:outline-none"
+                    v-model="location"
+                    required
+                  >
+                    <option class="content" value="">Pick location</option>
+                    <option value="Krk">North Adriatic (Krk)</option>
+                    <option value="Zadar">Central Adriatic (Zadar)</option>
+                    <option value="Split">South Adriatic (Split)</option>
+                    <option value="Split">South Adriatic (Dubrovnik)</option>
+                  </select>
+                </div>
+              </section>
+            </section>
+
             <!-- INPUT INFO -->
             <div class="flex justify-center mx-auto content w-modal-inputs">
               <div class="flex flex-col w-modal-inputs">
@@ -357,7 +428,8 @@ export default {
       name: '',
       userMail: '',
       numberOfPeople: '1',
-      date: '',
+      startDate: '',
+      endDate: '',
       location: '',
       message: '',
       accomodation: '',
@@ -379,7 +451,8 @@ export default {
           userMail: this.userMail,
           name: this.name,
           numberOfPeople: this.numberOfPeople,
-          date: this.date,
+          startDate: this.startDate,
+          endDate: this.endDate,
           location: this.location,
           text: this.message,
           accomodation: this.accomodation,
@@ -503,5 +576,22 @@ textarea.input-name::placeholder {
 
 button option {
   -webkit-appearance: none;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  opacity: 1;
+}
+input[type='number'] {
+  border: 1px solid #d3d3d3;
+  font-family: 'Poppins', sans-serif;
+  color: #154752;
+}
+.my-cust-nr-input {
+  width: 50px;
+}
+
+input[type='date'] {
+  font-family: 'Poppins', sans-serif;
+  color: #154752;
 }
 </style>
