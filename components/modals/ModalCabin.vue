@@ -339,8 +339,8 @@ export default {
     close() {
       this.$emit('close')
     },
-  },
-}
+  }
+
 </script>
 <style>
 .lefty {
