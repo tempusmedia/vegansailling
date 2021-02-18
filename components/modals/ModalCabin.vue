@@ -44,7 +44,7 @@
             </div>
           </header>
 
-          <form @submit.prevent="sendMail()">
+          <form ref="form" @submit.prevent="onSubmit()">
             <section id="modalDescription">
               <div class="flex flex-col radio-bg sm:w-txtarea sm:mx-auto">
                 <div
@@ -179,6 +179,12 @@
                 <nuxt-link to="/terms-and-conditions">Terms of Use</nuxt-link>
               </p>
             </div>
+            <recaptcha
+              @error="onError"
+              @success="onSuccess"
+              @expired="onExpired"
+            />
+
             <div class="mx-auto mt-6 mb-8 max-w-btn">
               <button
                 class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
@@ -263,6 +269,28 @@ export default {
     }
   },
   methods: {
+    onError(error) {
+      console.log('Error happened:', error)
+    },
+    async onSubmit() {
+      try {
+        const token = await this.$recaptcha.getResponse()
+        console.log('ReCaptcha token:', token)
+        await this.$recaptcha.reset()
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.log('Login error:', error)
+      }
+    },
+    onSuccess(token) {
+      console.log('Succeeded:', token)
+      // here you submit the form
+      this.sendMail()
+    },
+    onExpired() {
+      console.log('Expired')
+    },
+
     updatenumber(persons) {
       this.numberOfPeople = persons
     },
