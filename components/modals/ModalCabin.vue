@@ -44,7 +44,7 @@
             </div>
           </header>
 
-          <form ref="form" @submit.prevent="onSubmit()">
+          <form @submit.prevent="onSubmit()">
             <section id="modalDescription">
               <div class="flex flex-col radio-bg sm:w-txtarea sm:mx-auto">
                 <div
@@ -266,6 +266,7 @@ export default {
       accomodation: '',
       discountCode: '',
       acceptance: false,
+      represor: false,
     }
   },
   methods: {
@@ -285,7 +286,16 @@ export default {
     onSuccess(token) {
       console.log('Succeeded:', token)
       // here you submit the form
-      this.sendMail()
+
+      if (this.represor === false) {
+        this.sendMail()
+        this.represor = true
+        alert(this.represor)
+        console.log(this.represor)
+      }
+      if (this.represor === true) {
+        console.log('double sending stoped')
+      }
     },
     onExpired() {
       console.log('Expired')
