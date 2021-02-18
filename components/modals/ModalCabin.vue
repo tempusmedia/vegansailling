@@ -278,9 +278,8 @@ export default {
       try {
         const token = await this.$recaptcha.getResponse()
         console.log('ReCaptcha token:', token)
-        await this.$recaptcha.reset()
+        // await this.$recaptcha.reset()
       } catch (error) {
-        // eslint-disable-next-line no-console
         console.log('Login error:', error)
       }
     },
@@ -288,7 +287,7 @@ export default {
       console.log('Succeeded:', token)
       // here you submit the form
       alert('first entrance' + 'represor status:' + this.represor)
-      this.sendMail()
+      // this.sendMailCheck()
       // if (this.represor == false) {
       //   this.sendMail()
       //   this.represor = true
@@ -304,6 +303,10 @@ export default {
 
     updatenumber(persons) {
       this.numberOfPeople = persons
+    },
+
+    sendMailCheck() {
+      alert('poslan mail')
     },
 
     sendMail() {
