@@ -286,8 +286,9 @@ export default {
     },
     onSuccess(token) {
       console.log('Succeeded:', token)
-      // // here you submit the form
-      // alert('first entrance' + 'represor status:' + this.represor)
+      // here you submit the form
+      alert('first entrance' + 'represor status:' + this.represor)
+      this.sendMail()
       // if (this.represor == false) {
       //   this.sendMail()
       //   this.represor = true
@@ -295,8 +296,7 @@ export default {
       //   console.log(this.represor)
       // } else if (this.represor == true) {
       //   console.log('double sending stoped')
-      this.sendMail()
-      }
+      // }
     },
     onExpired() {
       console.log('Expired')
@@ -339,8 +339,8 @@ export default {
     close() {
       this.$emit('close')
     },
-  }
-
+  },
+}
 </script>
 <style>
 .lefty {
