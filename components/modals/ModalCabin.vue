@@ -181,7 +181,7 @@
             </div>
             <recaptcha
               @error="onError"
-              @success="onSuccess"
+              @success.prevent="onSuccess"
               @expired="onExpired"
             />
 
@@ -286,7 +286,7 @@ export default {
     onSuccess(token) {
       console.log('Succeeded:', token)
       // here you submit the form
-
+      alert('first entrance' + 'represor status:' + this.represor)
       if (this.represor == false) {
         this.sendMail()
         this.represor = true
