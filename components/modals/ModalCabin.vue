@@ -181,7 +181,7 @@
             </div>
             <recaptcha
               @error="onError"
-              @success.prevent="onSuccess"
+              @success="onSuccess"
               @expired="onExpired"
             />
 
