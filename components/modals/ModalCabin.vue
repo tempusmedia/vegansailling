@@ -287,13 +287,12 @@ export default {
       console.log('Succeeded:', token)
       // here you submit the form
 
-      if (this.represor === false) {
+      if (this.represor == false) {
         this.sendMail()
         this.represor = true
         alert(this.represor)
         console.log(this.represor)
-      }
-      if (this.represor === true) {
+      } else if (this.represor == true) {
         console.log('double sending stoped')
       }
     },
