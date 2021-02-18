@@ -44,7 +44,7 @@
             </div>
           </header>
 
-          <form @submit.prevent="onSubmit()">
+          <form ref="form" @submit.prevent="onSubmit">
             <section id="modalDescription">
               <div class="flex flex-col radio-bg sm:w-txtarea sm:mx-auto">
                 <div
@@ -181,7 +181,7 @@
             </div>
             <recaptcha
               @error="onError"
-              @success="onSuccess"
+              @success="sendMail"
               @expired="onExpired"
             />
 
@@ -255,6 +255,7 @@ export default {
   //   gtag('config', 'GTM-MHGR4PQ')
   // },
   name: 'modal',
+
   data() {
     return {
       subject: 'Book-a-Cabin',
@@ -284,16 +285,17 @@ export default {
       }
     },
     onSuccess(token) {
-      console.log('Succeeded:', token)
-      // here you submit the form
-      alert('first entrance' + 'represor status:' + this.represor)
-      if (this.represor == false) {
-        this.sendMail()
-        this.represor = true
-        alert(this.represor)
-        console.log(this.represor)
-      } else if (this.represor == true) {
-        console.log('double sending stoped')
+      // console.log('Succeeded:', token)
+      // // here you submit the form
+      // alert('first entrance' + 'represor status:' + this.represor)
+      // if (this.represor == false) {
+      //   this.sendMail()
+      //   this.represor = true
+      //   alert(this.represor)
+      //   console.log(this.represor)
+      // } else if (this.represor == true) {
+      //   console.log('double sending stoped')
+      this.sendMail()
       }
     },
     onExpired() {
