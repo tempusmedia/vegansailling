@@ -285,7 +285,7 @@ export default {
       }
     },
     onSuccess(token) {
-      // console.log('Succeeded:', token)
+      console.log('Succeeded:', token)
       // // here you submit the form
       // alert('first entrance' + 'represor status:' + this.represor)
       // if (this.represor == false) {
