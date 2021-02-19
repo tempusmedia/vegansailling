@@ -44,7 +44,7 @@
             </div>
           </header>
 
-          <form @submit.prevent="sendMail()" id="app">
+          <form ref="form" @submit.prevent="onSubmit()" id="app">
             <!-- CHECKBOX -->
             <section>
               <div class="flex justify-center">
@@ -360,7 +360,11 @@
                 <nuxt-link to="/terms-and-conditions">Terms of Use</nuxt-link>
               </p>
             </div>
-
+            <recaptcha
+              @error="onError"
+              @success="onSuccess"
+              @expired="onExpired"
+            />
             <div class="mx-auto mt-4 mb-10 max-w-btn">
               <button
                 class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
@@ -440,6 +444,26 @@ export default {
   },
 
   methods: {
+    onError(error) {
+      console.log('Error happened:', error)
+    },
+    async onSubmit() {
+      try {
+        const token = await this.$recaptcha.getResponse()
+        console.log('ReCaptcha token:', token)
+        await this.$recaptcha.reset()
+      } catch (error) {
+        console.log('Login error:', error)
+      }
+    },
+    onSuccess(token) {
+      // console.log('Succeeded:', token)
+
+      this.sendMail()
+    },
+    onExpired() {
+      console.log('Expired')
+    },
     updatenumber(persons) {
       this.numberOfPeople = persons
     },

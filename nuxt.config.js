@@ -116,7 +116,7 @@ export default {
   recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
     siteKey: '6LdNgV0aAAAAABfSYZKxqgHJ8_jvJAMm_0mMGoan', // online key
-
+    // siteKey: '6Lde8V0aAAAAAKo4iHuY0wyslkJBolQwWerLRWeS', //localhost key
     version: 2, // Version
     size: 'invisible' // Size: 'compact', 'normal', 'invisible' (v2)
   },
