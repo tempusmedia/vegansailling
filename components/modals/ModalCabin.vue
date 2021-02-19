@@ -44,7 +44,7 @@
             </div>
           </header>
 
-          <form ref="form" @submit.prevent="onSubmit">
+          <form ref="form" @submit.prevent="onSubmit()">
             <section id="modalDescription">
               <div class="flex flex-col radio-bg sm:w-txtarea sm:mx-auto">
                 <div
@@ -181,7 +181,7 @@
             </div>
             <recaptcha
               @error="onError"
-              @success="sendMail"
+              @success="onSuccess"
               @expired="onExpired"
             />
 
@@ -255,7 +255,13 @@ export default {
   //   gtag('config', 'GTM-MHGR4PQ')
   // },
   name: 'modal',
-
+  async mounted() {
+    try {
+      await this.$recaptcha.init()
+    } catch (e) {
+      console.log(e)
+    }
+  },
   data() {
     return {
       subject: 'Book-a-Cabin',
@@ -278,24 +284,15 @@ export default {
       try {
         const token = await this.$recaptcha.getResponse()
         console.log('ReCaptcha token:', token)
-        // await this.$recaptcha.reset()
+        await this.$recaptcha.reset()
       } catch (error) {
         console.log('Login error:', error)
       }
     },
     onSuccess(token) {
-      console.log('Succeeded:', token)
-      // here you submit the form
-      alert('first entrance' + 'represor status:' + this.represor)
-      // this.sendMailCheck()
-      // if (this.represor == false) {
-      //   this.sendMail()
-      //   this.represor = true
-      //   alert(this.represor)
-      //   console.log(this.represor)
-      // } else if (this.represor == true) {
-      //   console.log('double sending stoped')
-      // }
+      // console.log('Succeeded:', token)
+
+      this.sendMail()
     },
     onExpired() {
       console.log('Expired')
@@ -303,10 +300,6 @@ export default {
 
     updatenumber(persons) {
       this.numberOfPeople = persons
-    },
-
-    sendMailCheck() {
-      alert('poslan mail')
     },
 
     sendMail() {
