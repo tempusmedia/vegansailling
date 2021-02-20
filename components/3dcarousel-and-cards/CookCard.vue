@@ -44,7 +44,7 @@
         </div>
         <div class="px-2 py-6 text-center sm:pt-8 sm:pb-10 card-shadow">
           <h2 class="pb-2 card-title sm:text-2xl sm:pb-4 sm:pt-0">
-            Helena Smoljanić
+            Helena Smiljanić
           </h2>
 
           <table id="thirdTable" class="content sm:mr-12">
@@ -94,7 +94,7 @@ export default {
   data() {
     return {
       rows: [
-        { item: 'Name', desc: 'Helena Smoljanić' },
+        { item: 'Name', desc: 'Helena Smiljanić' },
         { item: 'Year of birth', desc: '1981' },
         { item: 'Nationality', desc: 'Croatian' },
         { item: 'Profession', desc: 'translator, homeopath, yoga teacher' },

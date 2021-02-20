@@ -102,7 +102,7 @@
                   <img class="-mt-36 cook-mask" src="/images/cook01.jpg" />
                 </div>
                 <div class="relative pt-3 pb-12 pl-8 text-left sm:pl-6">
-                  <h1 class="carousel-main-title">Helena Smoljanić</h1>
+                  <h1 class="carousel-main-title">Helena Smiljanić</h1>
                 </div>
               </div>
               <div
