@@ -166,7 +166,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `${process.env.BASE_URL}/images/facebookOG.jpg`,
+        content: `${process.env.BASE_URL}/gallery/facebook-og.jpg`,
       },
       //twitter
       {
@@ -193,7 +193,7 @@ export default {
       {
         hid: 'twitter:image',
         property: 'twitter:image',
-        content: `${process.env.BASE_URL}/images/facebookOG.jpg`,
+        content: `${process.env.BASE_URL}/gallery/facebook-og.jpg`,
       },
     ],
   },
