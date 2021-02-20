@@ -14,7 +14,7 @@
     <video-background
       ref="mobilevideo"
       poster="/images/bg-main.jpg"
-      src="https://paras.hr/mobile.mp4"
+      src="https://paras.hr/mobile2.mp4"
       class="flex flex-col justify-between object-cover object-center w-full bg-no-repeat custom-height xs:hidden"
     >
       <div
@@ -54,7 +54,7 @@
     <video-background
       ref="desktopvideo"
       poster="/images/bg-main.jpg"
-      src="https://paras.hr/desktop.mp4"
+      src="https://paras.hr/desktop2.mp4"
       class="hidden object-cover object-center w-full h-screen bg-center bg-no-repeat bg-cover xs:block"
     >
       <div
@@ -166,7 +166,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/bg-main.jpg',
+        content: `${process.env.BASE_URL}/images/facebookOG.jpg`,
       },
       //twitter
       {
@@ -193,7 +193,7 @@ export default {
       {
         hid: 'twitter:image',
         property: 'twitter:image',
-        content: `${process.env.BASE_URL}/images/bg-main.jpg`,
+        content: `${process.env.BASE_URL}/images/facebookOG.jpg`,
       },
     ],
   },
