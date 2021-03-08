@@ -179,12 +179,12 @@
                 <nuxt-link to="/terms-and-conditions">Terms of Use</nuxt-link>
               </p>
             </div>
-            <recaptcha
+            <!-- <recaptcha
               @error="onError"
               @success="onSuccess"
               @expired="onExpired"
-            />
-
+            /> -->
+            <recaptcha />
             <div class="mx-auto mt-6 mb-8 max-w-btn">
               <button
                 class="mt-5 mb-5 btn btn--secondary xs:block xs:mt-2 xs:mb-0"
@@ -255,13 +255,13 @@ export default {
   //   gtag('config', 'GTM-MHGR4PQ')
   // },
   name: 'modal',
-  async mounted() {
-    try {
-      await this.$recaptcha.init()
-    } catch (e) {
-      console.log(e)
-    }
-  },
+  // async mounted() {
+  //   try {
+  //     await this.$recaptcha.init()
+  //   } catch (e) {
+  //     console.log(e)
+  //   }
+  // },
   data() {
     return {
       subject: 'Book-a-Cabin',
@@ -280,23 +280,37 @@ export default {
     onError(error) {
       console.log('Error happened:', error)
     },
+    // async onSubmit() {
+    //   try {
+    //     const token = await this.$recaptcha.getResponse()
+    //     console.log('ReCaptcha token:', token)
+    //     await this.$recaptcha.reset()
+    //   } catch (error) {
+    //     console.log('Login error:', error)
+    //   }
+    // },
+
     async onSubmit() {
       try {
         const token = await this.$recaptcha.getResponse()
         console.log('ReCaptcha token:', token)
+        this.sendMail()
+        // send token to server alongside your form data
+
+        // at the end you need to reset recaptcha
         await this.$recaptcha.reset()
       } catch (error) {
         console.log('Login error:', error)
       }
     },
-    onSuccess(token) {
-      // console.log('Succeeded:', token)
+    // onSuccess(token) {
+    //   // console.log('Succeeded:', token)
 
-      this.sendMail()
-    },
-    onExpired() {
-      console.log('Expired')
-    },
+    //   this.sendMail()
+    // },
+    // onExpired() {
+    //   console.log('Expired')
+    // },
 
     updatenumber(persons) {
       this.numberOfPeople = persons
